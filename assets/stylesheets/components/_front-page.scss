@@ -1,0 +1,38 @@
+.page-template-template-front-php {
+
+  #page {
+    max-width: none;
+    width: 100%;
+  }
+
+  article {
+    background: $color__white;
+    border-bottom: 1px solid $color__black;
+    border-top: 1px solid $color__white;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+
+  .pique-panel-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .pique-panel-content {
+    margin: 0 auto;
+    max-width: $size__site-width;
+    padding: $size__site-gutter;
+  }
+
+  .entry-header,
+  .entry-content,
+  .entry-footer {
+    position: relative;
+    z-index: 100;
+  }
+}
