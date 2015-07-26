@@ -112,12 +112,76 @@ function pique_widgets_init() {
 add_action( 'widgets_init', 'pique_widgets_init' );
 
 /**
+ * Register Google Fonts
+ */
+function pique_fonts_url() {
+  $fonts_url = '';
+
+   /* Translators: If there are characters in your language that are not
+	 * supported by Lora, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$lora = esc_html_x( 'on', 'Lora font: on or off', 'pique' );
+
+	 /* Translators: If there are characters in your language that are not
+	 * supported by Karla, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$karla = esc_html_x( 'on', 'Karla font: on or off', 'pique' );
+
+	if ( 'off' !== $lora || 'off' !== $karla ) :
+		$font_families = array();
+
+		if ( 'off' !== $lora ) {
+			$font_families[] = 'Lora:400,700,400italic,700italic';
+		}
+
+		if ( 'off' !== $karla ) {
+			$font_families[] = 'Karla:400,700,400italic,700italic';
+		}
+
+		$query_args = array(
+			'family' => urlencode( implode( '|', $font_families ) ),
+			'subset' => urlencode( 'latin,latin-ext' ),
+		);
+
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+
+	endif;
+
+return $fonts_url;
+}
+
+/**
+ * Enqueue Google Fonts for Editor Styles
+ */
+function pique_editor_styles() {
+    add_editor_style( array( 'editor-style.css', pique_fonts_url() ) );
+}
+add_action( 'after_setup_theme', 'pique_editor_styles' );
+
+/**
+ * Enqueue Google Fonts for custom headers
+ */
+function pique_admin_scripts() {
+
+	wp_enqueue_style( 'pique-lora', pique_fonts_url(), array(), null );
+
+}
+add_action( 'admin_print_styles-appearance_page_custom-header', 'pique_admin_scripts' );
+
+/* Add this within wp_enqueue_scripts hook function */
+
+
+/**
  * Enqueue scripts and styles.
  */
 function pique_scripts() {
 	wp_enqueue_style( 'pique-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'pique', get_template_directory_uri() . '/assets/js/main.js', array(), '20120206', true );
+
+	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 
 	wp_enqueue_script( 'pique-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
