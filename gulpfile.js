@@ -26,7 +26,7 @@ gulp.task('styles', function() {
     //.pipe(rename({ suffix: '' }))
     //.pipe(minifycss())
     //.pipe(gulp.dest(''))
-    .pipe(notify({ message: 'Styles task complete' }));
+    //.pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Scripts
