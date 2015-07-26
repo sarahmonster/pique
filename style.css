@@ -923,6 +923,7 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 1040px;
   padding: 40px;
+  text-align: center;
 }
 .page-template-template-front-php .entry-header,
 .page-template-template-front-php .entry-content,
