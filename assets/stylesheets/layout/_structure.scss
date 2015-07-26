@@ -1,4 +1,4 @@
-.site{
+.site {
 	margin: 0 auto;
 	width: $size__site-width;
 }
@@ -22,4 +22,36 @@
 .site-footer {
 	clear: both;
 	width: $size__site-main;
+}
+
+.page-template-template-front-php {
+
+	#page {
+		width: 100%;
+	}
+
+	article {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		border-top: 1px solid $color__white;
+		border-bottom: 1px solid $color__black;
+		background: $color__white;
+	}
+
+	.pique-panel-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	.entry-header,
+	.entry-content,
+	.entry-footer {
+		position: relative;
+		z-index: 100;
+	}
 }

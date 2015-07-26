@@ -29,26 +29,14 @@ $query = new WP_Query( $args );
 
       <?php if ( $query->have_posts() ) : ?>
 
-        <?php // Spin up a Loop!
-          $count = 1;
-          while ( $query->have_posts() ) : $query->the_post();
-          $slug = $post->post_name;
-        ?>
-
-          <div id="<?php echo $slug; ?>" class="pique-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
-
-            <h2><?php the_title(); ?></h2>
-
-            <?php the_content(); ?>
-
-          </div>
-
-        <?php
-          $count++;
+          <?php
+          while ( $query->have_posts() ) : $query->the_post(); // Custom Loop for pages
+            get_template_part( 'components/content', 'front' );
           endwhile;
-        ?>
 
-        <?php wp_reset_postdata(); ?>
+          wp_reset_postdata();
+
+          ?>
 
       <?php else : ?>
         <p><?php _e( 'Welcome to Pique! To start setting up your site, add a page as a child of your homepage.', 'pique' ); ?></p>

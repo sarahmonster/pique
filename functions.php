@@ -39,11 +39,9 @@ function pique_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-
-	
-	// Adds Business Theme image sizes.
 	add_image_size( 'pique-hero', 1280, 1000, true );
 	add_image_size( 'pique-thumbnail-avatar', 100, 100, true );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top Menu', 'pique' ),
