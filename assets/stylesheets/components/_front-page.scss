@@ -5,7 +5,7 @@
     width: 100%;
   }
 
-  article {
+  .pique-panel {
     background: $color__white;
     border-bottom: 1px solid $color__black;
     border-top: 1px solid $color__white;
@@ -50,5 +50,15 @@
     a {
       text-decoration: none;
     }
+  }
+}
+
+.pique-child-pages {
+  article {
+    float: left;
+    margin: 0;
+    padding: $size__site-gutter / 2;
+    text-align: left;
+    width: 33.33333333%;
   }
 }

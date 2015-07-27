@@ -903,7 +903,7 @@ a:hover, a:active {
   max-width: none;
   width: 100%;
 }
-.page-template-template-front-php article {
+.page-template-template-front-php .pique-panel {
   background: #fff;
   border-bottom: 1px solid #222;
   border-top: 1px solid #fff;
@@ -944,6 +944,14 @@ a:hover, a:active {
 }
 .page-template-template-front-php .entry-footer a {
   text-decoration: none;
+}
+
+.pique-child-pages article {
+  float: left;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  width: 33.33333333%;
 }
 
 /*--------------------------------------------------------------
