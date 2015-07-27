@@ -102,8 +102,8 @@ if ( ! function_exists( 'pique_entry_footer' ) ) :
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function pique_entry_footer() {
-	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
+	// Hide category and tag text, as well as comment links, for pages.
+	if ( 'post' == get_post_type() ) :
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'pique' ) );
 		if ( $categories_list && pique_categorized_blog() ) {
@@ -115,13 +115,14 @@ function pique_entry_footer() {
 		if ( $tags_list ) {
 			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'pique' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
-	}
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'pique' ), esc_html__( '1 Comment', 'pique' ), esc_html__( '% Comments', 'pique' ) );
-		echo '</span>';
-	}
+		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			echo '<span class="comments-link">';
+			comments_popup_link( esc_html__( 'Leave a comment', 'pique' ), esc_html__( '1 Comment', 'pique' ), esc_html__( '% Comments', 'pique' ) );
+			echo '</span>';
+		}
+
+	endif; // post = get_post_type()
 
 	edit_post_link( esc_html__( 'Edit', 'pique' ), '<span class="edit-link">', '</span>' );
 }

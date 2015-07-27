@@ -926,10 +926,24 @@ a:hover, a:active {
   text-align: center;
 }
 .page-template-template-front-php .entry-header,
-.page-template-template-front-php .entry-content,
-.page-template-template-front-php .entry-footer {
+.page-template-template-front-php .entry-content {
   position: relative;
   z-index: 100;
+}
+.page-template-template-front-php .entry-footer {
+  background: rgba(255, 255, 255, 0.75);
+  bottom: 20px;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  left: 20px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 100;
+}
+.page-template-template-front-php .entry-footer a {
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------

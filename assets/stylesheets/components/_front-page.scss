@@ -31,9 +31,24 @@
   }
 
   .entry-header,
-  .entry-content,
-  .entry-footer {
+  .entry-content {
     position: relative;
     z-index: 100;
+  }
+
+  .entry-footer {
+    background: rgba(255, 255, 255, 0.75);
+    bottom: $size__site-gutter / 2;
+    @include font-size(0.9);
+    left: $size__site-gutter / 2;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 100;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
