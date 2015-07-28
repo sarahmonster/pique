@@ -6,7 +6,6 @@
  */
 ?>
 
-
   <?php
     $pique_child_pages = new WP_Query( array(
       'post_type'      => 'page',

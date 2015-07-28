@@ -44,7 +44,6 @@ $query = new WP_Query( $args );
 
 
 			<?php get_template_part( 'components/content', 'hero' ); ?>
-			<?php get_template_part( 'components/testimonials' ); ?>
 		</main>
 	</div>
 

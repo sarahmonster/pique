@@ -948,11 +948,11 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Front page
 --------------------------------------------------------------*/
-.page-template-template-front-php #page {
+.page-template-page-templatestemplate-front-php #page {
   max-width: none;
   width: 100%;
 }
-.page-template-template-front-php .pique-panel {
+.page-template-page-templatestemplate-front-php .pique-panel {
   background: #fff;
   border-bottom: 1px solid #222;
   border-top: 1px solid #fff;
@@ -960,7 +960,7 @@ a:hover, a:active {
   position: relative;
   width: 100%;
 }
-.page-template-template-front-php .pique-panel-background {
+.page-template-page-templatestemplate-front-php .pique-panel-background {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -968,18 +968,18 @@ a:hover, a:active {
   top: 0;
   z-index: 1;
 }
-.page-template-template-front-php .pique-panel-content {
+.page-template-page-templatestemplate-front-php .pique-panel-content {
   margin: 0 auto;
   max-width: 1040px;
   padding: 40px;
   text-align: center;
 }
-.page-template-template-front-php .entry-header,
-.page-template-template-front-php .entry-content {
+.page-template-page-templatestemplate-front-php .entry-header,
+.page-template-page-templatestemplate-front-php .entry-content {
   position: relative;
   z-index: 100;
 }
-.page-template-template-front-php .entry-footer {
+.page-template-page-templatestemplate-front-php .entry-footer {
   background: rgba(255, 255, 255, 0.75);
   bottom: 20px;
   font-size: 14.4px;
@@ -991,7 +991,7 @@ a:hover, a:active {
   text-transform: uppercase;
   z-index: 100;
 }
-.page-template-template-front-php .entry-footer a {
+.page-template-page-templatestemplate-front-php .entry-footer a {
   text-decoration: none;
 }
 
