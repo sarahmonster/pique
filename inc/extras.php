@@ -23,6 +23,91 @@ function pique_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'pique_body_classes' );
 
+/**
+ * We want to do some fancy-pants stuff with our navbar,
+ * so we'll need to create a custom walker.
+ *
+ */
+class Pique_Menu extends Walker_Nav_Menu {
+    var $current_menu    = null;
+    var $break_point     = null;
+    var $id_to_split_on  = null;
+    var $top_level_count = null;
+
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 )  {
+
+        global $wp_query;
+
+            // Get the locations of nav menus
+            $theme_locations = get_nav_menu_locations();
+
+            // Get the menu object of the current nav menu based on the returned theme location
+            $menu_obj = get_term( $theme_locations[$args->theme_location], 'nav_menu' );
+
+            if( !isset( $this->current_menu ) ) {
+                $this->current_menu = wp_get_nav_menu_object( $menu_obj->term_id );
+            }
+
+            // Determine a break point for our menu
+            $menu_items = wp_get_nav_menu_items( $menu_obj->term_id );
+            if ( !isset ( $this->top_level_count ) ) {
+            	$this->top_level_count = 0;
+					    foreach ( $menu_items as $menu_item ) {
+					    		if ( 0 == $menu_item->menu_item_parent ) {
+					    				$this->top_level_count++;
+					    		}
+					    }
+
+	            if ( !isset( $this->break_point ) ) {
+	                $this->break_point = ceil( $this->top_level_count / 2 );
+	            }
+
+	            $iterator = 0;
+	            foreach ( $menu_items as $menu_item ) {
+				    		if ( 0 == $menu_item->menu_item_parent ) {
+				    				if ( $iterator == $this->break_point ) {
+				    					  $this->id_to_split_on = $menu_item->ID;
+				    				}
+				    				$iterator++;
+				    		}
+					    }
+					   }
+
+
+        $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+        $class_names = $value = '';
+
+        $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+        $classes[] = 'menu-item-' . $item->ID;
+
+        $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+        $class_names = ' class="' . esc_attr( $class_names ) . '"';
+
+        $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+        $id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
+
+        if ( $this->id_to_split_on === $item->ID ) {
+            $output .= $indent . '</li></span><span class="pique-split-nav"><li' . $id . $value . $class_names .'>';
+        } else {
+            $output .= $indent . '<li' . $id . $value . $class_names . '>';
+        }
+
+        $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+        $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+        $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+        $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+        $item_output = $args->before;
+        $item_output .= '<a'. $attributes .'>';
+        $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+        $item_output .= '</a>';
+        $item_output .= $args->after;
+
+        $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+    }
+}
+
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
 	 * Filters wp_title to print a neat <title> tag based on what is being viewed.

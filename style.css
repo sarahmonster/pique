@@ -529,7 +529,6 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%;
 }
 .main-navigation ul {
@@ -561,12 +560,62 @@ a:hover, a:active {
   left: auto;
 }
 .main-navigation li {
-  float: left;
+  display: inline-block;
   position: relative;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
+}
+
+#masthead {
+  background: #222;
+  display: relative;
+  width: 100%;
+}
+#masthead ul a {
+  color: #fff;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+#masthead .site-branding {
+  background: silver;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 75px);
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  z-index: 100;
+}
+#masthead .site-branding h1 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+#masthead .site-branding h1 a {
+  text-decoration: none;
+}
+#masthead .site-branding p {
+  display: none;
+}
+#masthead .site-logo-link img {
+  margin: 0 auto;
+  max-width: 50%;
+}
+#masthead .pique-split-nav {
+  width: calc(50% - 100px);
+}
+#masthead .pique-split-nav:first-of-type {
+  float: left;
+  text-align: right;
+}
+#masthead .pique-split-nav:last-of-type {
+  float: right;
+  text-align: left;
 }
 
 /* Small menu. */

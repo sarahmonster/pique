@@ -45,7 +45,7 @@ function pique_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'top' => esc_html__( 'Top Menu', 'pique' ),
+		'primary' => esc_html__( 'Primary Menu', 'pique' ),
 		'social'  => esc_html__( 'Social Links Menu', 'pique' ),
 	) );
 
@@ -170,8 +170,6 @@ function pique_admin_scripts() {
 
 }
 add_action( 'admin_print_styles-appearance_page_custom-header', 'pique_admin_scripts' );
-
-/* Add this within wp_enqueue_scripts hook function */
 
 
 /**
