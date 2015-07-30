@@ -13,6 +13,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
+    <?php get_sidebar( 'footer' ); ?>
+
     <?php if ( has_nav_menu ( 'secondary' ) ) : ?>
       <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'depth' => 1, 'container_class' => 'secondary-links', ) ); ?>
     <?php endif; ?>
