@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Pique
 Theme URI: http://wordpress.com/pique
@@ -618,6 +619,21 @@ a:hover, a:active {
   text-align: left;
 }
 
+.secondary-links ul {
+  margin: 0;
+  padding: 0;
+}
+.secondary-links ul li {
+  display: inline;
+}
+.secondary-links ul li::after {
+  content: ' ·';
+  display: inline;
+}
+.secondary-links ul li:last-child::after {
+  display: none;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -942,7 +958,20 @@ a:hover, a:active {
 
 .site-footer {
   clear: both;
-  width: 100%;
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  margin: 10px auto;
+  max-width: 1040px;
+}
+
+.secondary-links {
+  float: left;
+}
+
+.site-info {
+  float: right;
 }
 
 /*--------------------------------------------------------------

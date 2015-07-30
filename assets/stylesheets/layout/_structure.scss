@@ -21,5 +21,17 @@
 
 .site-footer {
 	clear: both;
-	width: $size__site-main;
+	font-family: $font__serif;
+	font-style: italic;
+	@include font-size(0.9);
+	margin: 10px auto;
+	max-width: $size__site-width;
+}
+
+.secondary-links {
+	float: left;
+}
+
+.site-info {
+	float: right;
 }

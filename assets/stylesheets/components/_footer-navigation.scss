@@ -1,0 +1,20 @@
+.secondary-links {
+
+  ul {
+  margin: 0;
+  padding: 0;
+
+    li {
+      display: inline;
+
+      &::after {
+        content: ' ·';
+        display: inline;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    } // li
+  } // ul
+} // .secondary-links

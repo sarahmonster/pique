@@ -45,8 +45,9 @@ function pique_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'pique' ),
-		'social'  => esc_html__( 'Social Links Menu', 'pique' ),
+		'primary'   => esc_html__( 'Primary Menu', 'pique' ),
+		'secondary' => esc_html__( 'Secondary Menu', 'pique' ),
+		'social'    => esc_html__( 'Social Menu', 'pique' ),
 	) );
 
 	/*
