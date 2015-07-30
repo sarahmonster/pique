@@ -66,61 +66,63 @@
 	}
 }
 
-#masthead {
-	background: $color__black;
-	display: relative;
-	width: 100%;
+@include tablet {
+	#masthead {
+		background: $color__black;
+		display: relative;
+		width: 100%;
 
-	ul {
-		a {
-			color: $color__white;
-			@include font-size(0.8);
-			letter-spacing: 1px;
-			padding: 20px 10px;
-			text-transform: uppercase;
-		}
-	}
-
-	.site-branding {
-		background: silver;
-		position: absolute;
-		top: 0;
-		left: calc(50% - 75px);
-		line-height: 1;
-		padding: 10px;
-		text-align: center;
-		width: 150px;
-		z-index: 100;
-
-		h1 {
-			@include font-size(1);
-
+		ul {
 			a {
-				text-decoration: none;
+				color: $color__white;
+				@include font-size(0.8);
+				letter-spacing: 1px;
+				padding: 20px 10px;
+				text-transform: uppercase;
 			}
 		}
 
-		p {
-			display: none;
+		.site-branding {
+			background: silver;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 75px);
+			line-height: 1;
+			padding: 10px;
+			text-align: center;
+			width: 150px;
+			z-index: 100;
+
+			h1 {
+				@include font-size(1);
+
+				a {
+					text-decoration: none;
+				}
+			}
+
+			p {
+				display: none;
+			}
 		}
-	}
 
-	.site-logo-link img {
-		margin: 0 auto;
-		max-width: 50%;
-	}
-
-	.pique-split-nav {
-		width: calc(50% - 100px);
-
-		&:first-of-type {
-			float: left;
-			text-align: right;
+		.site-logo-link img {
+			margin: 0 auto;
+			max-width: 50%;
 		}
 
-		&:last-of-type {
-			float: right;
-			text-align: left;
+		.pique-split-nav {
+			width: calc(50% - 100px);
+
+			&:first-of-type {
+				float: left;
+				text-align: right;
+			}
+
+			&:last-of-type {
+				float: right;
+				text-align: left;
+			}
 		}
 	}
 }

@@ -19,19 +19,37 @@
 	width: 100%;
 }
 
+/* Footer sidebar */
+#tertiary {
+	border-bottom: 1px solid lighten($color__text-main, 25%);
+	margin-bottom: 10px;
+}
+
+/* Footer */
 .site-footer {
 	clear: both;
 	font-family: $font__serif;
 	font-style: italic;
-	@include font-size(0.9);
 	margin: 10px auto;
 	max-width: $size__site-width;
-}
 
-.secondary-links {
-	float: left;
-}
+	@include mobile {
+		@include font-size(0.8);
+		text-align: center;
 
-.site-info {
-	float: right;
+		.secondary-links {
+			margin-bottom: 10px;
+		}
+	}
+
+	@include tablet {
+		@include font-size(0.9);
+		.secondary-links {
+			float: left;
+		}
+
+		.site-info {
+			float: right;
+		}
+	}
 }
