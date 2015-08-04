@@ -21,16 +21,55 @@
 
 /* Footer sidebar */
 #tertiary {
+	@include clearfix;
+	@include clearfix-after;
 	border-bottom: 1px solid lighten($color__text-main, 25%);
-	margin-bottom: 10px;
-}
+	margin-bottom: $size__site-gutter / 4;
+	padding: $size__site-gutter 0;
+
+	@include tablet {
+		aside {
+			float: left;
+			margin-right: $size__site-gutter;
+
+			// One widget area
+			&:nth-child(1):nth-last-child(1) {
+				float: none;
+				max-width: 500px;
+			}
+
+			// Two widget areas
+			&:nth-child(1):nth-last-child(2),
+			&:nth-child(2):nth-last-child(1) {
+				width: 45%;
+				width: calc( (100% - #{$size__site-gutter}) / 2);
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+
+			// Three widget areas
+			&:nth-child(1):nth-last-child(3),
+			&:nth-child(2):nth-last-child(2),
+			&:nth-child(3):nth-last-child(1) {
+				width: 30%;
+				width: calc( (100% - #{$size__site-gutter*2}) / 3);
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	} // @include tablet
+} // #tertiary
 
 /* Footer */
 .site-footer {
 	clear: both;
 	font-family: $font__serif;
 	font-style: italic;
-	margin: 10px auto;
+	margin: $size__site-gutter / 4 auto;
 	max-width: $size__site-width;
 
 	@include mobile {

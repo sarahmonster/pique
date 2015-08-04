@@ -959,8 +959,36 @@ a:hover, a:active {
 
 /* Footer sidebar */
 #tertiary {
+  content: "";
+  display: table;
+  clear: both;
   border-bottom: 1px solid #a6a6a6;
   margin-bottom: 10px;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  #tertiary aside {
+    float: left;
+    margin-right: 40px;
+  }
+  #tertiary aside:nth-child(1):nth-last-child(1) {
+    float: none;
+    max-width: 500px;
+  }
+  #tertiary aside:nth-child(1):nth-last-child(2), #tertiary aside:nth-child(2):nth-last-child(1) {
+    width: 45%;
+    width: calc( (100% - 40px) / 2);
+  }
+  #tertiary aside:nth-child(1):nth-last-child(2):last-of-type, #tertiary aside:nth-child(2):nth-last-child(1):last-of-type {
+    margin-right: 0;
+  }
+  #tertiary aside:nth-child(1):nth-last-child(3), #tertiary aside:nth-child(2):nth-last-child(2), #tertiary aside:nth-child(3):nth-last-child(1) {
+    width: 30%;
+    width: calc( (100% - 80px) / 3);
+  }
+  #tertiary aside:nth-child(1):nth-last-child(3):last-of-type, #tertiary aside:nth-child(2):nth-last-child(2):last-of-type, #tertiary aside:nth-child(3):nth-last-child(1):last-of-type {
+    margin-right: 0;
+  }
 }
 
 /* Footer */
