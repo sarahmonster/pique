@@ -196,9 +196,7 @@ add_action( 'after_setup_theme', 'pique_editor_styles' );
  * Enqueue Google Fonts for custom headers
  */
 function pique_admin_scripts() {
-
-	wp_enqueue_style( 'pique-lora', pique_fonts_url(), array(), null );
-
+	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 }
 add_action( 'admin_print_styles-appearance_page_custom-header', 'pique_admin_scripts' );
 
@@ -208,14 +206,15 @@ add_action( 'admin_print_styles-appearance_page_custom-header', 'pique_admin_scr
  */
 function pique_scripts() {
 	wp_enqueue_style( 'pique-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'pique', get_template_directory_uri() . '/assets/js/main.js', array(), '20120206', true );
-
 	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 
 	wp_enqueue_script( 'pique-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
-
 	wp_enqueue_script( 'pique-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	// Scroll effects
+	wp_enqueue_script( 'pique-skrollr', get_template_directory_uri() . '/assets/js/skrollr.min.js', array(), '20150805', true );
+	wp_enqueue_script( 'pique-skrollr-menu', get_template_directory_uri() . '/assets/js/skrollr.menu.min.js', array(), '20150805', true );
+	wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr'), '20150805', true );
 
 	if ( wp_style_is( 'genericons', 'registered' ) ) {
 		wp_enqueue_style( 'genericons' );
