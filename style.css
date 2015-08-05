@@ -594,14 +594,14 @@ a:hover, a:active {
     width: 150px;
     z-index: 100;
   }
-  #masthead .site-branding h1 {
+  #masthead .site-branding .site-title {
     font-size: 16px;
     font-size: 1rem;
   }
-  #masthead .site-branding h1 a {
+  #masthead .site-branding .site-title a {
     text-decoration: none;
   }
-  #masthead .site-branding p {
+  #masthead .site-branding .site-description {
     display: none;
   }
   #masthead .site-logo-link img {
@@ -955,6 +955,12 @@ a:hover, a:active {
 .widget_nav_menu .sub-menu {
   margin-left: 1em;
   padding: 0;
+}
+
+/* Text widget */
+.textwidget {
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 /*--------------------------------------------------------------

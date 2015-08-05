@@ -93,7 +93,7 @@
 			width: 150px;
 			z-index: 100;
 
-			h1 {
+			.site-title {
 				@include font-size(1);
 
 				a {
@@ -101,7 +101,7 @@
 				}
 			}
 
-			p {
+			.site-description {
 				display: none;
 			}
 		}
