@@ -1059,8 +1059,12 @@ a:hover, a:active {
   .site-footer .secondary-links {
     float: left;
   }
+  .site-footer .site-info {
+    text-align: center;
+  }
   .site-footer .secondary-links + .site-info {
     float: right;
+    text-align: right;
   }
 }
 

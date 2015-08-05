@@ -102,8 +102,13 @@
 			float: left;
 		}
 
+		.site-info {
+			text-align: center; // Align center if we only have this menu
+		}
+
 		.secondary-links + .site-info {
 			float: right;
+			text-align: right;
 		}
 	}
 } // .site-footer
