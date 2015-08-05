@@ -27,9 +27,16 @@
 	margin-bottom: $size__site-gutter / 4;
 	padding: $size__site-gutter 0;
 
+	@include mobile {
+		aside {
+			padding: $size__site-gutter;
+		}
+	}
+
 	@include tablet {
 		aside {
 			float: left;
+			@include font-size(0.95);
 			margin-right: $size__site-gutter;
 
 			// One widget area
@@ -68,27 +75,36 @@
 .site-footer {
 	clear: both;
 	font-family: $font__serif;
-	font-style: italic;
 	margin: $size__site-gutter / 4 auto;
 	max-width: $size__site-width;
 
 	@include mobile {
-		@include font-size(0.8);
+		@include font-size(0.9);
 		text-align: center;
-
-		.secondary-links {
-			margin-bottom: 10px;
-		}
 	}
 
+	.secondary-links,
+	.site-info {
+		font-style: italic;
+
+		@include mobile {
+			@include font-size(0.8);
+			margin-bottom: 10px;
+		}
+
+		@include tablet {
+			@include font-size(0.9);
+		}
+	} // .secondary-links .site-footer
+
 	@include tablet {
-		@include font-size(0.9);
 		.secondary-links {
 			float: left;
 		}
 
-		.site-info {
+		.secondary-links + .site-info {
 			float: right;
 		}
 	}
-}
+} // .site-footer
+

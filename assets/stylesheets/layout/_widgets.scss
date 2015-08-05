@@ -7,7 +7,34 @@
 	}
 }
 
+.widget-title {
+  border-bottom: 2px solid;
+  font-family: $font__sans;
+  @include font-size(1.1);
+  letter-spacing: 1px;
+  margin-bottom: $size__site-gutter / 2;
+  padding-bottom: $size__site-gutter / 4;
+  text-transform: uppercase;
+}
+
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
 }
+
+/* Nav widget */
+.widget_nav_menu {
+  ul {
+    list-style-type: none;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-menu {
+    margin-left: 1em;
+    padding: 0;
+  }
+} // .widget_nav_menu

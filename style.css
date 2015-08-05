@@ -928,9 +928,33 @@ a:hover, a:active {
   max-width: 100%;
 }
 
+.widget-title {
+  border-bottom: 2px solid;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
+}
+
+/* Nav widget */
+.widget_nav_menu ul {
+  list-style-type: none;
+}
+.widget_nav_menu .menu {
+  margin: 0;
+  padding: 0;
+}
+.widget_nav_menu .sub-menu {
+  margin-left: 1em;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -966,9 +990,16 @@ a:hover, a:active {
   margin-bottom: 10px;
   padding: 40px 0;
 }
+@media (max-width: 767px) {
+  #tertiary aside {
+    padding: 40px;
+  }
+}
 @media (min-width: 768px) {
   #tertiary aside {
     float: left;
+    font-size: 15.2px;
+    font-size: 0.95rem;
     margin-right: 40px;
   }
   #tertiary aside:nth-child(1):nth-last-child(1) {
@@ -995,29 +1026,40 @@ a:hover, a:active {
 .site-footer {
   clear: both;
   font-family: Lora, Georgia, serif;
-  font-style: italic;
   margin: 10px auto;
   max-width: 1040px;
 }
 @media (max-width: 767px) {
   .site-footer {
-    font-size: 12.8px;
-    font-size: 0.8rem;
+    font-size: 14.4px;
+    font-size: 0.9rem;
     text-align: center;
   }
-  .site-footer .secondary-links {
+}
+.site-footer .secondary-links,
+.site-footer .site-info {
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  .site-footer .secondary-links,
+  .site-footer .site-info {
+    font-size: 12.8px;
+    font-size: 0.8rem;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
-  .site-footer {
+  .site-footer .secondary-links,
+  .site-footer .site-info {
     font-size: 14.4px;
     font-size: 0.9rem;
   }
+}
+@media (min-width: 768px) {
   .site-footer .secondary-links {
     float: left;
   }
-  .site-footer .site-info {
+  .site-footer .secondary-links + .site-info {
     float: right;
   }
 }
