@@ -24,6 +24,26 @@ function pique_body_classes( $classes ) {
 add_filter( 'body_class', 'pique_body_classes' );
 
 /**
+ * Adds custom classes to the array of post classes.
+ *
+ * @param array $classes Classes for the post element.
+ * @return array
+ */
+function pique_post_classes( $classes ) {
+  // Adds the page template slug, if we're using one, to the array of classes
+  // We're stripping the prefixed folder name and the .php suffix for prettier CSS
+  if ( get_page_template_slug() ) {
+    $simple_slug = get_page_template_slug();
+    $simple_slug = explode( '.', $simple_slug )[0];
+    $simple_slug = explode( '/', $simple_slug )[1];
+    $classes[] = 'pique-' . $simple_slug;
+  }
+
+  return $classes;
+}
+add_filter( 'post_class', 'pique_post_classes' );
+
+/**
  * We want to do some fancy-pants stuff with our navbar,
  * so we'll need to create a custom walker.
  *

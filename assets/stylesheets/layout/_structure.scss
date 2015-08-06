@@ -42,7 +42,7 @@
 			// One widget area
 			&:nth-child(1):nth-last-child(1) {
 				float: none;
-				max-width: 500px;
+				max-width: $size__site-width / 2;
 			}
 
 			// Two widget areas

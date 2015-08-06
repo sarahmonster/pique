@@ -7,7 +7,6 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1.2);
 	line-height: $font__line-height-body;
-	letter-spacing: -0.25px;
 }
 
 h1,
@@ -27,11 +26,17 @@ h1 {
 }
 
 h2 {
-    font-size: $font__size-h2;
+  font-size: $font__size-h2;
 }
 
 h3 {
-    font-size: $font__size-h3;
+  font-size: $font__size-h3;
+  border-bottom: 2px solid;
+  letter-spacing: 1px;
+  margin-bottom: $size__site-gutter / 2;
+  padding-bottom: $size__site-gutter / 4;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 h4 {

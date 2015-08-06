@@ -275,12 +275,12 @@ textarea {
   font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.5;
-  letter-spacing: -0.25px;
 }
 
 h1,
 h2,
 h3,
+.widget-title,
 h4,
 h5,
 h6 {
@@ -298,8 +298,14 @@ h2 {
   font-size: 2.441em;
 }
 
-h3 {
-  font-size: 1.953em;
+h3, .widget-title {
+  font-size: 1.2em;
+  border-bottom: 2px solid;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -929,17 +935,6 @@ a:hover, a:active {
   max-width: 100%;
 }
 
-.widget-title {
-  border-bottom: 2px solid;
-  font-family: Karla, Arial, sans-serif;
-  font-size: 17.6px;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
-
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
@@ -1011,7 +1006,7 @@ a:hover, a:active {
   }
   #tertiary aside:nth-child(1):nth-last-child(1) {
     float: none;
-    max-width: 500px;
+    max-width: 520px;
   }
   #tertiary aside:nth-child(1):nth-last-child(2), #tertiary aside:nth-child(2):nth-last-child(1) {
     width: 45%;
@@ -1078,6 +1073,9 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Front page
 --------------------------------------------------------------*/
+.page-template-page-templatestemplate-front-php {
+  /* Grid template page */
+}
 .page-template-page-templatestemplate-front-php #page {
   max-width: none;
   width: 100%;
@@ -1118,8 +1116,43 @@ a:hover, a:active {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content h3 {
+.page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid {
+  background-color: #fff;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content {
+  color: #666;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .entry-content > p {
+  font-size: 1.2em;
+  font-style: italic;
+  max-width: 520px;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article {
+  float: left;
+  font-size: 0.85em;
+  text-align: center;
+  width: 30%;
+  width: calc( (100% - 80px) / 3);
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(1), .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(3n+1) {
+  margin-right: 40px;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(3n) {
+  margin-left: 40px;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages .widget-title {
+  color: #666;
+}
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages p {
+  text-align: left;
 }
 .page-template-page-templatestemplate-front-php .entry-header,
 .page-template-page-templatestemplate-front-php .entry-content {
@@ -1140,14 +1173,6 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .entry-footer a {
   text-decoration: none;
-}
-
-.pique-child-pages article {
-  float: left;
-  margin: 0;
-  padding: 20px;
-  text-align: left;
-  width: 33.33333333%;
 }
 
 /*--------------------------------------------------------------

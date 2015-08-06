@@ -8,13 +8,7 @@
 }
 
 .widget-title {
-  border-bottom: 2px solid;
-  font-family: $font__sans;
-  @include font-size(1.1);
-  letter-spacing: 1px;
-  margin-bottom: $size__site-gutter / 2;
-  padding-bottom: $size__site-gutter / 4;
-  text-transform: uppercase;
+  @extend h3;
 }
 
 /* Search widget. */
