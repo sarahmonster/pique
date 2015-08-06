@@ -1,5 +1,4 @@
 window.onload = function(e) {
-  console.log("window loaded");
   var s = skrollr.init();
 
   //The options (second parameter) are all optional. The values shown are the default values.
@@ -24,9 +23,9 @@ window.onload = function(e) {
 
       //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
       //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
-      handleLink: function(link) {
-          return 400;//Hardcoding 400 doesn't make much sense.
-      },
+      //handleLink: function(link) {
+      //    return 400;//Hardcoding 400 doesn't make much sense.
+      //},
 
       //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
       //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
@@ -41,7 +40,7 @@ window.onload = function(e) {
           //Do stuff
       },
 
-      //Add hash link (e.g. `#foo`) to URL or not.
-      updateUrl: false //defaults to `true`.
+      // Don't append hash link (#post-xxxx) to URL
+      updateUrl: true
   });
 };
