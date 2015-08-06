@@ -1,10 +1,17 @@
-$color__primary: #111;
 $color__white: #fff;
 $color__light-grey: #f4f4f4;
 $color__mid-grey: #ccc;
 $color__dark-grey: #666;
 $color__light-black: #444;
 $color__black: #222;
+
+$color__navy: #192b3f;
+$color__blue: #6599be;
+$color__red: #8a260c;
+
+$color__primary: $color__navy;
+$color__secondary: $color__red;
+$color__tertiary: $color__blue;
 
 $color__background-body: $color__white;
 $color__background-hr: $color__light-grey;

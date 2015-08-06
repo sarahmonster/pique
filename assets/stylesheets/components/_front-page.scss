@@ -6,12 +6,17 @@
   }
 
   .pique-panel {
-    background: $color__white;
-    border-bottom: 1px solid $color__black;
-    border-top: 1px solid $color__white;
+    background-color: darken(saturate($color__primary, 10%), 5%);
+    background-image: url(assets/images/noise.png);
+    border-bottom: 1px solid transparentize($color__black, 0.5);
+    border-top: 1px solid transparentize($color__white, 0.75);
     min-height: 100vh;
     position: relative;
     width: 100%;
+
+    &:nth-of-type(odd) {
+      background-color: darken( saturate($color__secondary, 10%), 5%);
+    }
   }
 
   .pique-panel-background {
@@ -24,10 +29,15 @@
   }
 
   .pique-panel-content {
+    color: $color__white;
     margin: 0 auto;
     max-width: $size__site-width;
     padding: $size__site-gutter;
     text-align: center;
+
+    h2, h3 {
+      color: $color__white;
+    }
   }
 
   .entry-header,
