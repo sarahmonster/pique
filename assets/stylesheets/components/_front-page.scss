@@ -14,8 +14,8 @@
     position: relative;
     width: 100%;
 
-    &:nth-of-type(odd) {
-      background-color: darken( saturate($color__secondary, 10%), 5%);
+    &:nth-of-type(even) {
+      background-color: darken(saturate($color__secondary, 10%), 5%);
     }
   }
 
@@ -33,9 +33,20 @@
     margin: 0 auto;
     max-width: $size__site-width;
     padding: $size__site-gutter;
-    text-align: center;
+    //text-align: center;
 
-    h2, h3 {
+    h2 {
+      background: $color__white;
+      display: inline-block;
+      font-size: 2em;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-left: 0;
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+
+    h3 {
       color: $color__white;
     }
   }

@@ -271,7 +271,7 @@ input,
 select,
 textarea {
   color: #666;
-  font-family: Karla, Arial, sans-serif;
+  font-family: Lora, Georgia, serif;
   font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -286,7 +286,7 @@ h5,
 h6 {
   clear: both;
   color: #666;
-  font-family: Lora, Georgia, serif;
+  font-family: Karla, Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -530,6 +530,7 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: block;
+  font-family: Karla, Arial, sans-serif;
   width: 100%;
 }
 .main-navigation ul {
@@ -584,7 +585,7 @@ a:hover, a:active {
     text-transform: uppercase;
   }
   #masthead .site-branding {
-    background: silver;
+    background: #6599be;
     position: absolute;
     top: 0;
     left: calc(50% - 75px);
@@ -1090,7 +1091,7 @@ a:hover, a:active {
   position: relative;
   width: 100%;
 }
-.page-template-page-templatestemplate-front-php .pique-panel:nth-of-type(odd) {
+.page-template-page-templatestemplate-front-php .pique-panel:nth-of-type(even) {
   background-color: #791c04;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-background {
@@ -1106,9 +1107,18 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 1040px;
   padding: 40px;
-  text-align: center;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content h2, .page-template-page-templatestemplate-front-php .pique-panel-content h3 {
+.page-template-page-templatestemplate-front-php .pique-panel-content h2 {
+  background: #fff;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-left: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.page-template-page-templatestemplate-front-php .pique-panel-content h3 {
   color: #fff;
 }
 .page-template-page-templatestemplate-front-php .entry-header,

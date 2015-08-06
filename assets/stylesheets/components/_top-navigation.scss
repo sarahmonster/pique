@@ -1,6 +1,7 @@
 .main-navigation {
 	clear: both;
 	display: block;
+	font-family: $font__sans;
 	width: 100%;
 
 	ul {
@@ -83,7 +84,7 @@
 		}
 
 		.site-branding {
-			background: silver;
+			background: $color__tertiary;
 			position: absolute;
 			top: 0;
 			left: calc(50% - 75px);
