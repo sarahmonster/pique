@@ -280,6 +280,7 @@ textarea {
 h1,
 h2,
 h3,
+blockquote cite,
 .widget-title,
 h4,
 h5,
@@ -298,7 +299,7 @@ h2 {
   font-size: 2.441em;
 }
 
-h3, .widget-title {
+h3, blockquote cite, .widget-title {
   font-size: 1.2em;
   border-bottom: 2px solid;
   letter-spacing: 1px;
@@ -329,7 +330,36 @@ dfn, cite, em, i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+  border-top: 2px solid;
+  font-size: 2em;
+  font-style: italic;
+  margin: 3em auto;
+  max-width: 693.33333px;
+  text-align: center;
+}
+blockquote:before {
+  content: '“';
+  display: block;
+  font-size: 4em;
+  font-style: normal;
+  font-family: Georgia, serif;
+  font-weight: bolder;
+  line-height: 0.25em;
+  margin: 4px auto 0;
+}
+blockquote p {
+  text-align: left;
+  margin: 0;
+}
+blockquote cite {
+  border: none;
+  display: block;
+  font-style: normal;
+  font-size: 0.5em;
+  text-align: right;
+}
+blockquote cite::before {
+  content: '—';
 }
 
 address {
@@ -389,9 +419,6 @@ body {
 
 blockquote, q {
   quotes: "" "";
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
 }
 
 hr {
@@ -1116,7 +1143,7 @@ a:hover, a:active {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
+.page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid {
@@ -1148,7 +1175,7 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 80%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages .widget-title {
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages cite, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages .widget-title {
   color: #666;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages p {

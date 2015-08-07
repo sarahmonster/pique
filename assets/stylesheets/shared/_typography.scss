@@ -60,7 +60,41 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+  border-top: 2px solid;
+  font-size: 2em;
+  font-style: italic;
+	margin: 3em auto;
+  max-width: $size__site-width / 1.5;
+  text-align: center;
+
+  &:before {
+    content: '“';
+    display: block;
+    font-size: 4em;
+    font-style: normal;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    line-height: 0.25em;
+    margin: 4px auto 0;
+  }
+
+  p {
+    text-align: left;
+    margin: 0;
+  }
+
+  cite {
+    @extend h3;
+    border: none;
+    display: block;
+    font-style: normal;
+    font-size: 0.5em;
+    text-align: right;
+
+    &::before {
+      content: '—';
+    }
+  }
 }
 
 address {
