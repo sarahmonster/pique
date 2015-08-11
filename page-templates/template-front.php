@@ -42,8 +42,6 @@ $query = new WP_Query( $args );
         <p><?php _e( 'Welcome to Pique! To start setting up your site, add a page as a child of your homepage.', 'pique' ); ?></p>
       <?php endif; ?>
 
-
-			<?php get_template_part( 'components/content', 'hero' ); ?>
 		</main>
 	</div>
 

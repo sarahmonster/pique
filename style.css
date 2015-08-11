@@ -1101,6 +1101,7 @@ a:hover, a:active {
 # Front page
 --------------------------------------------------------------*/
 .page-template-page-templatestemplate-front-php {
+  /* Hero area */
   /* Grid template page */
 }
 .page-template-page-templatestemplate-front-php #page {
@@ -1145,6 +1146,13 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
+}
+.page-template-page-templatestemplate-front-php .pique-hero {
+  font-size: 1.25em;
+}
+.page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+  max-width: 693.33333px;
+  text-align: center;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid {
   background-color: #fff;

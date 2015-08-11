@@ -51,6 +51,16 @@
     }
   }
 
+  /* Hero area */
+  .pique-hero {
+    font-size: 1.25em;
+
+    .pique-panel-content {
+      max-width: $size__site-width / 1.5;
+      text-align: center;
+    }
+  }
+
   /* Grid template page */
   .pique-template-grid {
       background-color: $color__white;
