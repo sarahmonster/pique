@@ -70,8 +70,11 @@
 @include tablet {
 	#masthead {
 		background: $color__black;
-		display: relative;
+		bottom: 0;
+		left: 0;
+		position: absolute;
 		width: 100%;
+		z-index: 100;
 
 		ul {
 			a {
@@ -84,14 +87,13 @@
 		}
 
 		.site-branding {
-			background: $color__tertiary;
 			position: absolute;
-			top: 0;
-			left: calc(50% - 75px);
+			top: -500px;
+			left: calc(50% - 150px);
 			line-height: 1;
 			padding: 10px;
 			text-align: center;
-			width: 150px;
+			width: 300px;
 			z-index: 100;
 
 			.site-title {
@@ -100,6 +102,11 @@
 				a {
 					text-decoration: none;
 				}
+			}
+
+			.site-branding.minified {
+				background: $color__tertiary;
+				width: 150px;
 			}
 
 			.site-description {

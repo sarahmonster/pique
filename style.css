@@ -640,8 +640,11 @@ a:hover, a:active {
 @media (min-width: 768px) {
   #masthead {
     background: #222;
-    display: relative;
+    bottom: 0;
+    left: 0;
+    position: absolute;
     width: 100%;
+    z-index: 100;
   }
   #masthead ul a {
     color: #fff;
@@ -652,14 +655,13 @@ a:hover, a:active {
     text-transform: uppercase;
   }
   #masthead .site-branding {
-    background: #6599be;
     position: absolute;
-    top: 0;
-    left: calc(50% - 75px);
+    top: -500px;
+    left: calc(50% - 150px);
     line-height: 1;
     padding: 10px;
     text-align: center;
-    width: 150px;
+    width: 300px;
     z-index: 100;
   }
   #masthead .site-branding .site-title {
@@ -668,6 +670,10 @@ a:hover, a:active {
   }
   #masthead .site-branding .site-title a {
     text-decoration: none;
+  }
+  #masthead .site-branding .site-branding.minified {
+    background: #6599be;
+    width: 150px;
   }
   #masthead .site-branding .site-description {
     display: none;
@@ -1181,13 +1187,12 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
 }
-.page-template-page-templatestemplate-front-php .pique-hero {
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-}
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+  font-size: 1.5em;
+  margin-top: 200px;
   max-width: 693.33333px;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid {
   background-color: #fff;
