@@ -20,7 +20,10 @@
   }
 
   .pique-panel-background {
+    background-attachment: fixed;
     bottom: 0;
+    -webkit-filter: brightness(.75);
+            filter: brightness(.75);
     left: 0;
     position: absolute;
     right: 0;

@@ -1161,7 +1161,10 @@ a:hover, a:active {
   background-color: #791c04;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-background {
+  background-attachment: fixed;
   bottom: 0;
+  -webkit-filter: brightness(0.75);
+  filter: brightness(0.75);
   left: 0;
   position: absolute;
   right: 0;
