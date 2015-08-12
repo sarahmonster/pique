@@ -1176,6 +1176,7 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 1040px;
   padding: 40px;
+  text-align: center;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h2 {
   background: #fff;
@@ -1190,10 +1191,14 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
 }
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
+  max-width: 693.33333px;
+  margin: 0 auto;
+}
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
   font-size: 1.5em;
   margin-top: 200px;
-  max-width: 693.33333px;
+  max-width: 1040px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
@@ -1203,9 +1208,13 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content {
   color: #666;
 }
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content {
+  max-width: none;
+}
 .page-template-page-templatestemplate-front-php .pique-template-grid .entry-content > p {
   font-size: 1.2em;
   font-style: italic;
+  margin: 0 auto 1em;
   max-width: 520px;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article {

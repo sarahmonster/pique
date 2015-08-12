@@ -36,7 +36,7 @@
     margin: 0 auto;
     max-width: $size__site-width;
     padding: $size__site-gutter;
-    //text-align: center;
+    text-align: center;
 
     h2 {
       background: $color__white;
@@ -52,6 +52,11 @@
     h3 {
       color: $color__white;
     }
+
+    .entry-content {
+      max-width: $size__site-width / 1.5;
+      margin: 0 auto;
+    }
   }
 
   /* Hero area */
@@ -60,7 +65,7 @@
     .pique-panel-content {
       font-size: 1.5em;
       margin-top: 200px;
-      max-width: $size__site-width / 1.5;
+      max-width: $size__site-width;
       text-align: center;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
     }
@@ -68,15 +73,20 @@
 
   /* Grid template page */
   .pique-template-grid {
-      background-color: $color__white;
+    background-color: $color__white;
 
     .pique-panel-content {
       color: $color__text-main;
+
+      .entry-content {
+        max-width: none;
+      }
     }
 
     .entry-content > p {
       font-size: 1.2em;
       font-style: italic;
+      margin: 0 auto 1em;
       max-width: $size__site-width / 2;
     }
 
