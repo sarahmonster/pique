@@ -473,24 +473,29 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc;
-  border-radius: 3px;
-  background: #f4f4f4;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  border: 2px solid;
+  border-color: #274464;
+  border-radius: 0;
+  background: #87aad0;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  color: #192b3f;
+  font-size: 15.2px;
+  font-size: 0.95rem;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  padding: 1em 2em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-transform: uppercase;
 }
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #444;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+  background-color: #6390c1;
+  border-color: #192b3f;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 }
 button:active, button:focus,
 input[type="button"]:active,
@@ -499,8 +504,33 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #444;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  background-color: #6390c1;
+  border-color: #192b3f;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+button.minimal,
+input[type="button"].minimal,
+input[type="reset"].minimal,
+input[type="submit"].minimal {
+  background: transparent;
+  border-color: #fff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+button.minimal:active, button.minimal:focus, button.minimal:hover,
+input[type="button"].minimal:active,
+input[type="button"].minimal:focus,
+input[type="button"].minimal:hover,
+input[type="reset"].minimal:active,
+input[type="reset"].minimal:focus,
+input[type="reset"].minimal:hover,
+input[type="submit"].minimal:active,
+input[type="submit"].minimal:focus,
+input[type="submit"].minimal:hover {
+  border-color: #e6e6e6;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25), inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
 }
 
 input[type="text"],
@@ -533,6 +563,10 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%;
+}
+
+button + button {
+  margin-left: 0.5em;
 }
 
 /*--------------------------------------------------------------
@@ -1148,7 +1182,8 @@ a:hover, a:active {
   color: #fff;
 }
 .page-template-page-templatestemplate-front-php .pique-hero {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
   max-width: 693.33333px;

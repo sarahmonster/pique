@@ -23,19 +23,20 @@ $color__text-input: $color__light-black;
 $color__text-input-focus: $color__black;
 $color__text-screen: $color__primary;
 
-$color__background-button: $color__white;
-$color__background-button: $color__light-grey;
-$color__background-button-hover: $color__mid-grey;
+$color__background-button: lighten($color__primary, 50%);
+$color__background-button-hover: lighten($color__primary, 40%);
+$color__background-button-focus: lighten($color__primary, 40%);
 
 $color__link: $color__light-black;
 $color__link-visited: $color__light-black;
 $color__link-hover: $color__primary;
 $color__text-main: $color__dark-grey;
 $color__text-headings: $color__dark-grey;
+$color__text-button: $color__primary;
 
 $color__border-abbr: $color__light-black;
-$color__border-button: $color__mid-grey;
-$color__border-button-hover: $color__light-black;
-$color__border-button-focus: $color__light-black;
+$color__border-button: lighten($color__primary, 10%);
+$color__border-button-hover: $color__primary;
+$color__border-button-focus: $color__primary;
 $color__border-input: $color__mid-grey;
 $color__border-input-focus: $color__light-black;
