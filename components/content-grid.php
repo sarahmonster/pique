@@ -19,7 +19,7 @@
 
   <?php if ( $pique_child_pages->have_posts() ) : ?>
 
-  <div class="pique-child-pages">
+  <div class="pique-grid-three">
 
     <?php while ( $pique_child_pages->have_posts() ) : $pique_child_pages->the_post(); ?>
 

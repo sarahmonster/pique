@@ -1063,6 +1063,34 @@ a:hover, a:active {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  /* Grid structures */
+  .pique-grid-two article {
+    float: left;
+    font-size: 0.85em;
+    text-align: left;
+    width: 45%;
+    width: calc( (100% - 80px) / 2);
+  }
+  .pique-grid-two article:nth-of-type(odd) {
+    margin-right: 40px;
+  }
+  .pique-grid-two article:nth-of-type(even) {
+    margin-left: 40px;
+  }
+
+  .pique-grid-three article {
+    float: left;
+    width: 30%;
+    width: calc( (100% - 80px) / 3);
+  }
+  .pique-grid-three article:nth-of-type(1), .pique-grid-three article:nth-of-type(3n+1) {
+    margin-right: 40px;
+  }
+  .pique-grid-three article:nth-of-type(3n) {
+    margin-left: 40px;
+  }
+}
 /* Footer sidebar */
 #tertiary {
   content: "";
@@ -1155,6 +1183,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .page-template-page-templatestemplate-front-php {
   /* Hero area */
+  /* Content-heavy pages use a white background */
   /* Grid template panel */
   /* Testimonial panel */
 }
@@ -1216,66 +1245,48 @@ a:hover, a:active {
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid {
+.page-template-page-templatestemplate-front-php .pique-template-grid,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts {
   background-color: #fff;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content {
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content {
   color: #666;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content {
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .entry-content,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .entry-content {
   max-width: none;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .entry-content > p {
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content > .entry-content > p,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content > .entry-content > p,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content > .entry-content > p {
   font-size: 1.2em;
   font-style: italic;
   margin: 0 auto 1em;
   max-width: 520px;
+  text-align: center;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article {
-  float: left;
+.page-template-page-templatestemplate-front-php .pique-template-grid article {
   font-size: 0.85em;
   text-align: center;
-  width: 30%;
-  width: calc( (100% - 80px) / 3);
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(1), .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(3n+1) {
-  margin-right: 40px;
-}
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages article:nth-of-type(3n) {
-  margin-left: 40px;
-}
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages img {
+.page-template-page-templatestemplate-front-php .pique-template-grid img {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 80%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages cite, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages .widget-title {
+.page-template-page-templatestemplate-front-php .pique-template-grid h3, .page-template-page-templatestemplate-front-php .pique-template-grid blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid cite, .page-template-page-templatestemplate-front-php .pique-template-grid .widget-title {
   color: #666;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-child-pages p {
+.page-template-page-templatestemplate-front-php .pique-template-grid p {
   text-align: left;
-}
-.page-template-page-templatestemplate-front-php .pique-template-testimonials {
-  background-color: #fff;
-}
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content {
-  color: #666;
-}
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .entry-content {
-  max-width: none;
 }
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article {
-  float: left;
   font-size: 0.85em;
   text-align: left;
-  width: 45%;
-  width: calc( (100% - 80px) / 2);
-}
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article:nth-of-type(odd) {
-  margin-right: 40px;
-}
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article:nth-of-type(even) {
-  margin-left: 40px;
 }
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content {
   background: #fff;

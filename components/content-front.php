@@ -38,9 +38,11 @@ endif;
 			?>
 
 			<?php // Show recent blog posts for blog panel (Note that get_option returns a string, so we're casting the result as an int)
-					if( get_the_ID() === (int)get_option( 'page_for_posts' )  ):
+				if( get_the_ID() === (int)get_option( 'page_for_posts' )  ): ?>
 
-						// Show our four most recent posts
+					<div class="pique-recent-posts pique-grid-two">
+
+						<?php // Show four most recent posts
 						$pique_recent_posts = wp_get_recent_posts( array(
 							'numberposts' => 4,
 							'post_status' => 'publish',
@@ -52,9 +54,9 @@ endif;
 				 			setup_postdata( $post);
 				 				get_template_part( 'components/content', 'excerpt' );
 							wp_reset_postdata();
-						endforeach;
-					endif;
-				?>
+						endforeach; ?>
+					</div><!-- .pique-recent-posts -->
+				<?php endif; ?>
 
 			<?php // Show sub-pages of grid template page
 				if ( 'page-templates/template-grid.php' === get_page_template_slug() ) :
@@ -63,9 +65,27 @@ endif;
 
 				// Show testimonials
 				if ( 'page-templates/template-testimonials.php' === get_page_template_slug() ) :
-					get_template_part( 'components/testimonials' );
-				endif;
-			?>
+					// Show two random testimonials
+					$testimonials = new WP_Query( array(
+						'post_type'      => 'jetpack-testimonial',
+						'order'          => 'ASC',
+						'orderby'        => 'rand',
+						'posts_per_page' => 2,
+						'no_found_rows'  => true,
+					) );
+					?>
+
+					<?php if ( $testimonials->have_posts() ) : ?>
+						<div class="pique-testimonials pique-grid-two">
+							<?php
+								while ( $testimonials->have_posts() ) : $testimonials->the_post();
+									get_template_part( 'components/content', 'testimonial' );
+								endwhile;
+								wp_reset_postdata();
+							?>
+						</div><!-- .pique-testimonials -->
+					<?php endif; ?>
+				<?php endif; ?>
 
 			<?php
 				wp_link_pages( array(

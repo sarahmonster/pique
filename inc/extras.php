@@ -39,6 +39,11 @@ function pique_post_classes( $classes ) {
     $classes[] = 'pique-' . $simple_slug;
   }
 
+  // Add a page template slug to the main posts page
+  if( get_the_ID() === (int)get_option( 'page_for_posts' )  ) {
+    $classes[] = 'pique-template-recent-posts';
+  }
+
   return $classes;
 }
 add_filter( 'post_class', 'pique_post_classes' );

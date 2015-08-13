@@ -71,8 +71,10 @@
     }
   }
 
-  /* Grid template panel */
-  .pique-template-grid {
+  /* Content-heavy pages use a white background */
+  .pique-template-grid,
+  .pique-template-testimonials,
+  .pique-template-recent-posts {
     background-color: $color__white;
 
     .pique-panel-content {
@@ -81,76 +83,47 @@
       .entry-content {
         max-width: none;
       }
+
+      > .entry-content > p {
+          font-size: 1.2em;
+          font-style: italic;
+          margin: 0 auto 1em;
+          max-width: $size__site-width / 2;
+          text-align: center;
+        }
+    } // .pique-panel-content
+  } // .pique-template-grid, .pique-template-testimonials, .pique-template-recent-posts
+
+  /* Grid template panel */
+  .pique-template-grid {
+
+    article {
+      font-size: 0.85em;
+      text-align: center;
     }
 
-    .entry-content > p {
-      font-size: 1.2em;
-      font-style: italic;
-      margin: 0 auto 1em;
-      max-width: $size__site-width / 2;
+    img {
+      border-radius: 50%;
+      margin: 0 auto;
+      max-width: 80%;
     }
 
-    .pique-child-pages {
-      article {
-        float: left;
-        font-size: 0.85em;
-        text-align: center;
-        width: 30%;
-        width: calc( (100% - #{$size__site-gutter*2}) / 3);
+    h3 {
+      color: $color__text-headings;
+    }
 
-        &:nth-of-type(1),
-        &:nth-of-type(3n+1) {
-          margin-right: $size__site-gutter;
-        }
-
-        &:nth-of-type(3n) {
-          margin-left: $size__site-gutter;
-        }
-      }
-
-      img {
-        border-radius: 50%;
-        margin: 0 auto;
-        max-width: 80%;
-      }
-
-      h3 {
-        color: $color__text-headings;
-      }
-
-      p {
-        text-align: left;
-      }
-    } // .pique-child-pages
+    p {
+      text-align: left;
+    }
   } // .pique-template-grid
 
   /* Testimonial panel */
   .pique-template-testimonials {
-    background-color: $color__white;
-
-    .pique-panel-content {
-      color: $color__text-main;
-
-      .entry-content {
-        max-width: none;
-      }
-    }
 
     .pique-testimonials {
       article {
-        float: left;
         font-size: 0.85em;
         text-align: left;
-        width: 45%;
-        width: calc( (100% - #{$size__site-gutter*2}) / 2);
-
-        &:nth-of-type(odd) {
-          margin-right: $size__site-gutter;
-        }
-
-        &:nth-of-type(even) {
-          margin-left: $size__site-gutter;
-        }
 
         .entry-content {
           background: $color__white;

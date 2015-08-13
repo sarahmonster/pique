@@ -14,7 +14,26 @@ get_header(); ?>
 
         <?php get_template_part( 'components/content', 'page' ); ?>
 
-        <?php get_template_part( 'components/testimonials' ); ?>
+          <?php // List all testimonials in order
+          $testimonials = new WP_Query( array(
+            'post_type'      => 'jetpack-testimonial',
+            'order'          => 'ASC',
+            'orderby'        => 'order',
+            'posts_per_page' => -1,
+            'no_found_rows'  => true,
+          ) );
+          ?>
+
+          <?php if ( $testimonials->have_posts() ) : ?>
+            <div class="pique-testimonials pique-grid-two">
+              <?php
+                while ( $testimonials->have_posts() ) : $testimonials->the_post();
+                  get_template_part( 'components/content', 'testimonial' );
+                endwhile;
+                wp_reset_postdata();
+              ?>
+            </div><!-- .pique-testimonials -->
+          <?php endif; ?>
 
         <?php
           // If comments are open or we have at least one comment, load up the comment template.
