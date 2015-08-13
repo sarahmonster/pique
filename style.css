@@ -170,7 +170,8 @@ samp {
   font-size: 1em;
 }
 
-button,
+button, .more-link,
+.more-link:visited,
 input,
 optgroup,
 select,
@@ -180,16 +181,19 @@ textarea {
   margin: 0;
 }
 
-button {
+button, .more-link,
+.more-link:visited {
   overflow: visible;
 }
 
-button,
+button, .more-link,
+.more-link:visited,
 select {
   text-transform: none;
 }
 
-button,
+button, .more-link,
+.more-link:visited,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -197,12 +201,13 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-button[disabled],
+button[disabled], [disabled].more-link,
 html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner,
+button::-moz-focus-inner, .more-link::-moz-focus-inner,
+.more-link:visited::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -267,6 +272,8 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
+.more-link,
+.more-link:visited,
 input,
 select,
 textarea {
@@ -289,6 +296,32 @@ h6 {
   color: #666;
   font-family: Karla, Arial, sans-serif;
   line-height: 1.2;
+}
+h1 a:hover,
+h1 a:focus,
+h1 a:active,
+h2 a:hover,
+h2 a:focus,
+h2 a:active,
+h3 a:hover,
+blockquote cite a:hover,
+.widget-title a:hover,
+h3 a:focus,
+blockquote cite a:focus,
+.widget-title a:focus,
+h3 a:active,
+blockquote cite a:active,
+.widget-title a:active,
+h4 a:hover,
+h4 a:focus,
+h4 a:active,
+h5 a:hover,
+h5 a:focus,
+h5 a:active,
+h6 a:hover,
+h6 a:focus,
+h6 a:active {
+  border-bottom: none;
 }
 
 h1 {
@@ -469,7 +502,8 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+button, .more-link,
+.more-link:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -477,7 +511,7 @@ input[type="submit"] {
   border-color: #274464;
   border-radius: 0;
   background: #87aad0;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
   color: #192b3f;
   font-size: 15.2px;
   font-size: 0.95rem;
@@ -486,10 +520,10 @@ input[type="submit"] {
   letter-spacing: 1px;
   line-height: 1;
   padding: 1em 2em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
 }
-button:hover,
+button:hover, .more-link:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -497,7 +531,7 @@ input[type="submit"]:hover {
   border-color: #192b3f;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 }
-button:active, button:focus,
+button:active, .more-link:active, button:focus, .more-link:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -508,7 +542,7 @@ input[type="submit"]:focus {
   border-color: #192b3f;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-button.minimal,
+button.minimal, .minimal.more-link,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
@@ -518,7 +552,7 @@ input[type="submit"].minimal {
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
-button.minimal:active, button.minimal:focus, button.minimal:hover,
+button.minimal:active, .minimal.more-link:active, button.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .minimal.more-link:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -565,7 +599,9 @@ textarea {
   width: 100%;
 }
 
-button + button {
+button + button, .more-link + button,
+.more-link:visited + button, button + .more-link, .more-link + .more-link,
+button + .more-link:visited {
   margin-left: 0.5em;
 }
 
@@ -1080,6 +1116,7 @@ a:hover, a:active {
   }
   .pique-grid-two article:nth-of-type(odd) {
     margin-right: 40px;
+    clear: left;
   }
   .pique-grid-two article:nth-of-type(even) {
     margin-left: 40px;
@@ -1185,13 +1222,14 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Front page
+# Content
 --------------------------------------------------------------*/
 .page-template-page-templatestemplate-front-php {
   /* Hero area */
   /* Content-heavy pages use a white background */
   /* Grid template panel */
   /* Testimonial panel */
+  /* Recent blog posts panel */
 }
 .page-template-page-templatestemplate-front-php #page {
   max-width: none;
@@ -1203,6 +1241,7 @@ a:hover, a:active {
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   min-height: 100vh;
+  margin: 0;
   position: relative;
   width: 100%;
 }
@@ -1275,6 +1314,29 @@ a:hover, a:active {
   max-width: 520px;
   text-align: center;
 }
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .widget-title,
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content h3 a,
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content blockquote cite a,
+blockquote .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content cite a,
+.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .widget-title a,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content h3,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content blockquote cite,
+blockquote .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content cite,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .widget-title,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content h3 a,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content blockquote cite a,
+blockquote .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content cite a,
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .widget-title a,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content h3,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content blockquote cite,
+blockquote .page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content cite,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .widget-title,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content h3 a,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content blockquote cite a,
+blockquote .page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content cite a,
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .widget-title a {
+  color: #666;
+}
 .page-template-page-templatestemplate-front-php .pique-template-grid article {
   font-size: 0.85em;
   text-align: center;
@@ -1283,9 +1345,6 @@ a:hover, a:active {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 80%;
-}
-.page-template-page-templatestemplate-front-php .pique-template-grid h3, .page-template-page-templatestemplate-front-php .pique-template-grid blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid cite, .page-template-page-templatestemplate-front-php .pique-template-grid .widget-title {
-  color: #666;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid p {
   text-align: left;
@@ -1347,6 +1406,27 @@ a:hover, a:active {
   letter-spacing: 0;
   text-transform: none;
 }
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts article {
+  text-align: center;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
+  border: none;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-header {
+  text-align: left;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-title {
+  margin-bottom: 0.5em;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .posted-on {
+  font-style: italic;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .byline {
+  display: none;
+}
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-content {
+  text-align: left;
+}
 .page-template-page-templatestemplate-front-php .entry-header,
 .page-template-page-templatestemplate-front-php .entry-content {
   position: relative;
@@ -1368,6 +1448,48 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .edit-link a {
   text-decoration: none;
+}
+
+.sticky {
+  display: block;
+}
+
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+time + .updated {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.more-link,
+.more-link:visited {
+  border-width: 1px;
+  margin: 0.5em auto;
+  font-size: 0.8em;
+  padding: 0.75em 1.5em;
+  color: #192b3f;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
 }
 
 /*--------------------------------------------------------------

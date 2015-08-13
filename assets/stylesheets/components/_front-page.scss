@@ -11,6 +11,7 @@
     border-bottom: 1px solid transparentize($color__black, 0.5);
     border-top: 1px solid transparentize($color__white, 0.75);
     min-height: 100vh;
+    margin: 0;
     position: relative;
     width: 100%;
 
@@ -85,12 +86,17 @@
       }
 
       > .entry-content > p {
-          font-size: 1.2em;
-          font-style: italic;
-          margin: 0 auto 1em;
-          max-width: $size__site-width / 2;
-          text-align: center;
-        }
+        font-size: 1.2em;
+        font-style: italic;
+        margin: 0 auto 1em;
+        max-width: $size__site-width / 2;
+        text-align: center;
+      }
+
+      h3,
+      h3 a {
+        color: $color__text-headings;
+      }
     } // .pique-panel-content
   } // .pique-template-grid, .pique-template-testimonials, .pique-template-recent-posts
 
@@ -106,10 +112,6 @@
       border-radius: 50%;
       margin: 0 auto;
       max-width: 80%;
-    }
-
-    h3 {
-      color: $color__text-headings;
     }
 
     p {
@@ -185,6 +187,40 @@
       }
     }
   } // .pique-template-testimonials
+
+  /* Recent blog posts panel */
+  .pique-template-recent-posts {
+    .pique-recent-posts {
+
+      article {
+        text-align: center;
+      }
+
+      a[rel=bookmark]:hover {
+        border: none;
+      }
+
+      .entry-header {
+        text-align: left;
+      }
+
+      .entry-title {
+        margin-bottom: 0.5em;
+      }
+
+      .posted-on {
+        font-style: italic;
+      }
+
+      .byline {
+        display: none;
+      }
+
+      .entry-content {
+        text-align: left;
+      }
+    } // .pique-recent-posts
+  } // .pique-template-recent-posts
 
   .entry-header,
   .entry-content {

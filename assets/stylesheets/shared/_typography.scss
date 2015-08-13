@@ -19,6 +19,12 @@ h6 {
     color: $color__text-headings;
     font-family: $font__heading;
     line-height: $font__line-height-headings;
+
+    a:hover,
+    a:focus,
+    a:active {
+      border-bottom: none;
+    }
 }
 
 h1 {

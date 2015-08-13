@@ -96,9 +96,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/structure";
 
 /*--------------------------------------------------------------
-# Front page
+# Content
 --------------------------------------------------------------*/
 @import "components/front-page";
+@import "components/posts-and-pages";
 
 /*--------------------------------------------------------------
 # Infinite scroll

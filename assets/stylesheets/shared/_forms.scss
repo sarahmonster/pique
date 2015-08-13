@@ -6,7 +6,7 @@ input[type="submit"] {
 	border-color: $color__border-button;
 	border-radius: 0;
 	background: $color__background-button;
-	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
 	color: $color__text-button;
 	@include font-size(0.95);
 	font-family: $font__sans;
@@ -14,7 +14,7 @@ input[type="submit"] {
 	letter-spacing: 1px;
 	line-height: 1;
 	padding: 1em 2em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 	text-transform: uppercase;
 
 	&:hover {

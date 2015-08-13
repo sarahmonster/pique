@@ -31,6 +31,7 @@
 
 	    &:nth-of-type(odd) {
 	      margin-right: $size__site-gutter;
+	      clear: left;
 	    }
 
 	    &:nth-of-type(even) {
