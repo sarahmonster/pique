@@ -214,7 +214,8 @@ function pique_scripts() {
 	// Scroll effects
 	wp_enqueue_script( 'pique-skrollr', get_template_directory_uri() . '/assets/js/skrollr.min.js', array(), '20150805', true );
 	wp_enqueue_script( 'pique-skrollr-menu', get_template_directory_uri() . '/assets/js/skrollr.menu.min.js', array(), '20150805', true );
-	wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr'), '20150805', true );
+	wp_enqueue_script( 'pique-waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints.min.js', array( 'jquery' ), '20150813', true );
+	wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr', 'pique-waypoints' ), '20150805', true );
 
 	if ( wp_style_is( 'genericons', 'registered' ) ) {
 		wp_enqueue_style( 'genericons' );

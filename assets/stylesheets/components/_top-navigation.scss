@@ -96,6 +96,11 @@
 			width: 300px;
 			z-index: 100;
 
+			.site-logo-link img {
+				margin: 0 auto;
+				max-width: 50%;
+			}
+
 			.site-title {
 				@include font-size(1);
 
@@ -104,23 +109,33 @@
 				}
 			}
 
-			.site-branding.minified {
-				background: $color__tertiary;
-				width: 150px;
-			}
-
 			.site-description {
 				display: none;
 			}
-		}
+		} // .site-branding
 
-		.site-logo-link img {
-			margin: 0 auto;
-			max-width: 50%;
+		&.pique-sticky-header {
+			position: fixed;
+			top: 0;
+			bottom: auto;
+			z-index: 10000;
+
+			.site-branding {
+				left: calc(50% - 50px);
+				top: -6px;
+				height: 71px;
+				width: 100px;
+			}
+
+			.site-logo-link img {
+				max-height: 100%;
+				max-width: 100%;
+				width: auto;
+			}
 		}
 
 		.pique-split-nav {
-			width: calc(50% - 100px);
+			width: calc(50% - 50px);
 
 			&:first-of-type {
 				float: left;
@@ -131,6 +146,6 @@
 				float: right;
 				text-align: left;
 			}
-		}
-	}
+		} // .pique-split-nav
+	} // #masthead
 }

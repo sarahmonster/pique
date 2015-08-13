@@ -664,6 +664,10 @@ a:hover, a:active {
     width: 300px;
     z-index: 100;
   }
+  #masthead .site-branding .site-logo-link img {
+    margin: 0 auto;
+    max-width: 50%;
+  }
   #masthead .site-branding .site-title {
     font-size: 16px;
     font-size: 1rem;
@@ -671,19 +675,28 @@ a:hover, a:active {
   #masthead .site-branding .site-title a {
     text-decoration: none;
   }
-  #masthead .site-branding .site-branding.minified {
-    background: #6599be;
-    width: 150px;
-  }
   #masthead .site-branding .site-description {
     display: none;
   }
-  #masthead .site-logo-link img {
-    margin: 0 auto;
-    max-width: 50%;
+  #masthead.pique-sticky-header {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    z-index: 10000;
+  }
+  #masthead.pique-sticky-header .site-branding {
+    left: calc(50% - 50px);
+    top: -6px;
+    height: 71px;
+    width: 100px;
+  }
+  #masthead.pique-sticky-header .site-logo-link img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
   }
   #masthead .pique-split-nav {
-    width: calc(50% - 100px);
+    width: calc(50% - 50px);
   }
   #masthead .pique-split-nav:first-of-type {
     float: left;

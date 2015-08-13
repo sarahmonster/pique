@@ -39,11 +39,15 @@ Pique includes support for Infinite Scroll in Jetpack.
 
 == Licensing ==
 
-Pique WordPress Theme, Copyright 2015 Automattic
-Automattic is distributed under the terms of the GNU GPL
+Pique WordPress theme, Copyright 2015 Automattic
+Distributed under the GNU GPL
 
-Pique WordPress Theme bundles the following third-party resources:
+Pique WordPress theme bundles the following third-party resources:
 
-Skrollr library and plugins, 2012-2014 Alexander Prinzhorn
-Touche is licensed under the terms of the MIT license
+Skrollr library and plugins, Copyright 2012-2014 Alexander Prinzhorn
+Licensed under the MIT license
 Source: https://github.com/Prinzhorn/skrollr/blob/master/LICENSE.txt, https://github.com/Prinzhorn/skrollr-menu/blob/master/LICENSE.txt
+
+Waypoints library, Copyright 2011-2014 Caleb Troughton
+Licensed under the MIT license
+Source: https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
