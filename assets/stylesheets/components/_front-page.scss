@@ -71,7 +71,7 @@
     }
   }
 
-  /* Grid template page */
+  /* Grid template panel */
   .pique-template-grid {
     background-color: $color__white;
 
@@ -124,13 +124,103 @@
     } // .pique-child-pages
   } // .pique-template-grid
 
+  /* Testimonial panel */
+  .pique-template-testimonials {
+    background-color: $color__white;
+
+    .pique-panel-content {
+      color: $color__text-main;
+
+      .entry-content {
+        max-width: none;
+      }
+    }
+
+    .pique-testimonials {
+      article {
+        float: left;
+        font-size: 0.85em;
+        text-align: left;
+        width: 45%;
+        width: calc( (100% - #{$size__site-gutter*2}) / 2);
+
+        &:nth-of-type(odd) {
+          margin-right: $size__site-gutter;
+        }
+
+        &:nth-of-type(even) {
+          margin-left: $size__site-gutter;
+        }
+
+        .entry-content {
+          background: $color__white;
+          border-radius: 25px;
+          border: #7F7F7F solid 2px;
+          position: relative;
+          padding: 0 $size__site-gutter/2;
+
+          &::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 0;
+            border-color: $color__white transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+            margin-left: -15px;
+            bottom: -15px;
+            left: 50%;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 16px 16px 0;
+            border-color: #7F7F7F transparent;
+            display: block;
+            width: 0;
+            z-index: 0;
+            margin-left: -16px;
+            bottom: -18px;
+            left: 50%;
+          }
+        } // .entry-content
+      } // article
+
+      .attachment-pique-thumbnail-avatar {
+        border-radius: 50%;
+        float: left;
+        margin: $size__site-gutter/4 $size__site-gutter/4 0 0;
+        max-width: 80%;
+      }
+
+      h2 {
+        background: none;
+        clear: none;
+        float: left;
+        @include font-size(1);
+        margin: $size__site-gutter/4 0;
+        width: calc(100% - 100px - #{$size__site-gutter/4});
+
+        span {
+          display: block;
+          letter-spacing: 0;
+          text-transform: none;
+        }
+      }
+    }
+  } // .pique-template-testimonials
+
   .entry-header,
   .entry-content {
     position: relative;
     z-index: 100;
   }
 
-  .entry-footer {
+  .edit-link {
+    display: none; /* Todo: show these again */
     background: rgba(255, 255, 255, 0.75);
     bottom: $size__site-gutter / 2;
     @include font-size(0.9);

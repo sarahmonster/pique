@@ -11,11 +11,13 @@
 		<?php the_content(); ?>
 	</div>
 
-	<?php the_title( '<header class="entry-header"><h2 class="entry-title">', '</h2></header>' ); ?>
+  <footer class="entry-footer">
+  	<?php if ( has_post_thumbnail() ) : ?>
+  		<?php the_post_thumbnail( 'pique-thumbnail-avatar' ); ?>
+  	<?php endif; ?>
 
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="post-thumbnail"><?php the_post_thumbnail( 'pique-thumbnail-avatar' ); ?></div>
-	<?php endif; ?>
+    <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+  </footer>
 
 	<?php edit_post_link( __( 'Edit', 'pique' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->

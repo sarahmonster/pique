@@ -9,14 +9,12 @@
 	?>
 
 	<?php if ( $testimonials->have_posts() ) : ?>
-	<div id="front-page-testimonials" class="front-testimonials testimonials">
-		<div class="grid-row">
+	<div class="pique-testimonials">
 		<?php
 			while ( $testimonials->have_posts() ) : $testimonials->the_post();
-				 get_template_part( 'components/content', 'testimonial' );
+				get_template_part( 'components/content', 'testimonial' );
 			endwhile;
 			wp_reset_postdata();
 		?>
-		</div>
 	</div><!-- .testimonials -->
 	<?php endif; ?>
