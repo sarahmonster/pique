@@ -2,7 +2,7 @@
 		$testimonials = new WP_Query( array(
 			'post_type'      => 'jetpack-testimonial',
 			'order'          => 'ASC',
-			'orderby'        => 'menu_order',
+			'orderby'        => 'rand',
 			'posts_per_page' => 2,
 			'no_found_rows'  => true,
 		) );
