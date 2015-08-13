@@ -29,7 +29,6 @@ endif;
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-
 			<?php
 				/* translators: %s: Name of current post */
 				the_content( sprintf(
@@ -38,11 +37,31 @@ endif;
 				) );
 			?>
 
-			<?php
+			<?php // Show recent blog posts for blog panel (Note that get_option returns a string, so we're casting the result as an int)
+					if( get_the_ID() === (int)get_option( 'page_for_posts' )  ):
+
+						// Show our four most recent posts
+						$pique_recent_posts = wp_get_recent_posts( array(
+							'numberposts' => 4,
+							'post_status' => 'publish',
+				 		), OBJECT );
+
+				 		get_posts( $pique_recent_posts );
+
+				 		foreach ( $pique_recent_posts as $post):
+				 			setup_postdata( $post);
+				 				get_template_part( 'components/content', 'excerpt' );
+							wp_reset_postdata();
+						endforeach;
+					endif;
+				?>
+
+			<?php // Show sub-pages of grid template page
 				if ( 'page-templates/template-grid.php' === get_page_template_slug() ) :
 					get_template_part( 'components/content', 'grid' );
 				endif;
 
+				// Show testimonials
 				if ( 'page-templates/template-testimonials.php' === get_page_template_slug() ) :
 					get_template_part( 'components/testimonials' );
 				endif;
