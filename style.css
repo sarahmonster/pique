@@ -576,13 +576,19 @@ button + button {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #444;
+  color: #6599be;
+  text-decoration: none;
+  border-bottom: 0;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
 }
 a:visited {
-  color: #444;
+  color: #6599be;
 }
 a:hover, a:focus, a:active {
-  color: #192b3f;
+  color: #8a260c;
+  border-bottom: 2px solid;
 }
 a:focus {
   outline: thin dotted;

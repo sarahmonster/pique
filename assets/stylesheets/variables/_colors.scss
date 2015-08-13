@@ -27,9 +27,9 @@ $color__background-button: lighten($color__primary, 50%);
 $color__background-button-hover: lighten($color__primary, 40%);
 $color__background-button-focus: lighten($color__primary, 40%);
 
-$color__link: $color__light-black;
-$color__link-visited: $color__light-black;
-$color__link-hover: $color__primary;
+$color__link: $color__tertiary;
+$color__link-visited: $color__tertiary;
+$color__link-hover: $color__secondary;
 $color__text-main: $color__dark-grey;
 $color__text-headings: $color__dark-grey;
 $color__text-button: $color__primary;
