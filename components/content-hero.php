@@ -15,16 +15,7 @@
 
     <div class="entry-content">
 
-      <div class="site-branding">
-        <?php pique_the_site_logo(); ?>
-        <?php if ( ( is_home() OR ( 'page-templates/template-front.php' === get_page_template_slug() ) ) && is_front_page() ) : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <?php else : ?>
-          <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        <?php endif; ?>
-
-        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-      </div><!-- .site-branding -->
+     
 
       <?php
         /* translators: %s: Name of current post */

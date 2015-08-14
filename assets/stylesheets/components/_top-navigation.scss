@@ -97,7 +97,6 @@
 			line-height: 1;
 			padding: 10px;
 			text-align: center;
-			width: 300px;
 			z-index: 100;
 			left: calc(50% - 50px);
 			top: -6px;
@@ -137,18 +136,22 @@
 		} // .pique-split-nav
 
 		&.pique-unstuck-header {
+			background: transparent;
 			position: absolute;
-				bottom: 0;
-				top: auto;
+				top: 2em;
 
 			.site-branding {
-				display: none;
+				width: 150px;
+				position: absolute;
+					left: calc(50% - 75px);
+					top: -75%;
+				height: auto;
 			}
 
 			.pique-split-nav {
-				width: 50%;
+				width: calc(50% - 75px);
 			}
-		}
+		} // .pique-unstuck-header
 
 	} // #masthead
 }

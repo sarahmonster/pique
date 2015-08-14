@@ -3396,7 +3396,6 @@ a:hover, a:active {
     line-height: 1;
     padding: 10px;
     text-align: center;
-    width: 300px;
     z-index: 100;
     left: calc(50% - 50px);
     top: -6px;
@@ -3429,15 +3428,19 @@ a:hover, a:active {
     text-align: left;
   }
   #masthead.pique-unstuck-header {
+    background: transparent;
     position: absolute;
-    bottom: 0;
-    top: auto;
+    top: 2em;
   }
   #masthead.pique-unstuck-header .site-branding {
-    display: none;
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: -75%;
+    height: auto;
   }
   #masthead.pique-unstuck-header .pique-split-nav {
-    width: 50%;
+    width: calc(50% - 75px);
   }
 }
 .secondary-links ul {
@@ -3981,6 +3984,11 @@ a:hover, a:active {
   max-width: 1040px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+    margin-top: 6em;
+  }
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials,
