@@ -3376,7 +3376,7 @@ a:hover, a:active {
 }
 @media (min-width: 768px) {
   #masthead {
-    background: #222;
+    background: #192b3f;
     padding: 0.5em;
     position: fixed;
     top: 0;
@@ -3979,13 +3979,25 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h2 {
   background: #fff;
+  color: #6599be;
   display: inline-block;
-  font-size: 2em;
-  font-weight: 200;
+  font-size: 1.5em;
+  font-weight: 600;
   letter-spacing: 2px;
   margin-left: 0;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  position: relative;
   text-transform: uppercase;
+}
+.page-template-page-templatestemplate-front-php .pique-panel-content h2::before {
+  content: '';
+  border: 1px solid;
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #fff;
@@ -4110,11 +4122,15 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 {
   background: none;
   clear: none;
+  color: #666;
   float: left;
   font-size: 16px;
   font-size: 1rem;
   margin: 10px 0;
   width: calc(100% - 100px - 10px);
+}
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2::before {
+  display: none;
 }
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 span {
   display: block;

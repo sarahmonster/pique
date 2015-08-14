@@ -45,13 +45,26 @@
 
     h2 {
       background: $color__white;
+      color: $color__tertiary;
       display: inline-block;
-      font-size: 2em;
-      font-weight: 200;
+      font-size: 1.5em;
+      font-weight: 600;
       letter-spacing: 2px;
       margin-left: 0;
-      padding: 10px 20px;
+      padding: 15px 25px;
+      position: relative;
       text-transform: uppercase;
+
+      &::before {
+        content: '';
+        border: 1px solid;
+        display: block;
+        position: absolute;
+          top: 4px;
+          right: 4px;
+          left: 4px;
+          bottom: 4px;
+      }
     }
 
     h3 {
@@ -181,10 +194,15 @@
       h2 {
         background: none;
         clear: none;
+        color: $color__text-main;
         float: left;
         @include font-size(1);
         margin: $size__site-gutter/4 0;
         width: calc(100% - 100px - #{$size__site-gutter/4});
+
+        &::before {
+          display: none;
+        }
 
         span {
           display: block;
