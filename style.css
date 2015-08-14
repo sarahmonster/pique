@@ -679,36 +679,43 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  #masthead .site-branding {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   #masthead {
     background: #222;
-    bottom: 0;
-    left: 0;
-    position: absolute;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10000;
   }
   #masthead ul a {
     color: #fff;
     font-size: 12.8px;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    padding: 20px 10px;
+    padding: 5px 10px;
     text-transform: uppercase;
   }
   #masthead .site-branding {
     position: absolute;
-    top: -500px;
-    left: calc(50% - 150px);
     line-height: 1;
     padding: 10px;
     text-align: center;
     width: 300px;
     z-index: 100;
+    left: calc(50% - 50px);
+    top: -6px;
+    height: 71px;
+    width: 100px;
   }
   #masthead .site-branding .site-logo-link img {
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 100%;
   }
   #masthead .site-branding .site-title {
     font-size: 16px;
@@ -720,23 +727,6 @@ a:hover, a:active {
   #masthead .site-branding .site-description {
     display: none;
   }
-  #masthead.pique-sticky-header {
-    position: fixed;
-    top: 0;
-    bottom: auto;
-    z-index: 10000;
-  }
-  #masthead.pique-sticky-header .site-branding {
-    left: calc(50% - 50px);
-    top: -6px;
-    height: 71px;
-    width: 100px;
-  }
-  #masthead.pique-sticky-header .site-logo-link img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-  }
   #masthead .pique-split-nav {
     width: calc(50% - 50px);
   }
@@ -747,6 +737,17 @@ a:hover, a:active {
   #masthead .pique-split-nav:last-of-type {
     float: right;
     text-align: left;
+  }
+  #masthead.pique-unstuck-header {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+  }
+  #masthead.pique-unstuck-header .site-branding {
+    display: none;
+  }
+  #masthead.pique-unstuck-header .pique-split-nav {
+    width: 50%;
   }
 }
 .secondary-links ul {
@@ -1285,7 +1286,6 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
   font-size: 1.5em;
-  margin-top: 200px;
   max-width: 1040px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);

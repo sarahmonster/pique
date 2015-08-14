@@ -67,38 +67,46 @@
 	}
 }
 
+@include mobile {
+	#masthead .site-branding {
+		display: none;
+	}
+} // @include mobile
+
 @include tablet {
 	#masthead {
 		background: $color__black;
-		bottom: 0;
-		left: 0;
-		position: absolute;
+		padding: 0.5em;
+		position: fixed;
+			top: 0;
 		width: 100%;
-		z-index: 100;
+		z-index: 10000;
 
 		ul {
 			a {
 				color: $color__white;
 				@include font-size(0.8);
 				letter-spacing: 1px;
-				padding: 20px 10px;
+				padding: 5px 10px;
 				text-transform: uppercase;
 			}
 		}
 
 		.site-branding {
 			position: absolute;
-			top: -500px;
-			left: calc(50% - 150px);
 			line-height: 1;
 			padding: 10px;
 			text-align: center;
 			width: 300px;
 			z-index: 100;
+			left: calc(50% - 50px);
+			top: -6px;
+			height: 71px;
+			width: 100px;
 
 			.site-logo-link img {
 				margin: 0 auto;
-				max-width: 50%;
+				max-width: 100%;
 			}
 
 			.site-title {
@@ -114,26 +122,6 @@
 			}
 		} // .site-branding
 
-		&.pique-sticky-header {
-			position: fixed;
-			top: 0;
-			bottom: auto;
-			z-index: 10000;
-
-			.site-branding {
-				left: calc(50% - 50px);
-				top: -6px;
-				height: 71px;
-				width: 100px;
-			}
-
-			.site-logo-link img {
-				max-height: 100%;
-				max-width: 100%;
-				width: auto;
-			}
-		}
-
 		.pique-split-nav {
 			width: calc(50% - 50px);
 
@@ -147,5 +135,20 @@
 				text-align: left;
 			}
 		} // .pique-split-nav
+
+		&.pique-unstuck-header {
+			position: absolute;
+				bottom: 0;
+				top: auto;
+
+			.site-branding {
+				display: none;
+			}
+
+			.pique-split-nav {
+				width: 50%;
+			}
+		}
+
 	} // #masthead
 }

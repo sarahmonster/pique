@@ -53,9 +53,21 @@
      * we are in the page, and assign a CSS class accordingly.
      */
     var waypoint = new Waypoint({
-      element: document.getElementById( 'masthead' ),
+      element: document.getElementById( 'pique-hero' ),
       handler: function() {
-        $(this.element).toggleClass( 'pique-sticky-header' );
+        $( '#masthead' ).toggleClass( 'pique-unstuck-header' );
+        console.log("Switch!");
+      },
+      offset: function() {
+        return -this.element.clientHeight
+      }
+    })
+
+    var waypoint = new Waypoint({
+      element: document.getElementById( 'pique-hero' ),
+      handler: function() {
+        $( '#masthead' ).addClass( 'pique-unstuck-header' );
+        console.log("Top of page");
       }
     })
 

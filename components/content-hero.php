@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel pique-hero' ); ?> data-slide="1" data-stellar-background-ratio="0.5">
+<article id="pique-hero" <?php post_class( 'pique-panel pique-hero' ); ?> data-slide="1" data-stellar-background-ratio="0.5">
   <?php if ( has_post_thumbnail() ) :
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'pique-hero' ); ?>
     <div class="pique-panel-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)"></div>
@@ -14,6 +14,17 @@
   <div class="pique-panel-content">
 
     <div class="entry-content">
+
+      <div class="site-branding">
+        <?php pique_the_site_logo(); ?>
+        <?php if ( ( is_home() OR ( 'page-templates/template-front.php' === get_page_template_slug() ) ) && is_front_page() ) : ?>
+          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        <?php else : ?>
+          <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+        <?php endif; ?>
+
+        <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+      </div><!-- .site-branding -->
 
       <?php
         /* translators: %s: Name of current post */
