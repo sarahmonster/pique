@@ -1,45 +1,121 @@
-[![Build Status](https://travis-ci.org/Automattic/Pique.svg?branch=master)](https://travis-ci.org/Automattic/Pique)
+# Pique
 
-Pique
-===
+Pique is a one-page scrolling theme for your business needs. It's great for businesses, event promotion, and probably other stuff too.
 
-Hi. I'm a starter theme called `Pique`. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+## Setting up your front page
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+When you first activate Pique, your homepage will display posts in a traditional blog format. To set up your one-page template as the homepage, follow these steps:
 
-Getting Started
----------------
+* Create or edit a page, and assign it the Front Page Template from the Page Attributes box.
+* Go to Settings → Reading and set “Front page displays” to “A static page.”
+* Select the page created in Step One as “Front page,” and choose another page as “Posts page” to display your blog posts.
 
-If you want to keep it simple, head over to http://underscores.me and generate your `Pique` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+The Front Page Template is pretty bare-bones on its own. It displays a single panel with a full-screen featured image, your site logo and navigation, and your page content.
 
-If you want to set things up manually, download `Pique` from GitHub. The first thing you want to do is copy the `Pique` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+To get your one-page site set up, you'll need to add some more panels.
 
-1. Search for `'Pique'` (inside single quotations) to capture the text domain.
-2. Search for `Pique_` to capture all the function names.
-3. Search for `Text Domain: Pique` in style.css.
-4. Search for <code>&nbsp;Pique</code> (with a space before it) to capture DocBlocks.
-5. Search for `Pique-` to capture prefixed handles.
+### Adding more panels
 
-OR
+Each "panel" is a page. To add additional panels to your Front Page, follow these steps:
 
-* Search for: `'Pique'` and replace with: `'megatherium'`
-* Search for: `Pique_` and replace with: `megatherium_`
-* Search for: `Text Domain: Pique` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;Pique</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `Pique-` and replace with: `megatherium-`
+* Create or edit a page.
+* From the [Page Attributes box](https://en.support.wordpress.com/pages/page-attributes/), set the parent page as your Front Page.
 
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+Panels will display in according to the Order set in Page Attributes.
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+To add items to the grid, create additional pages and set their parent page in the Page Attributes box to the grid page you just created. Be sure to set a featured image for each child page if you want an image to show up inside the grid. Repeat these steps for every item you want to display in the grid.
 
-Good luck!
+### Using page templates
+
+Pique comes with a number of page templates, designed to give you flexibility in the way you arrange your content.
+To use a page template, edit your page and select the template you'd like under Page Attributes.
+
+#### Grid Template
+
+The Grid Page template is designed to show child pages in a grid format. This is good for showcasing your services or featuring your staff.
+
+To get started, first create or edit a page, and assign it to the Grid Page template from the Page Attributes box. The content of this page (if any) will be displayed above the grid.
+
+To add an item to the grid, create a second page and set its parent page to the grid page you just created. Be sure to set a featured image for each child page if you want an image to show up inside the grid. Repeat these steps for every item you want to display in the grid.
+
+#### Full-Width Template
+
+The Full-Width template gives you more space for your content. It’s the perfect way to showcase a gallery of images or a video.
+
+#### Testimonials Template
+
+This panel will show two testimonials, selected at random. When the page is refreshed, two different testimonials will display, allowing your customers to see a rotating display of your testimonials.
+
+To add a testimonial, go to Testimonials → Add New in your dashboard. Testimonials are composed of the testimonial text, the name of the customer (added as testimonial title), and an image or logo (which can be added as a Featured Image).
+
+You may wish to display supplementary information about your testimonial author, like their job title or company. Pique can show this information with a different formatting so it's visually distinct from the name. To make use of this, add `<span>` and `</span>` tags around your supplementary text, for example:
+
+`Groucho Marx, <span>Marx Brother and general mischief-maker</span>`
+
+
+#### Displaying your recent blog posts
+
+You can show a panel of the four most recent blog posts by adding the page you selected as your “Posts page” above as a child page of your Front Page.
+
+## Special Formatting
+
+### Using icons
+
+Pique comes packaged with the Font Awesome icon library so that you have easy access to hundreds of icons. To use an icon, find the icon you're looking for on [Font Awesome's website](http://fortawesome.github.io/Font-Awesome/icons/) and copy the code provided.
+
+Open any page or post for editing. Select Text in your editor tab, then add this code where you'd like the icon to appear.
+
+### Call-to-action buttons
+
+You can add call-to-action buttons to your site by using the following code:
+
+`<a href="#" class="button">Learn more</a>`
+`<a href="#" class="button minimal">Try it out</a>`
+
+### Adding a background to panel text
+
+Sometimes, you may want to show a smaller area of content with a solid background. This is especially useful if you'd like to show a map in the background, with your content information overlaid on top.
+
+`<div class="overlay alignright">
+This overlay will be aligned to the right-hand side of its panel.
+
+You can add whatever content you'd like here.
+</div>`
+
+## Site Logo
+
+Your logo is an important part of your brand identity, so Pique supports a Site Logo. To add your logo, go to Customize → Site Title. Your logo will appear on the first panel of your site, as well as in your navbar.
+
+## Custom Menus
+
+Pique allows you to have two Custom Menus: one in the theme’s header and one in the footer. To set up your menus, go to Appearance → Menus.
+
+### Primary Menu
+
+The Primary Menu will display at the top of your page.
+
+### Secondary Menu
+
+The Secondary Menu has been designed to provide quick links for your visitors. It only supports top-level links; if you have a child link, it won’t be displayed. The Secondary Menu will be displayed in the footer of your site. It's a good place to put Terms & Conditions and a Privacy Policy, or quick links to important pages on your site. Alternatively, you could use this area to add your social media links.
+
+### Social media links
+
+Pique doesn't have a specific menu just for social media links, but it offers two excellent spots to put them. You can use a [Social Media Icons Widget](https://en.support.wordpress.com/widgets/social-media-icons-widget/) in one of the three footer widget areas, or you can use the secondary menu for your social media links.
+
+Pique supports the following networks: (any icon used in FontAwesome). Adding a social media link will automatically show the icon.
+
+## Testimonials
+
+Pique features testimonials in two ways:
+
+* The dedicated testimonial archive page displays all testimonials in reverse chronological order, with the newest displayed first.
+* The Testimonials Template displays two random testimonials. (If you prefer to select which two testimonials are displayed on the homepage, add the number 1 or 2 to the Order field in the Page Attributes box on the testimonial edit screen. --> Maybe add as enhancement?)
+
+### Testimonial archive page
+
+All testimonials are displayed on the testimonial archive page. This page can be added to a Custom Menu using the Links Panel.
+
+The testimonial archive page can be found at http://mygroovysite.wordpress.com/testimonial/ — just replace http://mygroovysite.wordpress.com/ with the URL of your website.
+
+This page can be further customized by adding a title, intro text, and featured image via Customizer → Testimonials. This content will appear above the testimonials list.
