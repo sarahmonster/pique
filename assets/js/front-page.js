@@ -58,9 +58,7 @@
         $( '#masthead' ).toggleClass( 'pique-unstuck-header' );
         console.log("Switch!");
       },
-      offset: function() {
-        return -this.element.clientHeight
-      }
+      offset: -150
     })
 
     var waypoint = new Waypoint({
