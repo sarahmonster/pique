@@ -5,7 +5,7 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1.2);
+	@include font-size(1.125);
 	line-height: $font__line-height-body;
 }
 
@@ -18,6 +18,7 @@ h6 {
     clear: both;
     color: $color__text-headings;
     font-family: $font__heading;
+    font-weight: $font__weight-default;
     line-height: $font__line-height-headings;
 
     a:hover,
@@ -28,7 +29,9 @@ h6 {
 }
 
 h1 {
-    font-size: $font__size-h1;
+  color: $color__tertiary;
+  font-size: $font__size-h1;
+  letter-spacing: -2px;
 }
 
 h2 {
@@ -36,6 +39,7 @@ h2 {
 }
 
 h3 {
+  font-family: $font__sans;
   font-size: $font__size-h3;
   border-bottom: 2px solid;
   letter-spacing: 1px;

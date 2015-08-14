@@ -2919,8 +2919,8 @@ select,
 textarea {
   color: #666;
   font-family: Lora, Georgia, serif;
-  font-size: 19.2px;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -2935,6 +2935,7 @@ h6 {
   clear: both;
   color: #666;
   font-family: Karla, Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.2;
 }
 h1 a:hover,
@@ -2965,14 +2966,17 @@ h6 a:active {
 }
 
 h1 {
-  font-size: 3.052em;
+  color: #6599be;
+  font-size: 3.998em;
+  letter-spacing: -2px;
 }
 
 h2 {
-  font-size: 2.441em;
+  font-size: 2.827em;
 }
 
 h3, blockquote cite, .widget-title {
+  font-family: Karla, Arial, sans-serif;
   font-size: 1.2em;
   border-bottom: 2px solid;
   letter-spacing: 1px;
@@ -2983,11 +2987,11 @@ h3, blockquote cite, .widget-title {
 }
 
 h4 {
-  font-size: 1.563em;
+  font-size: 1.999em;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: 1.414em;
 }
 
 h6 {
@@ -4134,6 +4138,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 }
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 span {
   display: block;
+  font-weight: normal;
   letter-spacing: 0;
   text-transform: none;
 }
