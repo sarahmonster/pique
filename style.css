@@ -2977,6 +2977,7 @@ h2 {
 
 h3, blockquote cite, .widget-title {
   font-family: Karla, Arial, sans-serif;
+  font-weight: 700;
   font-size: 1.2em;
   border-bottom: 2px solid;
   letter-spacing: 1px;
@@ -3011,7 +3012,7 @@ blockquote {
   font-size: 2em;
   font-style: italic;
   margin: 3em auto;
-  max-width: 693.33333px;
+  max-width: 760px;
   text-align: center;
 }
 blockquote:before {
@@ -3155,7 +3156,7 @@ form {
   padding: 26.66667px;
   text-align: left;
   margin: 0 auto;
-  max-width: 594.28571px;
+  max-width: 651.42857px;
 }
 
 /* Labels */
@@ -3790,21 +3791,22 @@ a:hover, a:active {
 
 .site-content {
   margin: 0 auto;
-  max-width: 1040px;
+  padding: 20px;
+  max-width: 1180px;
 }
 .site-content .widget-area {
   display: none;
 }
 
-@media (min-width: 768px) {
-  /* Two column page */
+/* On desktop devices, we'll show a sidebar next to our content */
+@media (min-width: 1024px) {
   .site-content {
     margin-top: 5em;
   }
   .site-content .content-area {
     float: left;
     padding-right: 40px;
-    width: 693.264px;
+    width: 66%;
   }
   .site-content .widget-area {
     display: block;
@@ -3812,10 +3814,11 @@ a:hover, a:active {
     font-size: 15.2px;
     font-size: 0.95rem;
     padding-left: 40px;
-    width: 346.632px;
+    width: 33%;
   }
-
-  /* Grid structures */
+}
+/* Grid structures for tablet devices and larger */
+@media (min-width: 768px) {
   .pique-grid-two article {
     float: left;
     font-size: 0.85em;
@@ -3866,7 +3869,7 @@ a:hover, a:active {
   }
   #tertiary aside:nth-child(1):nth-last-child(1) {
     float: none;
-    max-width: 520px;
+    max-width: 570px;
   }
   #tertiary aside:nth-child(1):nth-last-child(2), #tertiary aside:nth-child(2):nth-last-child(1) {
     width: 45%;
@@ -3889,7 +3892,7 @@ a:hover, a:active {
   clear: both;
   font-family: Lora, Georgia, serif;
   margin: 10px auto;
-  max-width: 1040px;
+  max-width: 1140px;
 }
 @media (max-width: 767px) {
   .site-footer {
@@ -3977,7 +3980,7 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-panel-content {
   color: #fff;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1140px;
   padding: 40px;
   text-align: center;
 }
@@ -4007,12 +4010,12 @@ a:hover, a:active {
   color: #fff;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
-  max-width: 693.33333px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
   font-size: 1.5em;
-  max-width: 1040px;
+  max-width: 1140px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
@@ -4042,7 +4045,7 @@ a:hover, a:active {
   font-size: 1.2em;
   font-style: italic;
   margin: 0 auto 1em;
-  max-width: 520px;
+  max-width: 570px;
   text-align: center;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .widget-title,
@@ -4171,7 +4174,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   border-top: 4px solid #6599be;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
-  max-width: 520px;
+  max-width: 570px;
   padding: 0 20px;
   text-align: left;
 }

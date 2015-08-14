@@ -4,7 +4,8 @@
 
 .site-content {
 	margin: 0 auto;
-	max-width: $size__site-width;
+	padding: $size__site-gutter / 2;
+	max-width: $size__site-width + $size__site-gutter;
 
 	.content-area {
 	}
@@ -14,15 +15,15 @@
 	}
 } // .site-content
 
-@include tablet {
-	/* Two column page */
+/* On desktop devices, we'll show a sidebar next to our content */
+@include desktop {
 	.site-content {
 		margin-top: 5em;
 
 		.content-area {
 			float: left;
 			padding-right: $size__site-gutter;
-			width: $size__site-width * 0.6666;
+			width: 66%;
 		}
 
 		.widget-area {
@@ -30,11 +31,13 @@
 			float: left;
 			@include font-size(0.95);
 			padding-left: $size__site-gutter;
-			width: $size__site-width * 0.3333;
+			width: 33%;
 		}
 	}
+}
 
-	/* Grid structures */
+/* Grid structures for tablet devices and larger */
+@include tablet {
 	.pique-grid-two {
 		article {
 			float: left;
