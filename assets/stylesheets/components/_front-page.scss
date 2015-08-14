@@ -221,6 +221,49 @@
     } // .pique-recent-posts
   } // .pique-template-recent-posts
 
+  /* Full-width panel */
+  .pique-template-full-width {
+    .entry-content {
+      max-width: none;
+    }
+  }
+
+  /* Overlays */
+  .overlay {
+    background: $color__primary;
+    font-family: $font__sans;
+    font-size: 0.8em;
+    max-width: $size__site-width / 2;
+    padding: 0 $size__site-gutter / 2;
+    text-align: left;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 60%;
+    }
+
+    @include desktop {
+      width: 40%;
+    }
+
+    h3 {
+      border-bottom: none;
+      color: $color__tertiary;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
   .entry-header,
   .entry-content {
     position: relative;

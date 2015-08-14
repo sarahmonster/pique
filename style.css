@@ -3872,6 +3872,7 @@ a:hover, a:active {
   /* Testimonial panel */
   /* Recent blog posts panel */
   /* Full-width panel */
+  /* Overlays */
 }
 .page-template-page-templatestemplate-front-php #page {
   max-width: none;
@@ -4070,6 +4071,40 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 }
 .page-template-page-templatestemplate-front-php .pique-template-full-width .entry-content {
   max-width: none;
+}
+.page-template-page-templatestemplate-front-php .overlay {
+  background: #192b3f;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 0.8em;
+  max-width: 520px;
+  padding: 0 20px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .page-template-page-templatestemplate-front-php .overlay {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php .overlay {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .page-template-page-templatestemplate-front-php .overlay {
+    width: 40%;
+  }
+}
+.page-template-page-templatestemplate-front-php .overlay h3, .page-template-page-templatestemplate-front-php .overlay blockquote cite, blockquote .page-template-page-templatestemplate-front-php .overlay cite, .page-template-page-templatestemplate-front-php .overlay .widget-title {
+  border-bottom: none;
+  color: #6599be;
+  margin-bottom: 0;
+}
+.page-template-page-templatestemplate-front-php .overlay p {
+  margin-top: 0;
+}
+.page-template-page-templatestemplate-front-php .hide {
+  display: none;
 }
 .page-template-page-templatestemplate-front-php .entry-header,
 .page-template-page-templatestemplate-front-php .entry-content {
