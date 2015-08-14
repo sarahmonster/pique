@@ -1,3 +1,68 @@
+/* Overall form */
+form {
+	background: repeating-linear-gradient(45deg,
+					  transparentize($color__tertiary, 0.95),
+					  transparentize($color__tertiary, 0.95) 2px,
+					  transparentize($color__tertiary, 1) 4px,
+					  transparentize($color__tertiary, 1) 8px
+					),
+			$color__white;
+	color: $color__text-main;
+	border-top: 4px solid $color__tertiary;
+	padding: $size__site-gutter / 1.5;
+	text-align: left;
+	margin: 0 auto;
+	max-width: $size__site-width / 1.75;
+}
+
+/* Labels */
+label {
+	font-family: $font__sans;
+	font-size: 0.8em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: $color__text-input;
+	background: $color__white;
+	border: 2px solid $color__border-input;
+	border-radius: 0;
+	box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+	font-size: 0.9em;
+	transition: all 0.2s ease-in-out 0s;
+	width: 100% !important;
+
+	&:focus {
+		background: transparentize( $color__white, 0.5 );
+		border-color: $color__border-input-focus;
+		color: $color__text-input-focus;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	font-style: italic;
+	padding: 0.5em;
+}
+
+textarea {
+	padding: 0.5em 0.5em;
+	width: 100%;
+}
+
+/* Buttons */
 button,
 input[type="button"],
 input[type="reset"],
@@ -16,6 +81,7 @@ input[type="submit"] {
 	padding: 1em 2em;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 	text-transform: uppercase;
+	transition: all 0.2s ease-in-out 0s;
 
 	&:hover {
 		background-color: $color__background-button-hover;
@@ -44,37 +110,21 @@ input[type="submit"] {
 			box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25), inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
 			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
 		}
-	}
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
-	border-radius: 3px;
-
-	&:focus {
-		color: $color__text-input-focus;
-	}
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
-}
-
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
+	} // .minimal
+} // button
 
 button + button {
-	margin-left: 0.5em;
+	@include mobile {
+		display: block;
+		margin-top: 1em;
+	}
+
+	@include tablet {
+		margin-left: 0.5em;
+	}
+}
+
+/* MailChimp-embed-specific */
+#mce-responses + p {
+	display: none; // Ah, WordPress. Always adding extra p tags.
 }

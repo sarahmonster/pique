@@ -19,8 +19,8 @@ $color__background-pre: $color__light-grey;
 $color__background-ins: $color__light-grey;
 $color__background-screen: $color__light-grey;
 
-$color__text-input: $color__light-black;
-$color__text-input-focus: $color__black;
+$color__text-input: $color__mid-grey;
+$color__text-input-focus: $color__primary;
 $color__text-screen: $color__primary;
 
 $color__background-button: lighten($color__primary, 50%);
@@ -38,5 +38,5 @@ $color__border-abbr: $color__light-black;
 $color__border-button: lighten($color__primary, 10%);
 $color__border-button-hover: $color__primary;
 $color__border-button-focus: $color__primary;
-$color__border-input: $color__mid-grey;
-$color__border-input-focus: $color__light-black;
+$color__border-input: $color__light-grey;
+$color__border-input-focus: lighten($color__primary, 50%);

@@ -3142,6 +3142,71 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* Overall form */
+form {
+  background: -webkit-repeating-linear-gradient(45deg, rgba(101, 153, 190, 0.05), rgba(101, 153, 190, 0.05) 2px, rgba(101, 153, 190, 0) 4px, rgba(101, 153, 190, 0) 8px), #fff;
+  background: repeating-linear-gradient(45deg, rgba(101, 153, 190, 0.05), rgba(101, 153, 190, 0.05) 2px, rgba(101, 153, 190, 0) 4px, rgba(101, 153, 190, 0) 8px), #fff;
+  color: #666;
+  border-top: 4px solid #6599be;
+  padding: 26.66667px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 594.28571px;
+}
+
+/* Labels */
+label {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #ccc;
+  background: #fff;
+  border: 2px solid #f4f4f4;
+  border-radius: 0;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  font-size: 0.9em;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
+  width: 100% !important;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: #87aad0;
+  color: #192b3f;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  font-style: italic;
+  padding: 0.5em;
+}
+
+textarea {
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+
+/* Buttons */
 button, .more-link,
 .more-link:visited,
 input[type="button"],
@@ -3162,6 +3227,8 @@ input[type="submit"] {
   padding: 1em 2em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
 }
 button:hover, .more-link:hover,
 input[type="button"]:hover,
@@ -3207,42 +3274,25 @@ input[type="submit"].minimal:hover {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #444;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+@media (max-width: 767px) {
+  button + button, .more-link + button,
+  .more-link:visited + button, button + .more-link, .more-link + .more-link,
+  button + .more-link:visited {
+    display: block;
+    margin-top: 1em;
+  }
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  color: #222;
+@media (min-width: 768px) {
+  button + button, .more-link + button,
+  .more-link:visited + button, button + .more-link, .more-link + .more-link,
+  button + .more-link:visited {
+    margin-left: 0.5em;
+  }
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px;
-}
-
-textarea {
-  padding-left: 3px;
-  width: 100%;
-}
-
-button + button, .more-link + button,
-.more-link:visited + button, button + .more-link, .more-link + .more-link,
-button + .more-link:visited {
-  margin-left: 0.5em;
+/* MailChimp-embed-specific */
+#mce-responses + p {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -4074,6 +4124,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 }
 .page-template-page-templatestemplate-front-php .overlay {
   background: #192b3f;
+  border-top: 4px solid #6599be;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
   max-width: 520px;

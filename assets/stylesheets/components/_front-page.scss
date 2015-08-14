@@ -231,6 +231,7 @@
   /* Overlays */
   .overlay {
     background: $color__primary;
+    border-top: 4px solid $color__tertiary;
     font-family: $font__sans;
     font-size: 0.8em;
     max-width: $size__site-width / 2;
