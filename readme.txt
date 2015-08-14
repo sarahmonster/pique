@@ -51,3 +51,8 @@ Source: https://github.com/Prinzhorn/skrollr/blob/master/LICENSE.txt, https://gi
 Waypoints library, Copyright 2011-2014 Caleb Troughton
 Licensed under the MIT license
 Source: https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+
+Font Awesome, Copyright Dave Gandy
+Fonts licensed under the SIL OFL 1.1 license
+Code licensed under the MIT license
+Source: http://fortawesome.github.io/Font-Awesome/license/
