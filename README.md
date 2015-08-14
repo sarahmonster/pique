@@ -53,7 +53,6 @@ You may wish to display supplementary information about your testimonial author,
 
 `Groucho Marx, <span>Marx Brother and general mischief-maker</span>`
 
-
 #### Displaying your recent blog posts
 
 You can show a panel of the four most recent blog posts by adding the page you selected as your “Posts page” above as a child page of your Front Page.
@@ -70,18 +69,24 @@ Open any page or post for editing. Select Text in your editor tab, then add this
 
 You can add call-to-action buttons to your site by using the following code:
 
-`<a href="#" class="button">Learn more</a>`
-`<a href="#" class="button minimal">Try it out</a>`
+```
+<a href="#" class="button">Learn more</a>
+<a href="#" class="button minimal">Try it out</a>
+```
 
 ### Adding a background to panel text
 
 Sometimes, you may want to show a smaller area of content with a solid background. This is especially useful if you'd like to show a map in the background, with your content information overlaid on top.
 
-`<div class="overlay alignright">
+```
+<div class="overlay alignright">
 This overlay will be aligned to the right-hand side of its panel.
 
 You can add whatever content you'd like here.
-</div>`
+</div>
+```
+
+This works particularly nicely when combined with a Full-Width Template.
 
 ## Site Logo
 
@@ -93,7 +98,7 @@ Pique allows you to have two Custom Menus: one in the theme’s header and one i
 
 ### Primary Menu
 
-The Primary Menu will display at the top of your page.
+The Primary Menu will display at the top of your page. To add links to panels of your Front Page, just add the page to your menu. The theme will handle the rest and make sure it links to the right spot!
 
 ### Secondary Menu
 
