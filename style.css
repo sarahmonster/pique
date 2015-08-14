@@ -3782,26 +3782,35 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site {
   margin: 0 auto;
+}
+
+.site-content {
+  margin: 0 auto;
   max-width: 1040px;
 }
-
-.content-area {
-  float: none;
-  margin: 0;
-  width: 100%;
-}
-
-.site-main {
-  margin: 0;
-}
-
 .site-content .widget-area {
-  float: none;
-  overflow: hidden;
-  width: 100%;
+  display: none;
 }
 
 @media (min-width: 768px) {
+  /* Two column page */
+  .site-content {
+    margin-top: 5em;
+  }
+  .site-content .content-area {
+    float: left;
+    padding-right: 40px;
+    width: 693.264px;
+  }
+  .site-content .widget-area {
+    display: block;
+    float: left;
+    font-size: 15.2px;
+    font-size: 0.95rem;
+    padding-left: 40px;
+    width: 346.632px;
+  }
+
   /* Grid structures */
   .pique-grid-two article {
     float: left;
@@ -3929,8 +3938,11 @@ a:hover, a:active {
   /* Full-width panel */
   /* Overlays */
 }
-.page-template-page-templatestemplate-front-php #page {
+.page-template-page-templatestemplate-front-php .site-content,
+.page-template-page-templatestemplate-front-php .content-area {
+  margin: 0;
   max-width: none;
+  padding: 0;
   width: 100%;
 }
 .page-template-page-templatestemplate-front-php .pique-panel {

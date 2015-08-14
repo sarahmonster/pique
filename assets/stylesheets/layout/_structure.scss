@@ -1,25 +1,39 @@
 .site {
 	margin: 0 auto;
+}
+
+.site-content {
+	margin: 0 auto;
 	max-width: $size__site-width;
-}
 
-.content-area {
-	float: none;
-	margin: 0;
-	width: 100%;
-}
+	.content-area {
+	}
 
-.site-main {
-	margin: 0;
-}
-
-.site-content .widget-area {
-	float: none;
-	overflow: hidden;
-	width: 100%;
-}
+	.widget-area {
+		display: none;
+	}
+} // .site-content
 
 @include tablet {
+	/* Two column page */
+	.site-content {
+		margin-top: 5em;
+
+		.content-area {
+			float: left;
+			padding-right: $size__site-gutter;
+			width: $size__site-width * 0.6666;
+		}
+
+		.widget-area {
+			display: block;
+			float: left;
+			@include font-size(0.95);
+			padding-left: $size__site-gutter;
+			width: $size__site-width * 0.3333;
+		}
+	}
+
 	/* Grid structures */
 	.pique-grid-two {
 		article {

@@ -1,7 +1,10 @@
 .page-template-page-templatestemplate-front-php {
 
-  #page {
+  .site-content,
+  .content-area {
+    margin: 0;
     max-width: none;
+    padding: 0;
     width: 100%;
   }
 
