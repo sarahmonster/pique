@@ -147,6 +147,21 @@ class Pique_Menu extends Walker_Nav_Menu {
     }
 }
 
+/*
+ * Let's customize our excerpt a bit, so it looks better
+ * First we decrease the default excerpt length, then
+ * we give it a proper hellip for the more text.
+ */
+function pique_custom_excerpt_length( $length ) {
+   return 26;
+}
+add_filter( 'excerpt_length', 'pique_custom_excerpt_length', 999 );
+
+function pique_custom_excerpt_more($more) {
+   return '&hellip;';
+}
+add_filter('excerpt_more', 'pique_custom_excerpt_more');
+
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
 	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
