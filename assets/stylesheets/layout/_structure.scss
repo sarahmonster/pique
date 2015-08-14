@@ -83,17 +83,19 @@
 	margin-bottom: $size__site-gutter / 4;
 	padding: $size__site-gutter 0;
 
-	@include mobile {
-		aside {
-			padding: $size__site-gutter;
-		}
-	}
-
 	@include tablet {
-		aside {
+		.widget-area {
 			float: left;
 			@include font-size(0.95);
-			margin-right: $size__site-gutter;
+			padding: 0 $size__site-gutter / 2;
+
+			&:first-of-type {
+				padding-left: 0;
+			}
+
+			&:last-of-type {
+				padding-right: 0;
+			}
 
 			// One widget area
 			&:nth-child(1):nth-last-child(1) {
@@ -104,24 +106,18 @@
 			// Two widget areas
 			&:nth-child(1):nth-last-child(2),
 			&:nth-child(2):nth-last-child(1) {
-				width: 45%;
-				width: calc( (100% - #{$size__site-gutter}) / 2);
-
-				&:last-of-type {
-					margin-right: 0;
-				}
+				width: 50%;
 			}
 
 			// Three widget areas
 			&:nth-child(1):nth-last-child(3),
 			&:nth-child(2):nth-last-child(2),
 			&:nth-child(3):nth-last-child(1) {
-				width: 30%;
-				width: calc( (100% - #{$size__site-gutter*2}) / 3);
+				width: 33.3333%;
+			}
 
-				&:last-of-type {
-					margin-right: 0;
-				}
+			&:nth-child(2):nth-last-child(2) {
+				padding: 0 $size__site-gutter / 4;
 			}
 		}
 	} // @include tablet
@@ -133,6 +129,7 @@
 	font-family: $font__serif;
 	margin: $size__site-gutter / 4 auto;
 	max-width: $size__site-width;
+	padding: 0 $size__site-gutter / 2;
 
 	@include mobile {
 		@include font-size(0.9);

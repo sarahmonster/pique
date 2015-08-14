@@ -3855,35 +3855,31 @@ a:hover, a:active {
   margin-bottom: 10px;
   padding: 40px 0;
 }
-@media (max-width: 767px) {
-  #tertiary aside {
-    padding: 40px;
-  }
-}
 @media (min-width: 768px) {
-  #tertiary aside {
+  #tertiary .widget-area {
     float: left;
     font-size: 15.2px;
     font-size: 0.95rem;
-    margin-right: 40px;
+    padding: 0 20px;
   }
-  #tertiary aside:nth-child(1):nth-last-child(1) {
+  #tertiary .widget-area:first-of-type {
+    padding-left: 0;
+  }
+  #tertiary .widget-area:last-of-type {
+    padding-right: 0;
+  }
+  #tertiary .widget-area:nth-child(1):nth-last-child(1) {
     float: none;
     max-width: 570px;
   }
-  #tertiary aside:nth-child(1):nth-last-child(2), #tertiary aside:nth-child(2):nth-last-child(1) {
-    width: 45%;
-    width: calc( (100% - 40px) / 2);
+  #tertiary .widget-area:nth-child(1):nth-last-child(2), #tertiary .widget-area:nth-child(2):nth-last-child(1) {
+    width: 50%;
   }
-  #tertiary aside:nth-child(1):nth-last-child(2):last-of-type, #tertiary aside:nth-child(2):nth-last-child(1):last-of-type {
-    margin-right: 0;
+  #tertiary .widget-area:nth-child(1):nth-last-child(3), #tertiary .widget-area:nth-child(2):nth-last-child(2), #tertiary .widget-area:nth-child(3):nth-last-child(1) {
+    width: 33.3333%;
   }
-  #tertiary aside:nth-child(1):nth-last-child(3), #tertiary aside:nth-child(2):nth-last-child(2), #tertiary aside:nth-child(3):nth-last-child(1) {
-    width: 30%;
-    width: calc( (100% - 80px) / 3);
-  }
-  #tertiary aside:nth-child(1):nth-last-child(3):last-of-type, #tertiary aside:nth-child(2):nth-last-child(2):last-of-type, #tertiary aside:nth-child(3):nth-last-child(1):last-of-type {
-    margin-right: 0;
+  #tertiary .widget-area:nth-child(2):nth-last-child(2) {
+    padding: 0 10px;
   }
 }
 
@@ -3893,6 +3889,7 @@ a:hover, a:active {
   font-family: Lora, Georgia, serif;
   margin: 10px auto;
   max-width: 1140px;
+  padding: 0 20px;
 }
 @media (max-width: 767px) {
   .site-footer {
