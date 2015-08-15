@@ -48,7 +48,6 @@ function pique_setup() {
 	register_nav_menus( array(
 		'primary'   => esc_html__( 'Primary Menu', 'pique' ),
 		'secondary' => esc_html__( 'Secondary Menu', 'pique' ),
-		'social'    => esc_html__( 'Social Menu', 'pique' ),
 	) );
 
 	/*
