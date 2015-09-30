@@ -1,159 +1,154 @@
-.social-links ul a:before {
-  font-family: "Genericons";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-decoration: none;
-  vertical-align: text-bottom;
-  -webkit-font-smoothing: antialiased;
-}
-
-.social-links {
+.widget_wpcom_social_media_icons_widget {
   margin: 0 auto;
   padding: 0;
-}
-.social-links ul {
-  list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
-}
-.social-links ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 -2px 0 0;
-  padding: 0;
-}
-.social-links ul a {
-  background: #88cc33;
-  display: inline-block;
-  text-decoration: none;
-}
-.social-links ul a:before {
-  color: #fff;
-  display: block;
-  font-size: 22px;
-  padding: 5px;
-  text-align: center;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-}
-.social-links ul a:hover {
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-}
-.social-links ul a:hover:before {
-  color: #fff;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-}
 
-.social-links ul a[href*='wordpress.org']:before,
-.social-links ul a[href*='wordpress.com']:before {
-  content: '\f205';
-}
+  ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
 
-.social-links ul a[href*='facebook.com']:before {
-  content: '\f204';
-}
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 2px 0 0;
+      padding: 0;
+    }
 
-.social-links ul a[href*='twitter.com']:before {
-  content: '\f202';
-}
+    a {
+      background: $color__primary;
+      border: 2px solid $color__tertiary !important; // Bad Jetpack.
+      border-radius: 50%;
+      display: inline-block;
+      text-decoration: none;
 
-.social-links ul a[href*='dribbble.com']:before {
-  content: '\f201';
-}
+      &::before {
+        @include genericons;
+        color: $color__tertiary;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        transition: 0.2s all ease-in-out;
+      }
 
-.social-links ul a[href*='plus.google.com']:before {
-  content: '\f206';
-}
+      &:hover {
+        background: $color__tertiary;
+        border-color: $color__primary;
 
-.social-links ul a[href*='pinterest.com']:before {
-  content: '\f209';
-}
+        &::before {
+          color: #fff;
+        }
+      } // :hover
+    } // a
 
-.social-links ul a[href*='github.com']:before {
-  content: '\f200';
-}
+    // This is only needed if you want to use the footer menu for social icons
+    a[href*='wordpress.org']:before,
+    a[href*='wordpress.com']:before {
+      content: '\f205';
+    }
 
-.social-links ul a[href*='tumblr.com']:before {
-  content: '\f214';
-}
+    a[href*='facebook.com']:before {
+      content: '\f204';
+    }
 
-.social-links ul a[href*='youtube.com']:before {
-  content: '\f213';
-}
+    a[href*='twitter.com']:before {
+      content: '\f202';
+    }
 
-.social-links ul a[href*='flickr.com']:before {
-  content: '\f211';
-}
+    a[href*='dribbble.com']:before {
+      content: '\f201';
+    }
 
-.social-links ul a[href*='vimeo.com']:before {
-  content: '\f212';
-}
+    a[href*='plus.google.com']:before {
+      content: '\f206';
+    }
 
-.social-links ul a[href*='instagram.com']:before {
-  content: '\f215';
-}
+    a[href*='pinterest.com']:before {
+      content: '\f209';
+    }
 
-.social-links ul a[href*='codepen.io']:before {
-  content: '\f216';
-}
+    a[href*='github.com']:before {
+      content: '\f200';
+    }
 
-.social-links ul a[href*='linkedin.com']:before {
-  content: '\f207';
-}
+    a[href*='tumblr.com']:before {
+      content: '\f214';
+    }
 
-.social-links ul a[href*='foursquare.com']:before {
-  content: '\f226';
-}
+    a[href*='youtube.com']:before {
+      content: '\f213';
+    }
 
-.social-links ul a[href*='reddit.com']:before {
-  content: '\f222';
-}
+    a[href*='flickr.com']:before {
+      content: '\f211';
+    }
 
-.social-links ul a[href*='digg.com']:before {
-  content: '\f221';
-}
+    a[href*='vimeo.com']:before {
+      content: '\f212';
+    }
 
-.social-links ul a[href*='getpocket.com']:before {
-  content: '\f224';
-}
+    a[href*='instagram.com']:before {
+      content: '\f215';
+    }
 
-.social-links ul a[href*='path.com']:before {
-  content: '\f219';
-}
+    a[href*='codepen.io']:before {
+      content: '\f216';
+    }
 
-.social-links ul a[href*='stumbleupon.com']:before {
-  content: '\f223';
-}
+    a[href*='linkedin.com']:before {
+      content: '\f207';
+    }
 
-.social-links ul a[href*='spotify.com']:before {
-  content: '\f515';
-}
+    a[href*='foursquare.com']:before {
+      content: '\f226';
+    }
 
-.social-links ul a[href*='twitch.tv']:before {
-  content: '\f516';
-}
+    a[href*='reddit.com']:before {
+      content: '\f222';
+    }
 
-.social-links ul a[href*='dropbox.com']:before {
-  content: '\f225';
-}
+    a[href*='digg.com']:before {
+      content: '\f221';
+    }
 
-.social-links ul a[href*='/feed']:before {
-  content: '\f413';
-}
+    a[href*='getpocket.com']:before {
+      content: '\f224';
+    }
 
-.social-links ul a[href*='skype']:before {
-  content: '\f220';
-}
+    a[href*='path.com']:before {
+      content: '\f219';
+    }
 
-.social-links ul a[href*='mailto']:before {
-  content: '\f410';
-}
+    a[href*='stumbleupon.com']:before {
+      content: '\f223';
+    }
 
-.social-links ul a:before {
-  content: '\f415';
-}
+    a[href*='spotify.com']:before {
+      content: '\f515';
+    }
+
+    a[href*='twitch.tv']:before {
+      content: '\f516';
+    }
+
+    a[href*='dropbox.com']:before {
+      content: '\f225';
+    }
+
+    a[href*='/feed']:before {
+      content: '\f413';
+    }
+
+    a[href*='skype']:before {
+      content: '\f220';
+    }
+
+    a[href*='mailto']:before {
+      content: '\f410';
+    }
+
+    a::before {
+      content: '\f415';
+    }
+  } // ul
+
+} // .widget_wpcom_social_media_icons_widget

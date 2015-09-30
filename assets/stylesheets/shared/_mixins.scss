@@ -21,3 +21,15 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Include Genericons
+@mixin genericons() {
+	font-family: "Genericons";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	-webkit-font-smoothing: antialiased;
+}
