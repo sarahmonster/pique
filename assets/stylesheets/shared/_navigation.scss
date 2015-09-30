@@ -46,16 +46,48 @@ a {
 		overflow: hidden;
 	}
 
+	.nav-previous,
+	.nav-next {
+		border-bottom: 2px solid lighten($color__secondary, 10%);
+		border-top: 1px solid lighten($color__secondary, 10%);
+		color: lighten($color__secondary, 10%);
+		display: block;
+		font-family: $font__sans;
+		@include font-size(1);
+		padding: 7px 0;
+	}
+
+	a:hover {
+		border-bottom: none;
+		color: darken($color__secondary, 25%);
+	}
+
 	& .nav-previous {
 		float: left;
 		width: 50%;
+
+		a::before {
+			@include fontawesome;
+			content: $fa-var-arrow-left;
+			display: inline-block;
+			margin-right: 5px;
+			vertical-align: 1px;
+		}
 	}
 
 	& .nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+
+		a::after {
+			@include fontawesome;
+			content: $fa-var-arrow-right;
+			display: inline-block;
+			margin-left: 5px;
+			vertical-align: 1px;
+		}
 	}
-}
+} // .comments-navigation, .posts-navigation, .post-navigation
 
 @import "../components/social-menu";

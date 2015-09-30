@@ -56,7 +56,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: normal;
   font-style: normal;
 }
-.fa, .cat-links::before,
+.fa, .comment-navigation .nav-previous a::before,
+.posts-navigation .nav-previous a::before,
+.post-navigation .nav-previous a::before, .comment-navigation .nav-next a::after,
+.posts-navigation .nav-next a::after,
+.post-navigation .nav-next a::after, .cat-links::before,
 .tags-links::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -128,11 +132,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.cat-links::before,
+.fa.fa-pull-left, .comment-navigation .nav-previous a.fa-pull-left::before,
+.posts-navigation .nav-previous a.fa-pull-left::before,
+.post-navigation .nav-previous a.fa-pull-left::before, .comment-navigation .nav-next a.fa-pull-left::after,
+.posts-navigation .nav-next a.fa-pull-left::after,
+.post-navigation .nav-next a.fa-pull-left::after, .fa-pull-left.cat-links::before,
 .fa-pull-left.tags-links::before {
   margin-right: .3em;
 }
-.fa.fa-pull-right, .fa-pull-right.cat-links::before,
+.fa.fa-pull-right, .comment-navigation .nav-previous a.fa-pull-right::before,
+.posts-navigation .nav-previous a.fa-pull-right::before,
+.post-navigation .nav-previous a.fa-pull-right::before, .comment-navigation .nav-next a.fa-pull-right::after,
+.posts-navigation .nav-next a.fa-pull-right::after,
+.post-navigation .nav-next a.fa-pull-right::after, .fa-pull-right.cat-links::before,
 .fa-pull-right.tags-links::before {
   margin-left: .3em;
 }
@@ -146,11 +158,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: left;
 }
 
-.fa.pull-left, .pull-left.cat-links::before,
+.fa.pull-left, .comment-navigation .nav-previous a.pull-left::before,
+.posts-navigation .nav-previous a.pull-left::before,
+.post-navigation .nav-previous a.pull-left::before, .comment-navigation .nav-next a.pull-left::after,
+.posts-navigation .nav-next a.pull-left::after,
+.post-navigation .nav-next a.pull-left::after, .pull-left.cat-links::before,
 .pull-left.tags-links::before {
   margin-right: .3em;
 }
-.fa.pull-right, .pull-right.cat-links::before,
+.fa.pull-right, .comment-navigation .nav-previous a.pull-right::before,
+.posts-navigation .nav-previous a.pull-right::before,
+.post-navigation .nav-previous a.pull-right::before, .comment-navigation .nav-next a.pull-right::after,
+.posts-navigation .nav-next a.pull-right::after,
+.post-navigation .nav-next a.pull-right::after, .pull-right.cat-links::before,
 .pull-right.tags-links::before {
   margin-left: .3em;
 }
@@ -3516,10 +3536,40 @@ a:hover, a:active {
   overflow: hidden;
 }
 .comment-navigation .nav-previous,
+.comment-navigation .nav-next,
+.posts-navigation .nav-previous,
+.posts-navigation .nav-next,
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+  border-bottom: 2px solid #a7cbdb;
+  border-top: 1px solid #a7cbdb;
+  color: #a7cbdb;
+  display: block;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 7px 0;
+}
+.comment-navigation a:hover,
+.posts-navigation a:hover,
+.post-navigation a:hover {
+  border-bottom: none;
+  color: #3c7993;
+}
+.comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
+}
+.comment-navigation .nav-previous a::before,
+.posts-navigation .nav-previous a::before,
+.post-navigation .nav-previous a::before {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: 1px;
 }
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
@@ -3527,6 +3577,15 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%;
+}
+.comment-navigation .nav-next a::after,
+.posts-navigation .nav-next a::after,
+.post-navigation .nav-next a::after {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: 1px;
 }
 
 .widget_wpcom_social_media_icons_widget {
