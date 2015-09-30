@@ -30,14 +30,21 @@
 	?>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pique' ); ?></a>
-	<header id="masthead" class="site-header" role="banner">
+
+	<header id="masthead" class="site-header" role="banner" data-image-height="<?php echo absint( get_custom_header()->height ); ?>">
+		<?php if ( get_header_image() ) : ?>
+		<a class="pique-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img id="pique-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+		</a>
+		<?php endif; // End header image check. ?>
 
 		<div class="site-branding">
 			<?php pique_the_site_logo(); ?>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pique' ); ?></button>
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pique' ); ?></button>-->
 			<?php
 				wp_nav_menu( array(
 					'theme_location'  => 'primary',

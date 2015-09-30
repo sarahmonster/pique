@@ -3332,17 +3332,45 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#masthead {
+  position: relative;
+  text-align: center;
+}
+#masthead .pique-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#masthead .site-logo-link {
+  display: inline-block;
+  margin: 1rem auto;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  #masthead .site-logo-link {
+    width: 150px;
+  }
+}
+
 .main-navigation {
+  background: #483E34;
   clear: both;
   display: block;
   font-family: Karla, Arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 }
 .main-navigation ul {
-  display: none;
+  display: block;
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0.5rem;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -3371,17 +3399,21 @@ a:hover, a:active {
   position: relative;
 }
 .main-navigation a {
-  display: block;
-  text-decoration: none;
+  color: #FCFBF9;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
-  #masthead .site-branding {
+  #mastheader .site-branding {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  #masthead {
+  #mastheader {
     background: #483E34;
     padding: 0.5em;
     position: fixed;
@@ -3391,15 +3423,7 @@ a:hover, a:active {
     width: 100%;
     z-index: 10000;
   }
-  #masthead ul a {
-    color: #FCFBF9;
-    font-size: 12.8px;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-    text-transform: uppercase;
-  }
-  #masthead .site-branding {
+  #mastheader .site-branding {
     position: absolute;
     line-height: 1;
     padding: 10px;
@@ -3410,44 +3434,44 @@ a:hover, a:active {
     height: 71px;
     width: 100px;
   }
-  #masthead .site-branding .site-logo-link img {
+  #mastheader .site-branding .site-logo-link img {
     margin: 0 auto;
     max-width: 100%;
   }
-  #masthead .site-branding .site-title {
+  #mastheader .site-branding .site-title {
     font-size: 16px;
     font-size: 1rem;
   }
-  #masthead .site-branding .site-title a {
+  #mastheader .site-branding .site-title a {
     text-decoration: none;
   }
-  #masthead .site-branding .site-description {
+  #mastheader .site-branding .site-description {
     display: none;
   }
-  #masthead .pique-split-nav {
+  #mastheader .pique-split-nav {
     width: calc(50% - 50px);
   }
-  #masthead .pique-split-nav:first-of-type {
+  #mastheader .pique-split-nav:first-of-type {
     float: left;
     text-align: right;
   }
-  #masthead .pique-split-nav:last-of-type {
+  #mastheader .pique-split-nav:last-of-type {
     float: right;
     text-align: left;
   }
-  #masthead.pique-unstuck-header {
+  #mastheader.pique-unstuck-header {
     background: transparent;
     position: absolute;
     top: 2em;
   }
-  #masthead.pique-unstuck-header .site-branding {
+  #mastheader.pique-unstuck-header .site-branding {
     width: 150px;
     position: absolute;
     left: calc(50% - 75px);
     top: -75%;
     height: auto;
   }
-  #masthead.pique-unstuck-header .pique-split-nav {
+  #mastheader.pique-unstuck-header .pique-split-nav {
     width: calc(50% - 75px);
   }
 }

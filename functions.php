@@ -208,8 +208,10 @@ function pique_scripts() {
 	wp_enqueue_style( 'pique-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 
+	// Header and navigation
 	wp_enqueue_script( 'pique-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'pique-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'pique-header', get_template_directory_uri() . '/assets/js/header.js', array( 'jquery' ), '20150930', true );
 
 	// Scroll effects
 	wp_enqueue_script( 'pique-skrollr', get_template_directory_uri() . '/assets/js/skrollr.min.js', array(), '20150805', true );
