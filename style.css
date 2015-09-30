@@ -2966,7 +2966,7 @@ h6 a:active {
 }
 
 h1 {
-  color: #6599be;
+  color: #E9D5C0;
   font-size: 3.998em;
   letter-spacing: -2px;
 }
@@ -3091,7 +3091,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #FCFBF9;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -3149,10 +3149,10 @@ table {
 --------------------------------------------------------------*/
 /* Overall form */
 form {
-  background: -webkit-repeating-linear-gradient(45deg, rgba(101, 153, 190, 0.05), rgba(101, 153, 190, 0.05) 2px, rgba(101, 153, 190, 0) 4px, rgba(101, 153, 190, 0) 8px), #fff;
-  background: repeating-linear-gradient(45deg, rgba(101, 153, 190, 0.05), rgba(101, 153, 190, 0.05) 2px, rgba(101, 153, 190, 0) 4px, rgba(101, 153, 190, 0) 8px), #fff;
+  background: -webkit-repeating-linear-gradient(45deg, rgba(233, 213, 192, 0.05), rgba(233, 213, 192, 0.05) 2px, rgba(233, 213, 192, 0) 4px, rgba(233, 213, 192, 0) 8px), #FCFBF9;
+  background: repeating-linear-gradient(45deg, rgba(233, 213, 192, 0.05), rgba(233, 213, 192, 0.05) 2px, rgba(233, 213, 192, 0) 4px, rgba(233, 213, 192, 0) 8px), #FCFBF9;
   color: #666;
-  border-top: 4px solid #6599be;
+  border-top: 4px solid #E9D5C0;
   padding: 26.66667px;
   text-align: left;
   margin: 0 auto;
@@ -3177,7 +3177,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #ccc;
-  background: #fff;
+  background: #FCFBF9;
   border: 2px solid #f4f4f4;
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
@@ -3192,9 +3192,9 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  background: rgba(255, 255, 255, 0.5);
-  border-color: #87aad0;
-  color: #192b3f;
+  background: rgba(252, 251, 249, 0.5);
+  border-color: #c8beb3;
+  color: #483E34;
 }
 
 input[type="text"],
@@ -3218,11 +3218,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 2px solid;
-  border-color: #274464;
+  border-color: #665849;
   border-radius: 0;
-  background: #87aad0;
+  background: #c8beb3;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-  color: #192b3f;
+  color: #483E34;
   font-size: 15.2px;
   font-size: 0.95rem;
   font-family: Karla, Arial, sans-serif;
@@ -3239,8 +3239,8 @@ button:hover, .more-link:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #6390c1;
-  border-color: #192b3f;
+  background-color: #b3a495;
+  border-color: #483E34;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 }
 button:active, .more-link:active, button:focus, .more-link:focus,
@@ -3250,8 +3250,8 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: #6390c1;
-  border-color: #192b3f;
+  background-color: #b3a495;
+  border-color: #483E34;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 button.minimal, .minimal.more-link,
@@ -3259,9 +3259,9 @@ input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
   background: transparent;
-  border-color: #fff;
+  border-color: #FCFBF9;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  color: #fff;
+  color: #FCFBF9;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 button.minimal:active, .minimal.more-link:active, button.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .minimal.more-link:hover,
@@ -3274,7 +3274,7 @@ input[type="reset"].minimal:hover,
 input[type="submit"].minimal:active,
 input[type="submit"].minimal:focus,
 input[type="submit"].minimal:hover {
-  border-color: #e6e6e6;
+  border-color: #ebe4d7;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25), inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
 }
@@ -3307,7 +3307,7 @@ input[type="submit"].minimal:hover {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #6599be;
+  color: #83B6CC;
   text-decoration: none;
   border-bottom: 0;
   padding-bottom: 2px;
@@ -3315,10 +3315,10 @@ a {
           transition: all 0.2s ease-in-out 0s;
 }
 a:visited {
-  color: #6599be;
+  color: #83B6CC;
 }
 a:hover, a:focus, a:active {
-  color: #8a260c;
+  color: #E9D5C0;
   border-bottom: 2px solid;
 }
 a:focus {
@@ -3381,7 +3381,7 @@ a:hover, a:active {
 }
 @media (min-width: 768px) {
   #masthead {
-    background: #192b3f;
+    background: #483E34;
     padding: 0.5em;
     position: fixed;
     top: 0;
@@ -3391,7 +3391,7 @@ a:hover, a:active {
     z-index: 10000;
   }
   #masthead ul a {
-    color: #fff;
+    color: #FCFBF9;
     font-size: 12.8px;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -3516,8 +3516,8 @@ a:hover, a:active {
   padding: 0;
 }
 .widget_wpcom_social_media_icons_widget ul a {
-  background: #192b3f;
-  border: 2px solid #6599be !important;
+  background: #483E34;
+  border: 2px solid #E9D5C0 !important;
   border-radius: 50%;
   display: inline-block;
   text-decoration: none;
@@ -3531,7 +3531,7 @@ a:hover, a:active {
   text-decoration: none;
   vertical-align: text-bottom;
   -webkit-font-smoothing: antialiased;
-  color: #6599be;
+  color: #E9D5C0;
   display: block;
   padding: 10px;
   text-align: center;
@@ -3539,11 +3539,11 @@ a:hover, a:active {
           transition: 0.2s all ease-in-out;
 }
 .widget_wpcom_social_media_icons_widget ul a:hover {
-  background: #6599be;
-  border-color: #192b3f;
+  background: #E9D5C0;
+  border-color: #483E34;
 }
 .widget_wpcom_social_media_icons_widget ul a:hover::before {
-  color: #fff;
+  color: #FCFBF9;
 }
 .widget_wpcom_social_media_icons_widget ul a[href*='wordpress.org']:before,
 .widget_wpcom_social_media_icons_widget ul a[href*='wordpress.com']:before {
@@ -3644,7 +3644,7 @@ a:hover, a:active {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #192b3f;
+  color: #483E34;
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
@@ -3912,17 +3912,17 @@ a:hover, a:active {
   width: 100%;
 }
 .page-template-page-templatestemplate-front-php .pique-panel {
-  background-color: #0f1e30;
+  background-color: #3e3124;
   background-image: url(assets/images/noise.png);
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(252, 251, 249, 0.25);
   min-height: 100vh;
   margin: 0;
   position: relative;
   width: 100%;
 }
 .page-template-page-templatestemplate-front-php .pique-panel:nth-of-type(even) {
-  background-color: #791c04;
+  background-color: #67afcf;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-background {
   background-attachment: fixed;
@@ -3937,15 +3937,15 @@ a:hover, a:active {
   height: 100%;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content {
-  color: #fff;
+  color: #FCFBF9;
   margin: 0 auto;
   max-width: 1140px;
   padding: 40px;
   text-align: center;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h2 {
-  background: #fff;
-  color: #6599be;
+  background: #FCFBF9;
+  color: #E9D5C0;
   display: inline-block;
   font-size: 1.5em;
   font-weight: 600;
@@ -3966,7 +3966,7 @@ a:hover, a:active {
   bottom: 4px;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
-  color: #fff;
+  color: #FCFBF9;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
   max-width: 760px;
@@ -3986,7 +3986,7 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-template-grid,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials,
 .page-template-page-templatestemplate-front-php .pique-template-recent-posts {
-  background-color: #fff;
+  background-color: #FCFBF9;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content,
@@ -4047,7 +4047,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   text-align: left;
 }
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content {
-  background: #fff;
+  background: #FCFBF9;
   border-radius: 25px;
   border: #7F7F7F solid 2px;
   position: relative;
@@ -4058,7 +4058,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   position: absolute;
   border-style: solid;
   border-width: 15px 15px 0;
-  border-color: #fff transparent;
+  border-color: #FCFBF9 transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -4129,8 +4129,8 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   max-width: none;
 }
 .page-template-page-templatestemplate-front-php .overlay {
-  background: #192b3f;
-  border-top: 4px solid #6599be;
+  background: #483E34;
+  border-top: 4px solid #E9D5C0;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
   max-width: 570px;
@@ -4154,7 +4154,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 }
 .page-template-page-templatestemplate-front-php .overlay h3, .page-template-page-templatestemplate-front-php .overlay blockquote cite, blockquote .page-template-page-templatestemplate-front-php .overlay cite, .page-template-page-templatestemplate-front-php .overlay .widget-title {
   border-bottom: none;
-  color: #6599be;
+  color: #E9D5C0;
   margin-bottom: 0;
 }
 .page-template-page-templatestemplate-front-php .overlay p {
@@ -4220,7 +4220,7 @@ time + .updated {
   margin: 0.5em auto;
   font-size: 0.8em;
   padding: 0.75em 1.5em;
-  color: #192b3f;
+  color: #483E34;
 }
 
 .page-links {

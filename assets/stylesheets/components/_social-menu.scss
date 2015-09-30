@@ -35,7 +35,7 @@
         border-color: $color__primary;
 
         &::before {
-          color: #fff;
+          color: $color__white;
         }
       } // :hover
     } // a

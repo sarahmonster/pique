@@ -1,4 +1,4 @@
-$color__white: #fff;
+$color__white: #FCFBF9;
 $color__light-grey: #f4f4f4;
 $color__mid-grey: #ccc;
 $color__dark-grey: #666;
@@ -6,12 +6,14 @@ $color__light-black: #444;
 $color__black: #222;
 
 $color__navy: #192b3f;
-$color__blue: #6599be;
+$color__blue: #83B6CC;
 $color__red: #8a260c;
+$color__brown: #483E34;
+$color__tan: #E9D5C0;
 
-$color__primary: $color__navy;
-$color__secondary: $color__red;
-$color__tertiary: $color__blue;
+$color__primary: $color__brown;
+$color__secondary: $color__blue;
+$color__tertiary: $color__tan;
 
 $color__background-body: $color__white;
 $color__background-hr: $color__light-grey;
@@ -27,9 +29,9 @@ $color__background-button: lighten($color__primary, 50%);
 $color__background-button-hover: lighten($color__primary, 40%);
 $color__background-button-focus: lighten($color__primary, 40%);
 
-$color__link: $color__tertiary;
-$color__link-visited: $color__tertiary;
-$color__link-hover: $color__secondary;
+$color__link: $color__secondary;
+$color__link-visited: $color__secondary;
+$color__link-hover: $color__tertiary;
 $color__text-main: $color__dark-grey;
 $color__text-headings: $color__dark-grey;
 $color__text-button: $color__primary;
