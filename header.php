@@ -32,7 +32,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pique' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner" data-image-height="<?php echo absint( get_custom_header()->height ); ?>">
-		<?php if ( get_header_image() ) : ?>
+
+		<?php if ( 'page-templates/template-front.php' !== get_page_template_slug() && get_header_image() ) : ?>
 		<a class="pique-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<img id="pique-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 		</a>
