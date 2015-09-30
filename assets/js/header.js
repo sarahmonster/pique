@@ -5,9 +5,9 @@
  */
 
 ( function( $ ) {
-  $(document).ready(function() {
+  $(window).on("resize", function () {
     var piqueHeaderHeight = $('#pique-header-image').height();
     var piqueNavHeight = $('#primary-menu').height();
     $('#masthead').css('height', piqueHeaderHeight + piqueNavHeight);
-  });
+  }).resize();
 } )( jQuery );
