@@ -2980,7 +2980,6 @@ h3, blockquote cite, .widget-title {
   font-family: Karla, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2em;
-  border-bottom: 2px solid;
   letter-spacing: 1px;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -3537,7 +3536,7 @@ a:hover, a:active {
 .widget_wpcom_social_media_icons_widget ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 2px 0 0;
+  margin: 0 5px 5px 0;
   padding: 0;
 }
 .widget_wpcom_social_media_icons_widget ul a {
@@ -3558,10 +3557,13 @@ a:hover, a:active {
   -webkit-font-smoothing: antialiased;
   color: #E9D5C0;
   display: block;
-  padding: 10px;
+  height: 32px;
+  line-height: 1;
+  padding: 8px;
   text-align: center;
   -webkit-transition: 0.2s all ease-in-out;
           transition: 0.2s all ease-in-out;
+  width: 34px;
 }
 .widget_wpcom_social_media_icons_widget ul a:hover {
   background: #E9D5C0;
@@ -3739,6 +3741,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
+  font-family: Karla, Arial, sans-serif;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -3765,6 +3768,7 @@ a:hover, a:active {
 
 /* Text widget */
 .textwidget {
+  font-family: Lora, Georgia, serif;
   font-style: italic;
   font-size: 1.2em;
 }
@@ -3833,16 +3837,94 @@ a:hover, a:active {
     margin-left: 40px;
   }
 }
+/* Footer */
+.site-footer {
+  clear: both;
+  color: #FCFBF9;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+  position: relative;
+}
+.site-footer::before {
+  background: rgba(57, 49, 41, 0.875);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.site-footer a {
+  color: #E9D5C0;
+}
+@media (max-width: 767px) {
+  .site-footer {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+.site-footer .secondary-links,
+.site-footer .site-info {
+  font-style: italic;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1000;
+}
+.site-footer .secondary-links a,
+.site-footer .site-info a {
+  color: #FCFBF9;
+}
+@media (max-width: 767px) {
+  .site-footer .secondary-links,
+  .site-footer .site-info {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .site-footer .secondary-links,
+  .site-footer .site-info {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .site-footer .secondary-links {
+    float: left;
+  }
+  .site-footer .site-info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .site-footer .secondary-links + .site-info {
+    float: right;
+    text-align: right;
+  }
+  .site-footer .secondary-links + .site-info::after {
+    content: "";
+    display: table;
+  }
+}
+
 /* Footer sidebar */
 #tertiary {
   content: "";
   display: table;
   clear: both;
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid rgba(233, 213, 192, 0.25);
   margin-bottom: 10px;
-  padding: 40px 0;
+  padding: 40px 0 10px;
+  position: relative;
+  z-index: 1000;
 }
 @media (min-width: 768px) {
+  #tertiary {
+    margin-bottom: 15px;
+  }
   #tertiary .widget-area {
     float: left;
     font-size: 15.2px;
@@ -3867,53 +3949,6 @@ a:hover, a:active {
   }
   #tertiary .widget-area:nth-child(2):nth-last-child(2) {
     padding: 0 10px;
-  }
-}
-
-/* Footer */
-.site-footer {
-  clear: both;
-  font-family: Lora, Georgia, serif;
-  margin: 10px auto;
-  max-width: 1140px;
-  padding: 0 20px;
-}
-@media (max-width: 767px) {
-  .site-footer {
-    font-size: 14.4px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-}
-.site-footer .secondary-links,
-.site-footer .site-info {
-  font-style: italic;
-}
-@media (max-width: 767px) {
-  .site-footer .secondary-links,
-  .site-footer .site-info {
-    font-size: 12.8px;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .site-footer .secondary-links,
-  .site-footer .site-info {
-    font-size: 14.4px;
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 768px) {
-  .site-footer .secondary-links {
-    float: left;
-  }
-  .site-footer .site-info {
-    text-align: center;
-  }
-  .site-footer .secondary-links + .site-info {
-    float: right;
-    text-align: right;
   }
 }
 

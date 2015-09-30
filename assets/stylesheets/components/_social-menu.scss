@@ -10,7 +10,7 @@
     li {
       display: inline-block;
       list-style: none;
-      margin: 0 2px 0 0;
+      margin: 0 5px 5px 0;
       padding: 0;
     }
 
@@ -25,9 +25,12 @@
         @include genericons;
         color: $color__tertiary;
         display: block;
-        padding: 10px;
+        height: 32px;
+        line-height: 1;
+        padding: 8px;
         text-align: center;
         transition: 0.2s all ease-in-out;
+        width: 34px;
       }
 
       &:hover {

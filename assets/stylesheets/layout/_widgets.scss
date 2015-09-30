@@ -1,5 +1,6 @@
 .widget {
 	margin: 0 0 1.5em;
+	font-family: $font__sans;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -36,6 +37,7 @@
 
 /* Text widget */
 .textwidget {
+	font-family: $font__serif;
   font-style: italic;
   font-size: 1.2em;
 }
