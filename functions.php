@@ -6,80 +6,80 @@
  */
 
 if ( ! function_exists( 'pique_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function pique_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Pique, use a find and replace
-	 * to change 'pique' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'pique', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
-
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
 	 */
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'pique-hero', 1280, 1000, true );
-	add_image_size( 'pique-square', 280, 280, true );
-	add_image_size( 'pique-strip', 440, 160, true );
-	add_image_size( 'pique-thumbnail-avatar', 100, 100, true );
+	function pique_setup() {
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on Pique, use a find and replace
+		 * to change 'pique' to the name of your theme in all the template files
+		 */
+		load_theme_textdomain( 'pique', get_template_directory() . '/languages' );
 
-	// This theme uses wp_nav_menu() in three locations.
-	register_nav_menus( array(
-		'primary'   => esc_html__( 'Primary Menu', 'pique' ),
-		'secondary' => esc_html__( 'Secondary Menu', 'pique' ),
-	) );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+		/*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+		add_theme_support( 'title-tag' );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+		/*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+		 */
+		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'pique-hero', 1280, 1000, true );
+		add_image_size( 'pique-square', 280, 280, true );
+		add_image_size( 'pique-strip', 440, 160, true );
+		add_image_size( 'pique-thumbnail-avatar', 100, 100, true );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'pique_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-}
+		// This theme uses wp_nav_menu() in three locations.
+		register_nav_menus( array(
+			'primary'   => esc_html__( 'Primary Menu', 'pique' ),
+			'secondary' => esc_html__( 'Secondary Menu', 'pique' ),
+		) );
+
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
+
+		/*
+		 * Enable support for Post Formats.
+		 * See http://codex.wordpress.org/Post_Formats
+		 */
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'image',
+			'video',
+			'quote',
+			'link',
+		) );
+
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'pique_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
+	}
 endif; // pique_setup
 add_action( 'after_setup_theme', 'pique_setup' );
 
@@ -147,15 +147,15 @@ add_action( 'widgets_init', 'pique_widgets_init' );
  * Register Google Fonts
  */
 function pique_fonts_url() {
-  $fonts_url = '';
+	$fonts_url = '';
 
-   /* Translators: If there are characters in your language that are not
+	/* Translators: If there are characters in your language that are not
 	 * supported by Lora, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
 	$lora = esc_html_x( 'on', 'Lora font: on or off', 'pique' );
 
-	 /* Translators: If there are characters in your language that are not
+	/* Translators: If there are characters in your language that are not
 	 * supported by Karla, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
@@ -181,14 +181,14 @@ function pique_fonts_url() {
 
 	endif;
 
-return $fonts_url;
+	return $fonts_url;
 }
 
 /**
  * Enqueue Google Fonts for Editor Styles
  */
 function pique_editor_styles() {
-    add_editor_style( array( 'editor-style.css', pique_fonts_url() ) );
+	add_editor_style( array( 'editor-style.css', pique_fonts_url() ) );
 }
 add_action( 'after_setup_theme', 'pique_editor_styles' );
 
