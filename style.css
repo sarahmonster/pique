@@ -56,7 +56,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa, .cat-links::before,
+.tags-links::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -127,10 +128,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
 }
 
-.fa.fa-pull-left {
+.fa.fa-pull-left, .fa-pull-left.cat-links::before,
+.fa-pull-left.tags-links::before {
   margin-right: .3em;
 }
-.fa.fa-pull-right {
+.fa.fa-pull-right, .fa-pull-right.cat-links::before,
+.fa-pull-right.tags-links::before {
   margin-left: .3em;
 }
 
@@ -143,10 +146,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: left;
 }
 
-.fa.pull-left {
+.fa.pull-left, .pull-left.cat-links::before,
+.pull-left.tags-links::before {
   margin-right: .3em;
 }
-.fa.pull-right {
+.fa.pull-right, .pull-right.cat-links::before,
+.pull-right.tags-links::before {
   margin-left: .3em;
 }
 
@@ -3841,6 +3846,9 @@ a:hover, a:active {
 .site-footer {
   clear: both;
   color: #FCFBF9;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   max-width: 1140px;
@@ -4284,6 +4292,11 @@ time + .updated {
   display: none;
 }
 
+.edit-link::before {
+  content: ' · ';
+  display: inline;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -4302,6 +4315,35 @@ time + .updated {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.cat-links,
+.tags-links {
+  color: #c2beb9;
+  display: block;
+  font-family: Lora, Georgia, serif;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+.cat-links a,
+.tags-links a {
+  color: #aaa49e;
+}
+.cat-links::before,
+.tags-links::before {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.cat-links::before {
+  content: "";
+}
+
+.tags-links::before {
+  content: "";
 }
 
 /*--------------------------------------------------------------

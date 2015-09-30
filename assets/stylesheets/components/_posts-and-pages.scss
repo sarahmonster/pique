@@ -37,6 +37,13 @@ time + .updated {
   display: none;
 }
 
+.edit-link {
+	&::before {
+		content: ' · ';
+		display: inline;
+	}
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -56,4 +63,32 @@ time + .updated {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.cat-links,
+.tags-links {
+	color: desaturate(lighten($color__text-screen, 50%), 10%);
+	display: block;
+	font-family: $font__serif;
+	@include font-size(0.9);
+	font-style: italic;
+	margin-top: 0.25rem;
+
+	a {
+		color: desaturate(lighten($color__text-screen, 40%), 10%);
+	}
+
+	&::before {
+		@include fontawesome;
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.cat-links::before {
+	content: $fa-var-folder-open-o;
+}
+
+.tags-links::before {
+	content: $fa-var-tags;
 }

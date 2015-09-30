@@ -33,3 +33,8 @@
 	vertical-align: text-bottom;
 	-webkit-font-smoothing: antialiased;
 }
+
+@mixin fontawesome() {
+  @extend .#{$fa-css-prefix};
+  font-size: 14px;
+}
