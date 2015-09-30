@@ -92,3 +92,20 @@ time + .updated {
 .tags-links::before {
 	content: $fa-var-tags;
 }
+
+#commentform .logged-in-as,
+#commentform .comment-notes {
+	@include font-size(1);
+	font-style: italic;
+}
+
+#form-allowed-tags {
+	@include font-size(0.9);
+	font-style: italic;
+
+	code {
+		display: block;
+		@include font-size(0.8);
+		font-style: normal;
+	}
+}

@@ -1,22 +1,14 @@
 /* Overall form */
 form {
-	background: repeating-linear-gradient(45deg,
-					  transparentize($color__tertiary, 0.95),
-					  transparentize($color__tertiary, 0.95) 2px,
-					  transparentize($color__tertiary, 1) 4px,
-					  transparentize($color__tertiary, 1) 8px
-					),
-			$color__white;
 	color: $color__text-main;
-	border-top: 4px solid $color__tertiary;
-	padding: $size__site-gutter / 1.5;
 	text-align: left;
-	margin: 0 auto;
+	//margin: 0 auto;
 	max-width: $size__site-width / 1.75;
 }
 
 /* Labels */
 label {
+	color: desaturate(lighten($color__text-screen, 20%), 10%);
 	font-family: $font__sans;
 	font-size: 0.8em;
 	font-weight: 500;
@@ -45,6 +37,7 @@ textarea {
 		background: transparentize( $color__white, 0.5 );
 		border-color: $color__border-input-focus;
 		color: $color__text-input-focus;
+		outline: 0;
 	}
 }
 

@@ -3174,18 +3174,14 @@ table {
 --------------------------------------------------------------*/
 /* Overall form */
 form {
-  background: -webkit-repeating-linear-gradient(45deg, rgba(233, 213, 192, 0.05), rgba(233, 213, 192, 0.05) 2px, rgba(233, 213, 192, 0) 4px, rgba(233, 213, 192, 0) 8px), #FCFBF9;
-  background: repeating-linear-gradient(45deg, rgba(233, 213, 192, 0.05), rgba(233, 213, 192, 0.05) 2px, rgba(233, 213, 192, 0) 4px, rgba(233, 213, 192, 0) 8px), #FCFBF9;
   color: #666;
-  border-top: 4px solid #E9D5C0;
-  padding: 26.66667px;
   text-align: left;
-  margin: 0 auto;
   max-width: 651.42857px;
 }
 
 /* Labels */
 label {
+  color: #78716a;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
   font-weight: 500;
@@ -3201,9 +3197,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #ccc;
+  color: #928b83;
   background: #FCFBF9;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #aaa49e;
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
   font-size: 0.9em;
@@ -3218,8 +3214,9 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
   background: rgba(252, 251, 249, 0.5);
-  border-color: #c8beb3;
-  color: #483E34;
+  border-color: #83B6CC;
+  color: #83B6CC;
+  outline: 0;
 }
 
 input[type="text"],
@@ -3265,7 +3262,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background-color: #b3a495;
-  border-color: #483E34;
+  border-color: #83B6CC;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
 }
 button:active, .more-link:active, button:focus, .more-link:focus,
@@ -3276,7 +3273,7 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   background-color: #b3a495;
-  border-color: #483E34;
+  border-color: #83B6CC;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 button.minimal, .minimal.more-link,
@@ -4420,6 +4417,25 @@ time + .updated {
 
 .tags-links::before {
   content: "";
+}
+
+#commentform .logged-in-as,
+#commentform .comment-notes {
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#form-allowed-tags {
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+#form-allowed-tags code {
+  display: block;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  font-style: normal;
 }
 
 /*--------------------------------------------------------------
