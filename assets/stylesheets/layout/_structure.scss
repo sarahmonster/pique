@@ -160,6 +160,16 @@
 	position: relative;
 	z-index: 1000;
 
+	.widget {
+		border-top: none;
+	}
+	
+	.widget_nav_menu {
+		a {
+			color: $color__white;
+		}
+	}
+
 	@include tablet {
 		margin-bottom: 15px;
 

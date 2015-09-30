@@ -3746,6 +3746,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
+  border-top: 2px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
   /* Make sure select elements fit in widgets. */
 }
@@ -3761,6 +3762,16 @@ a:hover, a:active {
 /* Nav widget */
 .widget_nav_menu ul {
   list-style-type: none;
+}
+.widget_nav_menu a {
+  border-top: 1px solid rgba(233, 213, 192, 0.5);
+  color: #483E34;
+  display: block;
+  padding: 7px 0;
+}
+.widget_nav_menu a:hover {
+  border-bottom: none;
+  background-color: rgba(233, 213, 192, 0.15);
 }
 .widget_nav_menu .menu {
   margin: 0;
@@ -3928,6 +3939,12 @@ a:hover, a:active {
   padding: 40px 0 10px;
   position: relative;
   z-index: 1000;
+}
+#tertiary .widget {
+  border-top: none;
+}
+#tertiary .widget_nav_menu a {
+  color: #FCFBF9;
 }
 @media (min-width: 768px) {
   #tertiary {

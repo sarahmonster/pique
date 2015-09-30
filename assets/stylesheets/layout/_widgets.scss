@@ -1,5 +1,6 @@
 .widget {
 	margin: 0 0 1.5em;
+	border-top: 2px solid $color__secondary;
 	font-family: $font__sans;
 
 	/* Make sure select elements fit in widgets. */
@@ -22,6 +23,18 @@
   ul {
     list-style-type: none;
   }
+
+	a {
+		border-top: 1px solid transparentize($color__tertiary, 0.5);
+		color: $color__primary;
+		display: block;
+		padding: 7px 0;
+
+		&:hover {
+			border-bottom: none;
+			background-color: transparentize($color__tertiary, 0.85);
+		}
+	}
 
   .menu {
     margin: 0;
