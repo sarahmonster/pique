@@ -11,7 +11,7 @@
 	}
 
 	.widget-area {
-		display: none;
+
 	}
 } // .site-content
 
@@ -21,16 +21,16 @@
 		margin-top: 5em;
 
 		.content-area {
-			float: left;
-			padding-right: $size__site-gutter;
+			float: right;
+			padding-left: $size__site-gutter;
 			width: 66%;
 		}
 
 		.widget-area {
 			display: block;
-			float: left;
+			float: right;
 			@include font-size(0.95);
-			padding-left: $size__site-gutter;
+			padding-right: $size__site-gutter;
 			width: 33%;
 		}
 	}
@@ -163,7 +163,7 @@
 	.widget {
 		border-top: none;
 	}
-	
+
 	.widget_nav_menu {
 		a {
 			color: $color__white;

@@ -3857,9 +3857,6 @@ a:hover, a:active {
   padding: 20px;
   max-width: 1440px;
 }
-.site-content .widget-area {
-  display: none;
-}
 
 /* On desktop devices, we'll show a sidebar next to our content */
 @media (min-width: 1024px) {
@@ -3867,16 +3864,16 @@ a:hover, a:active {
     margin-top: 5em;
   }
   .site-content .content-area {
-    float: left;
-    padding-right: 40px;
+    float: right;
+    padding-left: 40px;
     width: 66%;
   }
   .site-content .widget-area {
     display: block;
-    float: left;
+    float: right;
     font-size: 15.2px;
     font-size: 0.95rem;
-    padding-left: 40px;
+    padding-right: 40px;
     width: 33%;
   }
 }
