@@ -29,9 +29,9 @@ h6 {
 }
 
 h1 {
-  color: $color__tertiary;
-  font-size: $font__size-h1;
-  letter-spacing: -2px;
+	@include font-size(2.1);
+	font-family: $font__serif;
+	font-style: italic;
 }
 
 h2 {
