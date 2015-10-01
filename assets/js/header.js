@@ -14,7 +14,11 @@
 			// For teensy little mobile screens, we want to position the nav before the header elements. Let's do it!
 			var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 40;
 			var piqueHeroContent = $('#pique-hero').find('.pique-panel-content');
-			$(piqueHeroContent).css('margin-top', piqueBrandingHeight);
+			if( $('#masthead').hasClass('pique-unstuck-header') {
+
+			} else {
+				$(piqueHeroContent).css('margin-top', piqueBrandingHeight);
+			}
 
 		// If we're not on the front page, we'll measure the height of the header
 		// image and the height of our nav to determine our overall header height.

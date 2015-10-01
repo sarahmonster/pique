@@ -56,18 +56,20 @@
       element: document.getElementById( 'pique-hero' ),
       handler: function() {
         $( '#masthead' ).toggleClass( 'pique-unstuck-header' );
-        console.log("Switch!");
+        //console.log("Switch!");
       },
       offset: -150
     })
 
-    var waypoint = new Waypoint({
+    /*var waypoint = new Waypoint({
       element: document.getElementById( 'pique-hero' ),
       handler: function() {
-        $( '#masthead' ).addClass( 'pique-unstuck-header' );
+
         console.log("Top of page");
       }
-    })
+  })*/
+  // Add the "unstuck header" class to our page when we initially load the page
+  $( '#masthead' ).addClass( 'pique-unstuck-header' );
 
   });
 } )( jQuery );

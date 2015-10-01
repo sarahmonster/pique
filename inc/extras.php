@@ -79,7 +79,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 		if ( ! isset ( $this->top_level_count ) ) :
 			$this->top_level_count = 0;
 			foreach ( $menu_items as $menu_item ) :
-				if ( 0 === $menu_item->menu_item_parent ) :
+				if ( 0 == $menu_item->menu_item_parent ) :
 					$this->top_level_count++;
 				endif;
 			endforeach;
@@ -90,8 +90,8 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 			$iterator = 0;
 			foreach ( $menu_items as $menu_item ) :
-				if ( 0 === $menu_item->menu_item_parent ) :
-					if ( $iterator === $this->break_point ) :
+				if ( 0 == $menu_item->menu_item_parent ) :
+					if ( $iterator == $this->break_point ) :
 						$this->id_to_split_on = $menu_item->ID;
 					endif;
 					$iterator++;
@@ -112,7 +112,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 		$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		if ( $this->id_to_split_on === $item->ID ) {
+		if ( $this->id_to_split_on == $item->ID ) {
 			$output .= $indent . '</li></span><span class="pique-split-nav"><li' . $id . $value . $class_names .'>';
 		} else {
 			$output .= $indent . '<li' . $id . $value . $class_names . '>';

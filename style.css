@@ -3458,74 +3458,6 @@ a:hover, a:active {
   color: #E9D5C0;
 }
 
-@media (max-width: 767px) {
-  #mastheader .site-branding {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  #mastheader {
-    background: #483E34;
-    padding: 0.5em;
-    position: fixed;
-    top: 0;
-    -webkit-transition: all 0.1s ease-in-out 0s;
-            transition: all 0.1s ease-in-out 0s;
-    width: 100%;
-    z-index: 10000;
-  }
-  #mastheader .site-branding {
-    position: absolute;
-    line-height: 1;
-    padding: 10px;
-    text-align: center;
-    z-index: 100;
-    left: calc(50% - 50px);
-    top: -6px;
-    height: 71px;
-    width: 100px;
-  }
-  #mastheader .site-branding .site-logo-link img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  #mastheader .site-branding .site-title {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-  #mastheader .site-branding .site-title a {
-    text-decoration: none;
-  }
-  #mastheader .site-branding .site-description {
-    display: none;
-  }
-  #mastheader .pique-split-nav {
-    width: calc(50% - 50px);
-  }
-  #mastheader .pique-split-nav:first-of-type {
-    float: left;
-    text-align: right;
-  }
-  #mastheader .pique-split-nav:last-of-type {
-    float: right;
-    text-align: left;
-  }
-  #mastheader.pique-unstuck-header {
-    background: transparent;
-    position: absolute;
-    top: 2em;
-  }
-  #mastheader.pique-unstuck-header .site-branding {
-    width: 150px;
-    position: absolute;
-    left: calc(50% - 75px);
-    top: -75%;
-    height: auto;
-  }
-  #mastheader.pique-unstuck-header .pique-split-nav {
-    width: calc(50% - 75px);
-  }
-}
 .secondary-links ul {
   margin: 0;
   padding: 0;
@@ -4083,6 +4015,74 @@ a:hover, a:active {
   }
   .page-template-page-templatestemplate-front-php #site-navigation {
     position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php #masthead {
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+            transition: all 0.1s ease-in-out 0s;
+    width: 100%;
+    z-index: 10000;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding {
+    position: absolute;
+    line-height: 1;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+    left: calc(50% - 50px);
+    top: -6px;
+    height: 71px;
+    width: 100px;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-logo-link img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title a {
+    text-decoration: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-description {
+    display: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav {
+    width: calc(50% - 50px);
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:first-of-type {
+    float: left;
+    text-align: right;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:last-of-type {
+    float: right;
+    text-align: left;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header {
+    position: absolute;
+    top: 2em;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header #site-navigation {
+    background: transparent;
+    border: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header ul {
+    margin: 1rem 0;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding {
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: -75%;
+    height: auto;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav {
+    width: calc(50% - 75px);
   }
 }
 .page-template-page-templatestemplate-front-php .site-content,
