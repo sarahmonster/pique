@@ -3240,11 +3240,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 2px solid;
-  border-color: #665849;
+  border-color: #83B6CC;
   border-radius: 0;
-  background: #c8beb3;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-  color: #483E34;
+  background: #eff6f9;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.125);
+  color: #83B6CC;
   font-size: 15.2px;
   font-size: 0.95rem;
   font-family: Karla, Arial, sans-serif;
@@ -3257,13 +3257,24 @@ input[type="submit"] {
   -webkit-transition: all 0.2s ease-in-out 0s;
           transition: all 0.2s ease-in-out 0s;
 }
+@media (max-width: 767px) {
+  button, .more-link,
+  .more-link:visited,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    width: 75%;
+  }
+}
 button:hover, .more-link:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #b3a495;
-  border-color: #83B6CC;
+  background-color: #3c7993;
+  border-color: #cbe1ea;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 button:active, .more-link:active, button:focus, .more-link:focus,
 input[type="button"]:active,
@@ -3280,11 +3291,11 @@ button.minimal, .minimal.more-link,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
-  background: transparent;
-  border-color: #FCFBF9;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  color: #FCFBF9;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  background-color: #83B6CC;
+  border-color: white;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 button.minimal:active, .minimal.more-link:active, button.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .minimal.more-link:hover,
 input[type="button"].minimal:active,
@@ -3296,9 +3307,11 @@ input[type="reset"].minimal:hover,
 input[type="submit"].minimal:active,
 input[type="submit"].minimal:focus,
 input[type="submit"].minimal:hover {
-  border-color: #ebe4d7;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25), inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+  background-color: #3c7993;
+  border-color: #cbe1ea;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 767px) {
@@ -3306,7 +3319,7 @@ input[type="submit"].minimal:hover {
   .more-link:visited + button, button + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     display: block;
-    margin-top: 1em;
+    margin: 1em auto;
   }
 }
 @media (min-width: 768px) {
@@ -4358,7 +4371,7 @@ time + .updated {
   margin: 0.5em auto;
   font-size: 0.8em;
   padding: 0.75em 1.5em;
-  color: #483E34;
+  color: #83B6CC;
 }
 
 .page-links {

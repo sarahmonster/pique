@@ -61,11 +61,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 2px solid;
-	border-color: $color__border-button;
+	border-color: $color__secondary;
 	border-radius: 0;
-	background: $color__background-button;
-	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-	color: $color__text-button;
+	background: lighten($color__secondary, 30%);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.125);
+	color: $color__secondary;
 	@include font-size(0.95);
 	font-family: $font__sans;
 	font-weight: bold;
@@ -76,10 +76,16 @@ input[type="submit"] {
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out 0s;
 
+	@include mobile {
+		width: 75%;
+	}
+
 	&:hover {
-		background-color: $color__background-button-hover;
-		border-color: $color__border-button-hover;
+		background-color: darken($color__secondary, 25%);
+		border-color: lighten($color__secondary, 20%);
 		box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+		color: lighten($color__secondary, 40%);
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 	}
 
 	&:active,
@@ -90,18 +96,20 @@ input[type="submit"] {
 	}
 
 	&.minimal {
-		background: transparent;
-		border-color: $color__white;
-		box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-		color: $color__white;
-		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+		background-color: $color__secondary;
+		border-color: lighten($color__secondary, 40%);
+		box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+		color: lighten($color__secondary, 40%);
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 
 		&:active,
 		&:focus,
 		&:hover {
-			border-color: darken($color__white, 10%);
-			box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25), inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+			background-color: darken($color__secondary, 25%);
+			border-color: lighten($color__secondary, 20%);
+			box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+			color: lighten($color__secondary, 40%);
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 		}
 	} // .minimal
 } // button
@@ -109,7 +117,7 @@ input[type="submit"] {
 button + button {
 	@include mobile {
 		display: block;
-		margin-top: 1em;
+		margin: 1em auto;
 	}
 
 	@include tablet {

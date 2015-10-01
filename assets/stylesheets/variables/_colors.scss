@@ -25,8 +25,8 @@ $color__text-input-focus: $color__blue;
 $color__text-screen: $color__primary;
 $color__text-input: desaturate(lighten($color__text-screen, 30%), 10%);
 
-$color__background-button: lighten($color__primary, 50%);
-$color__background-button-hover: lighten($color__primary, 40%);
+$color__background-button: lighten($color__secondary, 40%);
+$color__background-button-hover: lighten($color__secondary, 20%);
 $color__background-button-focus: lighten($color__primary, 40%);
 
 $color__link: $color__secondary;
@@ -34,11 +34,11 @@ $color__link-visited: $color__secondary;
 $color__link-hover: $color__tertiary;
 $color__text-main: $color__dark-grey;
 $color__text-headings: $color__secondary;
-$color__text-button: $color__primary;
+$color__text-button: $color__secondary;
 
 $color__border-abbr: $color__light-black;
-$color__border-button: lighten($color__primary, 10%);
-$color__border-button-hover: $color__secondary;
+$color__border-button: $color__secondary;
+$color__border-button-hover: darken($color__secondary, 10%);
 $color__border-button-focus: $color__secondary;
 $color__border-input: desaturate(lighten($color__text-screen, 40%), 10%);
 $color__border-input-focus: $color__secondary;
