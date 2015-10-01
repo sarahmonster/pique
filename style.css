@@ -3034,7 +3034,8 @@ dfn, cite, em, i {
 
 blockquote {
   border-top: 2px solid;
-  font-size: 2em;
+  color: #aaa49e;
+  font-size: 1.3em;
   font-style: italic;
   margin: 3em auto;
   max-width: 933.33333px;
@@ -3049,6 +3050,7 @@ blockquote:before {
   font-weight: bolder;
   line-height: 0.25em;
   margin: 4px auto 0;
+  text-shadow: none;
 }
 blockquote p {
   text-align: left;
@@ -3059,6 +3061,7 @@ blockquote cite {
   display: block;
   font-style: normal;
   font-size: 0.5em;
+  margin-top: 1.5rem;
   text-align: right;
 }
 blockquote cite::before {
@@ -4121,6 +4124,11 @@ a:hover, a:active {
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php .pique-panel-content {
+    padding: 40px;
+  }
+}
 .page-template-page-templatestemplate-front-php .pique-panel-content h2 {
   border: 2px solid #FCFBF9;
   color: #FCFBF9;
@@ -4136,6 +4144,14 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
   max-width: 933.33333px;
   margin: 0 auto;
+}
+.page-template-page-templatestemplate-front-php .pique-panel-content blockquote {
+  color: #FCFBF9;
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php .pique-panel-content blockquote {
+    font-size: 1.75em;
+  }
 }
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
   font-size: 1.5em;

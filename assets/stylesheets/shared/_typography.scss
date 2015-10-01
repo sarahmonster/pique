@@ -72,9 +72,10 @@ dfn, cite, em, i {
 
 blockquote {
   border-top: 2px solid;
-  font-size: 2em;
+  color: desaturate(lighten($color__text-screen, 40%), 10%);
+  font-size: 1.3em;
   font-style: italic;
-	margin: 3em auto;
+  margin: 3em auto;
   max-width: $size__site-width / 1.5;
   text-align: center;
 
@@ -87,6 +88,7 @@ blockquote {
     font-weight: bolder;
     line-height: 0.25em;
     margin: 4px auto 0;
+    text-shadow: none;
   }
 
   p {
@@ -100,6 +102,7 @@ blockquote {
     display: block;
     font-style: normal;
     font-size: 0.5em;
+    margin-top: 1.5rem;
     text-align: right;
 
     &::before {
