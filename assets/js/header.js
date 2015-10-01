@@ -12,7 +12,7 @@
 		// If we're on the homepage, we'll handle things a little differently
 		if ($('body').hasClass('page-template-page-templatestemplate-front-php')) {
 			// For teensy little mobile screens, we want to position the nav before the header elements. Let's do it!
-			var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 20;
+			var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 40;
 			var piqueHeroContent = $('#pique-hero').find('.pique-panel-content');
 			$(piqueHeroContent).css('margin-top', piqueBrandingHeight);
 

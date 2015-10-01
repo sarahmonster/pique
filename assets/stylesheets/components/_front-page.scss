@@ -56,8 +56,9 @@
     color: $color__white;
     margin: 0 auto;
     max-width: $size__site-width;
-    padding: $size__site-gutter;
+    padding: $size__site-gutter / 2;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 
     h2 {
       border: 2px solid $color__white;
@@ -85,7 +86,6 @@
       font-size: 1.5em;
       max-width: $size__site-width;
       text-align: center;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 
       @include tablet {
         margin-top: 6em;
@@ -123,14 +123,14 @@
   .pique-template-grid {
 
     article {
-      font-size: 0.85em;
+      font-size: 0.9em;
       text-align: center;
     }
 
     img {
       border-radius: 50%;
       margin: 0 auto;
-      max-width: 80%;
+      max-width: 60%;
     }
 
     p {

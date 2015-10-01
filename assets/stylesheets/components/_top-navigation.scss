@@ -27,7 +27,9 @@
 }
 
 .main-navigation {
-	background: $color__primary;
+	background: darken($color__primary, 10%);
+	border-bottom: 1px solid $color__primary;
+	border-top: 1px solid $color__primary;
 	clear: both;
 	display: block;
 	font-family: $font__sans;
@@ -96,20 +98,19 @@
 		letter-spacing: 1px;
 		padding: 5px 10px;
 		text-transform: uppercase;
+
+		&:hover {
+			border-bottom: none;
+			color: lighten($color__secondary, 10%);
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		color: $color__tertiary;
 	}
 }
-
-
-
-
-
-
-
 
 @include mobile {
 	#mastheader .site-branding {
