@@ -3380,13 +3380,16 @@ a:hover, a:active {
 }
 #masthead .site-logo-link {
   display: inline-block;
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem;
   width: 100px;
 }
 @media (min-width: 768px) {
   #masthead .site-logo-link {
     width: 150px;
   }
+}
+#masthead .site-logo-link:hover {
+  border-bottom: none;
 }
 
 .main-navigation {
@@ -4048,12 +4051,25 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .page-template-page-templatestemplate-front-php {
   /* Hero area */
-  /* Content-heavy pages use a white background */
+  /* Content-heavy pages */
   /* Grid template panel */
   /* Testimonial panel */
   /* Recent blog posts panel */
   /* Full-width panel */
   /* Overlays */
+}
+@media (max-width: 767px) {
+  .page-template-page-templatestemplate-front-php #masthead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+    margin-top: 2em;
+  }
+  .page-template-page-templatestemplate-front-php #site-navigation {
+    position: relative;
+  }
 }
 .page-template-page-templatestemplate-front-php .site-content,
 .page-template-page-templatestemplate-front-php .content-area {
@@ -4104,9 +4120,6 @@ a:hover, a:active {
   padding: 0.7rem 1.5rem;
   position: relative;
   text-transform: uppercase;
-}
-.page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
-  color: #FCFBF9;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
   max-width: 933.33333px;
@@ -4260,7 +4273,7 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 }
 .page-template-page-templatestemplate-front-php .overlay {
   background: #483E34;
-  border-top: 4px solid #E9D5C0;
+  border-top: 4px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
   max-width: 700px;
@@ -4283,8 +4296,6 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   }
 }
 .page-template-page-templatestemplate-front-php .overlay h3, .page-template-page-templatestemplate-front-php .overlay blockquote cite, blockquote .page-template-page-templatestemplate-front-php .overlay cite, .page-template-page-templatestemplate-front-php .overlay .widget-title {
-  border-bottom: none;
-  color: #E9D5C0;
   margin-bottom: 0;
 }
 .page-template-page-templatestemplate-front-php .overlay p {
