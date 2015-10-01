@@ -10,7 +10,6 @@
 
   .pique-panel {
     background-color: darken(saturate($color__primary, 10%), 5%);
-    background-image: url(assets/images/noise.png);
     border-bottom: 1px solid transparentize($color__black, 0.5);
     border-top: 1px solid transparentize($color__white, 0.75);
     min-height: 100vh;
@@ -27,7 +26,7 @@
     background-attachment: fixed;
     bottom: 0;
     -webkit-filter: brightness(.75);
-            filter: brightness(.75);
+        filter: brightness(.75);
     left: 0;
     position: absolute;
     right: 0;
@@ -44,27 +43,16 @@
     text-align: center;
 
     h2 {
-      background: $color__white;
-      color: $color__tertiary;
+      border: 2px solid $color__white;
+      color: $color__white;
       display: inline-block;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: 600;
       letter-spacing: 2px;
       margin-left: 0;
-      padding: 15px 25px;
+      padding: 0.7rem 1.5rem;
       position: relative;
       text-transform: uppercase;
-
-      &::before {
-        content: '';
-        border: 1px solid;
-        display: block;
-        position: absolute;
-          top: 4px;
-          right: 4px;
-          left: 4px;
-          bottom: 4px;
-      }
     }
 
     h3 {
@@ -96,10 +84,10 @@
   .pique-template-grid,
   .pique-template-testimonials,
   .pique-template-recent-posts {
-    background-color: $color__white;
+    //background-color: $color__white;
 
     .pique-panel-content {
-      color: $color__text-main;
+      //color: $color__text-main;
 
       .entry-content {
         max-width: none;

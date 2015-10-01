@@ -4051,7 +4051,6 @@ a:hover, a:active {
 }
 .page-template-page-templatestemplate-front-php .pique-panel {
   background-color: #3e3124;
-  background-image: url(assets/images/noise.png);
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
   border-top: 1px solid rgba(252, 251, 249, 0.25);
   min-height: 100vh;
@@ -4082,26 +4081,16 @@ a:hover, a:active {
   text-align: center;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h2 {
-  background: #FCFBF9;
-  color: #E9D5C0;
+  border: 2px solid #FCFBF9;
+  color: #FCFBF9;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 2px;
   margin-left: 0;
-  padding: 15px 25px;
+  padding: 0.7rem 1.5rem;
   position: relative;
   text-transform: uppercase;
-}
-.page-template-page-templatestemplate-front-php .pique-panel-content h2::before {
-  content: '';
-  border: 1px solid;
-  display: block;
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  left: 4px;
-  bottom: 4px;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content h3, .page-template-page-templatestemplate-front-php .pique-panel-content blockquote cite, blockquote .page-template-page-templatestemplate-front-php .pique-panel-content cite, .page-template-page-templatestemplate-front-php .pique-panel-content .widget-title {
   color: #FCFBF9;
@@ -4120,16 +4109,6 @@ a:hover, a:active {
   .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
     margin-top: 6em;
   }
-}
-.page-template-page-templatestemplate-front-php .pique-template-grid,
-.page-template-page-templatestemplate-front-php .pique-template-testimonials,
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts {
-  background-color: #FCFBF9;
-}
-.page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content,
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content,
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content {
-  color: #666;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .entry-content,
