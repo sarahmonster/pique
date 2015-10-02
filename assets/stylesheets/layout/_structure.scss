@@ -34,6 +34,12 @@
 			width: 33%;
 		}
 	}
+
+	.page-template-template-full-width .content-area {
+		float: none;
+		padding-left: 0;
+		width: 100%;
+	}
 }
 
 /* Grid structures for tablet devices and larger */

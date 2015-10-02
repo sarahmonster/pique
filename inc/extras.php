@@ -32,7 +32,7 @@ add_filter( 'body_class', 'pique_body_classes' );
 function pique_post_classes( $classes ) {
 	// Adds the page template slug, if we're using one, to the array of classes
 	// We're stripping the prefixed folder name and the .php suffix for prettier CSS
-	if ( get_page_template_slug() ) :
+	if ( get_page_template_slug() && '' !== get_page_template_slug() ) :
 		$simple_slug = get_page_template_slug();
 		$simple_slug = explode( '.', $simple_slug )[0];
 		$simple_slug = explode( '/', $simple_slug )[1];
