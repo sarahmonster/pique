@@ -12,9 +12,11 @@
  */
 function pique_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'container' => 'primary',
+		'type'      => 'click',
+		'wrapper'   => true,
 		'render'    => 'pique_infinite_scroll_render',
-		'footer'    => 'page',
+		'footer'    => 'tertiary',
 	) );
 } // end function pique_jetpack_setup
 add_action( 'after_setup_theme', 'pique_jetpack_setup' );

@@ -8,3 +8,37 @@
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+#infinite-footer {
+	font-family: $font__sans;
+	width: 100%;
+	z-index: 1000000;
+
+	.container {
+		width: 100%;
+	}
+
+	#infinity-blog-title {
+		font-weight: normal;
+	}
+}
+
+.infinite-scroll #infinite-handle {
+	@extend .posts-navigation;
+	display: block;
+	text-align: center;
+
+	span {
+		background: none;
+	}
+
+	button {
+		@extend button;
+
+		&:hover {
+			@extend button:hover;
+			font-family: $font__sans;
+			padding: inherit;
+		}
+	}
+}
