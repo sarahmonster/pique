@@ -157,7 +157,7 @@ class Pique_Menu extends Walker_Nav_Menu {
  * we give it a proper hellip for the more text.
  */
 function pique_custom_excerpt_length( $length ) {
-	return 26;
+	return 42;
 }
 add_filter( 'excerpt_length', 'pique_custom_excerpt_length', 999 );
 

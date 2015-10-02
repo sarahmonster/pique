@@ -57,6 +57,7 @@ textarea {
 
 /* Buttons */
 button,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -66,6 +67,7 @@ input[type="submit"] {
 	background: lighten($color__secondary, 30%);
 	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.125);
 	color: $color__secondary;
+	display: inline-block;
 	@include font-size(0.95);
 	font-family: $font__sans;
 	font-weight: bold;
@@ -116,8 +118,7 @@ input[type="submit"] {
 
 button + button {
 	@include mobile {
-		display: block;
-		margin: 1em auto;
+		margin-top: 1em;
 	}
 
 	@include tablet {

@@ -59,11 +59,6 @@ time + .updated {
 .more-link,
 .more-link:visited {
   @extend button;
-  border-width: 1px;
-  margin: 0.5em auto;
-  font-size: 0.8em;
-  padding: 0.75em 1.5em;
-  color: $color__text-button;
 }
 
 .page-links {

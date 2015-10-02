@@ -1,104 +1,6 @@
-.page-template-page-templatestemplate-front-php {
-
-  // Let's make some mobile-specific adjustments for this page.
-  @include mobile {
-    #masthead {
-      position: absolute;
-        top: 0;
-      width: 100%;
-    }
-
-    .pique-hero .pique-panel-content {
-      margin-top: 2em;
-    }
-
-    #site-navigation {
-      position: relative;
-    }
-  }
-
-  // Annnnnnd some for tablets and up
-  @include tablet {
-  	#masthead {
-  		padding: 0.5em;
-  		position: fixed;
-  			top: 0;
-  		transition: all 0.1s ease-in-out 0s;
-  		width: 100%;
-  		z-index: 10000;
-
-  		.site-branding {
-  			position: absolute;
-  			line-height: 1;
-  			padding: 10px 0;
-  			text-align: center;
-  			z-index: 100;
-  			left: calc(50% - 50px);
-  			top: -6px;
-  			height: 71px;
-  			width: 100px;
-
-  			.site-logo-link img {
-  				margin: 0 auto;
-  				max-width: 100%;
-  			}
-
-  			.site-title {
-  				@include font-size(1);
-
-  				a {
-  					text-decoration: none;
-  				}
-  			}
-
-  			.site-description {
-  				display: none;
-  			}
-  		} // .site-branding
-
-  		.pique-split-nav {
-  			width: calc(50% - 50px);
-
-  			&:first-of-type {
-  				float: left;
-  				text-align: right;
-  			}
-
-  			&:last-of-type {
-  				float: right;
-  				text-align: left;
-  			}
-  		} // .pique-split-nav
-
-  		&.pique-unstuck-header {
-  			position: absolute;
-  				top: 2em;
-
-      #site-navigation {
-        background: transparent;
-        border: none;
-      }
-
-      ul {
-        margin: 1rem 0;
-      }
-
-  			.site-branding {
-  				width: 150px;
-  				position: absolute;
-  					left: calc(50% - 75px);
-  					top: -75%;
-  				height: auto;
-  			}
-
-  			.pique-split-nav {
-  				width: calc(50% - 75px);
-  			}
-  		} // .pique-unstuck-header
-
-  	} // #masthead
-  } // tablet
-
+.page-template-page-templatestemplate-front-php,
+.archive,
+.blog {
   .site-content,
   .content-area {
     margin: 0;
@@ -108,7 +10,7 @@
   }
 
   .pique-panel {
-    background-color: darken(saturate($color__primary, 10%), 5%);
+    background-color: darken(saturate($color__primary, 10%), 15%);
     border-bottom: 1px solid transparentize($color__black, 0.5);
     border-top: 1px solid transparentize($color__white, 0.75);
     min-height: 100vh;
@@ -117,15 +19,15 @@
     width: 100%;
 
     &:nth-of-type(even) {
-      background-color: darken(saturate($color__secondary, 10%), 5%);
+      background-color: darken(saturate($color__secondary, 10%), 45%);
     }
   }
 
   .pique-panel-background {
     background-attachment: fixed;
     bottom: 0;
-    -webkit-filter: brightness(.75);
-        filter: brightness(.75);
+    -webkit-filter: brightness(.5);
+        filter: brightness(.5);
     left: 0;
     position: absolute;
     right: 0;
@@ -160,8 +62,24 @@
     }
 
     .entry-content {
-      max-width: $size__site-width / 1.5;
-      margin: 0 auto;
+      margin: 1em auto;
+      max-width: $size__site-width / 2;
+      text-align: left;
+
+      .read-more {
+        margin: 1em auto;
+        text-align: center;
+
+        a {
+          @extend button;
+
+          &::after {
+            @include fontawesome;
+      			  content: $fa-var-arrow-right;
+            display: inline-block;
+          }
+        }
+      }
     }
 
     blockquote {
@@ -179,7 +97,10 @@
     .pique-panel-content {
       font-size: 1.5em;
       max-width: $size__site-width;
-      text-align: center;
+
+      .entry-content {
+        text-align: center;
+      }
 
       @include tablet {
         margin-top: 6em;

@@ -60,7 +60,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous a::before,
 .post-navigation .nav-previous a::before, .comment-navigation .nav-next a::after,
 .posts-navigation .nav-next a::after,
-.post-navigation .nav-next a::after, .cat-links::before,
+.post-navigation .nav-next a::after, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a::after,
+.archive .pique-panel-content .entry-content .read-more a::after,
+.blog .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
 .tags-links::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -136,7 +138,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous a.fa-pull-left::before,
 .post-navigation .nav-previous a.fa-pull-left::before, .comment-navigation .nav-next a.fa-pull-left::after,
 .posts-navigation .nav-next a.fa-pull-left::after,
-.post-navigation .nav-next a.fa-pull-left::after, .fa-pull-left.cat-links::before,
+.post-navigation .nav-next a.fa-pull-left::after, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
+.archive .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
+.blog .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
 .fa-pull-left.tags-links::before {
   margin-right: .3em;
 }
@@ -144,7 +148,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous a.fa-pull-right::before,
 .post-navigation .nav-previous a.fa-pull-right::before, .comment-navigation .nav-next a.fa-pull-right::after,
 .posts-navigation .nav-next a.fa-pull-right::after,
-.post-navigation .nav-next a.fa-pull-right::after, .fa-pull-right.cat-links::before,
+.post-navigation .nav-next a.fa-pull-right::after, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
+.archive .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
+.blog .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
 .fa-pull-right.tags-links::before {
   margin-left: .3em;
 }
@@ -162,7 +168,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous a.pull-left::before,
 .post-navigation .nav-previous a.pull-left::before, .comment-navigation .nav-next a.pull-left::after,
 .posts-navigation .nav-next a.pull-left::after,
-.post-navigation .nav-next a.pull-left::after, .pull-left.cat-links::before,
+.post-navigation .nav-next a.pull-left::after, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.pull-left::after,
+.archive .pique-panel-content .entry-content .read-more a.pull-left::after,
+.blog .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
 .pull-left.tags-links::before {
   margin-right: .3em;
 }
@@ -170,7 +178,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous a.pull-right::before,
 .post-navigation .nav-previous a.pull-right::before, .comment-navigation .nav-next a.pull-right::after,
 .posts-navigation .nav-next a.pull-right::after,
-.post-navigation .nav-next a.pull-right::after, .pull-right.cat-links::before,
+.post-navigation .nav-next a.pull-right::after, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.pull-right::after,
+.archive .pique-panel-content .entry-content .read-more a.pull-right::after,
+.blog .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
 .pull-right.tags-links::before {
   margin-left: .3em;
 }
@@ -2835,7 +2845,9 @@ samp {
   font-size: 1em;
 }
 
-button, .more-link,
+button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 input,
 optgroup,
@@ -2846,18 +2858,24 @@ textarea {
   margin: 0;
 }
 
-button, .more-link,
+button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited {
   overflow: visible;
 }
 
-button, .more-link,
+button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 select {
   text-transform: none;
 }
 
-button, .more-link,
+button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 html input[type="button"],
 input[type="reset"],
@@ -2866,12 +2884,16 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-button[disabled], [disabled].more-link,
+button[disabled], .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a[disabled],
+.archive .pique-panel-content .entry-content .read-more a[disabled],
+.blog .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
 html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner, .more-link::-moz-focus-inner,
+button::-moz-focus-inner, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
+.archive .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
+.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
 .more-link:visited::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2937,6 +2959,9 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a,
 .more-link,
 .more-link:visited,
 input,
@@ -3237,8 +3262,11 @@ textarea {
 }
 
 /* Buttons */
-button, .more-link,
+button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -3248,6 +3276,7 @@ input[type="submit"] {
   background: #eff6f9;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.125);
   color: #83B6CC;
+  display: inline-block;
   font-size: 15.2px;
   font-size: 0.95rem;
   font-family: Karla, Arial, sans-serif;
@@ -3261,15 +3290,21 @@ input[type="submit"] {
           transition: all 0.2s ease-in-out 0s;
 }
 @media (max-width: 767px) {
-  button, .more-link,
+  button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+  .archive .pique-panel-content .entry-content .read-more a,
+  .blog .pique-panel-content .entry-content .read-more a, .more-link,
   .more-link:visited,
+  .button,
   input[type="button"],
   input[type="reset"],
   input[type="submit"] {
     width: 75%;
   }
 }
-button:hover, .more-link:hover,
+button:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
+.archive .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
+.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -3279,7 +3314,13 @@ input[type="submit"]:hover {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-button:active, .more-link:active, button:focus, .more-link:focus,
+button:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active,
+.archive .pique-panel-content .entry-content .read-more a:active,
+.blog .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
+.archive .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
+.button:active,
+.button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -3290,7 +3331,10 @@ input[type="submit"]:focus {
   border-color: #83B6CC;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-button.minimal, .minimal.more-link,
+button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal,
+.archive .pique-panel-content .entry-content .read-more a.minimal,
+.blog .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
+.button.minimal,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
@@ -3300,7 +3344,16 @@ input[type="submit"].minimal {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-button.minimal:active, .minimal.more-link:active, button.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .minimal.more-link:hover,
+button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:active,
+.archive .pique-panel-content .entry-content .read-more a.minimal:active,
+.blog .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:focus,
+.archive .pique-panel-content .entry-content .read-more a.minimal:focus,
+.blog .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:hover,
+.archive .pique-panel-content .entry-content .read-more a.minimal:hover,
+.blog .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
+.button.minimal:active,
+.button.minimal:focus,
+.button.minimal:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -3318,16 +3371,35 @@ input[type="submit"].minimal:hover {
 }
 
 @media (max-width: 767px) {
-  button + button, .more-link + button,
-  .more-link:visited + button, button + .more-link, .more-link + .more-link,
+  button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
+  .archive .pique-panel-content .entry-content .read-more a + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a,
+  .archive .pique-panel-content .entry-content .read-more button + a,
+  .archive .pique-panel-content .entry-content .read-more a + a,
+  .archive .pique-panel-content .entry-content .read-more .more-link + a,
+  .blog .pique-panel-content .entry-content .read-more button + a,
+  .blog .pique-panel-content .entry-content .read-more a + a,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .archive .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
-    display: block;
-    margin: 1em auto;
+    margin-top: 1em;
   }
 }
 @media (min-width: 768px) {
-  button + button, .more-link + button,
-  .more-link:visited + button, button + .more-link, .more-link + .more-link,
+  button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
+  .archive .pique-panel-content .entry-content .read-more a + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a,
+  .archive .pique-panel-content .entry-content .read-more button + a,
+  .archive .pique-panel-content .entry-content .read-more a + a,
+  .archive .pique-panel-content .entry-content .read-more .more-link + a,
+  .blog .pique-panel-content .entry-content .read-more button + a,
+  .blog .pique-panel-content .entry-content .read-more a + a,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .archive .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-left: 0.5em;
   }
@@ -3456,6 +3528,88 @@ a:hover, a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
   color: #E9D5C0;
+}
+
+@media (max-width: 767px) {
+  .page-template-page-templatestemplate-front-php #masthead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+    margin-top: 2em;
+  }
+  .page-template-page-templatestemplate-front-php #site-navigation {
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php #masthead {
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+            transition: all 0.1s ease-in-out 0s;
+    width: 100%;
+    z-index: 10000;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding {
+    position: absolute;
+    line-height: 1;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+    left: calc(50% - 50px);
+    top: -6px;
+    height: 71px;
+    width: 100px;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-logo-link img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title a {
+    text-decoration: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-description {
+    display: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav {
+    width: calc(50% - 50px);
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:first-of-type {
+    float: left;
+    text-align: right;
+  }
+  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:last-of-type {
+    float: right;
+    text-align: left;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header {
+    position: absolute;
+    top: 2em;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header #site-navigation {
+    background: transparent;
+    border: none;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header ul {
+    margin: 1rem 0;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding {
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: -75%;
+    height: auto;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav {
+    width: calc(50% - 75px);
+  }
 }
 
 .secondary-links ul {
@@ -4001,7 +4155,9 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.page-template-page-templatestemplate-front-php {
+.page-template-page-templatestemplate-front-php,
+.archive,
+.blog {
   /* Hero area */
   /* Content-heavy pages */
   /* Grid template panel */
@@ -4010,96 +4166,21 @@ a:hover, a:active {
   /* Full-width panel */
   /* Overlays */
 }
-@media (max-width: 767px) {
-  .page-template-page-templatestemplate-front-php #masthead {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
-    margin-top: 2em;
-  }
-  .page-template-page-templatestemplate-front-php #site-navigation {
-    position: relative;
-  }
-}
-@media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php #masthead {
-    padding: 0.5em;
-    position: fixed;
-    top: 0;
-    -webkit-transition: all 0.1s ease-in-out 0s;
-            transition: all 0.1s ease-in-out 0s;
-    width: 100%;
-    z-index: 10000;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding {
-    position: absolute;
-    line-height: 1;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 100;
-    left: calc(50% - 50px);
-    top: -6px;
-    height: 71px;
-    width: 100px;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-logo-link img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title a {
-    text-decoration: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-description {
-    display: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav {
-    width: calc(50% - 50px);
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:first-of-type {
-    float: left;
-    text-align: right;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:last-of-type {
-    float: right;
-    text-align: left;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header {
-    position: absolute;
-    top: 2em;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header #site-navigation {
-    background: transparent;
-    border: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header ul {
-    margin: 1rem 0;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding {
-    width: 150px;
-    position: absolute;
-    left: calc(50% - 75px);
-    top: -75%;
-    height: auto;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav {
-    width: calc(50% - 75px);
-  }
-}
 .page-template-page-templatestemplate-front-php .site-content,
-.page-template-page-templatestemplate-front-php .content-area {
+.page-template-page-templatestemplate-front-php .content-area,
+.archive .site-content,
+.archive .content-area,
+.blog .site-content,
+.blog .content-area {
   margin: 0;
   max-width: none;
   padding: 0;
   width: 100%;
 }
-.page-template-page-templatestemplate-front-php .pique-panel {
-  background-color: #3e3124;
+.page-template-page-templatestemplate-front-php .pique-panel,
+.archive .pique-panel,
+.blog .pique-panel {
+  background-color: #1e1812;
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
   border-top: 1px solid rgba(252, 251, 249, 0.25);
   min-height: 100vh;
@@ -4107,14 +4188,18 @@ a:hover, a:active {
   position: relative;
   width: 100%;
 }
-.page-template-page-templatestemplate-front-php .pique-panel:nth-of-type(even) {
-  background-color: #67afcf;
+.page-template-page-templatestemplate-front-php .pique-panel:nth-of-type(even),
+.archive .pique-panel:nth-of-type(even),
+.blog .pique-panel:nth-of-type(even) {
+  background-color: #194050;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-background {
+.page-template-page-templatestemplate-front-php .pique-panel-background,
+.archive .pique-panel-background,
+.blog .pique-panel-background {
   background-attachment: fixed;
   bottom: 0;
-  -webkit-filter: brightness(0.75);
-  filter: brightness(0.75);
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
   left: 0;
   position: absolute;
   right: 0;
@@ -4122,7 +4207,9 @@ a:hover, a:active {
   width: 100%;
   height: 100%;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content {
+.page-template-page-templatestemplate-front-php .pique-panel-content,
+.archive .pique-panel-content,
+.blog .pique-panel-content {
   color: #FCFBF9;
   margin: 0 auto;
   max-width: 1400px;
@@ -4131,11 +4218,15 @@ a:hover, a:active {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
 @media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php .pique-panel-content {
+  .page-template-page-templatestemplate-front-php .pique-panel-content,
+  .archive .pique-panel-content,
+  .blog .pique-panel-content {
     padding: 40px;
   }
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content h2 {
+.page-template-page-templatestemplate-front-php .pique-panel-content h2,
+.archive .pique-panel-content h2,
+.blog .pique-panel-content h2 {
   border: 2px solid #FCFBF9;
   color: #FCFBF9;
   display: inline-block;
@@ -4147,36 +4238,76 @@ a:hover, a:active {
   position: relative;
   text-transform: uppercase;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content {
-  max-width: 933.33333px;
-  margin: 0 auto;
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content,
+.archive .pique-panel-content .entry-content,
+.blog .pique-panel-content .entry-content {
+  margin: 1em auto;
+  max-width: 700px;
+  text-align: left;
 }
-.page-template-page-templatestemplate-front-php .pique-panel-content blockquote {
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more,
+.archive .pique-panel-content .entry-content .read-more,
+.blog .pique-panel-content .entry-content .read-more {
+  margin: 1em auto;
+  text-align: center;
+}
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a::after,
+.archive .pique-panel-content .entry-content .read-more a::after,
+.blog .pique-panel-content .entry-content .read-more a::after {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
+}
+.page-template-page-templatestemplate-front-php .pique-panel-content blockquote,
+.archive .pique-panel-content blockquote,
+.blog .pique-panel-content blockquote {
   color: #FCFBF9;
 }
 @media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php .pique-panel-content blockquote {
+  .page-template-page-templatestemplate-front-php .pique-panel-content blockquote,
+  .archive .pique-panel-content blockquote,
+  .blog .pique-panel-content blockquote {
     font-size: 1.75em;
   }
 }
-.page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+.page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content,
+.archive .pique-hero .pique-panel-content,
+.blog .pique-hero .pique-panel-content {
   font-size: 1.5em;
   max-width: 1400px;
+}
+.page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content .entry-content,
+.archive .pique-hero .pique-panel-content .entry-content,
+.blog .pique-hero .pique-panel-content .entry-content {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
+  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content,
+  .archive .pique-hero .pique-panel-content,
+  .blog .pique-hero .pique-panel-content {
     margin-top: 6em;
   }
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .entry-content,
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .entry-content {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .entry-content,
+.archive .pique-template-grid .pique-panel-content .entry-content,
+.archive .pique-template-testimonials .pique-panel-content .entry-content,
+.archive .pique-template-recent-posts .pique-panel-content .entry-content,
+.blog .pique-template-grid .pique-panel-content .entry-content,
+.blog .pique-template-testimonials .pique-panel-content .entry-content,
+.blog .pique-template-recent-posts .pique-panel-content .entry-content {
   max-width: none;
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content > .entry-content > p,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content > .entry-content > p {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content > .entry-content > p,
+.archive .pique-template-grid .pique-panel-content > .entry-content > p,
+.archive .pique-template-testimonials .pique-panel-content > .entry-content > p,
+.archive .pique-template-recent-posts .pique-panel-content > .entry-content > p,
+.blog .pique-template-grid .pique-panel-content > .entry-content > p,
+.blog .pique-template-testimonials .pique-panel-content > .entry-content > p,
+.blog .pique-template-recent-posts .pique-panel-content > .entry-content > p {
   font-size: 1.2em;
   font-style: italic;
   margin: 0 auto 1em;
@@ -4203,33 +4334,93 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
 .page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content h3 a,
 .page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content blockquote cite a,
 blockquote .page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content cite a,
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .widget-title a {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-panel-content .widget-title a,
+.archive .pique-template-grid .pique-panel-content h3,
+.archive .pique-template-grid .pique-panel-content blockquote cite,
+blockquote .archive .pique-template-grid .pique-panel-content cite,
+.archive .pique-template-grid .pique-panel-content .widget-title,
+.archive .pique-template-grid .pique-panel-content h3 a,
+.archive .pique-template-grid .pique-panel-content blockquote cite a,
+blockquote .archive .pique-template-grid .pique-panel-content cite a,
+.archive .pique-template-grid .pique-panel-content .widget-title a,
+.archive .pique-template-testimonials .pique-panel-content h3,
+.archive .pique-template-testimonials .pique-panel-content blockquote cite,
+blockquote .archive .pique-template-testimonials .pique-panel-content cite,
+.archive .pique-template-testimonials .pique-panel-content .widget-title,
+.archive .pique-template-testimonials .pique-panel-content h3 a,
+.archive .pique-template-testimonials .pique-panel-content blockquote cite a,
+blockquote .archive .pique-template-testimonials .pique-panel-content cite a,
+.archive .pique-template-testimonials .pique-panel-content .widget-title a,
+.archive .pique-template-recent-posts .pique-panel-content h3,
+.archive .pique-template-recent-posts .pique-panel-content blockquote cite,
+blockquote .archive .pique-template-recent-posts .pique-panel-content cite,
+.archive .pique-template-recent-posts .pique-panel-content .widget-title,
+.archive .pique-template-recent-posts .pique-panel-content h3 a,
+.archive .pique-template-recent-posts .pique-panel-content blockquote cite a,
+blockquote .archive .pique-template-recent-posts .pique-panel-content cite a,
+.archive .pique-template-recent-posts .pique-panel-content .widget-title a,
+.blog .pique-template-grid .pique-panel-content h3,
+.blog .pique-template-grid .pique-panel-content blockquote cite,
+blockquote .blog .pique-template-grid .pique-panel-content cite,
+.blog .pique-template-grid .pique-panel-content .widget-title,
+.blog .pique-template-grid .pique-panel-content h3 a,
+.blog .pique-template-grid .pique-panel-content blockquote cite a,
+blockquote .blog .pique-template-grid .pique-panel-content cite a,
+.blog .pique-template-grid .pique-panel-content .widget-title a,
+.blog .pique-template-testimonials .pique-panel-content h3,
+.blog .pique-template-testimonials .pique-panel-content blockquote cite,
+blockquote .blog .pique-template-testimonials .pique-panel-content cite,
+.blog .pique-template-testimonials .pique-panel-content .widget-title,
+.blog .pique-template-testimonials .pique-panel-content h3 a,
+.blog .pique-template-testimonials .pique-panel-content blockquote cite a,
+blockquote .blog .pique-template-testimonials .pique-panel-content cite a,
+.blog .pique-template-testimonials .pique-panel-content .widget-title a,
+.blog .pique-template-recent-posts .pique-panel-content h3,
+.blog .pique-template-recent-posts .pique-panel-content blockquote cite,
+blockquote .blog .pique-template-recent-posts .pique-panel-content cite,
+.blog .pique-template-recent-posts .pique-panel-content .widget-title,
+.blog .pique-template-recent-posts .pique-panel-content h3 a,
+.blog .pique-template-recent-posts .pique-panel-content blockquote cite a,
+blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
+.blog .pique-template-recent-posts .pique-panel-content .widget-title a {
   color: #83B6CC;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid article {
+.page-template-page-templatestemplate-front-php .pique-template-grid article,
+.archive .pique-template-grid article,
+.blog .pique-template-grid article {
   font-size: 0.9em;
   text-align: center;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid img {
+.page-template-page-templatestemplate-front-php .pique-template-grid img,
+.archive .pique-template-grid img,
+.blog .pique-template-grid img {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 60%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-grid p {
+.page-template-page-templatestemplate-front-php .pique-template-grid p,
+.archive .pique-template-grid p,
+.blog .pique-template-grid p {
   text-align: left;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article,
+.archive .pique-template-testimonials .pique-testimonials article,
+.blog .pique-template-testimonials .pique-testimonials article {
   font-size: 0.85em;
   text-align: left;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content {
   background: #FCFBF9;
   border-radius: 25px;
   border: #7F7F7F solid 2px;
   position: relative;
   padding: 0 20px;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content::after {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content::after,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content::after,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content::after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -4242,7 +4433,9 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   bottom: -15px;
   left: 50%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content::before {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials article .entry-content::before,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content::before,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content::before {
   content: '';
   position: absolute;
   border-style: solid;
@@ -4255,13 +4448,17 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   bottom: -18px;
   left: 50%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
+.archive .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
+.blog .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
   border-radius: 50%;
   float: left;
   margin: 10px 10px 0 0;
   max-width: 80%;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2,
+.archive .pique-template-testimonials .pique-testimonials h2,
+.blog .pique-template-testimonials .pique-testimonials h2 {
   background: none;
   clear: none;
   color: #666;
@@ -4271,40 +4468,62 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   margin: 10px 0;
   width: calc(100% - 100px - 10px);
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2::before {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2::before,
+.archive .pique-template-testimonials .pique-testimonials h2::before,
+.blog .pique-template-testimonials .pique-testimonials h2::before {
   display: none;
 }
-.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 span {
+.page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-testimonials h2 span,
+.archive .pique-template-testimonials .pique-testimonials h2 span,
+.blog .pique-template-testimonials .pique-testimonials h2 span {
   display: block;
   font-weight: normal;
   letter-spacing: 0;
   text-transform: none;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts article {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts article,
+.archive .pique-template-recent-posts .pique-recent-posts article,
+.blog .pique-template-recent-posts .pique-recent-posts article {
   text-align: center;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
+.archive .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
+.blog .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
   border: none;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-header {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-header,
+.archive .pique-template-recent-posts .pique-recent-posts .entry-header,
+.blog .pique-template-recent-posts .pique-recent-posts .entry-header {
   text-align: left;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-title {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-title,
+.archive .pique-template-recent-posts .pique-recent-posts .entry-title,
+.blog .pique-template-recent-posts .pique-recent-posts .entry-title {
   margin-bottom: 0.5em;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .posted-on {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .posted-on,
+.archive .pique-template-recent-posts .pique-recent-posts .posted-on,
+.blog .pique-template-recent-posts .pique-recent-posts .posted-on {
   font-style: italic;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .byline {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .byline,
+.archive .pique-template-recent-posts .pique-recent-posts .byline,
+.blog .pique-template-recent-posts .pique-recent-posts .byline {
   display: none;
 }
-.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-content {
+.page-template-page-templatestemplate-front-php .pique-template-recent-posts .pique-recent-posts .entry-content,
+.archive .pique-template-recent-posts .pique-recent-posts .entry-content,
+.blog .pique-template-recent-posts .pique-recent-posts .entry-content {
   text-align: left;
 }
-.page-template-page-templatestemplate-front-php .pique-template-full-width .entry-content {
+.page-template-page-templatestemplate-front-php .pique-template-full-width .entry-content,
+.archive .pique-template-full-width .entry-content,
+.blog .pique-template-full-width .entry-content {
   max-width: none;
 }
-.page-template-page-templatestemplate-front-php .overlay {
+.page-template-page-templatestemplate-front-php .overlay,
+.archive .overlay,
+.blog .overlay {
   background: #483E34;
   border-top: 4px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
@@ -4314,35 +4533,59 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   text-align: left;
 }
 @media (max-width: 767px) {
-  .page-template-page-templatestemplate-front-php .overlay {
+  .page-template-page-templatestemplate-front-php .overlay,
+  .archive .overlay,
+  .blog .overlay {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php .overlay {
+  .page-template-page-templatestemplate-front-php .overlay,
+  .archive .overlay,
+  .blog .overlay {
     width: 60%;
   }
 }
 @media (min-width: 1024px) {
-  .page-template-page-templatestemplate-front-php .overlay {
+  .page-template-page-templatestemplate-front-php .overlay,
+  .archive .overlay,
+  .blog .overlay {
     width: 40%;
   }
 }
-.page-template-page-templatestemplate-front-php .overlay h3, .page-template-page-templatestemplate-front-php .overlay blockquote cite, blockquote .page-template-page-templatestemplate-front-php .overlay cite, .page-template-page-templatestemplate-front-php .overlay .widget-title {
+.page-template-page-templatestemplate-front-php .overlay h3, .page-template-page-templatestemplate-front-php .overlay blockquote cite, blockquote .page-template-page-templatestemplate-front-php .overlay cite, .page-template-page-templatestemplate-front-php .overlay .widget-title,
+.archive .overlay h3,
+.archive .overlay blockquote cite,
+blockquote .archive .overlay cite,
+.archive .overlay .widget-title,
+.blog .overlay h3,
+.blog .overlay blockquote cite,
+blockquote .blog .overlay cite,
+.blog .overlay .widget-title {
   margin-bottom: 0;
 }
-.page-template-page-templatestemplate-front-php .overlay p {
+.page-template-page-templatestemplate-front-php .overlay p,
+.archive .overlay p,
+.blog .overlay p {
   margin-top: 0;
 }
-.page-template-page-templatestemplate-front-php .hide {
+.page-template-page-templatestemplate-front-php .hide,
+.archive .hide,
+.blog .hide {
   display: none;
 }
 .page-template-page-templatestemplate-front-php .entry-header,
-.page-template-page-templatestemplate-front-php .entry-content {
+.page-template-page-templatestemplate-front-php .entry-content,
+.archive .entry-header,
+.archive .entry-content,
+.blog .entry-header,
+.blog .entry-content {
   position: relative;
   z-index: 100;
 }
-.page-template-page-templatestemplate-front-php .edit-link {
+.page-template-page-templatestemplate-front-php .edit-link,
+.archive .edit-link,
+.blog .edit-link {
   display: none;
   /* Todo: show these again */
   background: rgba(255, 255, 255, 0.75);
@@ -4356,7 +4599,9 @@ blockquote .page-template-page-templatestemplate-front-php .pique-template-recen
   text-transform: uppercase;
   z-index: 100;
 }
-.page-template-page-templatestemplate-front-php .edit-link a {
+.page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a {
   text-decoration: none;
 }
 
@@ -4411,15 +4656,6 @@ time + .updated {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
-}
-
-.more-link,
-.more-link:visited {
-  border-width: 1px;
-  margin: 0.5em auto;
-  font-size: 0.8em;
-  padding: 0.75em 1.5em;
-  color: #83B6CC;
 }
 
 .page-links {
