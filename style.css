@@ -4397,6 +4397,10 @@ time + .updated {
   display: inline;
 }
 
+.page .edit-link::before {
+  display: none;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
