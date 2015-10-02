@@ -91,7 +91,7 @@
     }
   }
 
-  /* Hero area */
+  /* Hero area (the "home" page, as it were) */
   .pique-hero {
 
     .pique-panel-content {
@@ -311,19 +311,27 @@
   }
 
   .edit-link {
-    display: none; /* Todo: show these again */
-    background: rgba(255, 255, 255, 0.75);
-    bottom: $size__site-gutter / 2;
-    @include font-size(0.9);
-    left: $size__site-gutter / 2;
-    letter-spacing: 1px;
-    padding: 5px 10px;
     position: absolute;
-    text-transform: uppercase;
+      bottom: 10px;
+      left: 10px;
     z-index: 100;
 
+    &::before {
+      display: none;
+    }
+
     a {
-      text-decoration: none;
+      @extend button;
+      @extend .minimal;
+      border-width: 1px;
+      font-size: 0.8rem;
+      opacity: 0.2;
+      padding: 0.5rem 1rem;
+      width: auto;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

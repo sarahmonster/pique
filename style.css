@@ -2847,7 +2847,9 @@ samp {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .more-link,
 .more-link:visited,
 input,
 optgroup,
@@ -2860,14 +2862,18 @@ textarea {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .more-link,
 .more-link:visited {
   overflow: visible;
 }
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .more-link,
 .more-link:visited,
 select {
   text-transform: none;
@@ -2875,7 +2881,9 @@ select {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .more-link,
 .more-link:visited,
 html input[type="button"],
 input[type="reset"],
@@ -2886,14 +2894,18 @@ input[type="submit"] {
 
 button[disabled], .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a[disabled],
 .archive .pique-panel-content .entry-content .read-more a[disabled],
-.blog .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
+.blog .pique-panel-content .entry-content .read-more a[disabled], .page-template-page-templatestemplate-front-php .edit-link a[disabled],
+.archive .edit-link a[disabled],
+.blog .edit-link a[disabled], [disabled].more-link,
 html input[disabled] {
   cursor: default;
 }
 
 button::-moz-focus-inner, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
 .archive .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
+.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .page-template-page-templatestemplate-front-php .edit-link a::-moz-focus-inner,
+.archive .edit-link a::-moz-focus-inner,
+.blog .edit-link a::-moz-focus-inner, .more-link::-moz-focus-inner,
 .more-link:visited::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2962,6 +2974,9 @@ button,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
 .blog .pique-panel-content .entry-content .read-more a,
+.page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a,
 .more-link,
 .more-link:visited,
 input,
@@ -3264,7 +3279,9 @@ textarea {
 /* Buttons */
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .more-link,
 .more-link:visited,
 .button,
 input[type="button"],
@@ -3292,7 +3309,9 @@ input[type="submit"] {
 @media (max-width: 767px) {
   button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
   .archive .pique-panel-content .entry-content .read-more a,
-  .blog .pique-panel-content .entry-content .read-more a, .more-link,
+  .blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+  .archive .edit-link a,
+  .blog .edit-link a, .more-link,
   .more-link:visited,
   .button,
   input[type="button"],
@@ -3303,7 +3322,9 @@ input[type="submit"] {
 }
 button:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
+.archive .edit-link a:hover,
+.blog .edit-link a:hover, .more-link:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -3316,9 +3337,13 @@ input[type="submit"]:hover {
 }
 button:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
+.archive .edit-link a:active,
+.blog .edit-link a:active, .more-link:active, button:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
+.archive .edit-link a:focus,
+.blog .edit-link a:focus, .more-link:focus,
 .button:active,
 .button:focus,
 input[type="button"]:active,
@@ -3331,10 +3356,19 @@ input[type="submit"]:focus {
   border-color: #83B6CC;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal,
+button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a.minimal,
-.blog .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
+.archive .pique-panel-content .entry-content .read-more .edit-link a,
+.archive .edit-link .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a.minimal,
+.blog .pique-panel-content .entry-content .read-more .edit-link a,
+.blog .edit-link .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+.archive .edit-link a,
+.blog .edit-link a, .minimal.more-link,
 .button.minimal,
+.page-template-page-templatestemplate-front-php .edit-link a.button,
+.archive .edit-link a.button,
+.blog .edit-link a.button,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
@@ -3344,16 +3378,43 @@ input[type="submit"].minimal {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:active,
+button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:active, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a.minimal:active,
-.blog .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:focus,
+.archive .pique-panel-content .entry-content .read-more .edit-link a:active,
+.archive .edit-link .pique-panel-content .entry-content .read-more a:active,
+.blog .pique-panel-content .entry-content .read-more a.minimal:active,
+.blog .pique-panel-content .entry-content .read-more .edit-link a:active,
+.blog .edit-link .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
+.archive .edit-link a:active,
+.blog .edit-link a:active, .minimal.more-link:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:focus, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a.minimal:focus,
-.blog .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:hover,
+.archive .pique-panel-content .entry-content .read-more .edit-link a:focus,
+.archive .edit-link .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a.minimal:focus,
+.blog .pique-panel-content .entry-content .read-more .edit-link a:focus,
+.blog .edit-link .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
+.archive .edit-link a:focus,
+.blog .edit-link a:focus, .minimal.more-link:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:hover, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a.minimal:hover,
-.blog .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
+.archive .pique-panel-content .entry-content .read-more .edit-link a:hover,
+.archive .edit-link .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more a.minimal:hover,
+.blog .pique-panel-content .entry-content .read-more .edit-link a:hover,
+.blog .edit-link .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
+.archive .edit-link a:hover,
+.blog .edit-link a:hover, .minimal.more-link:hover,
 .button.minimal:active,
+.page-template-page-templatestemplate-front-php .edit-link a.button:active,
+.archive .edit-link a.button:active,
+.blog .edit-link a.button:active,
 .button.minimal:focus,
+.page-template-page-templatestemplate-front-php .edit-link a.button:focus,
+.archive .edit-link a.button:focus,
+.blog .edit-link a.button:focus,
 .button.minimal:hover,
+.page-template-page-templatestemplate-front-php .edit-link a.button:hover,
+.archive .edit-link a.button:hover,
+.blog .edit-link a.button:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -3373,16 +3434,28 @@ input[type="submit"].minimal:hover {
 @media (max-width: 767px) {
   button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link a + button,
+  .archive .edit-link a + button,
+  .blog .edit-link a + button, .more-link + button,
   .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
   .archive .pique-panel-content .entry-content .read-more .more-link + a,
   .blog .pique-panel-content .entry-content .read-more button + a,
   .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a, .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link .more-link + a,
+  .archive .edit-link button + a,
+  .archive .pique-panel-content .entry-content .read-more .edit-link a + a,
+  .archive .edit-link a + a,
+  .archive .edit-link .more-link + a,
+  .blog .edit-link button + a,
+  .blog .pique-panel-content .entry-content .read-more .edit-link a + a,
+  .blog .edit-link a + a,
+  .blog .edit-link .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .page-template-page-templatestemplate-front-php .edit-link a + .more-link,
+  .archive .edit-link a + .more-link,
+  .blog .edit-link a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-top: 1em;
   }
@@ -3390,16 +3463,28 @@ input[type="submit"].minimal:hover {
 @media (min-width: 768px) {
   button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link a + button,
+  .archive .edit-link a + button,
+  .blog .edit-link a + button, .more-link + button,
   .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
   .archive .pique-panel-content .entry-content .read-more .more-link + a,
   .blog .pique-panel-content .entry-content .read-more button + a,
   .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a, .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link .more-link + a,
+  .archive .edit-link button + a,
+  .archive .pique-panel-content .entry-content .read-more .edit-link a + a,
+  .archive .edit-link a + a,
+  .archive .edit-link .more-link + a,
+  .blog .edit-link button + a,
+  .blog .pique-panel-content .entry-content .read-more .edit-link a + a,
+  .blog .edit-link a + a,
+  .blog .edit-link .more-link + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .page-template-page-templatestemplate-front-php .edit-link a + .more-link,
+  .archive .edit-link a + .more-link,
+  .blog .edit-link a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-left: 0.5em;
   }
@@ -4158,7 +4243,7 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php,
 .archive,
 .blog {
-  /* Hero area */
+  /* Hero area (the "home" page, as it were) */
   /* Content-heavy pages */
   /* Grid template panel */
   /* Testimonial panel */
@@ -4586,23 +4671,29 @@ blockquote .blog .overlay cite,
 .page-template-page-templatestemplate-front-php .edit-link,
 .archive .edit-link,
 .blog .edit-link {
-  display: none;
-  /* Todo: show these again */
-  background: rgba(255, 255, 255, 0.75);
-  bottom: 20px;
-  font-size: 14.4px;
-  font-size: 0.9rem;
-  left: 20px;
-  letter-spacing: 1px;
-  padding: 5px 10px;
   position: absolute;
-  text-transform: uppercase;
+  bottom: 10px;
+  left: 10px;
   z-index: 100;
+}
+.page-template-page-templatestemplate-front-php .edit-link::before,
+.archive .edit-link::before,
+.blog .edit-link::before {
+  display: none;
 }
 .page-template-page-templatestemplate-front-php .edit-link a,
 .archive .edit-link a,
 .blog .edit-link a {
-  text-decoration: none;
+  border-width: 1px;
+  font-size: 0.8rem;
+  opacity: 0.2;
+  padding: 0.5rem 1rem;
+  width: auto;
+}
+.page-template-page-templatestemplate-front-php .edit-link a:hover,
+.archive .edit-link a:hover,
+.blog .edit-link a:hover {
+  opacity: 1;
 }
 
 .sticky {

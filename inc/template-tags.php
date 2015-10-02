@@ -68,6 +68,32 @@ function pique_entry_footer() {
 endif;
 
 /**
+ * Returns an accessibility-friendly link to edit a post or page.
+ * This also gives us a little context about what exactly we're editing
+ * (post or page?) so that users understand a bit more where they are in terms
+ * of the template hierarchy and their content. Helpful when/if the single-page
+ * layout with multiple posts/pages shown gets confusing.
+ */
+function pique_edit_link( $id ) {
+	if ( is_page() ) :
+		$type = esc_html__( 'Page', 'pique' );
+	elseif ( get_post( $id ) ) :
+		$type = esc_html__( 'Post', 'pique' );
+	endif;
+	$link = edit_post_link(
+		sprintf(
+			/* translators: %s: Name of current post */
+			esc_html__( 'Edit %1$s %2$s', 'pique' ),
+			esc_html( $type ),
+			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+		),
+		'<span class="edit-link">',
+		'</span>'
+	);
+	return $link;
+}
+
+/**
  * Returns true if a blog has more than 1 category.
  *
  * @return bool

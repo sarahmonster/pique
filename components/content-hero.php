@@ -24,8 +24,8 @@
       ?>
     </div><!-- .entry-content -->
 
-    <footer class="entry-footer">
-      <?php pique_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
   </div><!-- .pique-panel-content -->
+  <footer class="entry-footer">
+    <?php pique_entry_footer(); ?>
+  </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

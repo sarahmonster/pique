@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel' ); ?> data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel' ); ?>>
 	<?php if ( has_post_thumbnail() ) :
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'pique-hero' ); ?>
 		<div class="pique-panel-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)"></div>
@@ -40,7 +40,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php //pique_entry_footer(); ?>
+			<?php pique_edit_link( get_the_ID() ); ?>
 		</footer><!-- .entry-footer -->
 	</div><!-- .pique-panel-content -->
 </article><!-- #post-## -->
