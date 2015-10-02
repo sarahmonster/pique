@@ -90,4 +90,27 @@ a {
 	}
 } // .comments-navigation, .posts-navigation, .post-navigation
 
+// Posts navigation
+.posts-navigation,
+.site-main .posts-navigation {
+	background: darken($color__primary, 10%);
+	border-bottom: 1px solid $color__primary;
+	border-top: 1px solid $color__primary;
+	margin-bottom: 0;
+	padding: 0.5rem 1rem;
+
+	@include tablet {
+		padding: 1rem 2rem;
+	}
+
+	.nav-previous,
+	.nav-next {
+		border: none;
+	}
+
+	a {
+		color: $color__tertiary;
+	}
+}
+
 @import "../components/social-menu";

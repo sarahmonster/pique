@@ -13,7 +13,7 @@
     background-color: darken(saturate($color__primary, 10%), 15%);
     border-bottom: 1px solid transparentize($color__black, 0.5);
     border-top: 1px solid transparentize($color__white, 0.75);
-    min-height: 100vh;
+    min-height: 50vh;
     margin: 0;
     position: relative;
     width: 100%;
@@ -72,6 +72,7 @@
 
         a {
           @extend button;
+          @extend .minimal;
 
           &::after {
             @include fontawesome;

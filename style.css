@@ -3356,16 +3356,15 @@ input[type="submit"]:focus {
   border-color: #83B6CC;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a.minimal,
-.archive .pique-panel-content .entry-content .read-more .edit-link a,
-.archive .edit-link .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a.minimal,
-.blog .pique-panel-content .entry-content .read-more .edit-link a,
-.blog .edit-link .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
+button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
 .archive .edit-link a,
 .blog .edit-link a, .minimal.more-link,
 .button.minimal,
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button,
+.archive .pique-panel-content .entry-content .read-more a.button,
+.blog .pique-panel-content .entry-content .read-more a.button,
 .page-template-page-templatestemplate-front-php .edit-link a.button,
 .archive .edit-link a.button,
 .blog .edit-link a.button,
@@ -3378,40 +3377,37 @@ input[type="submit"].minimal {
   color: white;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
-button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:active, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:active,
-.archive .pique-panel-content .entry-content .read-more a.minimal:active,
-.archive .pique-panel-content .entry-content .read-more .edit-link a:active,
-.archive .edit-link .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a.minimal:active,
-.blog .pique-panel-content .entry-content .read-more .edit-link a:active,
-.blog .edit-link .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
+button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active,
+.archive .pique-panel-content .entry-content .read-more a:active,
+.blog .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
 .archive .edit-link a:active,
-.blog .edit-link a:active, .minimal.more-link:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:focus, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:focus,
-.archive .pique-panel-content .entry-content .read-more a.minimal:focus,
-.archive .pique-panel-content .entry-content .read-more .edit-link a:focus,
-.archive .edit-link .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a.minimal:focus,
-.blog .pique-panel-content .entry-content .read-more .edit-link a:focus,
-.blog .edit-link .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
+.blog .edit-link a:active, .minimal.more-link:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
+.archive .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
 .archive .edit-link a:focus,
-.blog .edit-link a:focus, .minimal.more-link:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a:hover, .page-template-page-templatestemplate-front-php .edit-link .pique-panel-content .entry-content .read-more a:hover,
-.archive .pique-panel-content .entry-content .read-more a.minimal:hover,
-.archive .pique-panel-content .entry-content .read-more .edit-link a:hover,
-.archive .edit-link .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a.minimal:hover,
-.blog .pique-panel-content .entry-content .read-more .edit-link a:hover,
-.blog .edit-link .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
+.blog .edit-link a:focus, .minimal.more-link:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
+.archive .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
 .archive .edit-link a:hover,
 .blog .edit-link a:hover, .minimal.more-link:hover,
 .button.minimal:active,
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:active,
+.archive .pique-panel-content .entry-content .read-more a.button:active,
+.blog .pique-panel-content .entry-content .read-more a.button:active,
 .page-template-page-templatestemplate-front-php .edit-link a.button:active,
 .archive .edit-link a.button:active,
 .blog .edit-link a.button:active,
 .button.minimal:focus,
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:focus,
+.archive .pique-panel-content .entry-content .read-more a.button:focus,
+.blog .pique-panel-content .entry-content .read-more a.button:focus,
 .page-template-page-templatestemplate-front-php .edit-link a.button:focus,
 .archive .edit-link a.button:focus,
 .blog .edit-link a.button:focus,
 .button.minimal:hover,
+.page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:hover,
+.archive .pique-panel-content .entry-content .read-more a.button:hover,
+.blog .pique-panel-content .entry-content .read-more a.button:hover,
 .page-template-page-templatestemplate-front-php .edit-link a.button:hover,
 .archive .edit-link a.button:hover,
 .blog .edit-link a.button:hover,
@@ -3784,6 +3780,31 @@ a:hover, a:active {
   display: inline-block;
   margin-left: 5px;
   vertical-align: 1px;
+}
+
+.posts-navigation,
+.site-main .posts-navigation {
+  background: #2a251f;
+  border-bottom: 1px solid #483E34;
+  border-top: 1px solid #483E34;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .posts-navigation,
+  .site-main .posts-navigation {
+    padding: 1rem 2rem;
+  }
+}
+.posts-navigation .nav-previous,
+.posts-navigation .nav-next,
+.site-main .posts-navigation .nav-previous,
+.site-main .posts-navigation .nav-next {
+  border: none;
+}
+.posts-navigation a,
+.site-main .posts-navigation a {
+  color: #E9D5C0;
 }
 
 .widget_wpcom_social_media_icons_widget {
@@ -4268,7 +4289,7 @@ a:hover, a:active {
   background-color: #1e1812;
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
   border-top: 1px solid rgba(252, 251, 249, 0.25);
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0;
   position: relative;
   width: 100%;
