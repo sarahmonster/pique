@@ -3910,29 +3910,30 @@ a:hover, a:active {
   color: #E9D5C0;
 }
 
-.widget_wpcom_social_media_icons_widget {
+.widget.widget_wpcom_social_media_icons_widget {
   margin: 0 auto;
   padding: 0;
 }
-.widget_wpcom_social_media_icons_widget ul {
+.widget.widget_wpcom_social_media_icons_widget ul {
   list-style: none;
   margin: 0 0 20px 0;
   padding: 0;
 }
-.widget_wpcom_social_media_icons_widget ul li {
+.widget.widget_wpcom_social_media_icons_widget ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 5px 5px 0;
+  margin: 0 10px 10px 0;
   padding: 0;
 }
-.widget_wpcom_social_media_icons_widget ul a {
+.widget.widget_wpcom_social_media_icons_widget ul a {
   background: #483E34;
   border: 2px solid #E9D5C0 !important;
   border-radius: 50%;
   display: inline-block;
+  padding: 0;
   text-decoration: none;
 }
-.widget_wpcom_social_media_icons_widget ul a::before {
+.widget.widget_wpcom_social_media_icons_widget ul a::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -3949,95 +3950,95 @@ a:hover, a:active {
   text-align: center;
   -webkit-transition: 0.2s all ease-in-out;
           transition: 0.2s all ease-in-out;
-  width: 34px;
+  width: 32px;
 }
-.widget_wpcom_social_media_icons_widget ul a:hover {
+.widget.widget_wpcom_social_media_icons_widget ul a:hover {
   background: #E9D5C0;
   border-color: #483E34;
 }
-.widget_wpcom_social_media_icons_widget ul a:hover::before {
-  color: #FCFBF9;
+.widget.widget_wpcom_social_media_icons_widget ul a:hover::before {
+  color: #483E34;
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.org']:before,
-.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.org']:before,
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.com']:before {
   content: '\f205';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='facebook.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='facebook.com']:before {
   content: '\f204';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='twitter.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='twitter.com']:before {
   content: '\f202';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='dribbble.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='dribbble.com']:before {
   content: '\f201';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='plus.google.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='plus.google.com']:before {
   content: '\f206';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='pinterest.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='pinterest.com']:before {
   content: '\f209';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='github.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='github.com']:before {
   content: '\f200';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='tumblr.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='tumblr.com']:before {
   content: '\f214';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='youtube.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='youtube.com']:before {
   content: '\f213';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='flickr.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='flickr.com']:before {
   content: '\f211';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='vimeo.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='vimeo.com']:before {
   content: '\f212';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='instagram.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='instagram.com']:before {
   content: '\f215';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='codepen.io']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='codepen.io']:before {
   content: '\f216';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='linkedin.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='linkedin.com']:before {
   content: '\f207';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='foursquare.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='foursquare.com']:before {
   content: '\f226';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='reddit.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='reddit.com']:before {
   content: '\f222';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='digg.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='digg.com']:before {
   content: '\f221';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='getpocket.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='getpocket.com']:before {
   content: '\f224';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='path.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='path.com']:before {
   content: '\f219';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='stumbleupon.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='stumbleupon.com']:before {
   content: '\f223';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='spotify.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='spotify.com']:before {
   content: '\f515';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='twitch.tv']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='twitch.tv']:before {
   content: '\f516';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='dropbox.com']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='dropbox.com']:before {
   content: '\f225';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='/feed']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='/feed']:before {
   content: '\f413';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='skype']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='skype']:before {
   content: '\f220';
 }
-.widget_wpcom_social_media_icons_widget ul a[href*='mailto']:before {
+.widget.widget_wpcom_social_media_icons_widget ul a[href*='mailto']:before {
   content: '\f410';
 }
-.widget_wpcom_social_media_icons_widget ul a::before {
+.widget.widget_wpcom_social_media_icons_widget ul a::before {
   content: '\f415';
 }
 
