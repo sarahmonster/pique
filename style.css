@@ -2939,7 +2939,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -3230,6 +3229,8 @@ table {
 form {
   color: #666;
   text-align: left;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 800px;
 }
 
@@ -3256,7 +3257,8 @@ textarea {
   border: 2px solid #aaa49e;
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  font-size: 0.9em;
+  font-size: 16px;
+  font-size: 1rem;
   -webkit-transition: all 0.2s ease-in-out 0s;
           transition: all 0.2s ease-in-out 0s;
   width: 100% !important;
