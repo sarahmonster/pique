@@ -4224,6 +4224,41 @@ a:hover, a:active {
   margin-left: 1em;
 }
 
+/* Comment widget */
+.widget_recent_comments li {
+  border-top: 1px solid rgba(233, 213, 192, 0.5);
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+  line-height: 1;
+  padding: 7px 0;
+  /*.comment-author-link::after,
+  > a::before {
+  	display: inline;
+  	content: "—";
+  }*/
+}
+.widget_recent_comments li a {
+  border: 0;
+  display: inline-block;
+  font-family: Karla, Arial, sans-serif;
+  font-style: normal;
+}
+
+/* RSS widget */
+.widget_rss .rsswidget {
+  margin-bottom: -7px;
+}
+.widget_rss .rssSummary {
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+}
+.widget_rss cite {
+  display: block;
+  font-style: normal;
+  padding-bottom: 7px;
+  text-align: right;
+}
+
 /* Text widget */
 .textwidget {
   font-family: Lora, Georgia, serif;
@@ -4894,7 +4929,7 @@ blockquote .blog .overlay cite,
   margin: 0 0 1.5em;
 }
 
-.entry-meta {
+.entry-meta, .widget_rss .rss-date, .widget_rss cite {
   color: #d9d7d5;
   font-family: Karla, Arial, sans-serif;
   font-weight: bold;
@@ -4903,10 +4938,10 @@ blockquote .blog .overlay cite,
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-.entry-meta a {
+.entry-meta a, .widget_rss .rss-date a, .widget_rss cite a {
   color: #c2beb9;
 }
-.entry-meta + .entry-title {
+.entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title {
   margin-top: 0.2rem;
 }
 

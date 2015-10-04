@@ -80,6 +80,55 @@
 	} // ul li
 } // .widget_archive, .widget_categories
 
+/* Comment widget */
+.widget_recent_comments {
+	li {
+		border-top: 1px solid transparentize($color__tertiary, 0.5);
+		font-family: $font__serif;
+		font-style: italic;
+		line-height: 1;
+		padding: 7px 0;
+
+		a {
+			border: 0;
+			display: inline-block;
+			font-family: $font__sans;
+			font-style: normal;
+		}
+
+		/*.comment-author-link::after,
+		> a::before {
+			display: inline;
+			content: "—";
+		}*/
+	}
+}
+
+/* RSS widget */
+.widget_rss {
+
+	.rsswidget {
+		margin-bottom: -7px;
+	}
+
+	.rss-date {
+		@extend .entry-meta;
+	}
+
+	.rssSummary {
+		font-family: $font__serif;
+		font-style: italic;
+	}
+
+	cite {
+		@extend .entry-meta;
+		display: block;
+		font-style: normal;
+		padding-bottom: 7px;
+		text-align: right;
+	}
+}
+
 /* Text widget */
 .textwidget {
 	font-family: $font__serif;
