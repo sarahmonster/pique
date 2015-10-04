@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  .page-header {
+    text-align: center;
+  }
+
   .pique-panel {
     background-color: darken(saturate($color__primary, 10%), 15%);
     border-bottom: 1px solid transparentize($color__black, 0.5);
@@ -18,7 +22,7 @@
     position: relative;
     width: 100%;
 
-    &:nth-of-type(even) {
+    &:nth-of-type(odd) {
       background-color: darken(saturate($color__secondary, 10%), 45%);
     }
   }

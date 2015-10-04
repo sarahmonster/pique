@@ -13,16 +13,16 @@
   @extend h3;
 }
 
-/* Search widget. */
+/* Search widget */
 .widget_search .search-submit {
 	display: none;
 }
 
-/* Nav widget */
-.widget_nav_menu {
-  ul {
-    list-style-type: none;
-  }
+/* Lists in widgets (pages, categories, comments, etc) */
+.widget ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 
 	a {
 		border-top: 1px solid transparentize($color__tertiary, 0.5);
@@ -36,17 +36,47 @@
 		}
 	}
 
-  .menu {
-    margin: 0;
-    padding: 0;
-  }
+	.sub-menu {
+		margin-left: 1em;
+		padding: 0;
+	}
+} // .widget ul
 
-  .sub-menu {
-    margin-left: 1em;
-    padding: 0;
-  }
-} // .widget_nav_menu
+/* Archive widgets */
+.widget_archive,
+.widget_categories {
+	ul li {
+		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
+		line-height: 1;
 
+		a {
+			border: none;
+			order: 1;
+		} // a
+
+		&::before {
+			border-bottom: 1px dotted darken($color__tertiary, 15%);
+			content: "";
+			flex-grow: 1;
+			order: 2;
+			margin: 0.25em 3px;
+		} // :before
+
+		.post-count {
+			order: 3;
+			padding-top: 0.5em;
+		}
+
+		ul {
+			order: 4;
+			flex-grow: 0;
+			flex-basis: 100%;
+			margin-left: 1em;
+		}
+	} // ul li
+} // .widget_archive, .widget_categories
 
 /* Text widget */
 .textwidget {

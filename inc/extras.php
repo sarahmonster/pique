@@ -165,3 +165,23 @@ function pique_custom_excerpt_more($more) {
 	return '&hellip;';
 }
 add_filter( 'excerpt_more', 'pique_custom_excerpt_more' );
+
+/*
+ * Filter the categories archive widget to add a span around post count
+ */
+function pique_cat_count_span( $links ) {
+	$links = str_replace( '</a> (', '</a><span class="post-count">(', $links );
+	$links = str_replace( ')', ')</span>', $links );
+	return $links;
+}
+add_filter( 'wp_list_categories', 'pique_cat_count_span' );
+
+/*
+ * Filter the archives widget to add a span around post count
+ */
+function pique_archive_count_span( $links ) {
+  $links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
+  $links = str_replace( ')', ')</span>', $links );
+  return $links;
+}
+add_filter( 'get_archives_link', 'pique_archive_count_span' );
