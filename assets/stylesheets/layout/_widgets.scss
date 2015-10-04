@@ -5,6 +5,8 @@
 
 	/* Make sure select elements fit in widgets. */
 	select {
+		font-family: $font__sans;
+		@include font-size(0.95);
 		max-width: 100%;
 	}
 }

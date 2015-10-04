@@ -4130,6 +4130,9 @@ a:hover, a:active {
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 15.2px;
+  font-size: 0.95rem;
   max-width: 100%;
 }
 
