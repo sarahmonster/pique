@@ -27,24 +27,21 @@
 
 	// Run every time the window is resized
 	$(window).on("resize", function () {
+		var windowWidth = $( window ).width();
+		var headerHeight = $('#pique-header-image').height();
+		var navHeight = $('#primary-menu').height();
 
-		// If we're on the homepage, we'll handle things a little differently
-		if ($('body').hasClass('page-template-page-templatestemplate-front-php')) {
-			// For teensy little mobile screens, we want to position the nav before the header elements. Let's do it!
-			var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 40;
-			var piqueHeroContent = $('#pique-hero').find('.pique-panel-content');
-			if( $('#masthead').hasClass('pique-unstuck-header') ) {
-				// something
+		// Make sure we're not on the homepage, since that handles stuff differently
+		if (!$('body').hasClass('page-template-page-templatestemplate-front-php')) {
+
+			// Is this a small screen? Okay, we should be using a priority+ navigation approach
+			if ( windowWidth < 640 ) {
+				$('#masthead').css('height', headerHeight);
+
+			// Add the height of our header image and the height of our nav
 			} else {
-				$(piqueHeroContent).css('margin-top', piqueBrandingHeight);
+				$('#masthead').css('height', headerHeight + navHeight);
 			}
-
-		// If we're not on the front page, we'll measure the height of the header
-		// image and the height of our nav to determine our overall header height.
-		} else {
-			var piqueHeaderHeight = $('#pique-header-image').height();
-			var piqueNavHeight = $('#primary-menu').height();
-			$('#masthead').css('height', piqueHeaderHeight + piqueNavHeight);
 		}
 
 	}).resize(); // fire the resize event at load to size & rearrange elements as needed
