@@ -3189,7 +3189,8 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 0;
+  padding: 0;
 }
 
 ul {
@@ -3200,18 +3201,23 @@ ol {
   list-style: decimal;
 }
 
+.entry-content li {
+  margin-bottom: 0.5em;
+}
+
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 
 dt {
+  color: #aaa49e;
   font-weight: bold;
 }
 
 dd {
-  margin: 0 1.5em 1.5em;
+  margin: 0 0 0.5em;
 }
 
 img {
