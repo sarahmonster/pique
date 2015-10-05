@@ -49,9 +49,9 @@ function pique_post_classes( $classes ) {
 add_filter( 'post_class', 'pique_post_classes' );
 
 /**
- * We want to do some fancy-pants stuff with our navbar,
- * so we'll need to create a custom walker.
- *
+ * We want to do some fancy-pants stuff with our navbar, so we'll need to
+ * create a custom walker. This basically just splits our navbar items into two
+ * spans, so we can split them around the logo on the homepage.
  */
 class Pique_Menu extends Walker_Nav_Menu {
 	var $current_menu    = null;
@@ -150,6 +150,16 @@ class Pique_Menu extends Walker_Nav_Menu {
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 }
+
+/*
+ * Add an extra
+ *
+ */
+function add_more_to_nav( $items, $args ) {
+	$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_more_to_nav', 10, 2 );
 
 /*
  * Let's customize our excerpt a bit, so it looks better

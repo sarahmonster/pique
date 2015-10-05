@@ -3640,7 +3640,7 @@ a:hover, a:active {
 }
 #masthead .site-branding .site-logo-link {
   display: inline-block;
-  margin: 1rem auto 0.5rem;
+  margin: 1rem auto 0;
 }
 #masthead .site-branding .site-logo-link img {
   width: auto;
@@ -3653,7 +3653,7 @@ a:hover, a:active {
 }
 #masthead .site-branding .site-title {
   font-style: normal;
-  margin: 0;
+  margin: -5px 0 0;
   padding: 0;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -3680,6 +3680,7 @@ a:hover, a:active {
   left: 0;
   right: 0;
   width: 100%;
+  /* Priority+ menu */
 }
 .main-navigation ul {
   display: block;
@@ -3729,6 +3730,26 @@ a:hover, a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
   color: #E9D5C0;
+}
+.main-navigation #more-menu {
+  display: none;
+}
+.main-navigation #more-menu.visible {
+  display: inline-block;
+}
+.main-navigation #more-menu a::before {
+  font-family: "Genericons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  -webkit-font-smoothing: antialiased;
+  content: '\f476';
+}
+.main-navigation #more-menu li {
+  display: none;
 }
 
 @media (max-width: 767px) {
