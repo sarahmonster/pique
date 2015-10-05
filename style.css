@@ -3041,14 +3041,18 @@ h6 a:active {
 }
 
 h1 {
-  font-size: 33.6px;
-  font-size: 2.1rem;
+  font-size: 38.4px;
+  font-size: 2.4rem;
   font-family: Lora, Georgia, serif;
   font-style: italic;
 }
 
 h2 {
-  font-size: 2.827em;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h3, blockquote cite, .widget-title {
@@ -3808,20 +3812,26 @@ a:hover, a:active {
     display: block;
   }
 }
+.comment-navigation,
+.posts-navigation,
+.infinite-scroll #infinite-handle,
+.post-navigation {
+  clear: both;
+}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main .infinite-scroll #infinite-handle, .infinite-scroll .site-main #infinite-handle, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-.comment-navigation .nav-previous,
-.comment-navigation .nav-next,
-.posts-navigation .nav-previous,
-.infinite-scroll #infinite-handle .nav-previous,
-.posts-navigation .nav-next,
-.infinite-scroll #infinite-handle .nav-next,
-.post-navigation .nav-previous,
-.post-navigation .nav-next {
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a,
+.posts-navigation .nav-previous a,
+.infinite-scroll #infinite-handle .nav-previous a,
+.posts-navigation .nav-next a,
+.infinite-scroll #infinite-handle .nav-next a,
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
   border-bottom: 2px solid #a7cbdb;
   border-top: 1px solid #a7cbdb;
   color: #a7cbdb;
@@ -3831,11 +3841,14 @@ a:hover, a:active {
   font-size: 1rem;
   padding: 7px 0;
 }
-.comment-navigation a:hover,
-.posts-navigation a:hover,
-.infinite-scroll #infinite-handle a:hover,
-.post-navigation a:hover {
-  border-bottom: none;
+.comment-navigation .nav-previous a:hover,
+.comment-navigation .nav-next a:hover,
+.posts-navigation .nav-previous a:hover,
+.infinite-scroll #infinite-handle .nav-previous a:hover,
+.posts-navigation .nav-next a:hover,
+.infinite-scroll #infinite-handle .nav-next a:hover,
+.post-navigation .nav-previous a:hover,
+.post-navigation .nav-next a:hover {
   color: #3c7993;
 }
 .comment-navigation .nav-previous,
@@ -4540,15 +4553,10 @@ a:hover, a:active {
 .page-template-page-templatestemplate-front-php .pique-panel-content h2,
 .archive .pique-panel-content h2,
 .blog .pique-panel-content h2 {
-  border: 2px solid #FCFBF9;
   color: #FCFBF9;
+  border: 2px solid #FCFBF9;
   display: inline-block;
-  font-size: 1.2em;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-left: 0;
   padding: 0.7rem 1.5rem;
-  position: relative;
   text-transform: uppercase;
 }
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content,
@@ -4932,7 +4940,7 @@ blockquote .blog .overlay cite,
   margin: 0 0 1.5em;
 }
 
-.entry-meta, .widget_rss .rss-date, .widget_rss cite {
+.entry-meta, .widget_rss .rss-date, .widget_rss cite, .comment-metadata, .reply {
   color: #d9d7d5;
   font-family: Karla, Arial, sans-serif;
   font-weight: bold;
@@ -4941,10 +4949,10 @@ blockquote .blog .overlay cite,
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-.entry-meta a, .widget_rss .rss-date a, .widget_rss cite a {
+.entry-meta a, .widget_rss .rss-date a, .widget_rss cite a, .comment-metadata a, .reply a {
   color: #c2beb9;
 }
-.entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title {
+.entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title, .comment-metadata + .entry-title, .reply + .entry-title {
   margin-top: 0.2rem;
 }
 
@@ -5028,6 +5036,81 @@ time + .updated {
   font-size: 12.8px;
   font-size: 0.8rem;
   font-style: normal;
+}
+
+.comment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-list .children {
+  border-left: 2px solid #83B6CC;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.comment-author .avatar {
+  border-radius: 50%;
+  float: left;
+  height: 75px;
+  margin: 0 0.5em 0 0;
+  width: 75px;
+}
+.comment-author .fn {
+  display: inline-block;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: normal;
+  max-width: calc(100% - 100px - 0.5em);
+  padding-top: 0.25em;
+}
+.comment-author .says {
+  display: none;
+}
+
+/* Comment content */
+.comment-content {
+  clear: left;
+  font-size: 0.9em;
+}
+.comment-content .comment-content a {
+  word-wrap: break-word;
+}
+
+/* Reply to comment */
+.reply {
+  border: 1px solid;
+  display: inline-block;
+  float: right;
+  padding: 2px 5px;
+}
+.reply a:hover {
+  border: 1px solid;
+}
+
+#cancel-comment-reply-link {
+  color: #c2beb9;
+}
+#cancel-comment-reply-link::before {
+  content: '(';
+  display: inline;
+}
+#cancel-comment-reply-link::after {
+  content: ')';
+  display: inline;
+}
+
+/* Post author comments */
+.bypostauthor {
+  background-color: #E9D5C0;
+}
+
+/* Pingbacks */
+.pingback,
+.trackback {
+  font-style: italic;
+  margin: 1em 0;
 }
 
 /*--------------------------------------------------------------

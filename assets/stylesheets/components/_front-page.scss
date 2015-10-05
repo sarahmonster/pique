@@ -53,15 +53,10 @@
     }
 
     h2 {
-      border: 2px solid $color__white;
       color: $color__white;
+      border: 2px solid $color__white;
       display: inline-block;
-      font-size: 1.2em;
-      font-weight: 600;
-      letter-spacing: 2px;
-      margin-left: 0;
       padding: 0.7rem 1.5rem;
-      position: relative;
       text-transform: uppercase;
     }
 

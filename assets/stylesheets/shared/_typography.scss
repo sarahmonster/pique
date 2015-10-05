@@ -29,13 +29,16 @@ h6 {
 }
 
 h1 {
-	@include font-size(2.1);
+	@include font-size(2.4);
 	font-family: $font__serif;
 	font-style: italic;
 }
 
 h2 {
-  font-size: $font__size-h2;
+	@include font-size(1.6);
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 h3 {
