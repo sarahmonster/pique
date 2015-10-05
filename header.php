@@ -37,7 +37,7 @@
 		if ( 'page-templates/template-front.php' !== get_page_template_slug() AND get_header_image() ) : ?>
 			<a class="pique-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<?php // If the post uses a Featured Image, let's show that
-			if ( has_post_thumbnail() ) :
+			if ( is_singular() && has_post_thumbnail() ) :
 				the_post_thumbnail( 'pique-header', array( 'id' => 'pique-header-image' ) );
 
 			// Otherwise, let's just show the header image
