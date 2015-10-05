@@ -31,14 +31,14 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pique' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner" data-image-height="<?php echo absint( get_custom_header()->height ); ?>">
+	<header id="masthead" class="site-header" role="banner">
 
-		<?php // Let's show a header image if we aren't on the front page
+		<?php // Let's show a header image if we aren't on the front page and a header has been set
 		if ( 'page-templates/template-front.php' !== get_page_template_slug() AND get_header_image() ) : ?>
-			<a class="pique-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<a class="pique-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<?php // If the post uses a Featured Image, let's show that
 			if ( has_post_thumbnail() ) :
-				the_post_thumbnail( 'post-thumbnail', array( 'id' => 'pique-header-image' ) );
+				the_post_thumbnail( 'pique-header', array( 'id' => 'pique-header-image' ) );
 
 			// Otherwise, let's just show the header image
 			else :

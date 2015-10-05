@@ -3615,7 +3615,7 @@ a:hover, a:active {
   position: relative;
   text-align: center;
 }
-#masthead .pique-header-image {
+#masthead .pique-header {
   position: absolute;
   top: 0;
   left: 0;
