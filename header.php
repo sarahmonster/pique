@@ -33,10 +33,19 @@
 
 	<header id="masthead" class="site-header" role="banner" data-image-height="<?php echo absint( get_custom_header()->height ); ?>">
 
-		<?php if ( 'page-templates/template-front.php' !== get_page_template_slug() && get_header_image() ) : ?>
-		<a class="pique-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<img id="pique-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'name' ); ?>">
-		</a>
+		<?php // Let's show a header image if we aren't on the front page
+		if ( 'page-templates/template-front.php' !== get_page_template_slug() AND get_header_image() ) : ?>
+			<a class="pique-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<?php // If the post uses a Featured Image, let's show that
+			if ( has_post_thumbnail() ) :
+				the_post_thumbnail( 'post-thumbnail', array( 'id' => 'pique-header-image' ) );
+
+			// Otherwise, let's just show the header image
+			else :
+			?>
+				<img id="pique-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+			<?php endif; // End featured image check. ?>
+			</a>
 		<?php endif; // End header image check. ?>
 
 		<div class="site-branding">

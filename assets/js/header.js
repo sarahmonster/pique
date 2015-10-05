@@ -6,6 +6,25 @@
 
 ( function( $ ) {
 
+	// Ensure that header images are no taller than the viewport height
+	function fitHeader() {
+		var windowHeight = $( window ).height();
+		var windowWidth = $( window ).width();
+		var navBarHeight = $( '.nav-bar' ).height();
+		var wpAdminBar = $( '#wpadminbar' ).height() || 0;
+		var effectiveViewportHeight = windowHeight - navBarHeight - wpAdminBar;
+		var mastheadImageHeight = $( '#masthead' ).data('image-height');
+
+		// we should only resize for larger devices (tablets and up)
+		if ( windowWidth > 640 ) {
+			if ( mastheadImageHeight >= effectiveViewportHeight ) {
+				$( '#masthead' ).css( 'height', effectiveViewportHeight );
+			} else {
+				$( '#masthead' ).css( 'height', mastheadImageHeight );
+			}
+		}
+	};
+
 	// Run every time the window is resized
 	$(window).on("resize", function () {
 
