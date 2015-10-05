@@ -3638,6 +3638,16 @@ a:hover, a:active {
     width: auto;
   }
 }
+@media (min-width: 768px) {
+  #masthead .site-branding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 #masthead .site-branding .site-logo-link {
   display: inline-block;
   margin: 1rem auto 0;

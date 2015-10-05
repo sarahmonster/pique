@@ -21,6 +21,12 @@
 	}
 
 	.site-branding {
+		@include tablet {
+			position: absolute;
+				top: 50%;
+				left: 50%;
+			transform: translate(-50%, -50%);
+		}
 
 		.site-logo-link {
 			display: inline-block;
