@@ -79,29 +79,71 @@
 		display: block;
 		list-style: none;
 		margin: 0;
-		padding: 0.5rem;
 
+		/* Sub-nav */
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			background: $color__primary;
 			float: left;
 			position: absolute;
-			top: 1.5em;
-			left: -999em;
+				top: 37px;
+				left: -999em;
+			text-align: left;
 			z-index: 99999;
 
-			ul {
-				left: -999em;
-				top: 0;
+			&::before {
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7px 7px 7px;
+				border-color: transparent transparent $color__primary transparent;
+				position: absolute;
+					top: -5px;
+					left: 10px;
+			}
+
+			/* This is just here to make it easier to scroll down to the drop-down */
+			&::after {
+				height: 20px;
+				position: absolute;
+					top: -10px;
+					left: 0;
+				width: 100%;
 			}
 
 			li {
 				&:hover > ul,
 				&.focus > ul {
-					left: 100%;
+					left: 102%;
+				}
+			}
+
+			/* Sub-sub-menu */
+			ul {
+				left: -999em;
+				top: 0;
+
+				&::before {
+					border-width: 7px 7px 7px 0;
+					border-color: transparent $color__primary transparent transparent;
+					position: absolute;
+						top: 15px;
+						left: -5px;
+				}
+
+				li {
+					&:hover > ul,
+					&.focus > ul {
+						left: 102%;
+					}
 				}
 			}
 
 			a {
+				color: $color__tertiary;
+				border-bottom: 1px solid transparentize($color__tertiary, 0.5);
+				display: block;
 				width: 200px;
 			}
 
@@ -118,7 +160,8 @@
 		li.focus > ul {
 			left: auto;
 		}
-	}
+	} // sub-nav
+
 	li {
 		display: inline-block;
 		position: relative;
@@ -130,13 +173,13 @@
 
 	a {
 		color: $color__white;
+		display: inline-block;
 		@include font-size(0.8);
 		letter-spacing: 1px;
-		padding: 5px 10px;
+		padding: 12px 15px;
 		text-transform: uppercase;
 
 		&:hover {
-			border-bottom: none;
 			color: lighten($color__secondary, 10%);
 		}
 	}
@@ -150,18 +193,14 @@
 	/* Priority+ menu */
 	#more-menu {
 		display: none;
-		
+
 		&.visible {
 			display: inline-block;
 		}
 
-		a::before {
+		> a::before {
 			@include genericons;
 			content: '\f476';
-		}
-
-		li {
-			display: none;
 		}
 	}
 }

@@ -120,7 +120,11 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 		// Get the IDs for our target page (the page we're linking to), the parent of our target, and current page
 		$target_page = $item->object_id;
-		$target_parent = get_post( $target_page )->post_parent;
+		if ( get_post( $target_page ) ) :
+			$target_parent = get_post( $target_page )->post_parent;
+		else :
+			$target_parent = 0;
+		endif;
 		if ( $post ) :
 			$current_page = $post->ID;
 		else :
