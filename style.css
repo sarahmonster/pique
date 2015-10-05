@@ -4559,6 +4559,11 @@ a:hover, a:active {
   padding: 0.7rem 1.5rem;
   text-transform: uppercase;
 }
+.page-template-page-templatestemplate-front-php .pique-panel-content h2 a,
+.archive .pique-panel-content h2 a,
+.blog .pique-panel-content h2 a {
+  color: #FCFBF9;
+}
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content,
 .archive .pique-panel-content .entry-content,
 .blog .pique-panel-content .entry-content {

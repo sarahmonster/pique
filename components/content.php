@@ -14,7 +14,7 @@
 	<?php endif; ?>
 	<div class="pique-panel-content">
 		<header class="entry-header">
-			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+			<?php the_title( '<h2 class="entry-title"><a href="'. esc_url( get_the_permalink() ) .'">', '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
