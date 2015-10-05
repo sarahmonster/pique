@@ -3690,14 +3690,12 @@ a:hover, a:active {
 }
 .main-navigation ul ul {
   background: #483E34;
-  float: left;
   position: absolute;
   top: 37px;
   left: -999em;
   text-align: left;
   z-index: 99999;
   /* This is just here to make it easier to scroll down to the drop-down */
-  /* Sub-sub-menu */
 }
 .main-navigation ul ul::before {
   content: '';
@@ -3709,7 +3707,7 @@ a:hover, a:active {
   border-color: transparent transparent #483E34 transparent;
   position: absolute;
   top: -5px;
-  left: 10px;
+  left: 50%;
 }
 .main-navigation ul ul::after {
   height: 20px;
@@ -3718,36 +3716,21 @@ a:hover, a:active {
   left: 0;
   width: 100%;
 }
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  left: 102%;
-}
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-.main-navigation ul ul ul::before {
-  border-width: 7px 7px 7px 0;
-  border-color: transparent #483E34 transparent transparent;
-  position: absolute;
-  top: 15px;
-  left: -5px;
-}
-.main-navigation ul ul ul li:hover > ul, .main-navigation ul ul ul li.focus > ul {
-  left: 102%;
+.main-navigation ul ul li {
+  display: block;
 }
 .main-navigation ul ul a {
   color: #E9D5C0;
   border-bottom: 1px solid rgba(233, 213, 192, 0.5);
   display: block;
-  width: 200px;
+  width: 100%;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 5%;
 }
 .main-navigation li {
   display: inline-block;
-  position: relative;
 }
 .main-navigation a {
   color: #FCFBF9;
@@ -3782,6 +3765,71 @@ a:hover, a:active {
   vertical-align: text-bottom;
   -webkit-font-smoothing: antialiased;
   content: '\f476';
+}
+@media (max-width: 767px) {
+  .main-navigation ul {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .main-navigation ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    /* Sub-nav */
+  }
+  .main-navigation ul ul {
+    float: left;
+    position: absolute;
+    top: 37px;
+    left: -999em;
+    min-width: 200px;
+    /* This is just here to make it easier to scroll down to the drop-down */
+    /* Sub-sub-menu */
+  }
+  .main-navigation ul ul::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #483E34 transparent;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+  }
+  .main-navigation ul ul::after {
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+  }
+  .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+    left: 102%;
+  }
+  .main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+  }
+  .main-navigation ul ul ul::before {
+    border-width: 7px 7px 7px 0;
+    border-color: transparent #483E34 transparent transparent;
+    position: absolute;
+    top: 15px;
+    left: -5px;
+  }
+  .main-navigation ul ul ul li:hover > ul, .main-navigation ul ul ul li.focus > ul {
+    left: 102%;
+  }
+  .main-navigation ul li {
+    position: relative;
+  }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto;
+  }
 }
 
 @media (max-width: 767px) {

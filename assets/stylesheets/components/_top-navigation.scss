@@ -83,7 +83,6 @@
 		/* Sub-nav */
 		ul {
 			background: $color__primary;
-			float: left;
 			position: absolute;
 				top: 37px;
 				left: -999em;
@@ -100,7 +99,7 @@
 				border-color: transparent transparent $color__primary transparent;
 				position: absolute;
 					top: -5px;
-					left: 10px;
+					left: 50%;
 			}
 
 			/* This is just here to make it easier to scroll down to the drop-down */
@@ -113,62 +112,26 @@
 			}
 
 			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 102%;
-				}
-			}
-
-			/* Sub-sub-menu */
-			ul {
-				left: -999em;
-				top: 0;
-
-				&::before {
-					border-width: 7px 7px 7px 0;
-					border-color: transparent $color__primary transparent transparent;
-					position: absolute;
-						top: 15px;
-						left: -5px;
-				}
-
-				li {
-					&:hover > ul,
-					&.focus > ul {
-						left: 102%;
-					}
-				}
+				display: block;
 			}
 
 			a {
 				color: $color__tertiary;
 				border-bottom: 1px solid transparentize($color__tertiary, 0.5);
 				display: block;
-				width: 200px;
+				width: 100%;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
+		} // ul (sub-menu)
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			left: 5%;
 		}
-	} // sub-nav
+	} // ul (main nav)
 
 	li {
 		display: inline-block;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 
 	a {
@@ -203,6 +166,92 @@
 			content: '\f476';
 		}
 	}
+
+	@include mobile {
+		ul {
+			width: 90%;
+		}
+	}
+
+	@include tablet {
+		ul {
+			display: block;
+			list-style: none;
+			margin: 0;
+
+			/* Sub-nav */
+			ul {
+				float: left;
+				position: absolute;
+					top: 37px;
+					left: -999em;
+				min-width: 200px;
+
+				&::before {
+					content: '';
+					display: block;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 7px 7px 7px;
+					border-color: transparent transparent $color__primary transparent;
+					position: absolute;
+						top: -5px;
+						left: 10px;
+				}
+
+				/* This is just here to make it easier to scroll down to the drop-down */
+				&::after {
+					height: 20px;
+					position: absolute;
+						top: -10px;
+						left: 0;
+					width: 100%;
+				}
+
+				li {
+					&:hover > ul,
+					&.focus > ul {
+						left: 102%;
+					}
+				}
+
+				/* Sub-sub-menu */
+				ul {
+					left: -999em;
+					top: 0;
+
+					&::before {
+						border-width: 7px 7px 7px 0;
+						border-color: transparent $color__primary transparent transparent;
+						position: absolute;
+							top: 15px;
+							left: -5px;
+					}
+
+					li {
+						&:hover > ul,
+						&.focus > ul {
+							left: 102%;
+						}
+					}
+				}
+
+				a {
+					//width: 200px;
+				}
+			}
+
+			li {
+				position: relative;
+			}
+
+			li:hover > ul,
+			li.focus > ul {
+				left: auto;
+			}
+		} // sub-nav
+	} // tablet
 }
 
 .page-template-page-templatestemplate-front-php {
