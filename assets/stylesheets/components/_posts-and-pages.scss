@@ -4,6 +4,15 @@
 
 .hentry {
 	margin: 0 0 1.5em;
+
+	a {
+		border-bottom: 0;
+		padding-bottom: 1px;
+
+		&:hover {
+			border-bottom: 2px solid;
+		}
+	}
 }
 
 .entry-meta {

@@ -92,7 +92,7 @@ add_action( 'after_setup_theme', 'pique_setup' );
  * @global int $content_width
  */
 function pique_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'pique_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'pique_content_width', 775 );
 }
 add_action( 'after_setup_theme', 'pique_content_width', 0 );
 

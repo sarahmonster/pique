@@ -1,5 +1,14 @@
+figure {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .gallery {
 	margin-bottom: 1.5em;
+
+	a:hover {
+		border-bottom: none;
+	}
 }
 
 .gallery-item {
@@ -43,4 +52,10 @@
 
 .gallery-caption {
 	display: block;
+}
+
+/* Tiled galleries */
+
+.tiled-gallery-caption {
+	@extend .wp-caption-text;
 }

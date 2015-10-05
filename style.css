@@ -3595,17 +3595,14 @@ input[type="submit"].minimal:hover {
 a {
   color: #83B6CC;
   text-decoration: none;
-  border-bottom: 0;
-  padding-bottom: 2px;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-          transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
 a:visited {
   color: #83B6CC;
 }
 a:hover, a:focus, a:active {
   color: #E9D5C0;
-  border-bottom: 2px solid;
 }
 a:focus {
   outline: thin dotted;
@@ -4973,6 +4970,13 @@ blockquote .blog .overlay cite,
 .hentry {
   margin: 0 0 1.5em;
 }
+.hentry a {
+  border-bottom: 0;
+  padding-bottom: 1px;
+}
+.hentry a:hover {
+  border-bottom: 2px solid;
+}
 
 .entry-meta, .widget_rss .rss-date, .widget_rss cite, .comment-metadata, .reply {
   color: #d9d7d5;
@@ -5225,19 +5229,28 @@ object {
   margin-left: auto;
   margin-right: auto;
 }
-.wp-caption .wp-caption-text {
+.wp-caption .wp-caption-text, .wp-caption .tiled-gallery-caption {
   margin: 0.8075em 0;
 }
 
-.wp-caption-text {
+.wp-caption-text, .tiled-gallery-caption {
+  font-style: italic;
   text-align: center;
 }
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .gallery {
   margin-bottom: 1.5em;
+}
+.gallery a:hover {
+  border-bottom: none;
 }
 
 .gallery-item {
@@ -5275,6 +5288,7 @@ object {
   display: block;
 }
 
+/* Tiled galleries */
 /*--------------------------------------------------------------
 # Media queries
 --------------------------------------------------------------*/
