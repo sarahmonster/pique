@@ -132,6 +132,34 @@
 /* Text widget */
 .textwidget {
 	font-family: $font__serif;
-  font-style: italic;
-  font-size: 1.2em;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+/* Calendar widget */
+.widget_calendar {
+	line-height: 1.8;
+	max-width: 500px;
+
+	caption {
+		font-family: $font__serif;
+		font-style: italic;
+		margin-bottom: 5px;
+	}
+
+	thead {
+		border-bottom: 1px solid transparentize($color__tertiary, 0.5);
+	}
+
+	td {
+		text-align: center;
+	}
+
+	#prev {
+		text-align: left;
+	}
+
+	#next {
+		text-align: right;
+	}
 }

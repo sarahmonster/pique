@@ -4282,6 +4282,29 @@ a:hover, a:active {
   font-size: 1.2em;
 }
 
+/* Calendar widget */
+.widget_calendar {
+  line-height: 1.8;
+  max-width: 500px;
+}
+.widget_calendar caption {
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.widget_calendar thead {
+  border-bottom: 1px solid rgba(233, 213, 192, 0.5);
+}
+.widget_calendar td {
+  text-align: center;
+}
+.widget_calendar #prev {
+  text-align: left;
+}
+.widget_calendar #next {
+  text-align: right;
+}
+
 /*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
