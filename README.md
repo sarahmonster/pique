@@ -2,12 +2,11 @@
 
 Pique is a one-page scrolling theme for your business needs. It's great for businesses, event promotion, and probably other stuff too.
 
-
 ## Setting up your front page
 
 When you first activate Pique, your homepage will display posts in a traditional blog format. To set up your one-page template as the homepage, follow these steps:
 
-* Create or edit a page, and assign it the Front Page Template from the Page Attributes box.
+* Create a page.
 * Go to Settings → Reading and set “Front page displays” to “A static page.”
 * Select the page created in Step One as “Front page,” and choose another page as “Posts page” to display your blog posts.
 
@@ -20,11 +19,11 @@ To get your one-page site set up, you'll need to add some more panels.
 Each "panel" is a page. To add additional panels to your Front Page, follow these steps:
 
 * Create or edit a page.
-* From the [Page Attributes box](https://en.support.wordpress.com/pages/page-attributes/), set the parent page as your Front Page.
+* Navigate to Customize  → Theme Options. From the dropdowns, select the page you'd like to appear in the panel.
 
-Panels will display in according to the Order set in Page Attributes.
+To set the background image of your panel, assign a [Featured Image](https://en.support.wordpress.com/featured-images/) to your page.
 
-To add items to the grid, create additional pages and set their parent page in the Page Attributes box to the grid page you just created. Be sure to set a featured image for each child page if you want an image to show up inside the grid. Repeat these steps for every item you want to display in the grid.
+![alt text](readme.png "Logo Title Text 1")
 
 ### Using page templates
 
