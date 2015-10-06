@@ -64,10 +64,22 @@
 	  }
 	}
 
+	// Sticky nav
+
+	// Okay, now we want to stick-ify our menu when we reach it
+	function stickyNav() {
+	  $('#site-navigation').waypoint(
+	    function() {
+	      $('#site-navigation').toggleClass('sticky');
+	    }
+	  )
+  };
+
 	// Run our functions on document load
 	$(document).on('ready', function() {
 		priorityNav();
 		fitHeader();
+		stickyNav();
 	});
 
 	// Annnnnd also every time the window resizes

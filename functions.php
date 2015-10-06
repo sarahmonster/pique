@@ -210,15 +210,15 @@ function pique_scripts() {
 	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 
 	// Header and navigation
+	wp_enqueue_script( 'pique-waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints.min.js', array( 'jquery' ), '20150813', true );
 	wp_enqueue_script( 'pique-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'pique-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
-	wp_enqueue_script( 'pique-header', get_template_directory_uri() . '/assets/js/header.js', array( 'jquery' ), '20150930', true );
+	wp_enqueue_script( 'pique-header', get_template_directory_uri() . '/assets/js/header.js', array( 'jquery', 'pique-waypoints' ), '20150930', true );
 
 	// Scroll effects (only loaded on front page)
 	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
 		wp_enqueue_script( 'pique-skrollr', get_template_directory_uri() . '/assets/js/skrollr.min.js', array(), '20150805', true );
 		wp_enqueue_script( 'pique-skrollr-menu', get_template_directory_uri() . '/assets/js/skrollr.menu.min.js', array(), '20150805', true );
-		wp_enqueue_script( 'pique-waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints.min.js', array( 'jquery' ), '20150813', true );
 		wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr', 'pique-waypoints' ), '20150805', true );
 	endif;
 

@@ -3638,7 +3638,7 @@ a:hover, a:active {
     width: auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #masthead .site-branding {
     position: absolute;
     top: 50%;
@@ -3690,7 +3690,13 @@ a:hover, a:active {
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 10000;
   /* Priority+ menu */
+}
+.main-navigation.sticky {
+  position: fixed;
+  top: 0px;
+  bottom: auto;
 }
 .main-navigation ul {
   display: block;
