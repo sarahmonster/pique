@@ -3769,88 +3769,6 @@ a:hover, a:active {
   }
 }
 
-@media (max-width: 767px) {
-  .page-template-page-templatestemplate-front-php #masthead {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content {
-    margin-top: 2em;
-  }
-  .page-template-page-templatestemplate-front-php #site-navigation {
-    position: relative;
-  }
-}
-@media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php #masthead {
-    padding: 0.5em;
-    position: fixed;
-    top: 0;
-    -webkit-transition: all 0.1s ease-in-out 0s;
-            transition: all 0.1s ease-in-out 0s;
-    width: 100%;
-    z-index: 10000;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding {
-    position: absolute;
-    line-height: 1;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 100;
-    left: calc(50% - 50px);
-    top: -6px;
-    height: 71px;
-    width: 100px;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-logo-link img {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-title a {
-    text-decoration: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .site-branding .site-description {
-    display: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav {
-    width: calc(50% - 50px);
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:first-of-type {
-    float: left;
-    text-align: right;
-  }
-  .page-template-page-templatestemplate-front-php #masthead .pique-split-nav:last-of-type {
-    float: right;
-    text-align: left;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header {
-    position: absolute;
-    top: 2em;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header #site-navigation {
-    background: transparent;
-    border: none;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header ul {
-    margin: 1rem 0;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding {
-    width: 150px;
-    position: absolute;
-    left: calc(50% - 75px);
-    top: -75%;
-    height: auto;
-  }
-  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav {
-    width: calc(50% - 75px);
-  }
-}
-
 .secondary-links ul {
   margin: 0;
   padding: 0;
@@ -4568,6 +4486,77 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.page-template-page-templatestemplate-front-php #masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000000000;
+}
+.page-template-page-templatestemplate-front-php #masthead .site-branding {
+  position: relative;
+  top: auto;
+  left: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.page-template-page-templatestemplate-front-php .main-navigation:not(.sticky) {
+  margin-top: 1em;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .page-template-page-templatestemplate-front-php .pique-split-nav {
+    float: left;
+    width: 50%;
+  }
+  .page-template-page-templatestemplate-front-php .sticky {
+    margin-top: 1em;
+    position: relative;
+  }
+  .page-template-page-templatestemplate-front-php .main-navigation {
+    content: "";
+    display: table;
+  }
+  .page-template-page-templatestemplate-front-php .main-navigation li {
+    display: block;
+  }
+  .page-template-page-templatestemplate-front-php .main-navigation a {
+    padding: 5px 10px;
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding {
+    margin-top: 2em;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding .site-logo-link {
+    width: 120px;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .site-branding .site-logo-link img {
+    height: auto;
+    max-width: 100%;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header #site-navigation {
+    background: none;
+    border: none;
+    margin-top: -5em;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav {
+    width: calc(50% - 70px);
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav:first-of-type {
+    float: left;
+    text-align: right;
+  }
+  .page-template-page-templatestemplate-front-php #masthead.pique-unstuck-header .pique-split-nav:last-of-type {
+    float: right;
+    text-align: left;
+  }
+}
+
 .page-template-page-templatestemplate-front-php,
 .archive,
 .blog {
@@ -4713,19 +4702,13 @@ a:hover, a:active {
 .archive .pique-hero .pique-panel-content,
 .blog .pique-hero .pique-panel-content {
   font-size: 1.5em;
+  margin-top: 7em;
   max-width: 1400px;
 }
 .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content .entry-content,
 .archive .pique-hero .pique-panel-content .entry-content,
 .blog .pique-hero .pique-panel-content .entry-content {
   text-align: center;
-}
-@media (min-width: 768px) {
-  .page-template-page-templatestemplate-front-php .pique-hero .pique-panel-content,
-  .archive .pique-hero .pique-panel-content,
-  .blog .pique-hero .pique-panel-content {
-    margin-top: 6em;
-  }
 }
 .page-template-page-templatestemplate-front-php .pique-template-grid .pique-panel-content .entry-content,
 .page-template-page-templatestemplate-front-php .pique-template-testimonials .pique-panel-content .entry-content,

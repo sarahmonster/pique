@@ -69,12 +69,12 @@
 
 	// Okay, now we want to stick-ify our menu when we reach it
 	function stickyNav() {
-	  $('#site-navigation').waypoint(
-	    function() {
-	      $('#site-navigation').toggleClass('sticky');
-	    }
-	  )
-  };
+		if (!$('body').hasClass('page-template-page-templatestemplate-front-php')) {
+			$('#site-navigation').waypoint(function() {
+				$('#site-navigation').toggleClass('sticky');
+			});
+		}
+	};
 
 	// Run our functions on document load
 	$(document).on('ready', function() {

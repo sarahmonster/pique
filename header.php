@@ -21,14 +21,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<?php
-	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
-		while ( have_posts() ) : the_post();
-			get_template_part( 'components/content', 'hero' );
-		endwhile;
-	endif;
-	?>
-
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pique' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -67,5 +59,13 @@
 		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
+
+	<?php
+	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
+		while ( have_posts() ) : the_post();
+			get_template_part( 'components/content', 'hero' );
+		endwhile;
+	endif;
+	?>
 
 	<div id="content" class="site-content">

@@ -1,6 +1,99 @@
+// Front-page only header stuff
+.page-template-page-templatestemplate-front-php {
+  #masthead {
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    width: 100%;
+    z-index: 1000000000;
+
+    .site-branding {
+      position: relative;
+        top: auto;
+        left: auto;
+      transform: none;
+    }
+  }
+
+  .main-navigation:not(.sticky) {
+    margin-top: 1em;
+    position: relative;
+  }
+
+  @include mobile {
+    .pique-split-nav {
+      float: left;
+      width: 50%;
+    }
+
+    // Because we don't want it to stick, ever.
+    .sticky {
+      margin-top: 1em;
+      position: relative;
+    }
+
+    .main-navigation {
+      @include clearfix;
+
+      li {
+        display: block;
+      }
+
+      a {
+        padding: 5px 10px;
+        text-align: left;
+        width: 100%;
+      }
+    } // main-navigation
+  } // mobile
+
+  // Initial state for our header & nav
+  @include tablet {
+    #masthead.pique-unstuck-header {
+
+      .site-branding {
+        margin-top: 2em;
+
+        .site-logo-link {
+          width: 120px;
+
+          img {
+            height: auto;
+            max-width: 100%
+          }
+        }
+      }
+
+      #site-navigation {
+        background: none;
+        border: none;
+        margin-top: -5em;
+      }
+
+      .pique-split-nav {
+        width: calc(50% - 70px);
+
+        &:first-of-type {
+          float: left;
+          text-align: right;
+        }
+
+        &:last-of-type {
+          float: right;
+          text-align: left;
+        }
+      } // .pique-split-nav
+    } // .pique-unstuck-header
+  } // tablet
+}
+
+// Applies to all long scrolly-style pages, so the blog indexes as well
 .page-template-page-templatestemplate-front-php,
 .archive,
 .blog {
+
+  // General content-ish stuff
   .site-content,
   .content-area {
     margin: 0;
@@ -100,14 +193,11 @@
 
     .pique-panel-content {
       font-size: 1.5em;
+      margin-top: 7em;
       max-width: $size__site-width;
 
       .entry-content {
         text-align: center;
-      }
-
-      @include tablet {
-        margin-top: 6em;
       }
     }
   }

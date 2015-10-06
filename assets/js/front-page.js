@@ -55,8 +55,8 @@
     var waypoint = new Waypoint({
       element: document.getElementById( 'pique-hero' ),
       handler: function() {
-        $( '#masthead' ).toggleClass( 'pique-unstuck-header' );
-        //console.log("Switch!");
+        $('#masthead').toggleClass('pique-unstuck-header');
+        $('#site-navigation').toggleClass('sticky');
       },
       offset: -150
     })
@@ -68,8 +68,23 @@
         console.log("Top of page");
       }
   })*/
+
+
   // Add the "unstuck header" class to our page when we initially load the page
   $( '#masthead' ).addClass( 'pique-unstuck-header' );
 
+
+  /*
+  // For teensy little mobile screens, we want to position the nav before the header elements. Let's do it!
+  var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 40;
+  var piqueHeroContent = $('#pique-hero').find('.pique-panel-content');
+  if( $('#masthead').hasClass('pique-unstuck-header') ) {
+      // something
+  } else {
+      $(piqueHeroContent).css('margin-top', piqueBrandingHeight);
+  }
+  */
+
   });
+
 } )( jQuery );
