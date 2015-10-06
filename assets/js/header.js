@@ -13,7 +13,7 @@
 		var navHeight = $('#primary-menu').height();
 
 		// Make sure we're not on the homepage, since that handles stuff differently
-		if (!$('body').hasClass('page-template-page-templatestemplate-front-php')) {
+		if (!$('body').hasClass('pique-frontpage')) {
 
 			// Is this a small screen? Okay, we should be making it a little smaller (no need to account for our nav height here)
 			if ( windowWidth < 640 ) {
@@ -29,7 +29,7 @@
 	// Priority+ navigation, whee!
 	function priorityNav() {
 		// Don't do it on the homepage, because the homepage is too damned delicate
-		if (!$('body').hasClass('page-template-page-templatestemplate-front-php')) {
+		if (!$('body').hasClass('pique-frontpage')) {
 		  var navWidth = 0;
 		  var firstMoreElement = $('#more-menu li').first();
 
@@ -69,7 +69,7 @@
 
 	// Okay, now we want to stick-ify our menu when we reach it
 	function stickyNav() {
-		if (!$('body').hasClass('page-template-page-templatestemplate-front-php')) {
+		if (!$('body').hasClass('pique-frontpage')) {
 			$('#site-navigation').waypoint(function() {
 				$('#site-navigation').toggleClass('sticky');
 			});

@@ -8,6 +8,18 @@
  */
 
 /**
+ * Checks to see if we're on the homepage or not.
+ * We reuse this check in a few places, so this simplifies the process a bit.
+ */
+function pique_is_frontpage() {
+	if ( is_front_page() && ! is_home() ) :
+		return true;
+	else :
+		return false;
+	endif;
+}
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
@@ -18,7 +30,10 @@ function pique_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-
+	// Adds a body class if we're on the (static) front page
+	if ( pique_is_frontpage() ) {
+		$classes[] = 'pique-frontpage';
+	}
 	return $classes;
 }
 add_filter( 'body_class', 'pique_body_classes' );

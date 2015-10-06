@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying pages on frontpage.
+ * Template part for displaying pages on front page.
  *
  * @package Pique
  */

@@ -235,6 +235,15 @@ function pique_scripts() {
 add_action( 'wp_enqueue_scripts', 'pique_scripts' );
 
 /**
+ * Filter the front page template so it's bypassed entirely if the user selects
+ * to display blog posts on their homepage instead of a static page.
+ */
+function pique_filter_front_page_template( $template ) {
+	return is_home() ? '' : $template;
+}
+add_filter( 'frontpage_template', 'pique_filter_front_page_template' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
