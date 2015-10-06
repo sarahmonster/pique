@@ -295,8 +295,8 @@
 
   .edit-link {
     position: absolute;
-      bottom: 10px;
-      left: 10px;
+      bottom: 5px;
+      left: 5px;
     z-index: 100;
 
     &::before {
@@ -304,15 +304,16 @@
     }
 
     a {
-      @extend button;
-      @extend .minimal;
-      border-width: 1px;
+      font-family: $font__sans;
       font-size: 0.8rem;
       opacity: 0.2;
-      padding: 0.5rem 1rem;
+      letter-spacing: 1px;
+      padding: 1rem 1rem;
+      text-transform: uppercase;
       width: auto;
 
       &:hover {
+        border: none;
         opacity: 1;
       }
     }

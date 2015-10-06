@@ -2857,9 +2857,7 @@ samp {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited, .infinite-scroll #infinite-handle button,
 input,
 optgroup,
@@ -2872,18 +2870,14 @@ textarea {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited, .infinite-scroll #infinite-handle button {
   overflow: visible;
 }
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited, .infinite-scroll #infinite-handle button,
 select {
   text-transform: none;
@@ -2891,9 +2885,7 @@ select {
 
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited, .infinite-scroll #infinite-handle button,
 html input[type="button"],
 input[type="reset"],
@@ -2904,18 +2896,14 @@ input[type="submit"] {
 
 button[disabled], .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a[disabled],
 .archive .pique-panel-content .entry-content .read-more a[disabled],
-.blog .pique-panel-content .entry-content .read-more a[disabled], .page-template-page-templatestemplate-front-php .edit-link a[disabled],
-.archive .edit-link a[disabled],
-.blog .edit-link a[disabled], [disabled].more-link, .infinite-scroll #infinite-handle button[disabled],
+.blog .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link, .infinite-scroll #infinite-handle button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
 button::-moz-focus-inner, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
 .archive .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .page-template-page-templatestemplate-front-php .edit-link a::-moz-focus-inner,
-.archive .edit-link a::-moz-focus-inner,
-.blog .edit-link a::-moz-focus-inner, .more-link::-moz-focus-inner,
+.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
 .more-link:visited::-moz-focus-inner, .infinite-scroll #infinite-handle button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2983,9 +2971,6 @@ button,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
 .blog .pique-panel-content .entry-content .read-more a,
-.page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a,
 .more-link,
 .more-link:visited,
 .infinite-scroll #infinite-handle button,
@@ -3332,9 +3317,7 @@ textarea {
 /* Buttons */
 button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited, .infinite-scroll #infinite-handle button,
 .button,
 input[type="button"],
@@ -3362,9 +3345,7 @@ input[type="submit"] {
 @media (max-width: 767px) {
   button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
   .archive .pique-panel-content .entry-content .read-more a,
-  .blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-  .archive .edit-link a,
-  .blog .edit-link a, .more-link,
+  .blog .pique-panel-content .entry-content .read-more a, .more-link,
   .more-link:visited, .infinite-scroll #infinite-handle button,
   .button,
   input[type="button"],
@@ -3375,17 +3356,11 @@ input[type="submit"] {
 }
 button:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
-.archive .edit-link a:hover,
-.blog .edit-link a:hover, .more-link:hover, .infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover, .more-link:hover, .infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a:hover, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .archive .edit-link a:hover,
-.archive .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .blog .edit-link a:hover,
-.blog .edit-link .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover,
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -3398,13 +3373,9 @@ input[type="submit"]:hover {
 }
 button:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
-.archive .edit-link a:active,
-.blog .edit-link a:active, .more-link:active, .infinite-scroll #infinite-handle button:active, button:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:active, .more-link:active, .infinite-scroll #infinite-handle button:active, button:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
-.archive .edit-link a:focus,
-.blog .edit-link a:focus, .more-link:focus, .infinite-scroll #infinite-handle button:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus, .more-link:focus, .infinite-scroll #infinite-handle button:focus,
 .button:active,
 .button:focus,
 input[type="button"]:active,
@@ -3419,24 +3390,15 @@ input[type="submit"]:focus {
 }
 button.minimal, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a, .minimal.more-link, .infinite-scroll #infinite-handle button.minimal, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
+.blog .pique-panel-content .entry-content .read-more a, .minimal.more-link, .infinite-scroll #infinite-handle button.minimal, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a,
-.infinite-scroll #infinite-handle .archive .edit-link a,
-.archive .edit-link .infinite-scroll #infinite-handle a,
-.infinite-scroll #infinite-handle .blog .edit-link a,
-.blog .edit-link .infinite-scroll #infinite-handle a,
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
 .button.minimal,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button,
 .archive .pique-panel-content .entry-content .read-more a.button,
 .blog .pique-panel-content .entry-content .read-more a.button,
-.page-template-page-templatestemplate-front-php .edit-link a.button,
-.archive .edit-link a.button,
-.blog .edit-link a.button,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
@@ -3448,62 +3410,35 @@ input[type="submit"].minimal {
 }
 button.minimal:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .edit-link a:active,
-.archive .edit-link a:active,
-.blog .edit-link a:active, .minimal.more-link:active, .infinite-scroll #infinite-handle button.minimal:active, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:active,
+.blog .pique-panel-content .entry-content .read-more a:active, .minimal.more-link:active, .infinite-scroll #infinite-handle button.minimal:active, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:active, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:active,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:active,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:active, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a:active, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a:active,
-.infinite-scroll #infinite-handle .archive .edit-link a:active,
-.archive .edit-link .infinite-scroll #infinite-handle a:active,
-.infinite-scroll #infinite-handle .blog .edit-link a:active,
-.blog .edit-link .infinite-scroll #infinite-handle a:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:active, button.minimal:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .edit-link a:focus,
-.archive .edit-link a:focus,
-.blog .edit-link a:focus, .minimal.more-link:focus, .infinite-scroll #infinite-handle button.minimal:focus, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus, .minimal.more-link:focus, .infinite-scroll #infinite-handle button.minimal:focus, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:focus, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:focus,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:focus,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:focus, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a:focus, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a:focus,
-.infinite-scroll #infinite-handle .archive .edit-link a:focus,
-.archive .edit-link .infinite-scroll #infinite-handle a:focus,
-.infinite-scroll #infinite-handle .blog .edit-link a:focus,
-.blog .edit-link .infinite-scroll #infinite-handle a:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:focus, button.minimal:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .edit-link a:hover,
-.archive .edit-link a:hover,
-.blog .edit-link a:hover, .minimal.more-link:hover, .infinite-scroll #infinite-handle button.minimal:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover, .minimal.more-link:hover, .infinite-scroll #infinite-handle button.minimal:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a:hover, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a:hover, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .archive .edit-link a:hover,
-.archive .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .blog .edit-link a:hover,
-.blog .edit-link .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .minimal.more-link:hover,
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .minimal.more-link:hover,
 .button.minimal:active,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:active,
 .archive .pique-panel-content .entry-content .read-more a.button:active,
 .blog .pique-panel-content .entry-content .read-more a.button:active,
-.page-template-page-templatestemplate-front-php .edit-link a.button:active,
-.archive .edit-link a.button:active,
-.blog .edit-link a.button:active,
 .button.minimal:focus,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:focus,
 .archive .pique-panel-content .entry-content .read-more a.button:focus,
 .blog .pique-panel-content .entry-content .read-more a.button:focus,
-.page-template-page-templatestemplate-front-php .edit-link a.button:focus,
-.archive .edit-link a.button:focus,
-.blog .edit-link a.button:focus,
 .button.minimal:hover,
 .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a.button:hover,
 .archive .pique-panel-content .entry-content .read-more a.button:hover,
 .blog .pique-panel-content .entry-content .read-more a.button:hover,
-.page-template-page-templatestemplate-front-php .edit-link a.button:hover,
-.archive .edit-link a.button:hover,
-.blog .edit-link a.button:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -3523,9 +3458,7 @@ input[type="submit"].minimal:hover {
 @media (max-width: 767px) {
   button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link a + button,
-  .archive .edit-link a + button,
-  .blog .edit-link a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
   .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
@@ -3536,41 +3469,21 @@ input[type="submit"].minimal:hover {
   .blog .pique-panel-content .entry-content .read-more a + a,
   .blog .pique-panel-content .entry-content .read-more .more-link + a,
   .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more button + a,
-  .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a, .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link .more-link + a, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle button + a,
-  .archive .edit-link button + a,
-  .archive .pique-panel-content .entry-content .read-more .edit-link a + a,
-  .archive .edit-link a + a,
-  .archive .edit-link .more-link + a,
-  .infinite-scroll #infinite-handle .archive .edit-link button + a,
-  .archive .edit-link .infinite-scroll #infinite-handle button + a,
-  .blog .edit-link button + a,
-  .blog .pique-panel-content .entry-content .read-more .edit-link a + a,
-  .blog .edit-link a + a,
-  .blog .edit-link .more-link + a,
-  .infinite-scroll #infinite-handle .blog .edit-link button + a,
-  .blog .edit-link .infinite-scroll #infinite-handle button + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .page-template-page-templatestemplate-front-php .edit-link a + .more-link,
-  .archive .edit-link a + .more-link,
-  .blog .edit-link a + .more-link, .more-link + .more-link, .infinite-scroll #infinite-handle button + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link, .infinite-scroll #infinite-handle button + .more-link,
   button + .more-link:visited, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button,
   .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a + button,
   .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a + button, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a + button,
-  .archive .edit-link .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .archive .edit-link a + button,
-  .blog .edit-link .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .blog .edit-link a + button, .infinite-scroll #infinite-handle .more-link + button, .infinite-scroll #infinite-handle button + button {
+  .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a + button, .infinite-scroll #infinite-handle .more-link + button, .infinite-scroll #infinite-handle button + button {
     margin-top: 1em;
   }
 }
 @media (min-width: 768px) {
   button + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link a + button,
-  .archive .edit-link a + button,
-  .blog .edit-link a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
   .more-link:visited + button, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .more-link + a, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
@@ -3581,32 +3494,14 @@ input[type="submit"].minimal:hover {
   .blog .pique-panel-content .entry-content .read-more a + a,
   .blog .pique-panel-content .entry-content .read-more .more-link + a,
   .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more button + a,
-  .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a, .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link a + a, .page-template-page-templatestemplate-front-php .edit-link .more-link + a, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link button + a, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle button + a,
-  .archive .edit-link button + a,
-  .archive .pique-panel-content .entry-content .read-more .edit-link a + a,
-  .archive .edit-link a + a,
-  .archive .edit-link .more-link + a,
-  .infinite-scroll #infinite-handle .archive .edit-link button + a,
-  .archive .edit-link .infinite-scroll #infinite-handle button + a,
-  .blog .edit-link button + a,
-  .blog .pique-panel-content .entry-content .read-more .edit-link a + a,
-  .blog .edit-link a + a,
-  .blog .edit-link .more-link + a,
-  .infinite-scroll #infinite-handle .blog .edit-link button + a,
-  .blog .edit-link .infinite-scroll #infinite-handle button + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle button + a, button + .more-link, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .page-template-page-templatestemplate-front-php .edit-link a + .more-link,
-  .archive .edit-link a + .more-link,
-  .blog .edit-link a + .more-link, .more-link + .more-link, .infinite-scroll #infinite-handle button + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link, .infinite-scroll #infinite-handle button + .more-link,
   button + .more-link:visited, .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button,
   .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a + button,
   .blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a + button, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a + button, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a + button,
-  .archive .edit-link .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .archive .edit-link a + button,
-  .blog .edit-link .infinite-scroll #infinite-handle a + button,
-  .infinite-scroll #infinite-handle .blog .edit-link a + button, .infinite-scroll #infinite-handle .more-link + button, .infinite-scroll #infinite-handle button + button {
+  .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a + button, .infinite-scroll #infinite-handle .more-link + button, .infinite-scroll #infinite-handle button + button {
     margin-left: 0.5em;
   }
 }
@@ -5213,8 +5108,8 @@ blockquote .blog .overlay cite,
 .archive .edit-link,
 .blog .edit-link {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 5px;
+  left: 5px;
   z-index: 100;
 }
 .page-template-page-templatestemplate-front-php .edit-link::before,
@@ -5225,15 +5120,18 @@ blockquote .blog .overlay cite,
 .page-template-page-templatestemplate-front-php .edit-link a,
 .archive .edit-link a,
 .blog .edit-link a {
-  border-width: 1px;
+  font-family: Karla, Arial, sans-serif;
   font-size: 0.8rem;
   opacity: 0.2;
-  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
   width: auto;
 }
 .page-template-page-templatestemplate-front-php .edit-link a:hover,
 .archive .edit-link a:hover,
 .blog .edit-link a:hover {
+  border: none;
   opacity: 1;
 }
 
@@ -5463,11 +5361,7 @@ time + .updated {
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .page-template-page-templatestemplate-front-php .edit-link a:hover, .page-template-page-templatestemplate-front-php .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .archive .edit-link a:hover,
-.archive .edit-link .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .blog .edit-link a:hover,
-.blog .edit-link .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
   font-family: Karla, Arial, sans-serif;
   padding: inherit;
 }
