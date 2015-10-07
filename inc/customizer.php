@@ -30,7 +30,7 @@ function pique_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'pique_panel1', array(
 		'label'   => esc_html__( 'Panel 1', 'pique' ),
 		'section' => 'pique_theme_options',
-	   'type'    => 'dropdown-pages',
+		'type'    => 'dropdown-pages',
 	) );
 
 	$wp_customize->add_setting( 'pique_panel2', array(
@@ -41,7 +41,7 @@ function pique_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'pique_panel2', array(
 		'label'   => esc_html__( 'Panel 2', 'pique' ),
 		'section' => 'pique_theme_options',
-	   'type'    => 'dropdown-pages',
+		'type'    => 'dropdown-pages',
 	) );
 
 	$wp_customize->add_setting( 'pique_panel3', array(
@@ -52,11 +52,10 @@ function pique_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'pique_panel3', array(
 		'label'   => esc_html__( 'Panel 3', 'pique' ),
 		'section' => 'pique_theme_options',
-	   'type'    => 'dropdown-pages',
+		'type'    => 'dropdown-pages',
 	) );
 }
 add_action( 'customize_register', 'pique_customize_register' );
-
 
 /**
  * Sanitize a numeric value

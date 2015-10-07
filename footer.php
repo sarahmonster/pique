@@ -24,7 +24,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'pique' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'pique' ), 'WordPress' ); ?></a>
 			<span class="sep"> &middot; </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'pique' ), 'Pique', '<a href="http://wordpress.com/themes" rel="designer">Automattic</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'pique' ), 'Pique', '<a href="http://wordpress.com/themes" rel="designer">WordPress.com</a>' ); ?>
     </div><!-- .site-info -->
 
 	</footer><!-- #colophon -->

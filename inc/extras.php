@@ -90,7 +90,6 @@ class Pique_Menu extends Walker_Nav_Menu {
 		if ( ! isset( $this->current_menu ) && ! empty ( $menu_obj ) ) :
 			$this->current_menu = wp_get_nav_menu_object( $menu_obj->term_id );
 
-
 			// Determine a break point for our menu
 			$menu_items = wp_get_nav_menu_items( $menu_obj->term_id );
 			if ( ! isset ( $this->top_level_count ) ) :
@@ -165,7 +164,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) .'"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
 
-		if ( is_object ( $args ) ) :
+		if ( is_object( $args ) ) :
 			$item_output = $args->before;
 			$item_output .= '<a'. $attributes .'>';
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
@@ -177,8 +176,8 @@ class Pique_Menu extends Walker_Nav_Menu {
 }
 
 /*
- * Add an extra
- *
+ * Add an extra li to our nav for our priority+ navigation to use
+ * @todo: Make this only apply to one menu!
  */
 function add_more_to_nav( $items, $args ) {
 	$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
@@ -215,8 +214,8 @@ add_filter( 'wp_list_categories', 'pique_cat_count_span' );
  * Filter the archives widget to add a span around post count
  */
 function pique_archive_count_span( $links ) {
-  $links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
-  $links = str_replace( ')', ')</span>', $links );
-  return $links;
+	$links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
+	$links = str_replace( ')', ')</span>', $links );
+	return $links;
 }
 add_filter( 'get_archives_link', 'pique_archive_count_span' );
