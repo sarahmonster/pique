@@ -6,7 +6,7 @@
       left: 0;
       right: 0;
     width: 100%;
-    z-index: 1000000000;
+    z-index: 10000;
 
     .site-branding {
       position: relative;
@@ -415,4 +415,15 @@
 .customize-active .archive .pique-panel-background,
 .customize-active .blog .pique-panel-background {
   background-position: initial;
+}
+
+/* Account for the admin bar */
+.admin-bar.pique-frontpage {
+  #masthead {
+    top: 32px;
+
+    @media screen and (max-width:782px) {
+      top: 46px;
+    }
+  }
 }

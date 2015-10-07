@@ -3614,10 +3614,12 @@ a:hover, a:active {
   z-index: 10000;
   /* Priority+ menu */
 }
-.main-navigation.sticky {
-  position: fixed;
-  top: 0px;
-  bottom: auto;
+@media (min-width: 768px) {
+  .main-navigation.sticky {
+    position: fixed;
+    top: 0px;
+    bottom: auto;
+  }
 }
 .main-navigation ul {
   display: block;
@@ -3766,6 +3768,18 @@ a:hover, a:active {
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto;
+  }
+}
+
+/* Account for the admin bar */
+@media screen and (min-width: 600px) and (max-width: 782px) {
+  .admin-bar .main-navigation.sticky {
+    top: 46px;
+  }
+}
+@media screen and (min-width: 782px) {
+  .admin-bar .main-navigation.sticky {
+    top: 32px;
   }
 }
 
@@ -4492,7 +4506,7 @@ a:hover, a:active {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 1000000000;
+  z-index: 10000;
 }
 .pique-frontpage #masthead .site-branding {
   position: relative;
@@ -5123,6 +5137,16 @@ blockquote .blog .overlay cite,
 .customize-active .archive .pique-panel-background,
 .customize-active .blog .pique-panel-background {
   background-position: initial;
+}
+
+/* Account for the admin bar */
+.admin-bar.pique-frontpage #masthead {
+  top: 32px;
+}
+@media screen and (max-width: 782px) {
+  .admin-bar.pique-frontpage #masthead {
+    top: 46px;
+  }
 }
 
 .sticky {

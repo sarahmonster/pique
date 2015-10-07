@@ -82,10 +82,12 @@
 	width: 100%;
 	z-index: 10000;
 
-	&.sticky {
-		position: fixed;
-			top: 0px;
-			bottom: auto;
+	@include tablet {
+		&.sticky {
+			position: fixed;
+				top: 0px;
+				bottom: auto;
+		}
 	}
 
 	ul {
@@ -265,4 +267,18 @@
 			}
 		} // sub-nav
 	} // tablet
+}
+
+/* Account for the admin bar */
+.admin-bar {
+  .main-navigation.sticky {
+
+    @media screen and (min-width:600px) and (max-width:782px) {
+      top: 46px;
+    }
+
+    @media screen and (min-width:782px) {
+      top: 32px;
+    }
+  }
 }
