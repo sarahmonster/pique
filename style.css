@@ -3587,7 +3587,7 @@ a:hover, a:active {
 }
 
 .main-navigation {
-  background: #2a251f;
+  background: #1d1813;
   border-bottom: 1px solid #483E34;
   border-top: 1px solid #483E34;
   clear: both;
@@ -4593,18 +4593,16 @@ a:hover, a:active {
 .pique-frontpage .pique-panel,
 .archive .pique-panel,
 .blog .pique-panel {
-  background-color: #1e1812;
-  border-bottom: 1px solid rgba(34, 34, 34, 0.5);
-  border-top: 1px solid rgba(252, 251, 249, 0.25);
+  background-color: #14100d;
   min-height: 50vh;
   margin: 0;
   position: relative;
   width: 100%;
 }
-.pique-frontpage .pique-panel:nth-of-type(odd),
-.archive .pique-panel:nth-of-type(odd),
-.blog .pique-panel:nth-of-type(odd) {
-  background-color: #194050;
+.pique-frontpage .pique-panel:nth-of-type(even),
+.archive .pique-panel:nth-of-type(even),
+.blog .pique-panel:nth-of-type(even) {
+  background-color: #1d1813;
 }
 .pique-frontpage .pique-panel-background,
 .archive .pique-panel-background,
@@ -5109,7 +5107,7 @@ blockquote .blog .overlay cite,
 .blog .entry-header,
 .blog .entry-content {
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 .pique-frontpage .edit-link,
 .archive .edit-link,

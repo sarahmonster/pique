@@ -107,16 +107,14 @@
   }
 
   .pique-panel {
-    background-color: darken(saturate($color__primary, 10%), 15%);
-    border-bottom: 1px solid transparentize($color__black, 0.5);
-    border-top: 1px solid transparentize($color__white, 0.75);
+    background-color: darken(saturate($color__primary, 5%), 18%);
     min-height: 50vh;
     margin: 0;
     position: relative;
     width: 100%;
 
-    &:nth-of-type(odd) {
-      background-color: darken(saturate($color__secondary, 10%), 45%);
+    &:nth-of-type(even) {
+      background-color: darken(saturate($color__primary, 5%), 15%);
     }
   }
 
@@ -391,7 +389,7 @@
   .entry-header,
   .entry-content {
     position: relative;
-    z-index: 100;
+    z-index: 1;
   }
 
   .edit-link {

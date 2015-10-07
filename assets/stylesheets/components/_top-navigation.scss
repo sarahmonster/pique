@@ -70,7 +70,7 @@
 } // #masthead
 
 .main-navigation {
-	background: darken($color__primary, 10%);
+	background: darken(saturate($color__primary, 5%), 15%);
 	border-bottom: 1px solid $color__primary;
 	border-top: 1px solid $color__primary;
 	clear: both;
