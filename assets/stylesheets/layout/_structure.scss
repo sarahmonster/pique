@@ -91,7 +91,7 @@
 	background-size: cover;
 	margin: 0 auto;
 	max-width: $size__site-width;
-	padding: 0 $size__site-gutter / 2;
+	padding: 15px $size__site-gutter / 2 0;
 	position: relative;
 
 	&::before {
@@ -162,8 +162,9 @@
 	@include clearfix-after;
 	border-bottom: 1px solid transparentize($color__tertiary, 0.75);
 	margin-bottom: $size__site-gutter / 4;
-	padding: $size__site-gutter 0 $size__site-gutter / 4;
+	padding: $size__site-gutter / 4 0;
 	position: relative;
+	width: 100%;
 	z-index: 1000;
 
 	.widget {

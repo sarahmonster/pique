@@ -4383,7 +4383,7 @@ a:hover, a:active {
   background-size: cover;
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 20px;
+  padding: 15px 20px 0;
   position: relative;
 }
 .site-footer::before {
@@ -4456,8 +4456,9 @@ a:hover, a:active {
   clear: both;
   border-bottom: 1px solid rgba(233, 213, 192, 0.25);
   margin-bottom: 10px;
-  padding: 40px 0 10px;
+  padding: 10px 0;
   position: relative;
+  width: 100%;
   z-index: 1000;
 }
 #tertiary .widget {
