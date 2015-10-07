@@ -3254,9 +3254,6 @@ table {
 form {
   color: #666;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
 }
 
 /* Labels */
@@ -3278,7 +3275,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #928b83;
-  background: #FCFBF9;
+  background: rgba(255, 255, 255, 0.75);
   border: 2px solid #aaa49e;
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
@@ -3294,7 +3291,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  background: rgba(252, 251, 249, 0.5);
+  background-color: #ffffff;
   border-color: #83B6CC;
   color: #83B6CC;
   outline: 0;
@@ -3323,12 +3320,10 @@ button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 2px solid;
-  border-color: #83B6CC;
-  border-radius: 0;
-  background: #eff6f9;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.125);
-  color: #83B6CC;
+  border: 2px solid transparent;
+  border-radius: 2em;
+  background-color: #83B6CC;
+  color: #eff6f9;
   display: inline-block;
   font-size: 15.2px;
   font-size: 0.95rem;
@@ -3336,11 +3331,10 @@ input[type="submit"] {
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 1;
-  padding: 1em 2em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  padding: 1em 3em;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-          transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: background-color 0.125s ease-in;
+          transition: background-color 0.125s ease-in;
 }
 @media (max-width: 767px) {
   button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
@@ -3365,11 +3359,9 @@ button:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #3c7993;
-  border-color: #cbe1ea;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-color: #83B6CC;
+  color: #83B6CC;
 }
 button:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
@@ -3386,7 +3378,6 @@ input[type="submit"]:active,
 input[type="submit"]:focus {
   background-color: #b3a495;
   border-color: #83B6CC;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
@@ -3402,11 +3393,8 @@ button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more 
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
-  background-color: #83B6CC;
-  border-color: white;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #eff6f9;
+  color: #83B6CC;
 }
 button.minimal:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
@@ -3448,11 +3436,9 @@ input[type="reset"].minimal:hover,
 input[type="submit"].minimal:active,
 input[type="submit"].minimal:focus,
 input[type="submit"].minimal:hover {
-  background-color: #3c7993;
-  border-color: #cbe1ea;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-color: #eff6f9;
+  color: #eff6f9;
 }
 
 @media (max-width: 767px) {
@@ -4665,6 +4651,11 @@ a:hover, a:active {
 .blog .pique-panel-content h2 a {
   color: #FCFBF9;
 }
+.pique-frontpage .pique-panel-content h2 a:hover,
+.archive .pique-panel-content h2 a:hover,
+.blog .pique-panel-content h2 a:hover {
+  border: none;
+}
 .pique-frontpage .pique-panel-content .entry-content,
 .archive .pique-panel-content .entry-content,
 .blog .pique-panel-content .entry-content {
@@ -4675,8 +4666,20 @@ a:hover, a:active {
 .pique-frontpage .pique-panel-content .entry-content .read-more,
 .archive .pique-panel-content .entry-content .read-more,
 .blog .pique-panel-content .entry-content .read-more {
-  margin: 1em auto;
+  margin: 2em auto 1em;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .pique-frontpage .pique-panel-content .entry-content .read-more,
+  .archive .pique-panel-content .entry-content .read-more,
+  .blog .pique-panel-content .entry-content .read-more {
+    margin-top: 4em;
+  }
+}
+.pique-frontpage .pique-panel-content .entry-content .read-more a,
+.archive .pique-panel-content .entry-content .read-more a,
+.blog .pique-panel-content .entry-content .read-more a {
+  text-shadow: none;
 }
 .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
 .archive .pique-panel-content .entry-content .read-more a::after,
@@ -5026,6 +5029,8 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 .blog form {
   background: #FCFBF9;
   border-top: 4px solid #83B6CC;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 700px;
   padding: 20px;
   text-shadow: none;

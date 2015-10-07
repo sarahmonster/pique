@@ -154,6 +154,10 @@
 
       a {
         color: $color__white;
+
+        &:hover {
+          border: none;
+        }
       }
     }
 
@@ -163,12 +167,17 @@
       text-align: left;
 
       .read-more {
-        margin: 1em auto;
+        margin: 2em auto 1em;
         text-align: center;
+
+        @include tablet {
+          margin-top: 4em;
+        }
 
         a {
           @extend button;
           @extend .minimal;
+          text-shadow: none;
 
           &::after {
             @include fontawesome;
@@ -337,6 +346,8 @@
   form {
     background: $color__white;
     border-top: 4px solid $color__secondary;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $size__site-width / 2;
     padding: $size__site-gutter / 2;
     text-shadow: none;
