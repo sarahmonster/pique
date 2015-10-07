@@ -4722,8 +4722,8 @@ a:hover, a:active {
 .archive .pique-hero .pique-panel-content,
 .blog .pique-hero .pique-panel-content {
   font-size: 1.5em;
-  margin-top: 7em;
   max-width: 1400px;
+  padding-top: 8em;
 }
 .pique-frontpage .pique-hero .pique-panel-content .entry-content,
 .archive .pique-hero .pique-panel-content .entry-content,
