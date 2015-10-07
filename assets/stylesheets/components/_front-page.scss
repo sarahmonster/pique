@@ -409,3 +409,10 @@
     }
   }
 }
+
+/* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
+.customize-active .pique-frontpage .pique-panel-background,
+.customize-active .archive .pique-panel-background,
+.customize-active .blog .pique-panel-background {
+  background-position: initial;
+}
