@@ -1,19 +1,15 @@
 .site {
+	background: $color__white;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
+	max-width: $size__site-width;
 }
 
 .site-content {
 	margin: 0 auto;
 	padding: $size__site-gutter / 2;
 	max-width: $size__site-width + $size__site-gutter;
-
-	.content-area {
-	}
-
-	.widget-area {
-
-	}
-} // .site-content
+}
 
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {

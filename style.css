@@ -3186,7 +3186,7 @@ html {
 }
 
 body {
-  background: #FCFBF9;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -3197,7 +3197,7 @@ blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials ar
 }
 
 hr {
-  background-color: #f4f4f4;
+  background-color: #E9D5C0;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -3542,6 +3542,7 @@ a:hover, a:active {
 #masthead {
   position: relative;
   text-align: center;
+  z-index: 10;
 }
 #masthead .pique-header {
   overflow: hidden;
@@ -4310,7 +4311,10 @@ a:hover, a:active {
 # Structure
 --------------------------------------------------------------*/
 .site {
+  background: #FCFBF9;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 .site-content {
@@ -5136,8 +5140,11 @@ blockquote .blog .overlay cite,
 /* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
 .customize-active .pique-frontpage .pique-panel-background,
 .customize-active .archive .pique-panel-background,
-.customize-active .blog .pique-panel-background {
-  background-position: initial;
+.customize-active .blog .pique-panel-background,
+.wp-customizer .pique-frontpage .pique-panel-background,
+.wp-customizer .archive .pique-panel-background,
+.wp-customizer .blog .pique-panel-background {
+  background-attachment: initial;
 }
 
 /* Account for the admin bar */
