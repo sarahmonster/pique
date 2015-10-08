@@ -13,7 +13,6 @@
 function pique_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'primary',
-		'type'      => 'click',
 		'wrapper'   => true,
 		'render'    => 'pique_infinite_scroll_render',
 		'footer'    => 'tertiary',
@@ -27,7 +26,7 @@ add_action( 'after_setup_theme', 'pique_jetpack_setup' );
 function pique_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', get_post_format() );
+		get_template_part( 'components/content', get_post_format() );
 	}
 } // end function pique_infinite_scroll_render
 

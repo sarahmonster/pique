@@ -8,6 +8,18 @@
  */
 
 /**
+ * Checks to see if we're on the homepage or not.
+ * We reuse this check in a few places, so this simplifies the process a bit.
+ */
+function pique_is_frontpage() {
+	if ( is_front_page() && ! is_home() ) :
+		return true;
+	else :
+		return false;
+	endif;
+}
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
@@ -18,6 +30,14 @@ function pique_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
+	// Adds a body class if we're on the (static) front page
+	if ( pique_is_frontpage() ) {
+		$classes[] = 'pique-frontpage';
+	}
+	// Adds a class if we're in the Customizer, since it doesn't like fixed backgrounds
+	if ( is_customize_preview() ):
+		$classes[] = 'pique-customizer';
+	endif;
 
 	return $classes;
 }
@@ -66,37 +86,41 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 		// Get the locations of nav menus
 		$theme_locations = get_nav_menu_locations();
-
-		// Get the menu object of the current nav menu based on the returned theme location
-		$menu_obj = get_term( $theme_locations[ $args->theme_location ], 'nav_menu' );
-
-		if ( ! isset( $this->current_menu ) ) :
-			$this->current_menu = wp_get_nav_menu_object( $menu_obj->term_id );
+		
+		if ( is_object( $args ) ) :
+			// Get the menu object of the current nav menu based on the returned theme location
+			$menu_obj = get_term( $theme_locations[ $args->theme_location ], 'nav_menu' );
 		endif;
 
-		// Determine a break point for our menu
-		$menu_items = wp_get_nav_menu_items( $menu_obj->term_id );
-		if ( ! isset ( $this->top_level_count ) ) :
-			$this->top_level_count = 0;
-			foreach ( $menu_items as $menu_item ) :
-				if ( 0 == $menu_item->menu_item_parent ) :
-					$this->top_level_count++;
-				endif;
-			endforeach;
+		if ( ! isset( $this->current_menu ) && ! empty ( $menu_obj ) ) :
+			$this->current_menu = wp_get_nav_menu_object( $menu_obj->term_id );
 
-			if ( ! isset( $this->break_point ) ) :
-				$this->break_point = ceil( $this->top_level_count / 2 );
-			endif;
-
-			$iterator = 0;
-			foreach ( $menu_items as $menu_item ) :
-				if ( 0 == $menu_item->menu_item_parent ) :
-					if ( $iterator == $this->break_point ) :
-						$this->id_to_split_on = $menu_item->ID;
+			// Determine a break point for our menu
+			$menu_items = wp_get_nav_menu_items( $menu_obj->term_id );
+			if ( ! isset ( $this->top_level_count ) ) :
+				$this->top_level_count = 0;
+				foreach ( $menu_items as $menu_item ) :
+					if ( 0 == $menu_item->menu_item_parent ) :
+						$this->top_level_count++;
 					endif;
-					$iterator++;
+				endforeach;
+
+				if ( ! isset( $this->break_point ) ) :
+					$this->break_point = ceil( $this->top_level_count / 2 );
 				endif;
-			endforeach;
+
+				$iterator = 0;
+				if ( ! empty( $menu_items ) ) :
+					foreach ( $menu_items as $menu_item ) :
+						if ( 0 == $menu_item->menu_item_parent ) :
+							if ( $iterator == $this->break_point ) :
+								$this->id_to_split_on = $menu_item->ID;
+							endif;
+							$iterator++;
+						endif;
+					endforeach;
+				endif;
+			endif;
 		endif;
 
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -145,19 +169,20 @@ class Pique_Menu extends Walker_Nav_Menu {
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) .'"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
 
-		$item_output = $args->before;
-		$item_output .= '<a'. $attributes .'>';
-		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		$item_output .= '</a>';
-		$item_output .= $args->after;
-
-		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+		if ( is_object( $args ) ) :
+			$item_output = $args->before;
+			$item_output .= '<a'. $attributes .'>';
+			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+			$item_output .= '</a>';
+			$item_output .= $args->after;
+			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+		endif;
 	}
 }
 
 /*
- * Add an extra
- *
+ * Add an extra li to our nav for our priority+ navigation to use
+ * @todo: Make this only apply to one menu!
  */
 function add_more_to_nav( $items, $args ) {
 	$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
@@ -194,8 +219,8 @@ add_filter( 'wp_list_categories', 'pique_cat_count_span' );
  * Filter the archives widget to add a span around post count
  */
 function pique_archive_count_span( $links ) {
-  $links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
-  $links = str_replace( ')', ')</span>', $links );
-  return $links;
+	$links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
+	$links = str_replace( ')', ')</span>', $links );
+	return $links;
 }
 add_filter( 'get_archives_link', 'pique_archive_count_span' );

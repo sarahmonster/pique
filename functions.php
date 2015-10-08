@@ -39,7 +39,7 @@ if ( ! function_exists( 'pique_setup' ) ) :
 		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'pique-hero', 1280, 1000, true );
+		add_image_size( 'pique-hero', 1400, 1000, true );
 		add_image_size( 'pique-square', 280, 280, true );
 		add_image_size( 'pique-strip', 440, 160, true );
 		add_image_size( 'pique-header', 1400, 400, true );
@@ -233,6 +233,15 @@ function pique_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'pique_scripts' );
+
+/**
+ * Filter the front page template so it's bypassed entirely if the user selects
+ * to display blog posts on their homepage instead of a static page.
+ */
+function pique_filter_front_page_template( $template ) {
+	return is_home() ? '' : $template;
+}
+add_filter( 'frontpage_template', 'pique_filter_front_page_template' );
 
 /**
  * Implement the Custom Header feature.

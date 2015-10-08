@@ -1,6 +1,7 @@
 #masthead {
 	position: relative;
 	text-align: center;
+	z-index: 10;
 
 	.pique-header {
 		overflow: hidden;
@@ -69,7 +70,7 @@
 } // #masthead
 
 .main-navigation {
-	background: darken($color__primary, 10%);
+	background: darken(saturate($color__primary, 5%), 15%);
 	border-bottom: 1px solid $color__primary;
 	border-top: 1px solid $color__primary;
 	clear: both;
@@ -82,10 +83,12 @@
 	width: 100%;
 	z-index: 10000;
 
-	&.sticky {
-		position: fixed;
-			top: 0px;
-			bottom: auto;
+	@include tablet {
+		&.sticky {
+			position: fixed;
+				top: 0px;
+				bottom: auto;
+		}
 	}
 
 	ul {
@@ -265,4 +268,18 @@
 			}
 		} // sub-nav
 	} // tablet
+}
+
+/* Account for the admin bar */
+.admin-bar {
+  .main-navigation.sticky {
+
+    @media screen and (min-width:600px) and (max-width:782px) {
+      top: 46px;
+    }
+
+    @media screen and (min-width:782px) {
+      top: 32px;
+    }
+  }
 }

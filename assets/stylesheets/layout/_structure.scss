@@ -1,19 +1,15 @@
 .site {
+	background: transparentize($color__white, 0.1);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
+	max-width: $size__site-width;
 }
 
 .site-content {
 	margin: 0 auto;
 	padding: $size__site-gutter / 2;
 	max-width: $size__site-width + $size__site-gutter;
-
-	.content-area {
-	}
-
-	.widget-area {
-
-	}
-} // .site-content
+}
 
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {
@@ -91,7 +87,7 @@
 	background-size: cover;
 	margin: 0 auto;
 	max-width: $size__site-width;
-	padding: 0 $size__site-gutter / 2;
+	padding: 15px $size__site-gutter / 2 0;
 	position: relative;
 
 	&::before {
@@ -162,17 +158,31 @@
 	@include clearfix-after;
 	border-bottom: 1px solid transparentize($color__tertiary, 0.75);
 	margin-bottom: $size__site-gutter / 4;
-	padding: $size__site-gutter 0 $size__site-gutter / 4;
+	padding: $size__site-gutter / 4 0;
 	position: relative;
+	table-layout: fixed; // Prevents select elements from getting all spilly
+	width: 100%;
 	z-index: 1000;
 
 	.widget {
 		border-top: none;
 	}
 
-	.widget_nav_menu {
+	.widget ul {
 		a {
 			color: $color__white;
+
+			&:hover {
+				background-color: transparentize($color__primary, 0.05);
+			}
+		}
+	}
+
+	.widget_archive,
+	.widget_categories {
+
+		ul li::before {
+			border-color: transparentize($color__tertiary, 0.75);
 		}
 	}
 
@@ -195,7 +205,9 @@
 			// One widget area
 			&:nth-child(1):nth-last-child(1) {
 				float: none;
-				max-width: $size__site-width / 2;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: $size__site-width / 3;
 			}
 
 			// Two widget areas

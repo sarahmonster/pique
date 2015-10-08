@@ -23,22 +23,39 @@
 	}
 }
 
+/* Center the loading graphic */
+.infinite-loader {
+  margin: 1.45em 46%;
+}
+
 .infinite-scroll #infinite-handle {
-	@extend .posts-navigation;
 	display: block;
 	text-align: center;
 
 	span {
-		background: none;
+		background: transparent;
 	}
 
 	button {
-		@extend button;
+		color: $color__secondary;
+		@include font-size(1.2);
+		font-style: italic;
+		letter-spacing: 0;
+		text-transform: none;
+		padding: 1em;
+
+		&::before {
+			@include fontawesome;
+			content: $fa-var-arrow-left;
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: 2px;
+		}
 
 		&:hover {
-			@extend button:hover;
-			font-family: $font__sans;
-			padding: inherit;
+			color: darken($color__secondary, 25%);
+			@include font-size(1.2);
+			padding: 1em;
 		}
 	}
 }

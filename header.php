@@ -26,14 +26,13 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php // Let's show a header image if we aren't on the front page and a header has been set
-		if ( 'page-templates/template-front.php' !== get_page_template_slug() AND get_header_image() ) : ?>
+		if ( ! pique_is_frontpage() AND get_header_image() ) : ?>
 			<a class="pique-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+
 			<?php // If the post uses a Featured Image, let's show that
 			if ( is_singular() && has_post_thumbnail() ) :
 				the_post_thumbnail( 'pique-header', array( 'id' => 'pique-header-image' ) );
-
-			// Otherwise, let's just show the header image
-			else :
+			else : // Otherwise, let's just show the header image
 			?>
 				<img id="pique-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 			<?php endif; // End featured image check. ?>
@@ -46,26 +45,20 @@
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php
-				wp_nav_menu( array(
-					'theme_location'  => 'primary',
-					'menu_id'         => 'primary-menu',
-					'fallback_cb'     => 'wp_page_menu',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s"><span class="pique-split-nav">%3$s</span></ul>',
-					'walker'          => new Pique_Menu(),
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location'  => 'primary',
+						'menu_id'         => 'primary-menu',
+						'fallback_cb'     => 'wp_page_menu',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s"><span class="pique-split-nav">%3$s</span></ul>',
+						'walker'          => new Pique_Menu(),
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
-
-	<?php
-	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
-		while ( have_posts() ) : the_post();
-			get_template_part( 'components/content', 'hero' );
-		endwhile;
-	endif;
-	?>
 
 	<div id="content" class="site-content">

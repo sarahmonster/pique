@@ -11,19 +11,19 @@
 
 	<header class="entry-header">
 		<?php
-			if ( has_post_thumbnail() ) :
-				printf( '<a href="%1$s" rel="bookmark" title="%2$s">',
-						esc_url( get_permalink() ),
-						esc_attr( get_the_title() )
-					);
-				the_post_thumbnail( 'pique-strip' );
-				echo '</a>';
-			endif;
+		if ( has_post_thumbnail() ) :
+			printf( '<a href="%1$s" rel="bookmark" title="%2$s">',
+				esc_url( get_permalink() ),
+				esc_attr( get_the_title() )
+			);
+			the_post_thumbnail( 'pique-strip' );
+			echo '</a>';
+		endif;
 		?>
 
 		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
+		<?php if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php pique_posted_on(); ?>
 			</div><!-- .entry-meta -->

@@ -1,12 +1,12 @@
 // Front-page only header stuff
-.page-template-page-templatestemplate-front-php {
+.pique-frontpage {
   #masthead {
     position: absolute;
       top: 0;
       left: 0;
       right: 0;
     width: 100%;
-    z-index: 1000000000;
+    z-index: 10000;
 
     .site-branding {
       position: relative;
@@ -89,7 +89,7 @@
 }
 
 // Applies to all long scrolly-style pages, so the blog indexes as well
-.page-template-page-templatestemplate-front-php,
+.pique-frontpage,
 .archive,
 .blog {
 
@@ -107,16 +107,14 @@
   }
 
   .pique-panel {
-    background-color: darken(saturate($color__primary, 10%), 15%);
-    border-bottom: 1px solid transparentize($color__black, 0.5);
-    border-top: 1px solid transparentize($color__white, 0.75);
+    background-color: darken(saturate($color__primary, 5%), 18%);
     min-height: 50vh;
     margin: 0;
     position: relative;
     width: 100%;
 
-    &:nth-of-type(odd) {
-      background-color: darken(saturate($color__secondary, 10%), 45%);
+    &:nth-of-type(even) {
+      background-color: darken(saturate($color__primary, 5%), 15%);
     }
   }
 
@@ -154,6 +152,10 @@
 
       a {
         color: $color__white;
+
+        &:hover {
+          border: none;
+        }
       }
     }
 
@@ -163,12 +165,17 @@
       text-align: left;
 
       .read-more {
-        margin: 1em auto;
+        margin: 2em auto 1em;
         text-align: center;
+
+        @include tablet {
+          margin-top: 4em;
+        }
 
         a {
           @extend button;
           @extend .minimal;
+          text-shadow: none;
 
           &::after {
             @include fontawesome;
@@ -193,8 +200,8 @@
 
     .pique-panel-content {
       font-size: 1.5em;
-      margin-top: 7em;
       max-width: $size__site-width;
+      padding-top: 8em;
 
       .entry-content {
         text-align: center;
@@ -337,6 +344,8 @@
   form {
     background: $color__white;
     border-top: 4px solid $color__secondary;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $size__site-width / 2;
     padding: $size__site-gutter / 2;
     text-shadow: none;
@@ -380,13 +389,13 @@
   .entry-header,
   .entry-content {
     position: relative;
-    z-index: 100;
+    z-index: 1;
   }
 
   .edit-link {
     position: absolute;
-      bottom: 5px;
-      left: 5px;
+      bottom: 15px;
+      left: 10px;
     z-index: 100;
 
     &::before {
@@ -394,9 +403,10 @@
     }
 
     a {
+      color: $color__white;
       font-family: $font__sans;
       font-size: 0.8rem;
-      opacity: 0.2;
+      opacity: 0.4;
       letter-spacing: 1px;
       padding: 1rem 1rem;
       text-transform: uppercase;
@@ -406,6 +416,22 @@
         border: none;
         opacity: 1;
       }
+    }
+  }
+}
+
+/* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
+.pique-customizer .pique-panel-background {
+  background-attachment: inherit !important;
+}
+
+/* Account for the admin bar */
+.admin-bar.pique-frontpage {
+  #masthead {
+    top: 32px;
+
+    @media screen and (max-width:782px) {
+      top: 46px;
     }
   }
 }
