@@ -5,7 +5,7 @@
 	hyphens: auto;
 	word-wrap: break-word;
 
-	/* Make sure select elements fit in widgets. */
+	/* Make sure select elements fit in nicely with their friends. */
 	select {
 		font-family: $font__sans;
 		@include font-size(0.95);

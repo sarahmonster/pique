@@ -4136,7 +4136,7 @@ a:hover, a:active {
       -ms-hyphens: auto;
           hyphens: auto;
   word-wrap: break-word;
-  /* Make sure select elements fit in widgets. */
+  /* Make sure select elements fit in nicely with their friends. */
   /* Consistency across header elements within widgets */
 }
 .widget select {
@@ -4480,6 +4480,7 @@ blockquote .widget cite:not(.widget-title),
   margin-bottom: 10px;
   padding: 10px 0;
   position: relative;
+  table-layout: fixed;
   width: 100%;
   z-index: 1000;
 }

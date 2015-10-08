@@ -160,6 +160,7 @@
 	margin-bottom: $size__site-gutter / 4;
 	padding: $size__site-gutter / 4 0;
 	position: relative;
+	table-layout: fixed; // Prevents select elements from getting all spilly
 	width: 100%;
 	z-index: 1000;
 
