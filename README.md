@@ -2,6 +2,7 @@
 
 Pique is a one-page scrolling theme for your business needs. It's great for businesses, event promotion, and probably other stuff too.
 
+Note: this is not ideal from a setup perspective!
 
 ## Setting up your front page
 
