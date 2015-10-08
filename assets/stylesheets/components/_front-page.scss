@@ -394,8 +394,8 @@
 
   .edit-link {
     position: absolute;
-      bottom: 5px;
-      left: 5px;
+      bottom: 15px;
+      left: 10px;
     z-index: 100;
 
     &::before {
@@ -403,9 +403,10 @@
     }
 
     a {
+      color: $color__white;
       font-family: $font__sans;
       font-size: 0.8rem;
-      opacity: 0.2;
+      opacity: 0.4;
       letter-spacing: 1px;
       padding: 1rem 1rem;
       text-transform: uppercase;

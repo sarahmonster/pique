@@ -5127,8 +5127,8 @@ blockquote .blog .overlay cite,
 .archive .edit-link,
 .blog .edit-link {
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 15px;
+  left: 10px;
   z-index: 100;
 }
 .pique-frontpage .edit-link::before,
@@ -5139,9 +5139,10 @@ blockquote .blog .overlay cite,
 .pique-frontpage .edit-link a,
 .archive .edit-link a,
 .blog .edit-link a {
+  color: #FCFBF9;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8rem;
-  opacity: 0.2;
+  opacity: 0.4;
   letter-spacing: 1px;
   padding: 1rem 1rem;
   text-transform: uppercase;
