@@ -13,7 +13,6 @@
 function pique_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'primary',
-		'type'      => 'click',
 		'wrapper'   => true,
 		'render'    => 'pique_infinite_scroll_render',
 		'footer'    => 'tertiary',
