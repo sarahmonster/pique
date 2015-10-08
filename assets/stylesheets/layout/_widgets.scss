@@ -11,6 +11,18 @@
 		@include font-size(0.95);
 		max-width: 100%;
 	}
+
+	/* Consistency across header elements within widgets */
+	h2:not(.widget-title),
+	h3:not(.widget-title),
+	h4:not(.widget-title) {
+		font-family: $font__serif;
+		@include font-size(1.8);
+		font-style: italic;
+		font-weight: normal;
+		letter-spacing: 0;
+		text-transform: none;
+	}
 }
 
 .widget-title {
@@ -141,7 +153,12 @@
 /* Calendar widget */
 .widget_calendar {
 	line-height: 1.8;
-	max-width: 500px;
+
+	#calendar-wrap {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
 
 	caption {
 		font-family: $font__serif;

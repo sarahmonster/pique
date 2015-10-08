@@ -4137,12 +4137,35 @@ a:hover, a:active {
           hyphens: auto;
   word-wrap: break-word;
   /* Make sure select elements fit in widgets. */
+  /* Consistency across header elements within widgets */
 }
 .widget select {
   font-family: Karla, Arial, sans-serif;
   font-size: 15.2px;
   font-size: 0.95rem;
   max-width: 100%;
+}
+.widget h2:not(.widget-title),
+.widget h3:not(.widget-title),
+.widget blockquote cite:not(.widget-title),
+blockquote .widget cite:not(.widget-title),
+.widget .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
+.widget .archive .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
+.widget .blog .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
+.widget #masthead .site-branding .site-title:not(.widget-title),
+#masthead .site-branding .widget .site-title:not(.widget-title),
+.widget .widget-title:not(.widget-title),
+.widget h4:not(.widget-title) {
+  font-family: Lora, Georgia, serif;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 /* Search widget */
@@ -4278,6 +4301,10 @@ a:hover, a:active {
 /* Calendar widget */
 .widget_calendar {
   line-height: 1.8;
+}
+.widget_calendar #calendar-wrap {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 500px;
 }
 .widget_calendar caption {
