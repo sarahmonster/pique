@@ -45,17 +45,19 @@
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php
-				wp_nav_menu( array(
-					'theme_location'  => 'primary',
-					'menu_id'         => 'primary-menu',
-					'fallback_cb'     => 'wp_page_menu',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s"><span class="pique-split-nav">%3$s</span></ul>',
-					'walker'          => new Pique_Menu(),
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location'  => 'primary',
+						'menu_id'         => 'primary-menu',
+						'fallback_cb'     => 'wp_page_menu',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s"><span class="pique-split-nav">%3$s</span></ul>',
+						'walker'          => new Pique_Menu(),
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
 

@@ -86,7 +86,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 		// Get the locations of nav menus
 		$theme_locations = get_nav_menu_locations();
-
+		
 		if ( is_object( $args ) ) :
 			// Get the menu object of the current nav menu based on the returned theme location
 			$menu_obj = get_term( $theme_locations[ $args->theme_location ], 'nav_menu' );
