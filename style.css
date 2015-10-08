@@ -5155,13 +5155,8 @@ blockquote .blog .overlay cite,
 }
 
 /* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
-.customize-active .pique-frontpage .pique-panel-background,
-.customize-active .archive .pique-panel-background,
-.customize-active .blog .pique-panel-background,
-.wp-customizer .pique-frontpage .pique-panel-background,
-.wp-customizer .archive .pique-panel-background,
-.wp-customizer .blog .pique-panel-background {
-  background-attachment: initial;
+.pique-customizer .pique-panel-background {
+  background-attachment: inherit !important;
 }
 
 /* Account for the admin bar */

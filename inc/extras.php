@@ -34,6 +34,11 @@ function pique_body_classes( $classes ) {
 	if ( pique_is_frontpage() ) {
 		$classes[] = 'pique-frontpage';
 	}
+	// Adds a class if we're in the Customizer, since it doesn't like fixed backgrounds
+	if ( is_customize_preview() ):
+		$classes[] = 'pique-customizer';
+	endif;
+
 	return $classes;
 }
 add_filter( 'body_class', 'pique_body_classes' );
