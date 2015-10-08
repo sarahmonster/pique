@@ -1,0 +1,166 @@
+/* WordPress.com Widgets */
+
+/* Hide stats smiley */
+#wpstats {
+  display: none;
+}
+
+/* Remove extra styling from comment submit */
+#respond .form-submit input,
+#respond .form-submit input#comment-submit,
+#respond .comment-form-fields input[type="submit"],
+#respond p.form-submit input[type="submit"],
+#respond input[type="submit"],
+#commentform #submit {
+  letter-spacing: 0;
+  outline: none;
+  text-transform: none;
+}
+
+/* Improve appearance of ratings */
+.rating-msg,
+.rating-nero-value {
+  font-size: 18px !important;
+  font-size: 1rem !important;
+  vertical-align: top;
+}
+
+/* Flickr */
+#flickr_badge_wrapper {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+#flickr_badge_uber_wrapper {
+  margin: 0 auto;
+}
+
+#flickr_badge_uber_wrapper td {
+  border: 0 !important;
+}
+
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {
+  color: #777 !important;
+}
+
+/* Recent Comments */
+.widget_recent_comments td {
+  border: 0;
+  padding: 5px 5px 10px 5px;
+  vertical-align: top;
+}
+
+/* Authors */
+.widget_authors > ul > li {
+  border-top: none;
+}
+
+.widget_authors img,
+.widget_author_grid img {
+  border-radius: 50%;
+  float: none;
+  max-width: 75px;
+  vertical-align: middle;
+}
+
+.widget_authors ul,
+.widget_author_grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blogroll */
+.widget_links li {
+  border-top: 1px solid rgba(233, 213, 192, 0.5);
+  padding: 7px 0;
+}
+
+.widget_links li a {
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.widget_links li a:hover {
+  background: none;
+}
+
+/* Follow widget */
+.widget-title label {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* Facebook */
+.fb_iframe_widget {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Goodreads */
+.widget_goodreads .gr_custom_widget div {
+  text-align: center;
+}
+
+/* Gravatar */
+.grofile-thumbnail,
+.widget_gravatar img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grofile-accounts li a {
+  display: inline;
+}
+
+/* Milestone */
+.milestone-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.milestone-header {
+  background-color: #1d1813;
+}
+.milestone-header .event {
+  font-size: 125%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.milestone-countdown,
+.milestone-message {
+  color: #1d1813;
+  border-color: #1d1813;
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+}
+
+.milestone-countdown .difference,
+.milestone-message .difference {
+  font-style: normal;
+}
+
+/* My Community, Posts I like */
+.widget_jetpack_my_community img,
+.widget_jetpack_posts_i_like img {
+  border-radius: 50%;
+}
+
+/* Follow button */
+.widget_follow_button_widget {
+  border: none;
+}
+
+
+
+/* Sharedaddy */
+h3.sd-title {
+  font-size: 16px;
+}
