@@ -2,6 +2,8 @@
 	margin: 0 0 1.5em;
 	border-top: 2px solid $color__secondary;
 	font-family: $font__sans;
+	hyphens: auto;
+	word-wrap: break-word;
 
 	/* Make sure select elements fit in widgets. */
 	select {

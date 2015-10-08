@@ -4131,6 +4131,11 @@ a:hover, a:active {
   margin: 0 0 1.5em;
   border-top: 2px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-wrap: break-word;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -4454,8 +4459,15 @@ a:hover, a:active {
 #tertiary .widget {
   border-top: none;
 }
-#tertiary .widget_nav_menu a {
+#tertiary .widget ul a {
   color: #FCFBF9;
+}
+#tertiary .widget ul a:hover {
+  background-color: rgba(72, 62, 52, 0.95);
+}
+#tertiary .widget_archive ul li::before,
+#tertiary .widget_categories ul li::before {
+  border-color: rgba(233, 213, 192, 0.25);
 }
 @media (min-width: 768px) {
   #tertiary {
