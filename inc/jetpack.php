@@ -27,7 +27,7 @@ add_action( 'after_setup_theme', 'pique_jetpack_setup' );
 function pique_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', get_post_format() );
+		get_template_part( 'components/content', get_post_format() );
 	}
 } // end function pique_infinite_scroll_render
 
