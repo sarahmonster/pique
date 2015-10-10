@@ -3292,7 +3292,7 @@ textarea {
   font-size: 1rem;
   -webkit-transition: all 0.2s ease-in-out 0s;
           transition: all 0.2s ease-in-out 0s;
-  width: 100% !important;
+  width: 100%;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -4566,7 +4566,6 @@ blockquote .widget cite:not(.widget-title),
   /* Testimonial panel */
   /* Recent blog posts panel */
   /* Full-width panel */
-  /* Forms */
   /* Overlays */
 }
 .pique-frontpage .site-content,
@@ -4680,6 +4679,17 @@ blockquote .widget cite:not(.widget-title),
   font-size: 14px;
   content: "";
   display: inline-block;
+}
+.pique-frontpage .pique-panel-content form,
+.archive .pique-panel-content form,
+.blog .pique-panel-content form {
+  background: #FCFBF9;
+  border-top: 4px solid #83B6CC;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding: 20px;
+  text-shadow: none;
 }
 .pique-frontpage .pique-panel-content blockquote, .pique-frontpage .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-frontpage .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
@@ -5016,17 +5026,6 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 .archive .pique-template-full-width .entry-content,
 .blog .pique-template-full-width .entry-content {
   max-width: none;
-}
-.pique-frontpage form,
-.archive form,
-.blog form {
-  background: #FCFBF9;
-  border-top: 4px solid #83B6CC;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
-  padding: 20px;
-  text-shadow: none;
 }
 .pique-frontpage .overlay,
 .archive .overlay,
