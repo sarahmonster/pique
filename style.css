@@ -5141,6 +5141,59 @@ blockquote .blog .overlay cite,
   background-attachment: inherit !important;
 }
 
+/* Add some user-friendly hints/overlays in the Customizer */
+.pique-customizer.pique-frontpage .edit-link {
+  bottom: 20px;
+}
+
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero) {
+  /* Colour-code all panels */
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero)::after {
+  border: 2px solid;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero) .pique-panel-title {
+  background: purple;
+  color: #FCFBF9;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-transform: uppercase;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(2n) .pique-panel-title {
+  background: #83B6CC;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(2n)::after {
+  border-color: #83B6CC;
+  color: #83B6CC;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(3n) .pique-panel-title {
+  background: #8a260c;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(3n)::after {
+  border-color: #8a260c;
+  color: #8a260c;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(4n) .pique-panel-title {
+  background: #E9D5C0;
+}
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero):nth-of-type(4n)::after {
+  border-color: #E9D5C0;
+  color: #E9D5C0;
+}
+
 /* Account for the admin bar */
 .admin-bar.pique-frontpage #masthead {
   top: 32px;

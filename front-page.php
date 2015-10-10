@@ -31,6 +31,7 @@ get_header(); ?>
 		if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 			$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
 			setup_postdata( $post );
+			set_query_var( 'pique_panel', $panel );
 			get_template_part( 'components/content', 'front' );
 			wp_reset_postdata();
 		endif;

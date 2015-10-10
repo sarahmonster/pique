@@ -425,6 +425,64 @@
   background-attachment: inherit !important;
 }
 
+/* Add some user-friendly hints/overlays in the Customizer */
+@mixin colourPanel($color) {
+
+  .pique-panel-title {
+    background: $color;
+  }
+
+  &::after {
+    border-color: $color;
+    color: $color;
+  }
+}
+
+.pique-customizer.pique-frontpage .edit-link {
+  bottom: 20px;
+}
+
+.pique-customizer.pique-frontpage .pique-panel:not(#pique-hero) {
+  &::after {
+    border: 2px solid;
+    content: '';
+    display: block;
+    position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+  }
+
+  .pique-panel-title {
+    background: purple;
+    color: $color__white;
+    font-family: $font__sans;
+    @include font-size(0.8);
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    position: absolute;
+      top: 15px;
+      right: 15px;
+    text-transform: uppercase;
+  }
+
+  /* Colour-code all panels */
+  &:nth-of-type(2n) {
+    @include colourPanel($color__blue);
+  }
+
+  &:nth-of-type(3n) {
+    @include colourPanel($color__red);
+  }
+
+  &:nth-of-type(4n) {
+    @include colourPanel($color__tan);
+  }
+}
+
+
+
 /* Account for the admin bar */
 .admin-bar.pique-frontpage {
   #masthead {
