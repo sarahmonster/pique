@@ -54,9 +54,12 @@ function pique_post_classes( $classes ) {
 	// We're stripping the prefixed folder name and the .php suffix for prettier CSS
 	if ( get_page_template_slug() && '' !== get_page_template_slug() ) :
 		$simple_slug = get_page_template_slug();
-		$simple_slug = explode( '.', $simple_slug )[0];
-		$simple_slug = explode( '/', $simple_slug )[1];
-		$classes[] = 'pique-' . $simple_slug;
+		// Make sure the template actually exists in this theme.
+		if ( locate_template( '' !== $simple_slug ) ) :
+			$simple_slug = explode( '.', $simple_slug )[0];
+			$simple_slug = explode( '/', $simple_slug )[1];
+			$classes[] = 'pique-' . $simple_slug;
+		endif;
 	endif;
 
 	// Add a page template slug to the main posts page
@@ -86,7 +89,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 		// Get the locations of nav menus
 		$theme_locations = get_nav_menu_locations();
-		
+
 		if ( is_object( $args ) ) :
 			// Get the menu object of the current nav menu based on the returned theme location
 			$menu_obj = get_term( $theme_locations[ $args->theme_location ], 'nav_menu' );
