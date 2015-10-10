@@ -43,6 +43,10 @@
 
         // Don't append hash link (#post-xxxx) to URL
         updateUrl: true
+
+        // forceHeight creates an ugly gap at the bottom of the page, so we're disabling it. 
+        // https://github.com/Prinzhorn/skrollr#forceheighttrue
+        forceHeight: false;
     });
 
     /*
