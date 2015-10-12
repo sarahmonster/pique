@@ -59,11 +59,6 @@ time + .updated {
 	}
 }
 
-.entry-title,
-.page-title {
-	margin-top: 0;
-}
-
 .page-content,
 .entry-content,
 .entry-summary {
@@ -126,6 +121,12 @@ time + .updated {
 }
 
 /* 404 page */
-.error-404 .search-form {
-	margin-bottom: $size__site-gutter;
+.error-404 {
+	.page-title {
+		margin-top: 0;
+	}
+
+	.search-form {
+		margin-bottom: $size__site-gutter;
+	}
 }

@@ -12,8 +12,8 @@
  */
 function pique_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'primary',
-		'wrapper'   => true,
+		'container' => 'main',
+		'wrapper'   => false,
 		'render'    => 'pique_infinite_scroll_render',
 		'footer'    => 'tertiary',
 	) );

@@ -5512,11 +5512,6 @@ time + .updated {
   display: none;
 }
 
-.entry-title,
-.page-title {
-  margin-top: 0;
-}
-
 .page-content,
 .entry-content,
 .entry-summary {
@@ -5577,6 +5572,9 @@ time + .updated {
 }
 
 /* 404 page */
+.error-404 .page-title {
+  margin-top: 0;
+}
 .error-404 .search-form {
   margin-bottom: 40px;
 }
