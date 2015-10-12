@@ -75,7 +75,11 @@ time + .updated {
 
 .page-links {
 	clear: both;
+	font-family: $font__sans;
+	@include font-size(0.9);
+	letter-spacing: 1px;
 	margin: 0 0 1.5em;
+	text-transform: uppercase;
 }
 
 /* Categories & tags */

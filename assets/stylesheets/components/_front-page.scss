@@ -148,6 +148,7 @@
       color: $color__white;
       border: 2px solid $color__white;
       display: inline-block;
+      max-width: $size__site-width / 2;
       padding: 0.7rem 1.5rem;
       text-transform: uppercase;
 
@@ -181,6 +182,13 @@
             @include fontawesome;
       			  content: $fa-var-arrow-right;
             display: inline-block;
+          }
+
+          &:hover {
+            padding-right: calc(3em - 20px);
+            &::after {
+              margin-left: 20px;
+            }
           }
         } // a
       } // .read-more
@@ -238,7 +246,6 @@
       margin-top: $size__site-gutter;
     }
   }
-
 
   .format-image,
   .format-video,

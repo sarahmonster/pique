@@ -4725,6 +4725,7 @@ blockquote .widget cite:not(.widget-title),
   color: #FCFBF9;
   border: 2px solid #FCFBF9;
   display: inline-block;
+  max-width: 700px;
   padding: 0.7rem 1.5rem;
   text-transform: uppercase;
 }
@@ -4776,6 +4777,18 @@ blockquote .widget cite:not(.widget-title),
   font-size: 14px;
   content: "";
   display: inline-block;
+}
+.pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
+.archive .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover,
+.search-results .pique-panel-content .entry-content .read-more a:hover {
+  padding-right: calc(3em - 20px);
+}
+.pique-frontpage .pique-panel-content .entry-content .read-more a:hover::after,
+.archive .pique-panel-content .entry-content .read-more a:hover::after,
+.blog .pique-panel-content .entry-content .read-more a:hover::after,
+.search-results .pique-panel-content .entry-content .read-more a:hover::after {
+  margin-left: 20px;
 }
 .pique-frontpage .pique-panel-content form,
 .archive .pique-panel-content form,
@@ -5602,7 +5615,12 @@ time + .updated {
 /* Read more */
 .page-links {
   clear: both;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
   margin: 0 0 1.5em;
+  text-transform: uppercase;
 }
 
 /* Categories & tags */
