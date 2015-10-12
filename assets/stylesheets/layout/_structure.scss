@@ -14,12 +14,23 @@
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {
 	.site-content {
-		margin-top: 5em;
+		margin-top: $size__site-gutter;
 
+		.content-area {
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: $size__site-gutter / 2;
+			padding-right: $size__site-gutter / 2;
+			width: 66%;
+		}
+	}
+
+	// If we have a sidebar, float our layout elements
+	.pique-sidebar {
 		.content-area {
 			float: right;
 			padding-left: $size__site-gutter;
-			width: 66%;
+			padding-right: 0;
 		}
 
 		.widget-area {

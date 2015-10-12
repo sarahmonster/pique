@@ -38,6 +38,10 @@ function pique_body_classes( $classes ) {
 	if ( is_customize_preview() ):
 		$classes[] = 'pique-customizer';
 	endif;
+	// Adds a class if we don't have a sidebar at all, so we can adjust the layout
+	if ( is_active_sidebar( 'sidebar-1' ) ):
+		$classes[] = 'pique-sidebar';
+	endif;
 
 	return $classes;
 }

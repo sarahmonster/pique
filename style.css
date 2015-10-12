@@ -4297,14 +4297,22 @@ blockquote .widget cite:not(.widget-title),
 /* On desktop devices, we'll show a sidebar next to our content */
 @media (min-width: 1024px) {
   .site-content {
-    margin-top: 5em;
+    margin-top: 40px;
   }
   .site-content .content-area {
-    float: right;
-    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 66%;
   }
-  .site-content .widget-area {
+
+  .pique-sidebar .content-area {
+    float: right;
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .pique-sidebar .widget-area {
     display: block;
     float: right;
     font-size: 15.2px;
