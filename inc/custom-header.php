@@ -17,7 +17,7 @@
 function pique_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'pique_custom_header_args', array(
 		'default-image'          => esc_url( get_template_directory_uri() ) . '/assets/images/default-header.jpg',
-		'default-text-color'     => '000000',
+		'default-text-color'     => '#FCFBF9',
 		'width'                  => 1400,
 		'height'                 => 400,
 		'flex-height'            => true,
