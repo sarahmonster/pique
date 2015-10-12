@@ -11,6 +11,10 @@
 	max-width: $size__site-width + $size__site-gutter;
 }
 
+.content-area {
+	@include clearfix;
+}
+
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {
 	.site-content {
@@ -42,50 +46,53 @@
 		}
 	}
 
+	// Full width template should expand to use our entire content width
 	.page-template-template-full-width .content-area {
 		float: none;
 		padding-left: 0;
+		padding-right: 0;
 		width: 100%;
 	}
 }
 
 /* Grid structures for tablet devices and larger */
 @include tablet {
-	.pique-grid-two {
-		article {
-			float: left;
-	    font-size: 0.85em;
-	    text-align: left;
-	    width: 45%;
-	    width: calc( (100% - #{$size__site-gutter*2}) / 2);
 
-	    &:nth-of-type(odd) {
-	      margin-right: $size__site-gutter;
-	      clear: left;
-	    }
+	// Two-column grid
+	.pique-grid-two article,
+	.error-404 .widget {
+		float: left;
+		font-size: 0.85em;
+		text-align: left;
+		width: 45%;
+		width: calc( (100% - #{$size__site-gutter*2}) / 2);
 
-	    &:nth-of-type(even) {
-	      margin-left: $size__site-gutter;
-	    }
-	  }
-	} // pique-grid-two
-
-	.pique-grid-three {
-		article {
-		  float: left;
-		  width: 30%;
-		  width: calc( (100% - #{$size__site-gutter*2}) / 3);
-
-		  &:nth-of-type(1),
-		  &:nth-of-type(3n+1) {
-		    margin-right: $size__site-gutter;
-		  }
-
-		  &:nth-of-type(3n) {
-		    margin-left: $size__site-gutter;
-		  }
+		&:nth-of-type(odd) {
+		  margin-right: $size__site-gutter;
+		  clear: left;
 		}
-	} // .pique-grid-three
+
+		&:nth-of-type(even) {
+		  margin-left: $size__site-gutter;
+		}
+	} // pique-grid-two article
+
+	// Three-column grid
+	.pique-grid-three article {
+	  float: left;
+	  width: 30%;
+	  width: calc( (100% - #{$size__site-gutter*2}) / 3);
+
+	  &:nth-of-type(1),
+	  &:nth-of-type(3n+1) {
+	    margin-right: $size__site-gutter;
+	  }
+
+	  &:nth-of-type(3n) {
+	    margin-left: $size__site-gutter;
+	  }
+	} // .pique-grid-three article
+
 } // @include tablet
 
 /* Footer */

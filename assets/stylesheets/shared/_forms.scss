@@ -117,3 +117,21 @@ button + button {
 #mce-responses + p {
 	display: none; // Ah, WordPress. Always adding extra p tags.
 }
+
+/* Search form specific */
+.search-form {
+
+	@include mobile {
+		text-align: center;
+	}
+
+	@include tablet {
+		.search-field {
+			width: 77%;
+		}
+
+		.search-submit {
+			display: inline-block;
+		}
+	} // tablet
+} // .search-form

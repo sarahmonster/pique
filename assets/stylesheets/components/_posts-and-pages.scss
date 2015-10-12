@@ -59,6 +59,11 @@ time + .updated {
 	}
 }
 
+.entry-title,
+.page-title {
+	margin-top: 0;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -118,4 +123,9 @@ time + .updated {
 		@include font-size(0.8);
 		font-style: normal;
 	}
+}
+
+/* 404 page */
+.error-404 .search-form {
+	margin-bottom: $size__site-gutter;
 }

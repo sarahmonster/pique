@@ -3526,6 +3526,21 @@ input[type="submit"].minimal:hover {
   display: none;
 }
 
+/* Search form specific */
+@media (max-width: 767px) {
+  .search-form {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .search-form .search-field {
+    width: 77%;
+  }
+  .search-form .search-submit {
+    display: inline-block;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -4358,6 +4373,11 @@ blockquote .widget cite:not(.widget-title),
   max-width: 1440px;
 }
 
+.content-area {
+  content: "";
+  display: table;
+}
+
 /* On desktop devices, we'll show a sidebar next to our content */
 @media (min-width: 1024px) {
   .site-content {
@@ -4388,23 +4408,27 @@ blockquote .widget cite:not(.widget-title),
   .page-template-template-full-width .content-area {
     float: none;
     padding-left: 0;
+    padding-right: 0;
     width: 100%;
   }
 }
 /* Grid structures for tablet devices and larger */
 @media (min-width: 768px) {
-  .pique-grid-two article {
+  .pique-grid-two article,
+  .error-404 .widget {
     float: left;
     font-size: 0.85em;
     text-align: left;
     width: 45%;
     width: calc( (100% - 80px) / 2);
   }
-  .pique-grid-two article:nth-of-type(odd) {
+  .pique-grid-two article:nth-of-type(odd),
+  .error-404 .widget:nth-of-type(odd) {
     margin-right: 40px;
     clear: left;
   }
-  .pique-grid-two article:nth-of-type(even) {
+  .pique-grid-two article:nth-of-type(even),
+  .error-404 .widget:nth-of-type(even) {
     margin-left: 40px;
   }
 
@@ -5488,6 +5512,11 @@ time + .updated {
   display: none;
 }
 
+.entry-title,
+.page-title {
+  margin-top: 0;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -5545,6 +5574,11 @@ time + .updated {
   font-size: 12.8px;
   font-size: 0.8rem;
   font-style: normal;
+}
+
+/* 404 page */
+.error-404 .search-form {
+  margin-bottom: 40px;
 }
 
 .comment-list {
