@@ -4251,6 +4251,12 @@ blockquote .widget cite:not(.widget-title),
   font-size: 1.2em;
 }
 
+/* Tag cloud widget */
+.widget_tag_cloud .tagcloud {
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+}
+
 /* Calendar widget */
 .widget_calendar {
   line-height: 1.8;
