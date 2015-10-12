@@ -37,8 +37,8 @@
 	} );
 
 	$(document).ready(function() {
-		// Give each of the panels a highlight
-		$( '.pique-panel' ).not( '#pique-hero' ).each(function() {
+		// Give each of the panels a highlight & title
+		$( '.pique-frontpage' ).find( '.pique-panel' ).not( '#pique-hero' ).each(function() {
 			$( this ).append( '<span class="pique-panel-title">' + $( this ).data( 'panel-title' ) + '</span>' );
 		});
 	});
