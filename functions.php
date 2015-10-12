@@ -69,10 +69,14 @@ if ( ! function_exists( 'pique_setup' ) ) :
 		 */
 		add_theme_support( 'post-formats', array(
 			'aside',
+			'chat',
+			'gallery',
 			'image',
 			'video',
 			'quote',
 			'link',
+			'status',
+			'audio',
 		) );
 
 		// Set up the WordPress core custom background feature.

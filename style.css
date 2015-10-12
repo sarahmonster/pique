@@ -3422,46 +3422,30 @@ input[type="submit"]:focus {
   background-color: #b3a495;
   border-color: #83B6CC;
 }
-button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .minimal.more-link,
+button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal,
+.archive .pique-panel-content .entry-content .read-more a.minimal,
+.blog .pique-panel-content .entry-content .read-more a.minimal,
+.search-results .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
 .button.minimal,
-.pique-frontpage .pique-panel-content .entry-content .read-more a.button,
-.archive .pique-panel-content .entry-content .read-more a.button,
-.blog .pique-panel-content .entry-content .read-more a.button,
-.search-results .pique-panel-content .entry-content .read-more a.button,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
   background-color: #eff6f9;
   color: #83B6CC;
 }
-button.minimal:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
-.archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active,
-.search-results .pique-panel-content .entry-content .read-more a:active, .minimal.more-link:active, button.minimal:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
-.archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus,
-.search-results .pique-panel-content .entry-content .read-more a:focus, .minimal.more-link:focus, button.minimal:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
-.archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover,
-.search-results .pique-panel-content .entry-content .read-more a:hover, .minimal.more-link:hover,
+button.minimal:active, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:active,
+.archive .pique-panel-content .entry-content .read-more a.minimal:active,
+.blog .pique-panel-content .entry-content .read-more a.minimal:active,
+.search-results .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:focus,
+.archive .pique-panel-content .entry-content .read-more a.minimal:focus,
+.blog .pique-panel-content .entry-content .read-more a.minimal:focus,
+.search-results .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:hover,
+.archive .pique-panel-content .entry-content .read-more a.minimal:hover,
+.blog .pique-panel-content .entry-content .read-more a.minimal:hover,
+.search-results .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
 .button.minimal:active,
-.pique-frontpage .pique-panel-content .entry-content .read-more a.button:active,
-.archive .pique-panel-content .entry-content .read-more a.button:active,
-.blog .pique-panel-content .entry-content .read-more a.button:active,
-.search-results .pique-panel-content .entry-content .read-more a.button:active,
 .button.minimal:focus,
-.pique-frontpage .pique-panel-content .entry-content .read-more a.button:focus,
-.archive .pique-panel-content .entry-content .read-more a.button:focus,
-.blog .pique-panel-content .entry-content .read-more a.button:focus,
-.search-results .pique-panel-content .entry-content .read-more a.button:focus,
 .button.minimal:hover,
-.pique-frontpage .pique-panel-content .entry-content .read-more a.button:hover,
-.archive .pique-panel-content .entry-content .read-more a.button:hover,
-.blog .pique-panel-content .entry-content .read-more a.button:hover,
-.search-results .pique-panel-content .entry-content .read-more a.button:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -4689,7 +4673,7 @@ blockquote .widget cite:not(.widget-title),
 .blog .pique-panel,
 .search-results .pique-panel {
   background-color: #14100d;
-  min-height: 50vh;
+  min-height: 75vh;
   margin: 0;
   position: relative;
   width: 100%;
@@ -4854,6 +4838,101 @@ blockquote .widget cite:not(.widget-title),
   .search-results .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
     font-size: 1.75em;
   }
+}
+.pique-frontpage .pique-panel-content
+.format-aside .pique-panel-content .entry-content,
+.pique-frontpage .format-status .pique-panel-content .entry-content,
+.archive .pique-panel-content
+.format-aside .pique-panel-content .entry-content,
+.archive .format-status .pique-panel-content .entry-content,
+.blog .pique-panel-content
+.format-aside .pique-panel-content .entry-content,
+.blog .format-status .pique-panel-content .entry-content,
+.search-results .pique-panel-content
+.format-aside .pique-panel-content .entry-content,
+.search-results .format-status .pique-panel-content .entry-content {
+  font-size: 1.2em;
+  font-style: italic;
+}
+.pique-frontpage .format-quote .read-more,
+.pique-frontpage .format-aside .read-more,
+.pique-frontpage .format-status .read-more,
+.pique-frontpage .format-link .read-more,
+.pique-frontpage .format-audio .read-more,
+.archive .format-quote .read-more,
+.archive .format-aside .read-more,
+.archive .format-status .read-more,
+.archive .format-link .read-more,
+.archive .format-audio .read-more,
+.blog .format-quote .read-more,
+.blog .format-aside .read-more,
+.blog .format-status .read-more,
+.blog .format-link .read-more,
+.blog .format-audio .read-more,
+.search-results .format-quote .read-more,
+.search-results .format-aside .read-more,
+.search-results .format-status .read-more,
+.search-results .format-link .read-more,
+.search-results .format-audio .read-more {
+  display: none;
+}
+.pique-frontpage .format-quote .entry-title,
+.pique-frontpage .format-aside .entry-title,
+.pique-frontpage .format-status .entry-title,
+.pique-frontpage .format-link .entry-title,
+.archive .format-quote .entry-title,
+.archive .format-aside .entry-title,
+.archive .format-status .entry-title,
+.archive .format-link .entry-title,
+.blog .format-quote .entry-title,
+.blog .format-aside .entry-title,
+.blog .format-status .entry-title,
+.blog .format-link .entry-title,
+.search-results .format-quote .entry-title,
+.search-results .format-aside .entry-title,
+.search-results .format-status .entry-title,
+.search-results .format-link .entry-title {
+  display: none;
+}
+.pique-frontpage .format-quote .entry-content,
+.pique-frontpage .format-aside .entry-content,
+.pique-frontpage .format-status .entry-content,
+.pique-frontpage .format-link .entry-content,
+.archive .format-quote .entry-content,
+.archive .format-aside .entry-content,
+.archive .format-status .entry-content,
+.archive .format-link .entry-content,
+.blog .format-quote .entry-content,
+.blog .format-aside .entry-content,
+.blog .format-status .entry-content,
+.blog .format-link .entry-content,
+.search-results .format-quote .entry-content,
+.search-results .format-aside .entry-content,
+.search-results .format-status .entry-content,
+.search-results .format-link .entry-content {
+  margin-top: 40px;
+}
+.pique-frontpage .format-image .pique-panel-content .entry-content,
+.pique-frontpage .format-video .pique-panel-content .entry-content,
+.pique-frontpage .format-gallery .pique-panel-content .entry-content,
+.pique-frontpage .format-status .pique-panel-content .entry-content,
+.pique-frontpage .format-link .pique-panel-content .entry-content,
+.archive .format-image .pique-panel-content .entry-content,
+.archive .format-video .pique-panel-content .entry-content,
+.archive .format-gallery .pique-panel-content .entry-content,
+.archive .format-status .pique-panel-content .entry-content,
+.archive .format-link .pique-panel-content .entry-content,
+.blog .format-image .pique-panel-content .entry-content,
+.blog .format-video .pique-panel-content .entry-content,
+.blog .format-gallery .pique-panel-content .entry-content,
+.blog .format-status .pique-panel-content .entry-content,
+.blog .format-link .pique-panel-content .entry-content,
+.search-results .format-image .pique-panel-content .entry-content,
+.search-results .format-video .pique-panel-content .entry-content,
+.search-results .format-gallery .pique-panel-content .entry-content,
+.search-results .format-status .pique-panel-content .entry-content,
+.search-results .format-link .pique-panel-content .entry-content {
+  text-align: center;
 }
 .pique-frontpage .pique-hero .pique-panel-content,
 .archive .pique-hero .pique-panel-content,
@@ -5473,6 +5552,7 @@ blockquote .search-results .overlay cite,
   border-bottom: 2px solid;
 }
 
+/* Entry meta */
 .entry-meta, .widget_rss .rss-date, .widget_rss cite, .comment-metadata, .reply {
   color: #d9d7d5;
   font-family: Karla, Arial, sans-serif;
@@ -5512,17 +5592,20 @@ time + .updated {
   display: none;
 }
 
+/* Content */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
+/* Read more */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
+/* Categories & tags */
 .cat-links,
 .tags-links {
   color: #c2beb9;
@@ -5552,6 +5635,15 @@ time + .updated {
   content: "";
 }
 
+/* 404 page */
+.error-404 .page-title {
+  margin-top: 0;
+}
+.error-404 .search-form {
+  margin-bottom: 40px;
+}
+
+/* Comment form */
 #commentform .logged-in-as,
 #commentform .comment-notes {
   font-size: 16px;
@@ -5569,14 +5661,6 @@ time + .updated {
   font-size: 12.8px;
   font-size: 0.8rem;
   font-style: normal;
-}
-
-/* 404 page */
-.error-404 .page-title {
-  margin-top: 0;
-}
-.error-404 .search-form {
-  margin-bottom: 40px;
 }
 
 .comment-list {
@@ -5825,6 +5909,10 @@ figure {
 }
 
 /* Tiled galleries */
+.tiled-gallery-caption {
+  text-shadow: none;
+}
+
 /*--------------------------------------------------------------
 # Media queries
 --------------------------------------------------------------*/

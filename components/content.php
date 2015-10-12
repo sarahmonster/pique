@@ -8,17 +8,35 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel' ); ?>>
-	<?php if ( has_post_thumbnail() ) :
+	<?php
+	// Set the post thumbnail as the background of the panel
+	if ( has_post_thumbnail() ) :
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'pique-hero' ); ?>
 		<div class="pique-panel-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)"></div>
 	<?php endif; ?>
+
+	<?php //echo get_post_format(); ?>
 	<div class="pique-panel-content">
+		<?php
+
+		$show_title = array( 'image', 'gallery', 'audio', 'video', 'aside', 'status', 'link', 'quote' );
+		if ( in_array( get_post_format(), $show_title ) ) :
+		endif;
+		?>
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="'. esc_url( get_the_permalink() ) .'">', '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php the_excerpt(); ?>
+			<?php
+			// For certain post types, we're going to display the excerpt
+			if ( ! get_post_format() || 'chat' === get_post_format() ) :
+				the_excerpt();
+			// Otherwise, it makes more sense to show the full content
+			else :
+				the_content();
+			endif;
+			?>
 			<div class="read-more">
 			<?php
 				printf(
