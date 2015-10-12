@@ -91,7 +91,8 @@
 // Applies to all long scrolly-style pages, so the blog indexes as well
 .pique-frontpage,
 .archive,
-.blog {
+.blog,
+.search-results {
 
   // General content-ish stuff
   .site-content,
@@ -481,8 +482,6 @@
     @include colourPanel($color__tan);
   }
 }
-
-
 
 /* Account for the admin bar */
 .admin-bar.pique-frontpage {

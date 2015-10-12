@@ -62,12 +62,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-next a::after,
 .post-navigation .nav-next a::after, .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
 .archive .pique-panel-content .entry-content .read-more a::after,
-.blog .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
+.blog .pique-panel-content .entry-content .read-more a::after,
+.search-results .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
 .tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -144,12 +147,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-next a.fa-pull-left::after,
 .post-navigation .nav-next a.fa-pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
 .archive .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
-.blog .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
+.blog .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
+.search-results .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
 .fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
   margin-right: .3em;
 }
 .fa.fa-pull-right, .comment-navigation .nav-previous a.fa-pull-right::before,
@@ -158,12 +164,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-next a.fa-pull-right::after,
 .post-navigation .nav-next a.fa-pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
 .archive .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
-.blog .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
+.blog .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
+.search-results .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
 .fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
   margin-left: .3em;
 }
 
@@ -182,12 +191,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-next a.pull-left::after,
 .post-navigation .nav-next a.pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::after,
 .archive .pique-panel-content .entry-content .read-more a.pull-left::after,
-.blog .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
+.blog .pique-panel-content .entry-content .read-more a.pull-left::after,
+.search-results .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
 .pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.pull-left::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.pull-left::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.pull-left::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
   margin-right: .3em;
 }
 .fa.pull-right, .comment-navigation .nav-previous a.pull-right::before,
@@ -196,12 +208,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-next a.pull-right::after,
 .post-navigation .nav-next a.pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::after,
 .archive .pique-panel-content .entry-content .read-more a.pull-right::after,
-.blog .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
+.blog .pique-panel-content .entry-content .read-more a.pull-right::after,
+.search-results .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
 .pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.pull-right::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.pull-right::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.pull-right::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
   margin-left: .3em;
 }
 
@@ -2867,7 +2882,8 @@ samp {
 
 button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 input,
 optgroup,
@@ -2880,14 +2896,16 @@ textarea {
 
 button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited {
   overflow: visible;
 }
 
 button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 select {
   text-transform: none;
@@ -2895,7 +2913,8 @@ select {
 
 button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 html input[type="button"],
 input[type="reset"],
@@ -2906,14 +2925,16 @@ input[type="submit"] {
 
 button[disabled], .pique-frontpage .pique-panel-content .entry-content .read-more a[disabled],
 .archive .pique-panel-content .entry-content .read-more a[disabled],
-.blog .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
+.blog .pique-panel-content .entry-content .read-more a[disabled],
+.search-results .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
 html input[disabled] {
   cursor: default;
 }
 
 button::-moz-focus-inner, .pique-frontpage .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
 .archive .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
+.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
+.search-results .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
 .more-link:visited::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2981,6 +3002,7 @@ button,
 .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
 .blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a,
 .more-link,
 .more-link:visited,
 input,
@@ -3000,6 +3022,7 @@ blockquote cite,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite,
 #masthead .site-branding .site-title,
 .widget-title,
 h4,
@@ -3022,6 +3045,7 @@ blockquote cite a:hover,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
 #masthead .site-branding .site-title a:hover,
 .widget-title a:hover,
 h3 a:focus,
@@ -3029,6 +3053,7 @@ blockquote cite a:focus,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
 #masthead .site-branding .site-title a:focus,
 .widget-title a:focus,
 h3 a:active,
@@ -3036,6 +3061,7 @@ blockquote cite a:active,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
 #masthead .site-branding .site-title a:active,
 .widget-title a:active,
 h4 a:hover,
@@ -3067,7 +3093,8 @@ h2 {
 
 h3, blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite, #masthead .site-branding .site-title, .widget-title {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite, #masthead .site-branding .site-title, .widget-title {
   font-family: Karla, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2em;
@@ -3100,7 +3127,8 @@ dfn, cite, em, i {
 
 blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content {
   border-top: 2px solid;
   color: #aaa49e;
   font-size: 1.3em;
@@ -3111,7 +3139,8 @@ blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials ar
 }
 blockquote:before, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content:before,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content:before,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content:before {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content:before,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content:before {
   content: '“';
   display: block;
   font-size: 4em;
@@ -3124,13 +3153,15 @@ blockquote:before, .pique-frontpage .pique-template-testimonials .pique-testimon
 }
 blockquote p, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content p,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content p,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content p {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content p,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content p {
   text-align: left;
   margin: 0;
 }
 blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite {
   border: none;
   display: block;
   font-style: normal;
@@ -3140,7 +3171,8 @@ blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonia
 }
 blockquote cite::before, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite::before {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite::before {
   content: '—';
 }
 
@@ -3201,7 +3233,8 @@ body {
 
 blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content, q {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content, q {
   quotes: "" "";
 }
 
@@ -3323,7 +3356,8 @@ textarea {
 /* Buttons */
 button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 .button,
 input[type="button"],
@@ -3348,7 +3382,8 @@ input[type="submit"] {
 @media (max-width: 767px) {
   button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
   .archive .pique-panel-content .entry-content .read-more a,
-  .blog .pique-panel-content .entry-content .read-more a, .more-link,
+  .blog .pique-panel-content .entry-content .read-more a,
+  .search-results .pique-panel-content .entry-content .read-more a, .more-link,
   .more-link:visited,
   .button,
   input[type="button"],
@@ -3359,7 +3394,8 @@ input[type="submit"] {
 }
 button:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover,
+.search-results .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -3370,9 +3406,11 @@ input[type="submit"]:hover {
 }
 button:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:active,
+.search-results .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
+.blog .pique-panel-content .entry-content .read-more a:focus,
+.search-results .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
 .button:active,
 .button:focus,
 input[type="button"]:active,
@@ -3386,11 +3424,13 @@ input[type="submit"]:focus {
 }
 button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a, .minimal.more-link,
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a, .minimal.more-link,
 .button.minimal,
 .pique-frontpage .pique-panel-content .entry-content .read-more a.button,
 .archive .pique-panel-content .entry-content .read-more a.button,
 .blog .pique-panel-content .entry-content .read-more a.button,
+.search-results .pique-panel-content .entry-content .read-more a.button,
 input[type="button"].minimal,
 input[type="reset"].minimal,
 input[type="submit"].minimal {
@@ -3399,23 +3439,29 @@ input[type="submit"].minimal {
 }
 button.minimal:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
 .archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active, .minimal.more-link:active, button.minimal:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
+.blog .pique-panel-content .entry-content .read-more a:active,
+.search-results .pique-panel-content .entry-content .read-more a:active, .minimal.more-link:active, button.minimal:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
 .archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus, .minimal.more-link:focus, button.minimal:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
+.blog .pique-panel-content .entry-content .read-more a:focus,
+.search-results .pique-panel-content .entry-content .read-more a:focus, .minimal.more-link:focus, button.minimal:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover, .minimal.more-link:hover,
+.blog .pique-panel-content .entry-content .read-more a:hover,
+.search-results .pique-panel-content .entry-content .read-more a:hover, .minimal.more-link:hover,
 .button.minimal:active,
 .pique-frontpage .pique-panel-content .entry-content .read-more a.button:active,
 .archive .pique-panel-content .entry-content .read-more a.button:active,
 .blog .pique-panel-content .entry-content .read-more a.button:active,
+.search-results .pique-panel-content .entry-content .read-more a.button:active,
 .button.minimal:focus,
 .pique-frontpage .pique-panel-content .entry-content .read-more a.button:focus,
 .archive .pique-panel-content .entry-content .read-more a.button:focus,
 .blog .pique-panel-content .entry-content .read-more a.button:focus,
+.search-results .pique-panel-content .entry-content .read-more a.button:focus,
 .button.minimal:hover,
 .pique-frontpage .pique-panel-content .entry-content .read-more a.button:hover,
 .archive .pique-panel-content .entry-content .read-more a.button:hover,
 .blog .pique-panel-content .entry-content .read-more a.button:hover,
+.search-results .pique-panel-content .entry-content .read-more a.button:hover,
 input[type="button"].minimal:active,
 input[type="button"].minimal:focus,
 input[type="button"].minimal:hover,
@@ -3433,16 +3479,21 @@ input[type="submit"].minimal:hover {
 @media (max-width: 767px) {
   button + button, .pique-frontpage .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button,
+  .search-results .pique-panel-content .entry-content .read-more a + button, .more-link + button,
   .more-link:visited + button, .pique-frontpage .pique-panel-content .entry-content .read-more button + a, .pique-frontpage .pique-panel-content .entry-content .read-more a + a, .pique-frontpage .pique-panel-content .entry-content .read-more .more-link + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
   .archive .pique-panel-content .entry-content .read-more .more-link + a,
   .blog .pique-panel-content .entry-content .read-more button + a,
   .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a,
+  .search-results .pique-panel-content .entry-content .read-more button + a,
+  .search-results .pique-panel-content .entry-content .read-more a + a,
+  .search-results .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link,
+  .search-results .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-top: 1em;
   }
@@ -3450,16 +3501,21 @@ input[type="submit"].minimal:hover {
 @media (min-width: 768px) {
   button + button, .pique-frontpage .pique-panel-content .entry-content .read-more a + button,
   .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .blog .pique-panel-content .entry-content .read-more a + button,
+  .search-results .pique-panel-content .entry-content .read-more a + button, .more-link + button,
   .more-link:visited + button, .pique-frontpage .pique-panel-content .entry-content .read-more button + a, .pique-frontpage .pique-panel-content .entry-content .read-more a + a, .pique-frontpage .pique-panel-content .entry-content .read-more .more-link + a,
   .archive .pique-panel-content .entry-content .read-more button + a,
   .archive .pique-panel-content .entry-content .read-more a + a,
   .archive .pique-panel-content .entry-content .read-more .more-link + a,
   .blog .pique-panel-content .entry-content .read-more button + a,
   .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
+  .blog .pique-panel-content .entry-content .read-more .more-link + a,
+  .search-results .pique-panel-content .entry-content .read-more button + a,
+  .search-results .pique-panel-content .entry-content .read-more a + a,
+  .search-results .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
   .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  .blog .pique-panel-content .entry-content .read-more a + .more-link,
+  .search-results .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-left: 0.5em;
   }
@@ -4108,6 +4164,8 @@ blockquote .widget cite:not(.widget-title),
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
 .widget .blog .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
+.widget .search-results .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
 .widget #masthead .site-branding .site-title:not(.widget-title),
 #masthead .site-branding .widget .site-title:not(.widget-title),
 .widget .widget-title:not(.widget-title),
@@ -4573,7 +4631,8 @@ blockquote .widget cite:not(.widget-title),
 
 .pique-frontpage,
 .archive,
-.blog {
+.blog,
+.search-results {
   /* Hero area (the "home" page, as it were) */
   /* Content-heavy pages */
   /* Grid template panel */
@@ -4587,7 +4646,9 @@ blockquote .widget cite:not(.widget-title),
 .archive .site-content,
 .archive .content-area,
 .blog .site-content,
-.blog .content-area {
+.blog .content-area,
+.search-results .site-content,
+.search-results .content-area {
   margin: 0;
   max-width: none;
   padding: 0;
@@ -4595,12 +4656,14 @@ blockquote .widget cite:not(.widget-title),
 }
 .pique-frontpage .page-header,
 .archive .page-header,
-.blog .page-header {
+.blog .page-header,
+.search-results .page-header {
   text-align: center;
 }
 .pique-frontpage .pique-panel,
 .archive .pique-panel,
-.blog .pique-panel {
+.blog .pique-panel,
+.search-results .pique-panel {
   background-color: #14100d;
   min-height: 50vh;
   margin: 0;
@@ -4609,12 +4672,14 @@ blockquote .widget cite:not(.widget-title),
 }
 .pique-frontpage .pique-panel:nth-of-type(even),
 .archive .pique-panel:nth-of-type(even),
-.blog .pique-panel:nth-of-type(even) {
+.blog .pique-panel:nth-of-type(even),
+.search-results .pique-panel:nth-of-type(even) {
   background-color: #1d1813;
 }
 .pique-frontpage .pique-panel-background,
 .archive .pique-panel-background,
-.blog .pique-panel-background {
+.blog .pique-panel-background,
+.search-results .pique-panel-background {
   background-attachment: fixed;
   bottom: 0;
   -webkit-filter: brightness(0.5);
@@ -4628,7 +4693,8 @@ blockquote .widget cite:not(.widget-title),
 }
 .pique-frontpage .pique-panel-content,
 .archive .pique-panel-content,
-.blog .pique-panel-content {
+.blog .pique-panel-content,
+.search-results .pique-panel-content {
   color: #FCFBF9;
   margin: 0 auto;
   max-width: 1400px;
@@ -4639,13 +4705,15 @@ blockquote .widget cite:not(.widget-title),
 @media (min-width: 768px) {
   .pique-frontpage .pique-panel-content,
   .archive .pique-panel-content,
-  .blog .pique-panel-content {
+  .blog .pique-panel-content,
+  .search-results .pique-panel-content {
     padding: 40px;
   }
 }
 .pique-frontpage .pique-panel-content h2,
 .archive .pique-panel-content h2,
-.blog .pique-panel-content h2 {
+.blog .pique-panel-content h2,
+.search-results .pique-panel-content h2 {
   color: #FCFBF9;
   border: 2px solid #FCFBF9;
   display: inline-block;
@@ -4654,49 +4722,57 @@ blockquote .widget cite:not(.widget-title),
 }
 .pique-frontpage .pique-panel-content h2 a,
 .archive .pique-panel-content h2 a,
-.blog .pique-panel-content h2 a {
+.blog .pique-panel-content h2 a,
+.search-results .pique-panel-content h2 a {
   color: #FCFBF9;
 }
 .pique-frontpage .pique-panel-content h2 a:hover,
 .archive .pique-panel-content h2 a:hover,
-.blog .pique-panel-content h2 a:hover {
+.blog .pique-panel-content h2 a:hover,
+.search-results .pique-panel-content h2 a:hover {
   border: none;
 }
 .pique-frontpage .pique-panel-content .entry-content,
 .archive .pique-panel-content .entry-content,
-.blog .pique-panel-content .entry-content {
+.blog .pique-panel-content .entry-content,
+.search-results .pique-panel-content .entry-content {
   margin: 1em auto;
   max-width: 700px;
   text-align: left;
 }
 .pique-frontpage .pique-panel-content .entry-content .read-more,
 .archive .pique-panel-content .entry-content .read-more,
-.blog .pique-panel-content .entry-content .read-more {
+.blog .pique-panel-content .entry-content .read-more,
+.search-results .pique-panel-content .entry-content .read-more {
   margin: 2em auto 1em;
   text-align: center;
 }
 @media (min-width: 768px) {
   .pique-frontpage .pique-panel-content .entry-content .read-more,
   .archive .pique-panel-content .entry-content .read-more,
-  .blog .pique-panel-content .entry-content .read-more {
+  .blog .pique-panel-content .entry-content .read-more,
+  .search-results .pique-panel-content .entry-content .read-more {
     margin-top: 4em;
   }
 }
 .pique-frontpage .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a {
+.blog .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more a {
   text-shadow: none;
 }
 .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
 .archive .pique-panel-content .entry-content .read-more a::after,
-.blog .pique-panel-content .entry-content .read-more a::after {
+.blog .pique-panel-content .entry-content .read-more a::after,
+.search-results .pique-panel-content .entry-content .read-more a::after {
   font-size: 14px;
   content: "";
   display: inline-block;
 }
 .pique-frontpage .pique-panel-content form,
 .archive .pique-panel-content form,
-.blog .pique-panel-content form {
+.blog .pique-panel-content form,
+.search-results .pique-panel-content form {
   background: #FCFBF9;
   border-top: 4px solid #83B6CC;
   margin-left: auto;
@@ -4708,45 +4784,65 @@ blockquote .widget cite:not(.widget-title),
 .pique-frontpage .pique-panel-content blockquote, .pique-frontpage .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-frontpage .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
 .blog .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
 .archive .pique-panel-content blockquote,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
 .archive .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
 .blog .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
 .blog .pique-panel-content blockquote,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
 .blog .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
+.blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
+.search-results .pique-panel-content blockquote,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+.archive .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+.blog .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+.search-results .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
   color: #FCFBF9;
 }
 @media (min-width: 768px) {
   .pique-frontpage .pique-panel-content blockquote, .pique-frontpage .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-frontpage .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
   .archive .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
   .blog .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
+  .search-results .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
   .archive .pique-panel-content blockquote,
   .pique-frontpage .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
   .archive .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
   .archive .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
   .blog .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
+  .search-results .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
   .blog .pique-panel-content blockquote,
   .pique-frontpage .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
   .archive .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
   .blog .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-  .blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
+  .blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
+  .search-results .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
+  .search-results .pique-panel-content blockquote,
+  .pique-frontpage .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+  .archive .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+  .blog .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
+  .search-results .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
+  .search-results .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
     font-size: 1.75em;
   }
 }
 .pique-frontpage .pique-hero .pique-panel-content,
 .archive .pique-hero .pique-panel-content,
-.blog .pique-hero .pique-panel-content {
+.blog .pique-hero .pique-panel-content,
+.search-results .pique-hero .pique-panel-content {
   font-size: 1.5em;
   max-width: 1400px;
   padding-top: 8em;
 }
 .pique-frontpage .pique-hero .pique-panel-content .entry-content,
 .archive .pique-hero .pique-panel-content .entry-content,
-.blog .pique-hero .pique-panel-content .entry-content {
+.blog .pique-hero .pique-panel-content .entry-content,
+.search-results .pique-hero .pique-panel-content .entry-content {
   text-align: center;
 }
 .pique-frontpage .pique-template-grid .pique-panel-content .entry-content,
@@ -4757,7 +4853,10 @@ blockquote .widget cite:not(.widget-title),
 .archive .pique-template-recent-posts .pique-panel-content .entry-content,
 .blog .pique-template-grid .pique-panel-content .entry-content,
 .blog .pique-template-testimonials .pique-panel-content .entry-content,
-.blog .pique-template-recent-posts .pique-panel-content .entry-content {
+.blog .pique-template-recent-posts .pique-panel-content .entry-content,
+.search-results .pique-template-grid .pique-panel-content .entry-content,
+.search-results .pique-template-testimonials .pique-panel-content .entry-content,
+.search-results .pique-template-recent-posts .pique-panel-content .entry-content {
   max-width: none;
 }
 .pique-frontpage .pique-template-grid .pique-panel-content > .entry-content > p,
@@ -4768,7 +4867,10 @@ blockquote .widget cite:not(.widget-title),
 .archive .pique-template-recent-posts .pique-panel-content > .entry-content > p,
 .blog .pique-template-grid .pique-panel-content > .entry-content > p,
 .blog .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.blog .pique-template-recent-posts .pique-panel-content > .entry-content > p {
+.blog .pique-template-recent-posts .pique-panel-content > .entry-content > p,
+.search-results .pique-template-grid .pique-panel-content > .entry-content > p,
+.search-results .pique-template-testimonials .pique-panel-content > .entry-content > p,
+.search-results .pique-template-recent-posts .pique-panel-content > .entry-content > p {
   font-size: 1.2em;
   font-style: italic;
   margin: 0 auto 1em;
@@ -4777,7 +4879,8 @@ blockquote .widget cite:not(.widget-title),
 }
 .pique-frontpage .pique-template-grid .pique-panel-content h3, .pique-frontpage .pique-template-grid .pique-panel-content blockquote cite, blockquote .pique-frontpage .pique-template-grid .pique-panel-content cite, .pique-frontpage .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite, .pique-frontpage .pique-template-grid .pique-panel-content #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .pique-template-grid .pique-panel-content .site-title, .pique-frontpage .pique-template-grid .pique-panel-content .widget-title,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite, .pique-frontpage .pique-template-grid .pique-panel-content #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .pique-template-grid .pique-panel-content .site-title, .pique-frontpage .pique-template-grid .pique-panel-content .widget-title,
 .pique-frontpage .pique-template-grid .pique-panel-content h3 a,
 .pique-frontpage .pique-template-grid .pique-panel-content blockquote cite a,
 blockquote .pique-frontpage .pique-template-grid .pique-panel-content cite a,
@@ -4785,6 +4888,7 @@ blockquote .pique-frontpage .pique-template-grid .pique-panel-content cite a,
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
 .pique-frontpage .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .pique-frontpage .pique-template-grid .pique-panel-content .site-title a,
 .pique-frontpage .pique-template-grid .pique-panel-content .widget-title a,
@@ -4811,6 +4915,7 @@ blockquote .pique-frontpage .pique-template-recent-posts .pique-panel-content ci
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
 .pique-frontpage .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
 #masthead .site-branding .pique-frontpage .pique-template-recent-posts .pique-panel-content .site-title,
 .pique-frontpage .pique-template-recent-posts .pique-panel-content .widget-title,
@@ -4821,6 +4926,7 @@ blockquote .pique-frontpage .pique-template-recent-posts .pique-panel-content ci
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
 .pique-frontpage .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .pique-frontpage .pique-template-recent-posts .pique-panel-content .site-title a,
 .pique-frontpage .pique-template-recent-posts .pique-panel-content .widget-title a,
@@ -4831,6 +4937,7 @@ blockquote .archive .pique-template-grid .pique-panel-content cite,
 .archive .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite,
 .archive .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
 #masthead .site-branding .archive .pique-template-grid .pique-panel-content .site-title,
 .archive .pique-template-grid .pique-panel-content .widget-title,
@@ -4841,6 +4948,7 @@ blockquote .archive .pique-template-grid .pique-panel-content cite a,
 .archive .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite a,
 .archive .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .archive .pique-template-grid .pique-panel-content .site-title a,
 .archive .pique-template-grid .pique-panel-content .widget-title a,
@@ -4867,6 +4975,7 @@ blockquote .archive .pique-template-recent-posts .pique-panel-content cite,
 .archive .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite,
 .archive .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
 #masthead .site-branding .archive .pique-template-recent-posts .pique-panel-content .site-title,
 .archive .pique-template-recent-posts .pique-panel-content .widget-title,
@@ -4877,6 +4986,7 @@ blockquote .archive .pique-template-recent-posts .pique-panel-content cite a,
 .archive .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite a,
 .archive .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .archive .pique-template-recent-posts .pique-panel-content .site-title a,
 .archive .pique-template-recent-posts .pique-panel-content .widget-title a,
@@ -4887,6 +4997,7 @@ blockquote .blog .pique-template-grid .pique-panel-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite,
 .blog .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite,
 .blog .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
 #masthead .site-branding .blog .pique-template-grid .pique-panel-content .site-title,
 .blog .pique-template-grid .pique-panel-content .widget-title,
@@ -4897,6 +5008,7 @@ blockquote .blog .pique-template-grid .pique-panel-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite a,
 .blog .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite a,
 .blog .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .blog .pique-template-grid .pique-panel-content .site-title a,
 .blog .pique-template-grid .pique-panel-content .widget-title a,
@@ -4923,6 +5035,7 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite,
 .blog .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite,
 .blog .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
 #masthead .site-branding .blog .pique-template-recent-posts .pique-panel-content .site-title,
 .blog .pique-template-recent-posts .pique-panel-content .widget-title,
@@ -4933,44 +5046,111 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite a,
 .blog .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite a,
 .blog .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
 #masthead .site-branding .blog .pique-template-recent-posts .pique-panel-content .site-title a,
-.blog .pique-template-recent-posts .pique-panel-content .widget-title a {
+.blog .pique-template-recent-posts .pique-panel-content .widget-title a,
+.search-results .pique-template-grid .pique-panel-content h3,
+.search-results .pique-template-grid .pique-panel-content blockquote cite,
+blockquote .search-results .pique-template-grid .pique-panel-content cite,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
+.search-results .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
+.search-results .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
+#masthead .site-branding .search-results .pique-template-grid .pique-panel-content .site-title,
+.search-results .pique-template-grid .pique-panel-content .widget-title,
+.search-results .pique-template-grid .pique-panel-content h3 a,
+.search-results .pique-template-grid .pique-panel-content blockquote cite a,
+blockquote .search-results .pique-template-grid .pique-panel-content cite a,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
+.search-results .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
+.search-results .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .search-results .pique-template-grid .pique-panel-content .site-title a,
+.search-results .pique-template-grid .pique-panel-content .widget-title a,
+.search-results .pique-template-testimonials .pique-panel-content h3,
+.search-results .pique-template-testimonials .pique-panel-content blockquote cite,
+blockquote .search-results .pique-template-testimonials .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
+.search-results .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
+#masthead .site-branding .search-results .pique-template-testimonials .pique-panel-content .site-title,
+.search-results .pique-template-testimonials .pique-panel-content .widget-title,
+.search-results .pique-template-testimonials .pique-panel-content h3 a,
+.search-results .pique-template-testimonials .pique-panel-content blockquote cite a,
+blockquote .search-results .pique-template-testimonials .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
+.search-results .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .search-results .pique-template-testimonials .pique-panel-content .site-title a,
+.search-results .pique-template-testimonials .pique-panel-content .widget-title a,
+.search-results .pique-template-recent-posts .pique-panel-content h3,
+.search-results .pique-template-recent-posts .pique-panel-content blockquote cite,
+blockquote .search-results .pique-template-recent-posts .pique-panel-content cite,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
+.search-results .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
+.search-results .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
+#masthead .site-branding .search-results .pique-template-recent-posts .pique-panel-content .site-title,
+.search-results .pique-template-recent-posts .pique-panel-content .widget-title,
+.search-results .pique-template-recent-posts .pique-panel-content h3 a,
+.search-results .pique-template-recent-posts .pique-panel-content blockquote cite a,
+blockquote .search-results .pique-template-recent-posts .pique-panel-content cite a,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
+.search-results .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
+.search-results .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .search-results .pique-template-recent-posts .pique-panel-content .site-title a,
+.search-results .pique-template-recent-posts .pique-panel-content .widget-title a {
   color: #83B6CC;
 }
 .pique-frontpage .pique-template-grid article,
 .archive .pique-template-grid article,
-.blog .pique-template-grid article {
+.blog .pique-template-grid article,
+.search-results .pique-template-grid article {
   font-size: 0.9em;
   text-align: center;
 }
 .pique-frontpage .pique-template-grid img,
 .archive .pique-template-grid img,
-.blog .pique-template-grid img {
+.blog .pique-template-grid img,
+.search-results .pique-template-grid img {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 60%;
 }
 .pique-frontpage .pique-template-grid p,
 .archive .pique-template-grid p,
-.blog .pique-template-grid p {
+.blog .pique-template-grid p,
+.search-results .pique-template-grid p {
   text-align: left;
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials article,
 .archive .pique-template-testimonials .pique-testimonials article,
-.blog .pique-template-testimonials .pique-testimonials article {
+.blog .pique-template-testimonials .pique-testimonials article,
+.search-results .pique-template-testimonials .pique-testimonials article {
   font-size: 0.85em;
   text-align: left;
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content {
+.blog .pique-template-testimonials .pique-testimonials article .entry-content,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content {
   color: #FCFBF9;
   margin-bottom: 0;
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
 .archive .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
-.blog .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
+.blog .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
+.search-results .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
   border-radius: 50%;
   float: left;
   margin: 10px 10px 0 0;
@@ -4978,7 +5158,8 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials h2,
 .archive .pique-template-testimonials .pique-testimonials h2,
-.blog .pique-template-testimonials .pique-testimonials h2 {
+.blog .pique-template-testimonials .pique-testimonials h2,
+.search-results .pique-template-testimonials .pique-testimonials h2 {
   border: none;
   clear: none;
   color: #E9D5C0;
@@ -4990,12 +5171,14 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials h2::before,
 .archive .pique-template-testimonials .pique-testimonials h2::before,
-.blog .pique-template-testimonials .pique-testimonials h2::before {
+.blog .pique-template-testimonials .pique-testimonials h2::before,
+.search-results .pique-template-testimonials .pique-testimonials h2::before {
   display: none;
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials h2 span,
 .archive .pique-template-testimonials .pique-testimonials h2 span,
-.blog .pique-template-testimonials .pique-testimonials h2 span {
+.blog .pique-template-testimonials .pique-testimonials h2 span,
+.search-results .pique-template-testimonials .pique-testimonials h2 span {
   display: block;
   font-weight: normal;
   letter-spacing: 0;
@@ -5003,47 +5186,56 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts article,
 .archive .pique-template-recent-posts .pique-recent-posts article,
-.blog .pique-template-recent-posts .pique-recent-posts article {
+.blog .pique-template-recent-posts .pique-recent-posts article,
+.search-results .pique-template-recent-posts .pique-recent-posts article {
   text-align: center;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
 .archive .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
-.blog .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
+.blog .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
+.search-results .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
   border: none;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-header,
 .archive .pique-template-recent-posts .pique-recent-posts .entry-header,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-header {
+.blog .pique-template-recent-posts .pique-recent-posts .entry-header,
+.search-results .pique-template-recent-posts .pique-recent-posts .entry-header {
   text-align: left;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-title,
 .archive .pique-template-recent-posts .pique-recent-posts .entry-title,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-title {
+.blog .pique-template-recent-posts .pique-recent-posts .entry-title,
+.search-results .pique-template-recent-posts .pique-recent-posts .entry-title {
   margin-bottom: 0.5em;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts .posted-on,
 .archive .pique-template-recent-posts .pique-recent-posts .posted-on,
-.blog .pique-template-recent-posts .pique-recent-posts .posted-on {
+.blog .pique-template-recent-posts .pique-recent-posts .posted-on,
+.search-results .pique-template-recent-posts .pique-recent-posts .posted-on {
   font-style: italic;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts .byline,
 .archive .pique-template-recent-posts .pique-recent-posts .byline,
-.blog .pique-template-recent-posts .pique-recent-posts .byline {
+.blog .pique-template-recent-posts .pique-recent-posts .byline,
+.search-results .pique-template-recent-posts .pique-recent-posts .byline {
   display: none;
 }
 .pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-content,
 .archive .pique-template-recent-posts .pique-recent-posts .entry-content,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-content {
+.blog .pique-template-recent-posts .pique-recent-posts .entry-content,
+.search-results .pique-template-recent-posts .pique-recent-posts .entry-content {
   text-align: left;
 }
 .pique-frontpage .pique-template-full-width .entry-content,
 .archive .pique-template-full-width .entry-content,
-.blog .pique-template-full-width .entry-content {
+.blog .pique-template-full-width .entry-content,
+.search-results .pique-template-full-width .entry-content {
   max-width: none;
 }
 .pique-frontpage .overlay,
 .archive .overlay,
-.blog .overlay {
+.blog .overlay,
+.search-results .overlay {
   background: #483E34;
   border-top: 4px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
@@ -5055,27 +5247,31 @@ blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
 @media (max-width: 767px) {
   .pique-frontpage .overlay,
   .archive .overlay,
-  .blog .overlay {
+  .blog .overlay,
+  .search-results .overlay {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
   .pique-frontpage .overlay,
   .archive .overlay,
-  .blog .overlay {
+  .blog .overlay,
+  .search-results .overlay {
     width: 60%;
   }
 }
 @media (min-width: 1024px) {
   .pique-frontpage .overlay,
   .archive .overlay,
-  .blog .overlay {
+  .blog .overlay,
+  .search-results .overlay {
     width: 40%;
   }
 }
 .pique-frontpage .overlay h3, .pique-frontpage .overlay blockquote cite, blockquote .pique-frontpage .overlay cite, .pique-frontpage .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite, .pique-frontpage .overlay #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .overlay .site-title, .pique-frontpage .overlay .widget-title,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite, .pique-frontpage .overlay #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .overlay .site-title, .pique-frontpage .overlay .widget-title,
 .archive .overlay h3,
 .archive .overlay blockquote cite,
 blockquote .archive .overlay cite,
@@ -5083,6 +5279,7 @@ blockquote .archive .overlay cite,
 .archive .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .overlay cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .overlay cite,
 .archive .overlay #masthead .site-branding .site-title,
 #masthead .site-branding .archive .overlay .site-title,
 .archive .overlay .widget-title,
@@ -5093,19 +5290,33 @@ blockquote .blog .overlay cite,
 .archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .overlay cite,
 .blog .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .blog .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .overlay cite,
 .blog .overlay #masthead .site-branding .site-title,
 #masthead .site-branding .blog .overlay .site-title,
-.blog .overlay .widget-title {
+.blog .overlay .widget-title,
+.search-results .overlay h3,
+.search-results .overlay blockquote cite,
+blockquote .search-results .overlay cite,
+.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
+.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
+.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
+.search-results .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.search-results .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
+.search-results .overlay #masthead .site-branding .site-title,
+#masthead .site-branding .search-results .overlay .site-title,
+.search-results .overlay .widget-title {
   margin-bottom: 0;
 }
 .pique-frontpage .overlay p,
 .archive .overlay p,
-.blog .overlay p {
+.blog .overlay p,
+.search-results .overlay p {
   margin-top: 0;
 }
 .pique-frontpage .hide,
 .archive .hide,
-.blog .hide {
+.blog .hide,
+.search-results .hide {
   display: none;
 }
 .pique-frontpage .entry-header,
@@ -5113,13 +5324,16 @@ blockquote .blog .overlay cite,
 .archive .entry-header,
 .archive .entry-content,
 .blog .entry-header,
-.blog .entry-content {
+.blog .entry-content,
+.search-results .entry-header,
+.search-results .entry-content {
   position: relative;
   z-index: 1;
 }
 .pique-frontpage .edit-link,
 .archive .edit-link,
-.blog .edit-link {
+.blog .edit-link,
+.search-results .edit-link {
   position: absolute;
   bottom: 15px;
   left: 10px;
@@ -5127,12 +5341,14 @@ blockquote .blog .overlay cite,
 }
 .pique-frontpage .edit-link::before,
 .archive .edit-link::before,
-.blog .edit-link::before {
+.blog .edit-link::before,
+.search-results .edit-link::before {
   display: none;
 }
 .pique-frontpage .edit-link a,
 .archive .edit-link a,
-.blog .edit-link a {
+.blog .edit-link a,
+.search-results .edit-link a {
   color: #FCFBF9;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8rem;
@@ -5144,7 +5360,8 @@ blockquote .blog .overlay cite,
 }
 .pique-frontpage .edit-link a:hover,
 .archive .edit-link a:hover,
-.blog .edit-link a:hover {
+.blog .edit-link a:hover,
+.search-results .edit-link a:hover {
   border: none;
   opacity: 1;
 }
@@ -5448,7 +5665,9 @@ time + .updated {
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .more-link {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .more-link {
   color: #83B6CC;
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -5461,7 +5680,9 @@ time + .updated {
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a::before,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a::before,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
   font-size: 14px;
   content: "";
   display: inline-block;
@@ -5472,7 +5693,9 @@ time + .updated {
 .infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:hover,
 .archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
 .infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
+.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
+.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a:hover,
+.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
   color: #3c7993;
   font-size: 19.2px;
   font-size: 1.2rem;
