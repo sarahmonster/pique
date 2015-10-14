@@ -4699,6 +4699,20 @@ blockquote .widget cite:not(.widget-title),
   width: 100%;
   height: 100%;
 }
+.pique-frontpage .pique-panel-background::before,
+.archive .pique-panel-background::before,
+.blog .pique-panel-background::before,
+.search-results .pique-panel-background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #483E34;
+  opacity: 0.75;
+}
 .pique-frontpage .pique-panel-content,
 .archive .pique-panel-content,
 .blog .pique-panel-content,
