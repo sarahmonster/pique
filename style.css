@@ -3630,7 +3630,7 @@ a:hover, a:active {
   /* Priority+ menu */
 }
 @media (min-width: 768px) {
-  .main-navigation.sticky {
+  .main-navigation.sticky, .main-navigation.format-aside, .main-navigation.format-audio, .main-navigation.format-chat, .main-navigation.format-gallery, .main-navigation.format-image, .main-navigation.format-link, .main-navigation.format-status, .main-navigation.format-quote, .main-navigation.format-video {
     position: fixed;
     top: 0px;
     bottom: auto;
@@ -3788,12 +3788,12 @@ a:hover, a:active {
 
 /* Account for the admin bar */
 @media screen and (min-width: 600px) and (max-width: 782px) {
-  .admin-bar .main-navigation.sticky {
+  .admin-bar .main-navigation.sticky, .admin-bar .main-navigation.format-aside, .admin-bar .main-navigation.format-audio, .admin-bar .main-navigation.format-chat, .admin-bar .main-navigation.format-gallery, .admin-bar .main-navigation.format-image, .admin-bar .main-navigation.format-link, .admin-bar .main-navigation.format-status, .admin-bar .main-navigation.format-quote, .admin-bar .main-navigation.format-video {
     top: 46px;
   }
 }
 @media screen and (min-width: 782px) {
-  .admin-bar .main-navigation.sticky {
+  .admin-bar .main-navigation.sticky, .admin-bar .main-navigation.format-aside, .admin-bar .main-navigation.format-audio, .admin-bar .main-navigation.format-chat, .admin-bar .main-navigation.format-gallery, .admin-bar .main-navigation.format-image, .admin-bar .main-navigation.format-link, .admin-bar .main-navigation.format-status, .admin-bar .main-navigation.format-quote, .admin-bar .main-navigation.format-video {
     top: 32px;
   }
 }
@@ -4582,7 +4582,7 @@ blockquote .widget cite:not(.widget-title),
       -ms-transform: none;
           transform: none;
 }
-.pique-frontpage .main-navigation:not(.sticky) {
+.pique-frontpage .main-navigation:not(.sticky):not(.format-aside):not(.format-audio):not(.format-chat):not(.format-gallery):not(.format-image):not(.format-link):not(.format-status):not(.format-quote):not(.format-video) {
   margin-top: 1em;
   position: relative;
 }
@@ -4591,7 +4591,7 @@ blockquote .widget cite:not(.widget-title),
     float: left;
     width: 50%;
   }
-  .pique-frontpage .sticky {
+  .pique-frontpage .sticky, .pique-frontpage .format-aside, .pique-frontpage .format-audio, .pique-frontpage .format-chat, .pique-frontpage .format-gallery, .pique-frontpage .format-image, .pique-frontpage .format-link, .pique-frontpage .format-status, .pique-frontpage .format-quote, .pique-frontpage .format-video {
     margin-top: 1em;
     position: relative;
   }
@@ -4866,17 +4866,13 @@ blockquote .widget cite:not(.widget-title),
     font-size: 1.75em;
   }
 }
-.pique-frontpage .pique-panel-content
-.format-aside .pique-panel-content .entry-content,
+.pique-frontpage .format-aside .pique-panel-content .entry-content,
 .pique-frontpage .format-status .pique-panel-content .entry-content,
-.archive .pique-panel-content
-.format-aside .pique-panel-content .entry-content,
+.archive .format-aside .pique-panel-content .entry-content,
 .archive .format-status .pique-panel-content .entry-content,
-.blog .pique-panel-content
-.format-aside .pique-panel-content .entry-content,
+.blog .format-aside .pique-panel-content .entry-content,
 .blog .format-status .pique-panel-content .entry-content,
-.search-results .pique-panel-content
-.format-aside .pique-panel-content .entry-content,
+.search-results .format-aside .pique-panel-content .entry-content,
 .search-results .format-status .pique-panel-content .entry-content {
   font-size: 1.2em;
   font-style: italic;
@@ -5564,10 +5560,6 @@ blockquote .search-results .overlay cite,
   }
 }
 
-.sticky {
-  display: block;
-}
-
 .hentry {
   margin: 0 0 1.5em;
 }
@@ -5577,6 +5569,59 @@ blockquote .search-results .overlay cite,
 }
 .hentry a:hover {
   border-bottom: 2px solid;
+}
+
+/* Sticky posts */
+.sticky .entry-title::before, .format-aside .entry-title::before, .format-audio .entry-title::before, .format-chat .entry-title::before, .format-gallery .entry-title::before, .format-image .entry-title::before, .format-link .entry-title::before, .format-status .entry-title::before, .format-quote .entry-title::before, .format-video .entry-title::before {
+  font-family: "Genericons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  -webkit-font-smoothing: antialiased;
+  content: '\f512';
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: 0;
+}
+
+/* Post formats */
+.format-aside .entry-title::before {
+  content: '\f101';
+}
+
+.format-audio .entry-title::before {
+  content: '\f109';
+}
+
+.format-chat .entry-title::before {
+  content: '\f108';
+}
+
+.format-gallery .entry-title::before {
+  content: '\f103';
+}
+
+.format-image .entry-title::before {
+  content: '\f102';
+}
+
+.format-link .entry-title::before {
+  content: '\f107';
+}
+
+.format-status .entry-title::before {
+  content: '\f105';
+}
+
+.format-quote .entry-title::before {
+  content: '\f106';
+}
+
+.format-video .entry-title::before {
+  content: '\f104';
 }
 
 /* Entry meta */

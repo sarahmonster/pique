@@ -1,7 +1,3 @@
-.sticky {
-	display: block;
-}
-
 .hentry {
 	margin: 0 0 1.5em;
 
@@ -12,6 +8,81 @@
 		&:hover {
 			border-bottom: 2px solid;
 		}
+	}
+}
+
+/* Sticky posts */
+.sticky {
+	.entry-title::before {
+		@include genericons;
+		content: '\f512';
+		display: inline-block;
+		margin-right: 0.5em;
+		vertical-align: 0;
+	}
+}
+
+/* Post formats */
+.format-aside {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f101';
+	}
+}
+
+.format-audio {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f109';
+	}
+}
+
+.format-chat {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f108';
+	}
+}
+
+.format-gallery {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f103';
+	}
+}
+
+.format-image {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f102';
+	}
+}
+
+.format-link {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f107';
+	}
+}
+
+.format-status {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f105';
+	}
+}
+
+.format-quote {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f106';
+	}
+}
+
+.format-video {
+	@extend .sticky;
+	.entry-title::before {
+		content: '\f104';
 	}
 }
 
