@@ -4121,6 +4121,7 @@ a:hover, a:active {
 .site-footer:after {
   content: "";
   display: table;
+  table-layout: fixed;
 }
 
 .clear:after,
@@ -4354,12 +4355,13 @@ blockquote .widget cite:not(.widget-title),
 .site-content {
   margin: 0 auto;
   padding: 20px;
-  max-width: 1440px;
 }
 
 .content-area {
   content: "";
   display: table;
+  table-layout: fixed;
+  width: 100%;
 }
 
 /* On desktop devices, we'll show a sidebar next to our content */
@@ -4501,6 +4503,7 @@ blockquote .widget cite:not(.widget-title),
   .site-footer .secondary-links + .site-info::after {
     content: "";
     display: table;
+    table-layout: fixed;
   }
 }
 
@@ -4508,6 +4511,7 @@ blockquote .widget cite:not(.widget-title),
 #tertiary {
   content: "";
   display: table;
+  table-layout: fixed;
   clear: both;
   border-bottom: 1px solid rgba(233, 213, 192, 0.25);
   margin-bottom: 10px;
@@ -4598,6 +4602,7 @@ blockquote .widget cite:not(.widget-title),
   .pique-frontpage .main-navigation {
     content: "";
     display: table;
+    table-layout: fixed;
   }
   .pique-frontpage .main-navigation li {
     display: block;

@@ -8,11 +8,12 @@
 .site-content {
 	margin: 0 auto;
 	padding: $size__site-gutter / 2;
-	max-width: $size__site-width + $size__site-gutter;
+	//max-width: $size__site-width + $size__site-gutter;
 }
 
 .content-area {
 	@include clearfix;
+	width: 100%;
 }
 
 /* On desktop devices, we'll show a sidebar next to our content */

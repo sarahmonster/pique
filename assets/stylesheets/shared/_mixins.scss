@@ -15,6 +15,7 @@
 @mixin clearfix() {
 	content: "";
 	display: table;
+	table-layout: fixed; // Prevents elements from getting all spilly
 }
 
 // Clear after (not all clearfix need this also)
