@@ -12,8 +12,8 @@
 }
 
 /* Sticky posts */
-.sticky {
-	.entry-title::before {
+.entry-title::before {
+	.sticky & {
 		@include genericons;
 		content: '\f512';
 		display: inline-block;
@@ -22,69 +22,35 @@
 	}
 }
 
-/* Post formats */
-.format-aside {
-	@extend .sticky;
+@mixin post-format($format, $icon) {
 	.entry-title::before {
-		content: '\f101';
+		.blog .format-#{$format} &,
+		.archive .format-#{$format} &,
+		.search-results .format-#{$format} & {
+			@extend .sticky;
+			@include genericons;
+			content: $icon;
+		}
+	}
+
+	.entry-meta::before {
+		.single .format-#{$format} & {
+			@extend .sticky;
+			@include genericons;
+			content: $icon;
+		}
 	}
 }
 
-.format-audio {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f109';
-	}
-}
-
-.format-chat {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f108';
-	}
-}
-
-.format-gallery {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f103';
-	}
-}
-
-.format-image {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f102';
-	}
-}
-
-.format-link {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f107';
-	}
-}
-
-.format-status {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f105';
-	}
-}
-
-.format-quote {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f106';
-	}
-}
-
-.format-video {
-	@extend .sticky;
-	.entry-title::before {
-		content: '\f104';
-	}
-}
+@include post-format('aside', '\f101');
+@include post-format('audio', '\f109');
+@include post-format('chat', '\f108');
+@include post-format('gallery', '\f103');
+@include post-format('image', '\f102');
+@include post-format('link', '\f107');
+@include post-format('status', '\f105');
+@include post-format('quote', '\f106');
+@include post-format('video', '\f104');
 
 /* Entry meta */
 .entry-meta {
