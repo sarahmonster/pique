@@ -35,7 +35,7 @@
 	}
 
 	.entry-meta::before {
-		.single .format-#{$format} & {
+		.format-#{$format} & {
 			@include genericons;
 			content: $icon;
 		}

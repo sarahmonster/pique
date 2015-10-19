@@ -5769,7 +5769,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-aside .entry-meta::before, .single .format-aside .widget_rss .rss-date::before, .widget_rss .single .format-aside .rss-date::before, .single .format-aside .widget_rss cite::before, .widget_rss .single .format-aside cite::before, .single .format-aside .comment-metadata::before, .single .format-aside .reply::before {
+.format-aside .entry-meta::before, .format-aside .widget_rss .rss-date::before, .widget_rss .format-aside .rss-date::before, .format-aside .widget_rss cite::before, .widget_rss .format-aside cite::before, .format-aside .comment-metadata::before, .format-aside .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5795,7 +5795,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-audio .entry-meta::before, .single .format-audio .widget_rss .rss-date::before, .widget_rss .single .format-audio .rss-date::before, .single .format-audio .widget_rss cite::before, .widget_rss .single .format-audio cite::before, .single .format-audio .comment-metadata::before, .single .format-audio .reply::before {
+.format-audio .entry-meta::before, .format-audio .widget_rss .rss-date::before, .widget_rss .format-audio .rss-date::before, .format-audio .widget_rss cite::before, .widget_rss .format-audio cite::before, .format-audio .comment-metadata::before, .format-audio .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5821,7 +5821,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-chat .entry-meta::before, .single .format-chat .widget_rss .rss-date::before, .widget_rss .single .format-chat .rss-date::before, .single .format-chat .widget_rss cite::before, .widget_rss .single .format-chat cite::before, .single .format-chat .comment-metadata::before, .single .format-chat .reply::before {
+.format-chat .entry-meta::before, .format-chat .widget_rss .rss-date::before, .widget_rss .format-chat .rss-date::before, .format-chat .widget_rss cite::before, .widget_rss .format-chat cite::before, .format-chat .comment-metadata::before, .format-chat .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5847,7 +5847,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-gallery .entry-meta::before, .single .format-gallery .widget_rss .rss-date::before, .widget_rss .single .format-gallery .rss-date::before, .single .format-gallery .widget_rss cite::before, .widget_rss .single .format-gallery cite::before, .single .format-gallery .comment-metadata::before, .single .format-gallery .reply::before {
+.format-gallery .entry-meta::before, .format-gallery .widget_rss .rss-date::before, .widget_rss .format-gallery .rss-date::before, .format-gallery .widget_rss cite::before, .widget_rss .format-gallery cite::before, .format-gallery .comment-metadata::before, .format-gallery .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5873,7 +5873,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-image .entry-meta::before, .single .format-image .widget_rss .rss-date::before, .widget_rss .single .format-image .rss-date::before, .single .format-image .widget_rss cite::before, .widget_rss .single .format-image cite::before, .single .format-image .comment-metadata::before, .single .format-image .reply::before {
+.format-image .entry-meta::before, .format-image .widget_rss .rss-date::before, .widget_rss .format-image .rss-date::before, .format-image .widget_rss cite::before, .widget_rss .format-image cite::before, .format-image .comment-metadata::before, .format-image .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5899,7 +5899,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-link .entry-meta::before, .single .format-link .widget_rss .rss-date::before, .widget_rss .single .format-link .rss-date::before, .single .format-link .widget_rss cite::before, .widget_rss .single .format-link cite::before, .single .format-link .comment-metadata::before, .single .format-link .reply::before {
+.format-link .entry-meta::before, .format-link .widget_rss .rss-date::before, .widget_rss .format-link .rss-date::before, .format-link .widget_rss cite::before, .widget_rss .format-link cite::before, .format-link .comment-metadata::before, .format-link .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5925,7 +5925,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-status .entry-meta::before, .single .format-status .widget_rss .rss-date::before, .widget_rss .single .format-status .rss-date::before, .single .format-status .widget_rss cite::before, .widget_rss .single .format-status cite::before, .single .format-status .comment-metadata::before, .single .format-status .reply::before {
+.format-status .entry-meta::before, .format-status .widget_rss .rss-date::before, .widget_rss .format-status .rss-date::before, .format-status .widget_rss cite::before, .widget_rss .format-status cite::before, .format-status .comment-metadata::before, .format-status .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5951,7 +5951,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-quote .entry-meta::before, .single .format-quote .widget_rss .rss-date::before, .widget_rss .single .format-quote .rss-date::before, .single .format-quote .widget_rss cite::before, .widget_rss .single .format-quote cite::before, .single .format-quote .comment-metadata::before, .single .format-quote .reply::before {
+.format-quote .entry-meta::before, .format-quote .widget_rss .rss-date::before, .widget_rss .format-quote .rss-date::before, .format-quote .widget_rss cite::before, .widget_rss .format-quote cite::before, .format-quote .comment-metadata::before, .format-quote .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
@@ -5977,7 +5977,7 @@ blockquote .search-results .overlay cite,
   vertical-align: 0;
 }
 
-.single .format-video .entry-meta::before, .single .format-video .widget_rss .rss-date::before, .widget_rss .single .format-video .rss-date::before, .single .format-video .widget_rss cite::before, .widget_rss .single .format-video cite::before, .single .format-video .comment-metadata::before, .single .format-video .reply::before {
+.format-video .entry-meta::before, .format-video .widget_rss .rss-date::before, .widget_rss .format-video .rss-date::before, .format-video .widget_rss cite::before, .widget_rss .format-video cite::before, .format-video .comment-metadata::before, .format-video .reply::before {
   font-family: "Genericons";
   font-size: 16px;
   font-style: normal;
