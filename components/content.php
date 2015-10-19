@@ -37,6 +37,11 @@
 				the_content();
 			endif;
 			?>
+
+			<div class="entry-meta">
+				<?php pique_posted_on(); ?>
+			</div><!-- .entry-meta -->
+
 			<div class="read-more">
 			<?php
 				printf(

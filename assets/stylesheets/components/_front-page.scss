@@ -228,6 +228,10 @@
 
   } //.pique-panel-content
 
+  .entry-meta {
+    display: none; /* Hide for most post formats */
+  }
+
   // Post formats
   .format-aside,
   .format-status {
@@ -244,6 +248,12 @@
   .format-audio {
     .read-more {
       display: none;
+    }
+
+    .entry-meta {
+      display: block;
+      font-style: normal;
+      text-align: left;
     }
   }
 

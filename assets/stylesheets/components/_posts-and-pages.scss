@@ -27,15 +27,15 @@
 		.blog .format-#{$format} &,
 		.archive .format-#{$format} &,
 		.search-results .format-#{$format} & {
-			@extend .sticky;
 			@include genericons;
 			content: $icon;
+			margin-right: 0.5em;
+			vertical-align: 0;
 		}
 	}
 
 	.entry-meta::before {
 		.single .format-#{$format} & {
-			@extend .sticky;
 			@include genericons;
 			content: $icon;
 		}
