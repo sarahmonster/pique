@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	// Set the post thumbnail as the background of the panel
 	if ( has_post_thumbnail() ) :

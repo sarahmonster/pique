@@ -59,7 +59,7 @@ function pique_post_classes( $classes ) {
 	if ( get_page_template_slug() && '' !== get_page_template_slug() ) :
 		$simple_slug = get_page_template_slug();
 		// Make sure the template actually exists in this theme.
-		if ( locate_template( '' !== $simple_slug ) ) :
+		if ( '' !== locate_template( $simple_slug ) ) :
 			$simple_slug = explode( '.', $simple_slug )[0];
 			$simple_slug = explode( '/', $simple_slug )[1];
 			$classes[] = 'pique-' . $simple_slug;
@@ -71,6 +71,17 @@ function pique_post_classes( $classes ) {
 		$classes[] = 'pique-template-recent-posts';
 	endif;
 
+	// Annnnd add a class if we're on a homepage or an archive page
+	if ( is_home() || is_front_page() || is_search() || is_archive() ) :
+		// But don't do it for child pages!
+		global $post;
+		$parent = wp_get_post_parent_id( $post->ID );
+		if ( 'page-templates/template-grid.php' !== get_page_template_slug( $parent ) ) :
+			$classes[] = 'pique-panel';
+		endif;
+	endif;
+
+	//print_r( $classes );
 	return $classes;
 }
 add_filter( 'post_class', 'pique_post_classes' );

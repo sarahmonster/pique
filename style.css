@@ -5125,18 +5125,18 @@ blockquote .widget cite:not(.widget-title),
 .search-results .format-link .pique-panel-content .entry-content {
   text-align: center;
 }
-.pique-frontpage .pique-hero .pique-panel-content,
-.archive .pique-hero .pique-panel-content,
-.blog .pique-hero .pique-panel-content,
-.search-results .pique-hero .pique-panel-content {
+.pique-frontpage #pique-hero .pique-panel-content,
+.archive #pique-hero .pique-panel-content,
+.blog #pique-hero .pique-panel-content,
+.search-results #pique-hero .pique-panel-content {
   font-size: 1.5em;
   max-width: 1400px;
   padding-top: 8em;
 }
-.pique-frontpage .pique-hero .pique-panel-content .entry-content,
-.archive .pique-hero .pique-panel-content .entry-content,
-.blog .pique-hero .pique-panel-content .entry-content,
-.search-results .pique-hero .pique-panel-content .entry-content {
+.pique-frontpage #pique-hero .pique-panel-content .entry-content,
+.archive #pique-hero .pique-panel-content .entry-content,
+.blog #pique-hero .pique-panel-content .entry-content,
+.search-results #pique-hero .pique-panel-content .entry-content {
   text-align: center;
 }
 .pique-frontpage .pique-template-grid .pique-panel-content .entry-content,
