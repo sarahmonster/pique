@@ -22,6 +22,17 @@ function pique_customize_register( $wp_customize ) {
 		'title' => esc_html__( 'Theme Options', 'pique' ),
 	) );
 
+	$wp_customize->add_setting( 'pique_menu', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'pique_menu', array(
+		'label'   => esc_html__( 'Use a dynamically-generated menu on the front page.', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'checkbox',
+	) );
+
 	$wp_customize->add_setting( 'pique_panel1', array(
 		'default'           => false,
 		'sanitize_callback' => 'pique_sanitize_numeric_value',
@@ -66,6 +77,16 @@ function pique_sanitize_numeric_value( $input ) {
 	} else {
 		return 0;
 	}
+}
+
+/**
+ * Sanitize a checkbox
+ */
+function pique_sanitize_checkbox( $input ) {
+	if ( ! in_array( $input, array( true, false ) ) ) {
+		$input = false;
+	}
+	return $input;
 }
 
 /**

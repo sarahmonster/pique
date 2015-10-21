@@ -45,7 +45,23 @@
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 		</div><!-- .site-branding -->
 
-		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+		<?php if ( pique_is_frontpage() AND get_theme_mod( 'pique_menu' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php // Get each of our panels and make a menu
+			$panels = array( '1', '2', '3' );
+			foreach ( $panels as $panel ) :
+				if ( get_theme_mod( 'pique_panel' . $panel ) ) :
+					$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
+					setup_postdata( $post );
+					the_title( '<li><a href="#post-'.get_the_ID().'">', '</a></li>' );
+					wp_reset_postdata();
+				endif;
+			endforeach;
+			?>
+			</nav><!-- #site-navigation -->
+
+
+		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
 					wp_nav_menu( array(
