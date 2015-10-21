@@ -10,7 +10,7 @@
  * Adds support for WP.com print styles and responsive videos
  */
 function pique_theme_support() {
-  global $themecolors;
+	global $themecolors;
 
 	/**
 	 * Set a default theme color array for WP.com.

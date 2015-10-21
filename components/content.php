@@ -32,8 +32,7 @@
 			// For certain post types, we're going to display the excerpt
 			if ( ! get_post_format() || 'chat' === get_post_format() ) :
 				the_excerpt();
-			// Otherwise, it makes more sense to show the full content
-			else :
+			else : // Otherwise, it makes more sense to show the full content
 				the_content();
 			endif;
 			?>

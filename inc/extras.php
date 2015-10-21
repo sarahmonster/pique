@@ -27,19 +27,22 @@ function pique_is_frontpage() {
  */
 function pique_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_multi_author() ) {
+	if ( is_multi_author() ) :
 		$classes[] = 'group-blog';
-	}
+	endif;
+
 	// Adds a body class if we're on the (static) front page
-	if ( pique_is_frontpage() ) {
+	if ( pique_is_frontpage() ) :
 		$classes[] = 'pique-frontpage';
-	}
+	endif;
+
 	// Adds a class if we're in the Customizer, since it doesn't like fixed backgrounds
-	if ( is_customize_preview() ):
+	if ( is_customize_preview() ) :
 		$classes[] = 'pique-customizer';
 	endif;
+
 	// Adds a class if we don't have a sidebar at all, so we can adjust the layout
-	if ( is_active_sidebar( 'sidebar-1' ) ):
+	if ( is_active_sidebar( 'sidebar-1' ) ) :
 		$classes[] = 'pique-sidebar';
 	endif;
 

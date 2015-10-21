@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-panel-title="Panel <?php echo $pique_panel; ?>" >
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-panel-title="Panel <?php echo esc_attr( $pique_panel ); ?>" >
 	<?php if ( has_post_thumbnail() ) :
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'pique-hero' ); ?>
 		<div class="pique-panel-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)"></div>

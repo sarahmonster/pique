@@ -49,7 +49,7 @@
 
 			<?php
 			// Get each of our panels and output a link to the section on the page
-			foreach ( range(1, 8) as $panel ) :
+			foreach ( range( 1, 8 ) as $panel ) :
 				if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 					$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
 					setup_postdata( $post );
@@ -70,8 +70,14 @@
 								echo '</span><span class="pique-split-nav">';
 							endif;
 							// Output menu link
-							echo $link;
-
+							echo wp_kses( $link, array(
+												'a' => array(
+															'href' => array(),
+															'title' => array(),
+														),
+												'li' => array(),
+												)
+							);
 							// If we only have one single panel, output an empty span so the styling is consistent
 							// and the Customizer experience feels more natural when they add a second panel
 							if ( 1 === count( $panel_links ) ) :

@@ -248,8 +248,8 @@ function pique_filter_front_page_template( $template ) {
 add_filter( 'frontpage_template', 'pique_filter_front_page_template' );
 
 function themeslug_query_vars( $qvars ) {
-  $qvars[] = 'pique_panel';
-  return $qvars;
+	$qvars[] = 'pique_panel';
+	return $qvars;
 }
 add_filter( 'query_vars', 'themeslug_query_vars' , 10, 1 );
 
