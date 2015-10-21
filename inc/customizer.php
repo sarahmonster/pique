@@ -105,7 +105,7 @@ function pique_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'pique_panel7', array(
-		'label'   => esc_html__( 'Panel 5', 'pique' ),
+		'label'   => esc_html__( 'Panel 7', 'pique' ),
 		'section' => 'pique_theme_options',
 		'type'    => 'dropdown-pages',
 	) );
@@ -116,7 +116,7 @@ function pique_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'pique_panel8', array(
-		'label'   => esc_html__( 'Panel 6', 'pique' ),
+		'label'   => esc_html__( 'Panel 8', 'pique' ),
 		'section' => 'pique_theme_options',
 		'type'    => 'dropdown-pages',
 	) );

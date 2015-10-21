@@ -528,7 +528,6 @@
   }
 
   .pique-panel-title {
-    background: purple;
     color: $color__white;
     font-family: $font__sans;
     @include font-size(0.8);
@@ -540,17 +539,37 @@
     text-transform: uppercase;
   }
 
-  /* Colour-code all panels */
-  &:nth-of-type(2n) {
-    @include colourPanel($color__blue);
+  /* Colour-code all panels (add 1 to account for #pique-hero, so 2 is actually panel 1)*/
+  &:nth-of-type(2) {
+    @include colourPanel(#a64b55);
   }
 
-  &:nth-of-type(3n) {
-    @include colourPanel($color__red);
+  &:nth-of-type(3) {
+    @include colourPanel(#b569a2);
   }
 
-  &:nth-of-type(4n) {
-    @include colourPanel($color__tan);
+  &:nth-of-type(4) {
+    @include colourPanel(#8f68bd);
+  }
+
+  &:nth-of-type(5) {
+    @include colourPanel(#575ebd);
+  }
+
+  &:nth-of-type(6) {
+    @include colourPanel(#55a1bd);
+  }
+
+  &:nth-of-type(7) {
+    @include colourPanel(#7dbd8f);
+  }
+
+  &:nth-of-type(8) {
+    @include colourPanel(#c8b247);
+  }
+
+  &:nth-of-type(9) {
+    @include colourPanel(#bd7555);
   }
 }
 
