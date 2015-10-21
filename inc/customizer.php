@@ -65,6 +65,61 @@ function pique_customize_register( $wp_customize ) {
 		'section' => 'pique_theme_options',
 		'type'    => 'dropdown-pages',
 	) );
+
+	$wp_customize->add_setting( 'pique_panel4', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_numeric_value',
+	) );
+
+	$wp_customize->add_control( 'pique_panel4', array(
+		'label'   => esc_html__( 'Panel 4', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'dropdown-pages',
+	) );
+
+	$wp_customize->add_setting( 'pique_panel5', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_numeric_value',
+	) );
+
+	$wp_customize->add_control( 'pique_panel5', array(
+		'label'   => esc_html__( 'Panel 5', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'dropdown-pages',
+	) );
+
+	$wp_customize->add_setting( 'pique_panel6', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_numeric_value',
+	) );
+
+	$wp_customize->add_control( 'pique_panel6', array(
+		'label'   => esc_html__( 'Panel 6', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'dropdown-pages',
+	) );
+
+	$wp_customize->add_setting( 'pique_panel7', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_numeric_value',
+	) );
+
+	$wp_customize->add_control( 'pique_panel7', array(
+		'label'   => esc_html__( 'Panel 5', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'dropdown-pages',
+	) );
+
+	$wp_customize->add_setting( 'pique_panel8', array(
+		'default'           => false,
+		'sanitize_callback' => 'pique_sanitize_numeric_value',
+	) );
+
+	$wp_customize->add_control( 'pique_panel8', array(
+		'label'   => esc_html__( 'Panel 6', 'pique' ),
+		'section' => 'pique_theme_options',
+		'type'    => 'dropdown-pages',
+	) );
 }
 add_action( 'customize_register', 'pique_customize_register' );
 

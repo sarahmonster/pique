@@ -26,7 +26,7 @@ get_header(); ?>
 
 	<?php
 	// Get each of our panels and show the post data
-	$panels = array( '1', '2', '3' );
+	$panels = array( '1', '2', '3', '4', '5', '6', '7', '8' );
 	foreach ( $panels as $panel ) :
 		if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 			$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );

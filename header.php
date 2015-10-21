@@ -46,20 +46,43 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( pique_is_frontpage() AND get_theme_mod( 'pique_menu' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php // Get each of our panels and make a menu
-			$panels = array( '1', '2', '3' );
-			foreach ( $panels as $panel ) :
+
+			<?php
+			// Get each of our panels and output a link to the section on the page
+			foreach ( range(1, 8) as $panel ) :
 				if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 					$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
 					setup_postdata( $post );
-					the_title( '<li><a href="#post-'.get_the_ID().'">', '</a></li>' );
+					$panel_links[] = '<li><a href="#post-' . get_the_ID() . '">' . get_the_title() . '</a></li>';
 					wp_reset_postdata();
 				endif;
 			endforeach;
-			?>
-			</nav><!-- #site-navigation -->
 
+			// Output our menu only if we actually have menu items
+			if ( 0 !== count( $panel_links ) ) : ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<span class="pique-split-nav">
+						<?php
+						// Split the menu in half at the half-way mark
+						$halfies = intval( ceil( count( $panel_links ) / 2 ) );
+						foreach ( $panel_links as $key => $link ) :
+							if ( $halfies === $key ) :
+								echo '</span><span class="pique-split-nav">';
+							endif;
+							// Output menu link
+							echo $link;
+
+							// If we only have one single panel, output an empty span so the styling is consistent
+							// and the Customizer experience feels more natural when they add a second panel
+							if ( 1 === count( $panel_links ) ) :
+								echo '</span><span class="pique-split-nav">';
+							endif;
+
+						endforeach;
+						?>
+					</span>
+				</nav><!-- #site-navigation -->
+			<?php endif; ?>
 
 		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
