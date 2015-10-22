@@ -4593,6 +4593,7 @@ blockquote .widget cite:not(.widget-title),
 @media (max-width: 767px) {
   .pique-frontpage .pique-split-nav {
     float: left;
+    padding: 10px;
     width: 50%;
   }
   .pique-frontpage .sticky {
