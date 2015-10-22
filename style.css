@@ -4624,12 +4624,20 @@ blockquote .widget cite:not(.widget-title),
     height: auto;
     max-width: 100%;
   }
+  .pique-frontpage #masthead.pique-unstuck-header .nav-wrapper {
+    position: relative;
+  }
   .pique-frontpage #masthead.pique-unstuck-header #site-navigation {
     background: none;
     border: none;
-    margin-top: -5em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .pique-frontpage #masthead.pique-unstuck-header .pique-split-nav {
+    position: relative;
     width: calc(50% - 70px);
   }
   .pique-frontpage #masthead.pique-unstuck-header .pique-split-nav:first-of-type {

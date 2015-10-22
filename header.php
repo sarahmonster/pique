@@ -48,7 +48,7 @@
 		<?php if ( pique_is_frontpage() AND get_theme_mod( 'pique_menu' ) ) : ?>
 
 			<?php
-			// Get each of our panels and output a link to the section on the page
+			// Get each of our panels and output a link to that section ID on the page
 			foreach ( range( 1, 8 ) as $panel ) :
 				if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 					$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
@@ -61,7 +61,8 @@
 			// Output our menu only if we actually have menu items
 			if ( 0 !== count( $panel_links ) ) : ?>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<span class="pique-split-nav">
+					<ul>
+						<span class="pique-split-nav">
 						<?php
 						// Split the menu in half at the half-way mark
 						$halfies = intval( ceil( count( $panel_links ) / 2 ) );
@@ -86,10 +87,10 @@
 
 						endforeach;
 						?>
-					</span>
+						</span>
+					</ul>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
-
 		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
