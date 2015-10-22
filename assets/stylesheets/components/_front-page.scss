@@ -68,7 +68,7 @@
       .nav-wrapper {
         position: relative;
       }
-      
+
       #site-navigation {
         background: none;
         border: none;
@@ -261,6 +261,10 @@
       display: block;
       font-style: normal;
       text-align: left;
+
+      .edit-link {
+        display: none;
+      }
     }
   }
 
