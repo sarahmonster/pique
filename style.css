@@ -4727,6 +4727,17 @@ blockquote .widget cite:not(.widget-title),
   background: #483E34;
   opacity: 0.75;
 }
+.pique-frontpage .pique-panel-background::after,
+.archive .pique-panel-background::after,
+.blog .pique-panel-background::after,
+.search-results .pique-panel-background::after {
+  border: 1px solid red;
+  height: 50px;
+  width: 50px;
+  content: 'hellllllo';
+  display: block;
+  z-index: 10000;
+}
 .pique-frontpage .pique-panel-content,
 .archive .pique-panel-content,
 .blog .pique-panel-content,
@@ -5586,14 +5597,20 @@ blockquote .search-results .pique-template-recent-posts .pique-panel-content cit
   color: #FCFBF9;
   margin-bottom: 0;
 }
+.pique-frontpage .pique-template-testimonials .pique-testimonials .entry-footer,
+.archive .pique-template-testimonials .pique-testimonials .entry-footer,
+.blog .pique-template-testimonials .pique-testimonials .entry-footer,
+.search-results .pique-template-testimonials .pique-testimonials .entry-footer {
+  margin-top: 20px;
+}
 .pique-frontpage .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
 .archive .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
 .blog .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
 .search-results .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
   border-radius: 50%;
   float: left;
-  margin: 10px 10px 0 0;
-  max-width: 80%;
+  margin: 0 20px 0 0;
+  max-width: 50%;
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials h2,
 .archive .pique-template-testimonials .pique-testimonials h2,
@@ -5605,8 +5622,8 @@ blockquote .search-results .pique-template-recent-posts .pique-panel-content cit
   float: left;
   font-size: 16px;
   font-size: 1rem;
-  margin: 10px 0;
-  width: calc(100% - 100px - 10px);
+  padding: 10px 0;
+  width: calc(100% - 100px - 20px);
 }
 .pique-frontpage .pique-template-testimonials .pique-testimonials h2::before,
 .archive .pique-template-testimonials .pique-testimonials h2::before,

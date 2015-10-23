@@ -150,6 +150,15 @@
       background: $color__primary;
       opacity: 0.75;
     }
+
+    &::after {
+      border: 1px solid red;
+      height: 50px;
+      width: 50px;
+      content: 'hellllllo';
+      display: block;
+      z-index: 10000;
+    }
   }
 
   .pique-panel-content {
@@ -365,11 +374,15 @@
         } // .entry-content
       } // article
 
+      .entry-footer {
+        margin-top: $size__site-gutter/2;
+      }
+
       .attachment-pique-thumbnail-avatar {
         border-radius: 50%;
         float: left;
-        margin: $size__site-gutter/4 $size__site-gutter/4 0 0;
-        max-width: 80%;
+        margin: 0 $size__site-gutter/2 0 0;
+        max-width: 50%;
       }
 
       h2 {
@@ -378,8 +391,8 @@
         color: $color__tertiary;
         float: left;
         @include font-size(1);
-        margin: $size__site-gutter/4 0;
-        width: calc(100% - 100px - #{$size__site-gutter/4});
+        padding: $size__site-gutter/4  0;
+        width: calc(100% - 100px - #{$size__site-gutter/2});
 
         &::before {
           display: none;
