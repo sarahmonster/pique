@@ -23,6 +23,10 @@
 
 		</header><!-- .entry-header -->
 
+		<footer class="entry-footer">
+			<?php pique_edit_link( get_the_ID() ); ?>
+		</footer><!-- .entry-footer -->
+
 		<div class="entry-content">
 			<?php
 				/* translators: %s: Name of current post */
@@ -95,8 +99,5 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php pique_edit_link( get_the_ID() ); ?>
-		</footer><!-- .entry-footer -->
 	</div><!-- .pique-panel-content -->
 </article><!-- #post-## -->
