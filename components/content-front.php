@@ -20,6 +20,7 @@
 				<?php pique_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
+
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
@@ -35,22 +36,25 @@
 			// Show recent blog posts for blog panel (Note that get_option returns a string, so we're casting the result as an int)
 			if ( get_the_ID() === (int) get_option( 'page_for_posts' )  ) : ?>
 
-				<div class="pique-recent-posts pique-grid-two">
+				<?php // Show four most recent posts
+				$recent_posts = new WP_Query( array(
+					'posts_per_page' => 4,
+					'post_status'  => 'publish',
+				) );
+				?>
 
-					<?php // Show four most recent posts
-					$pique_recent_posts = wp_get_recent_posts( array(
-						'numberposts' => 4,
-						'post_status' => 'publish',
-			 		), OBJECT );
+		 		<?php if ( $recent_posts->have_posts() ) : ?>
 
-			 		get_posts( $pique_recent_posts );
+					<div class="pique-recent-posts pique-grid-two">
 
-			 		foreach ( $pique_recent_posts as $post ) :
-			 			setup_postdata( $post );
-			 			get_template_part( 'components/content', 'excerpt' );
+						<?php
+						while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
+							get_template_part( 'components/content', 'excerpt' );
+						endwhile;
 						wp_reset_postdata();
-					endforeach; ?>
-				</div><!-- .pique-recent-posts -->
+						?>
+					</div><!-- .pique-recent-posts -->
+				<?php endif; ?>
 			<?php endif; ?>
 
 			<?php // Show sub-pages of grid template page
@@ -81,6 +85,7 @@
 					</div><!-- .pique-testimonials -->
 				<?php endif; ?>
 			<?php endif; ?>
+
 
 			<?php
 				wp_link_pages( array(

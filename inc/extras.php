@@ -84,7 +84,6 @@ function pique_post_classes( $classes ) {
 		endif;
 	endif;
 
-	//print_r( $classes );
 	return $classes;
 }
 add_filter( 'post_class', 'pique_post_classes' );
