@@ -117,6 +117,7 @@
 
   .pique-panel {
     background-color: darken(saturate($color__primary, 5%), 18%);
+    border-bottom: 4px solid transparentize($color__primary, 0.25);
     min-height: 75vh;
     margin: 0;
     position: relative;
@@ -150,14 +151,47 @@
       background: $color__primary;
       opacity: 0.75;
     }
+  }
+
+  /* In-between panel links */
+  .pique-panel-link {
+    background-color: $color__primary;
+    border-radius: 50%;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+      top: -30px;
+      left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 60px;
+    z-index: 1000;
+
+    &:hover {
+      border: none;
+    }
+
+    &::before,
+    &::after {
+      border-style: solid;
+      border-width: 16px 16px 0 16px;
+      content: '';
+      display: block;
+      height: 0;
+      position: absolute;
+        top: 54%;
+        left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+    }
+
+    &::before {
+      border-color: $color__tan transparent transparent transparent;
+    }
 
     &::after {
-      border: 1px solid red;
-      height: 50px;
-      width: 50px;
-      content: 'hellllllo';
-      display: block;
-      z-index: 10000;
+      border-color: $color__primary transparent transparent transparent;
+      top: 48%;
     }
   }
 

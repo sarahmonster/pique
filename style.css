@@ -4655,6 +4655,7 @@ blockquote .widget cite:not(.widget-title),
 .archive,
 .blog,
 .search-results {
+  /* In-between panel links */
   /* Hero area (the "home" page, as it were) */
   /* Content-heavy pages */
   /* Grid template panel */
@@ -4687,6 +4688,7 @@ blockquote .widget cite:not(.widget-title),
 .blog .pique-panel,
 .search-results .pique-panel {
   background-color: #14100d;
+  border-bottom: 4px solid rgba(72, 62, 52, 0.75);
   min-height: 75vh;
   margin: 0;
   position: relative;
@@ -4727,16 +4729,62 @@ blockquote .widget cite:not(.widget-title),
   background: #483E34;
   opacity: 0.75;
 }
-.pique-frontpage .pique-panel-background::after,
-.archive .pique-panel-background::after,
-.blog .pique-panel-background::after,
-.search-results .pique-panel-background::after {
-  border: 1px solid red;
-  height: 50px;
-  width: 50px;
-  content: 'hellllllo';
+.pique-frontpage .pique-panel-link,
+.archive .pique-panel-link,
+.blog .pique-panel-link,
+.search-results .pique-panel-link {
+  background-color: #483E34;
+  border-radius: 50%;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+  z-index: 1000;
+}
+.pique-frontpage .pique-panel-link:hover,
+.archive .pique-panel-link:hover,
+.blog .pique-panel-link:hover,
+.search-results .pique-panel-link:hover {
+  border: none;
+}
+.pique-frontpage .pique-panel-link::before, .pique-frontpage .pique-panel-link::after,
+.archive .pique-panel-link::before,
+.archive .pique-panel-link::after,
+.blog .pique-panel-link::before,
+.blog .pique-panel-link::after,
+.search-results .pique-panel-link::before,
+.search-results .pique-panel-link::after {
+  border-style: solid;
+  border-width: 16px 16px 0 16px;
+  content: '';
   display: block;
-  z-index: 10000;
+  height: 0;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+}
+.pique-frontpage .pique-panel-link::before,
+.archive .pique-panel-link::before,
+.blog .pique-panel-link::before,
+.search-results .pique-panel-link::before {
+  border-color: #E9D5C0 transparent transparent transparent;
+}
+.pique-frontpage .pique-panel-link::after,
+.archive .pique-panel-link::after,
+.blog .pique-panel-link::after,
+.search-results .pique-panel-link::after {
+  border-color: #483E34 transparent transparent transparent;
+  top: 48%;
 }
 .pique-frontpage .pique-panel-content,
 .archive .pique-panel-content,
