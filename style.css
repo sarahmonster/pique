@@ -56,11 +56,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: normal;
   font-style: normal;
 }
-.fa, .comment-navigation .nav-previous a::before,
-.posts-navigation .nav-previous a::before,
-.post-navigation .nav-previous a::before, .comment-navigation .nav-next a::after,
-.posts-navigation .nav-next a::after,
-.post-navigation .nav-next a::after, .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
+.fa, .comment-navigation .nav-previous span::before,
+.posts-navigation .nav-previous span::before,
+.post-navigation .nav-previous span::before, .comment-navigation .nav-next span::after,
+.posts-navigation .nav-next span::after,
+.post-navigation .nav-next span::after, .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
 .archive .pique-panel-content .entry-content .read-more a::after,
 .blog .pique-panel-content .entry-content .read-more a::after,
 .search-results .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
@@ -141,11 +141,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
 }
 
-.fa.fa-pull-left, .comment-navigation .nav-previous a.fa-pull-left::before,
-.posts-navigation .nav-previous a.fa-pull-left::before,
-.post-navigation .nav-previous a.fa-pull-left::before, .comment-navigation .nav-next a.fa-pull-left::after,
-.posts-navigation .nav-next a.fa-pull-left::after,
-.post-navigation .nav-next a.fa-pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
+.fa.fa-pull-left, .comment-navigation .nav-previous span.fa-pull-left::before,
+.posts-navigation .nav-previous span.fa-pull-left::before,
+.post-navigation .nav-previous span.fa-pull-left::before, .comment-navigation .nav-next span.fa-pull-left::after,
+.posts-navigation .nav-next span.fa-pull-left::after,
+.post-navigation .nav-next span.fa-pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
 .archive .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
 .blog .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
 .search-results .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
@@ -158,11 +158,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
   margin-right: .3em;
 }
-.fa.fa-pull-right, .comment-navigation .nav-previous a.fa-pull-right::before,
-.posts-navigation .nav-previous a.fa-pull-right::before,
-.post-navigation .nav-previous a.fa-pull-right::before, .comment-navigation .nav-next a.fa-pull-right::after,
-.posts-navigation .nav-next a.fa-pull-right::after,
-.post-navigation .nav-next a.fa-pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
+.fa.fa-pull-right, .comment-navigation .nav-previous span.fa-pull-right::before,
+.posts-navigation .nav-previous span.fa-pull-right::before,
+.post-navigation .nav-previous span.fa-pull-right::before, .comment-navigation .nav-next span.fa-pull-right::after,
+.posts-navigation .nav-next span.fa-pull-right::after,
+.post-navigation .nav-next span.fa-pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
 .archive .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
 .blog .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
 .search-results .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
@@ -185,11 +185,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: left;
 }
 
-.fa.pull-left, .comment-navigation .nav-previous a.pull-left::before,
-.posts-navigation .nav-previous a.pull-left::before,
-.post-navigation .nav-previous a.pull-left::before, .comment-navigation .nav-next a.pull-left::after,
-.posts-navigation .nav-next a.pull-left::after,
-.post-navigation .nav-next a.pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::after,
+.fa.pull-left, .comment-navigation .nav-previous span.pull-left::before,
+.posts-navigation .nav-previous span.pull-left::before,
+.post-navigation .nav-previous span.pull-left::before, .comment-navigation .nav-next span.pull-left::after,
+.posts-navigation .nav-next span.pull-left::after,
+.post-navigation .nav-next span.pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::after,
 .archive .pique-panel-content .entry-content .read-more a.pull-left::after,
 .blog .pique-panel-content .entry-content .read-more a.pull-left::after,
 .search-results .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
@@ -202,11 +202,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
   margin-right: .3em;
 }
-.fa.pull-right, .comment-navigation .nav-previous a.pull-right::before,
-.posts-navigation .nav-previous a.pull-right::before,
-.post-navigation .nav-previous a.pull-right::before, .comment-navigation .nav-next a.pull-right::after,
-.posts-navigation .nav-next a.pull-right::after,
-.post-navigation .nav-next a.pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::after,
+.fa.pull-right, .comment-navigation .nav-previous span.pull-right::before,
+.posts-navigation .nav-previous span.pull-right::before,
+.post-navigation .nav-previous span.pull-right::before, .comment-navigation .nav-next span.pull-right::after,
+.posts-navigation .nav-next span.pull-right::after,
+.post-navigation .nav-next span.pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::after,
 .archive .pique-panel-content .entry-content .read-more a.pull-right::after,
 .blog .pique-panel-content .entry-content .read-more a.pull-right::after,
 .search-results .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
@@ -3832,6 +3832,8 @@ a:hover, a:active {
 .posts-navigation,
 .post-navigation {
   clear: both;
+  border-top: 1px solid #a7cbdb;
+  border-bottom: 2px solid #a7cbdb;
 }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -3845,14 +3847,30 @@ a:hover, a:active {
 .posts-navigation .nav-next a,
 .post-navigation .nav-previous a,
 .post-navigation .nav-next a {
-  border-bottom: 2px solid #a7cbdb;
-  border-top: 1px solid #a7cbdb;
   color: #a7cbdb;
+  font-size: 18.4px;
+  font-size: 1.15rem;
+  font-style: italic;
+  display: block;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+.comment-navigation .nav-previous a span,
+.comment-navigation .nav-next a span,
+.posts-navigation .nav-previous a span,
+.posts-navigation .nav-next a span,
+.post-navigation .nav-previous a span,
+.post-navigation .nav-next a span {
+  color: #71abc5;
   display: block;
   font-family: Karla, Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  padding: 7px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
 }
 .comment-navigation .nav-previous a:hover,
 .comment-navigation .nav-next a:hover,
@@ -3868,9 +3886,9 @@ a:hover, a:active {
   float: left;
   width: 50%;
 }
-.comment-navigation .nav-previous a::before,
-.posts-navigation .nav-previous a::before,
-.post-navigation .nav-previous a::before {
+.comment-navigation .nav-previous span::before,
+.posts-navigation .nav-previous span::before,
+.post-navigation .nav-previous span::before {
   font-size: 14px;
   content: "";
   display: inline-block;
@@ -3884,9 +3902,9 @@ a:hover, a:active {
   text-align: right;
   width: 50%;
 }
-.comment-navigation .nav-next a::after,
-.posts-navigation .nav-next a::after,
-.post-navigation .nav-next a::after {
+.comment-navigation .nav-next span::after,
+.posts-navigation .nav-next span::after,
+.post-navigation .nav-next span::after {
   font-size: 14px;
   content: "";
   display: inline-block;

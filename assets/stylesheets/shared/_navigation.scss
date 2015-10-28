@@ -38,6 +38,8 @@ a {
 .posts-navigation,
 .post-navigation {
 	clear: both;
+	border-top: 1px solid lighten($color__secondary, 10%);
+	border-bottom: 2px solid lighten($color__secondary, 10%);
 
 	.site-main & {
 		margin: 0 0 1.5em;
@@ -46,13 +48,24 @@ a {
 
 	.nav-previous a,
 	.nav-next a {
-		border-bottom: 2px solid lighten($color__secondary, 10%);
-		border-top: 1px solid lighten($color__secondary, 10%);
 		color: lighten($color__secondary, 10%);
+		@include font-size(1.15);
+		font-style: italic;
 		display: block;
-		font-family: $font__sans;
-		@include font-size(1);
-		padding: 7px 0;
+		line-height: 1.2;
+		padding: 10px 0;
+
+		span {
+			color: darken($color__secondary, 5%);
+			display: block;
+			font-family: $font__sans;
+			font-style: normal;
+			font-weight: bold;
+			@include font-size(0.9);
+			letter-spacing: 1px;
+			padding-bottom: 2px;
+			text-transform: uppercase;
+		}
 
 		&:hover {
 			color: darken($color__secondary, 25%);
@@ -63,7 +76,7 @@ a {
 		float: left;
 		width: 50%;
 
-		a::before {
+		span::before {
 			@include fontawesome;
 			content: $fa-var-arrow-left;
 			display: inline-block;
@@ -77,7 +90,7 @@ a {
 		text-align: right;
 		width: 50%;
 
-		a::after {
+		span::after {
 			@include fontawesome;
 			content: $fa-var-arrow-right;
 			display: inline-block;
