@@ -17,12 +17,37 @@
   text-transform: none;
 }
 
+#respond p.comment-subscription-form label {
+  letter-spacing: 0;
+}
+
 /* Improve appearance of ratings */
 .rating-msg,
 .rating-nero-value {
   font-size: 18px !important;
   font-size: 1rem !important;
   vertical-align: top;
+}
+
+.rating-icons .rating-nero-icon {
+  margin-top: 2px !important;
+}
+
+/* Brute-force related posts h3 to use the right typeface */
+div#jp-relatedposts h3.jp-relatedposts-headline,
+div.sharedaddy h3.sd-title {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 0.9rem !important;
+}
+
+div#jp-relatedposts h3.jp-relatedposts-headline em::before,
+div.sharedaddy h3.sd-title::before {
+  display: none !important;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 /* Flickr */
@@ -157,8 +182,6 @@
 .widget_follow_button_widget {
   border: none;
 }
-
-
 
 /* Sharedaddy */
 h3.sd-title {
