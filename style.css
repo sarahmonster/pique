@@ -4723,29 +4723,16 @@ blockquote .widget cite:not(.widget-title),
 .blog .pique-panel-background,
 .search-results .pique-panel-background {
   background-attachment: fixed;
-  bottom: 0;
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.pique-frontpage .pique-panel-background::before,
-.archive .pique-panel-background::before,
-.blog .pique-panel-background::before,
-.search-results .pique-panel-background::before {
-  content: '';
-  display: block;
+  opacity: 0.5;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  background: #483E34;
-  opacity: 0.75;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .pique-frontpage .pique-panel-link,
 .archive .pique-panel-link,

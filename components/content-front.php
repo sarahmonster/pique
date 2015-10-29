@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-panel-title="Panel <?php echo esc_attr( $pique_panel ); ?>" >
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'pique-panel'. esc_attr( $pique_panel ) ); ?> data-panel-title="Panel <?php echo esc_attr( $pique_panel ); ?>" >
 
 	<a class="pique-panel-link" href="#post-<?php the_ID(); ?>"><span class="screen-reader-text"><?php esc_html_e( 'Skip panel', 'pique' ); ?></span></a>
 
