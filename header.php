@@ -59,7 +59,7 @@
 			endforeach;
 
 			// Output our menu only if we actually have menu items
-			if ( 0 !== count( $panel_links ) ) : ?>
+			if ( isset( $panel_links ) ) : ?>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<ul>
 						<span class="pique-split-nav">
@@ -91,6 +91,7 @@
 					</ul>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
+			
 		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
