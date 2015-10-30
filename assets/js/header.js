@@ -77,7 +77,7 @@
 				nav.toggleClass('sticky', direction=='down');
 
 				// Ensure we don't have an awkward jump when the menu sticks
-				if (direction == 'down') {
+				if ('down' === direction) {
 					nav_container.css({ 'height':nav.outerHeight() });
 				} else {
 					nav_container.css({ 'height':'auto' });
