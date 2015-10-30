@@ -41,7 +41,7 @@ add_theme_support( 'jetpack-responsive-videos' );
  * @since Pique 1.0
  */
 function pique_site_logo_init() {
-	add_image_size( 'pique-logo', 200, 200 );
+	add_image_size( 'pique-logo', 2000, 200 );
 	add_theme_support( 'site-logo', array( 'size' => 'pique-logo' ) );
 }
 add_action( 'after_setup_theme', 'pique_site_logo_init' );

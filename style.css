@@ -3597,6 +3597,11 @@ a:hover, a:active {
     height: 100px;
   }
 }
+#masthead .site-branding .site-logo-link:hover {
+  -webkit-transform: scale(5%);
+      -ms-transform: scale(5%);
+          transform: scale(5%);
+}
 #masthead .site-branding .site-title {
   font-style: normal;
   margin: -5px 0 0;
@@ -4609,11 +4614,6 @@ blockquote .widget cite:not(.widget-title),
   position: relative;
 }
 @media (max-width: 767px) {
-  .pique-frontpage .pique-split-nav {
-    float: left;
-    padding: 10px;
-    width: 50%;
-  }
   .pique-frontpage .sticky {
     margin-top: 1em;
     position: relative;
@@ -4623,49 +4623,23 @@ blockquote .widget cite:not(.widget-title),
     display: table;
     table-layout: fixed;
   }
+  .pique-frontpage .main-navigation ul {
+    width: 100%;
+  }
   .pique-frontpage .main-navigation li {
     display: block;
   }
   .pique-frontpage .main-navigation a {
-    padding: 5px 10px;
-    text-align: left;
+    border-bottom: 1px solid rgba(233, 213, 192, 0.1);
+    padding: 10px 10px;
+    text-align: center;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .pique-frontpage #masthead.pique-unstuck-header .site-branding {
-    margin-top: 2em;
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .site-branding .site-logo-link {
-    width: 120px;
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .site-branding .site-logo-link img {
-    height: auto;
-    max-width: 100%;
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .nav-wrapper {
-    position: relative;
-  }
   .pique-frontpage #masthead.pique-unstuck-header #site-navigation {
     background: none;
     border: none;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .pique-split-nav {
-    position: relative;
-    width: calc(50% - 70px);
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .pique-split-nav:first-of-type {
-    float: left;
-    text-align: right;
-  }
-  .pique-frontpage #masthead.pique-unstuck-header .pique-split-nav:last-of-type {
-    float: right;
-    text-align: left;
   }
 }
 

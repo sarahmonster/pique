@@ -62,14 +62,10 @@
 			if ( isset( $panel_links ) ) : ?>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<ul>
-						<span class="pique-split-nav">
 						<?php
 						// Split the menu in half at the half-way mark
 						$halfies = intval( ceil( count( $panel_links ) / 2 ) );
 						foreach ( $panel_links as $key => $link ) :
-							if ( $halfies === $key ) :
-								echo '</span><span class="pique-split-nav">';
-							endif;
 							// Output menu link
 							echo wp_kses( $link, array(
 												'a' => array(
@@ -79,19 +75,13 @@
 												'li' => array(),
 												)
 							);
-							// If we only have one single panel, output an empty span so the styling is consistent
-							// and the Customizer experience feels more natural when they add a second panel
-							if ( 1 === count( $panel_links ) ) :
-								echo '</span><span class="pique-split-nav">';
-							endif;
 
 						endforeach;
 						?>
-						</span>
 					</ul>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
-			
+
 		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
@@ -99,7 +89,7 @@
 						'theme_location'  => 'primary',
 						'menu_id'         => 'primary-menu',
 						'fallback_cb'     => 'wp_page_menu',
-						'items_wrap'      => '<ul id="%1$s" class="%2$s"><span class="pique-split-nav">%3$s</span></ul>',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						'walker'          => new Pique_Menu(),
 					) );
 				?>

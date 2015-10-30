@@ -95,8 +95,9 @@ add_filter( 'post_class', 'pique_post_classes' );
 
 /**
  * We want to do some fancy-pants stuff with our navbar, so we'll need to
- * create a custom walker. This basically just splits our navbar items into two
- * spans, so we can split them around the logo on the homepage.
+ * create a custom walker. This basically means that, if we're on the homepage,
+ * and the links in the menu are to panels on that page, the link will direct to
+ * that panel using a hash link, rather than directing to the new page itself.
  */
 class Pique_Menu extends Walker_Nav_Menu {
 	var $current_menu    = null;
@@ -117,37 +118,6 @@ class Pique_Menu extends Walker_Nav_Menu {
 			$menu_obj = get_term( $theme_locations[ $args->theme_location ], 'nav_menu' );
 		endif;
 
-		if ( ! isset( $this->current_menu ) && ! empty ( $menu_obj ) ) :
-			$this->current_menu = wp_get_nav_menu_object( $menu_obj->term_id );
-
-			// Determine a break point for our menu
-			$menu_items = wp_get_nav_menu_items( $menu_obj->term_id );
-			if ( ! isset ( $this->top_level_count ) ) :
-				$this->top_level_count = 0;
-				foreach ( $menu_items as $menu_item ) :
-					if ( 0 == $menu_item->menu_item_parent ) :
-						$this->top_level_count++;
-					endif;
-				endforeach;
-
-				if ( ! isset( $this->break_point ) ) :
-					$this->break_point = ceil( $this->top_level_count / 2 );
-				endif;
-
-				$iterator = 0;
-				if ( ! empty( $menu_items ) ) :
-					foreach ( $menu_items as $menu_item ) :
-						if ( 0 == $menu_item->menu_item_parent ) :
-							if ( $iterator == $this->break_point ) :
-								$this->id_to_split_on = $menu_item->ID;
-							endif;
-							$iterator++;
-						endif;
-					endforeach;
-				endif;
-			endif;
-		endif;
-
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		$class_names = $value = '';
@@ -161,11 +131,7 @@ class Pique_Menu extends Walker_Nav_Menu {
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 		$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		if ( $this->id_to_split_on == $item->ID ) {
-			$output .= $indent . '</li></span><span class="pique-split-nav"><li' . $id . $value . $class_names .'>';
-		} else {
-			$output .= $indent . '<li' . $id . $value . $class_names . '>';
-		}
+		$output .= $indent . '<li' . $id . $value . $class_names . '>';
 
 		// Get the IDs for our target page (the page we're linking to), the parent of our target, and current page
 		$target_page = $item->object_id;
