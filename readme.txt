@@ -56,3 +56,7 @@ Font Awesome, Copyright Dave Gandy
 Fonts licensed under the SIL OFL 1.1 license
 Code licensed under the MIT license
 Source: http://fortawesome.github.io/Font-Awesome/license/
+
+Genericons icon font, Copyright 2013 Automattic
+Licensed under the terms of the GNU GPL, Version 2 (or later)
+Source: http://www.genericons.com
