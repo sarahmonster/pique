@@ -14,6 +14,7 @@
 .content-area {
 	@include clearfix;
 	width: 100%;
+	//word-break: break-all;
 }
 
 /* On desktop devices, we'll show a sidebar next to our content */

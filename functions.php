@@ -221,8 +221,8 @@ function pique_scripts() {
 
 	// Scroll effects (only loaded on front page)
 	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
-		wp_enqueue_script( 'pique-scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.min.js', array(), '20151030', true );
-		wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr', 'pique-waypoints' ), '20151030', true );
+		wp_enqueue_script( 'pique-scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.min.js', array( 'jquery' ), '20151030', true );
+		wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-scrollTo', 'pique-waypoints' ), '20151030', true );
 	endif;
 
 	if ( wp_style_is( 'genericons', 'registered' ) ) {

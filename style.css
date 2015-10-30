@@ -60,17 +60,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span::before,
 .post-navigation .nav-previous span::before, .comment-navigation .nav-next span::after,
 .posts-navigation .nav-next span::after,
-.post-navigation .nav-next span::after, .pique-frontpage .pique-panel-content .entry-content .read-more a::after,
-.archive .pique-panel-content .entry-content .read-more a::after,
-.blog .pique-panel-content .entry-content .read-more a::after,
-.search-results .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
-.tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.post-navigation .nav-next span::after, .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
+.tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -145,34 +136,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.fa-pull-left::before,
 .post-navigation .nav-previous span.fa-pull-left::before, .comment-navigation .nav-next span.fa-pull-left::after,
 .posts-navigation .nav-next span.fa-pull-left::after,
-.post-navigation .nav-next span.fa-pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
-.archive .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
-.blog .pique-panel-content .entry-content .read-more a.fa-pull-left::after,
-.search-results .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
-.fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-left::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.fa-pull-left::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
+.post-navigation .nav-next span.fa-pull-left::after, .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
+.fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
   margin-right: .3em;
 }
 .fa.fa-pull-right, .comment-navigation .nav-previous span.fa-pull-right::before,
 .posts-navigation .nav-previous span.fa-pull-right::before,
 .post-navigation .nav-previous span.fa-pull-right::before, .comment-navigation .nav-next span.fa-pull-right::after,
 .posts-navigation .nav-next span.fa-pull-right::after,
-.post-navigation .nav-next span.fa-pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
-.archive .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
-.blog .pique-panel-content .entry-content .read-more a.fa-pull-right::after,
-.search-results .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
-.fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.fa-pull-right::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.fa-pull-right::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
+.post-navigation .nav-next span.fa-pull-right::after, .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
+.fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
   margin-left: .3em;
 }
 
@@ -189,34 +162,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.pull-left::before,
 .post-navigation .nav-previous span.pull-left::before, .comment-navigation .nav-next span.pull-left::after,
 .posts-navigation .nav-next span.pull-left::after,
-.post-navigation .nav-next span.pull-left::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::after,
-.archive .pique-panel-content .entry-content .read-more a.pull-left::after,
-.blog .pique-panel-content .entry-content .read-more a.pull-left::after,
-.search-results .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
-.pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-left::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.pull-left::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.pull-left::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.pull-left::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
+.post-navigation .nav-next span.pull-left::after, .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
+.pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
   margin-right: .3em;
 }
 .fa.pull-right, .comment-navigation .nav-previous span.pull-right::before,
 .posts-navigation .nav-previous span.pull-right::before,
 .post-navigation .nav-previous span.pull-right::before, .comment-navigation .nav-next span.pull-right::after,
 .posts-navigation .nav-next span.pull-right::after,
-.post-navigation .nav-next span.pull-right::after, .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::after,
-.archive .pique-panel-content .entry-content .read-more a.pull-right::after,
-.blog .pique-panel-content .entry-content .read-more a.pull-right::after,
-.search-results .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
-.pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a.pull-right::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a.pull-right::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a.pull-right::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a.pull-right::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
+.post-navigation .nav-next span.pull-right::after, .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
+.pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
   margin-left: .3em;
 }
 
@@ -2880,10 +2835,7 @@ samp {
   font-size: 1em;
 }
 
-button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .more-link,
+button, .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 input,
 optgroup,
@@ -2894,27 +2846,18 @@ textarea {
   margin: 0;
 }
 
-button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .more-link,
+button, .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited {
   overflow: visible;
 }
 
-button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .more-link,
+button, .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 select {
   text-transform: none;
 }
 
-button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .more-link,
+button, .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 html input[type="button"],
 input[type="reset"],
@@ -2923,18 +2866,12 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-button[disabled], .pique-frontpage .pique-panel-content .entry-content .read-more a[disabled],
-.archive .pique-panel-content .entry-content .read-more a[disabled],
-.blog .pique-panel-content .entry-content .read-more a[disabled],
-.search-results .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
+button[disabled], .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
 html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner, .pique-frontpage .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.archive .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.blog .pique-panel-content .entry-content .read-more a::-moz-focus-inner,
-.search-results .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
+button::-moz-focus-inner, .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
 .more-link:visited::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2999,10 +2936,7 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
-.pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a,
+.pique-panel-content .entry-content .read-more a,
 .more-link,
 .more-link:visited,
 input,
@@ -3019,10 +2953,7 @@ h1,
 h2,
 h3,
 blockquote cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.pique-template-testimonials .pique-testimonials article .entry-content cite,
 #masthead .site-branding .site-title,
 .widget-title,
 h4,
@@ -3042,26 +2973,17 @@ h2 a:focus,
 h2 a:active,
 h3 a:hover,
 blockquote cite a:hover,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
+.pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
 #masthead .site-branding .site-title a:hover,
 .widget-title a:hover,
 h3 a:focus,
 blockquote cite a:focus,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
+.pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
 #masthead .site-branding .site-title a:focus,
 .widget-title a:focus,
 h3 a:active,
 blockquote cite a:active,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
+.pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
 #masthead .site-branding .site-title a:active,
 .widget-title a:active,
 h4 a:hover,
@@ -3091,10 +3013,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3, blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite, #masthead .site-branding .site-title, .widget-title {
+h3, blockquote cite, .pique-template-testimonials .pique-testimonials article .entry-content cite, #masthead .site-branding .site-title, .widget-title {
   font-family: Karla, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2em;
@@ -3125,10 +3044,7 @@ dfn, cite, em, i {
   font-style: italic;
 }
 
-blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content {
+blockquote, .pique-template-testimonials .pique-testimonials article .entry-content {
   border-top: 2px solid;
   color: #aaa49e;
   font-size: 1.3em;
@@ -3137,10 +3053,7 @@ blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials ar
   max-width: 933.33333px;
   text-align: center;
 }
-blockquote:before, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content:before,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content:before,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content:before,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content:before {
+blockquote:before, .pique-template-testimonials .pique-testimonials article .entry-content:before {
   content: '“';
   display: block;
   font-size: 4em;
@@ -3151,17 +3064,11 @@ blockquote:before, .pique-frontpage .pique-template-testimonials .pique-testimon
   margin: 4px auto 0;
   text-shadow: none;
 }
-blockquote p, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content p,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content p,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content p,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content p {
+blockquote p, .pique-template-testimonials .pique-testimonials article .entry-content p {
   text-align: left;
   margin: 0;
 }
-blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite {
+blockquote cite, .pique-template-testimonials .pique-testimonials article .entry-content cite {
   border: none;
   display: block;
   font-style: normal;
@@ -3169,10 +3076,7 @@ blockquote cite, .pique-frontpage .pique-template-testimonials .pique-testimonia
   margin-top: 1.5rem;
   text-align: right;
 }
-blockquote cite::before, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content cite::before,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content cite::before {
+blockquote cite::before, .pique-template-testimonials .pique-testimonials article .entry-content cite::before {
   content: '—';
 }
 
@@ -3231,10 +3135,7 @@ body {
   /* Fallback for when there is no custom background color defined. */
 }
 
-blockquote, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content, q {
+blockquote, .pique-template-testimonials .pique-testimonials article .entry-content, q {
   quotes: "" "";
 }
 
@@ -3354,10 +3255,7 @@ textarea {
 }
 
 /* Buttons */
-button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a, .more-link,
+button, .pique-panel-content .entry-content .read-more a, .more-link,
 .more-link:visited,
 .button,
 input[type="button"],
@@ -3380,10 +3278,7 @@ input[type="submit"] {
           transition: background-color 0.125s ease-in;
 }
 @media (max-width: 767px) {
-  button, .pique-frontpage .pique-panel-content .entry-content .read-more a,
-  .archive .pique-panel-content .entry-content .read-more a,
-  .blog .pique-panel-content .entry-content .read-more a,
-  .search-results .pique-panel-content .entry-content .read-more a, .more-link,
+  button, .pique-panel-content .entry-content .read-more a, .more-link,
   .more-link:visited,
   .button,
   input[type="button"],
@@ -3392,10 +3287,7 @@ input[type="submit"] {
     width: 75%;
   }
 }
-button:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
-.archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover,
-.search-results .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
+button:hover, .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -3404,13 +3296,7 @@ input[type="submit"]:hover {
   border-color: #83B6CC;
   color: #83B6CC;
 }
-button:active, .pique-frontpage .pique-panel-content .entry-content .read-more a:active,
-.archive .pique-panel-content .entry-content .read-more a:active,
-.blog .pique-panel-content .entry-content .read-more a:active,
-.search-results .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a:focus,
-.archive .pique-panel-content .entry-content .read-more a:focus,
-.blog .pique-panel-content .entry-content .read-more a:focus,
-.search-results .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
+button:active, .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
 .button:active,
 .button:focus,
 input[type="button"]:active,
@@ -3422,10 +3308,7 @@ input[type="submit"]:focus {
   background-color: #b3a495;
   border-color: #83B6CC;
 }
-button.minimal, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal,
-.archive .pique-panel-content .entry-content .read-more a.minimal,
-.blog .pique-panel-content .entry-content .read-more a.minimal,
-.search-results .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
+button.minimal, .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
 .button.minimal,
 input[type="button"].minimal,
 input[type="reset"].minimal,
@@ -3433,16 +3316,7 @@ input[type="submit"].minimal {
   background-color: #eff6f9;
   color: #83B6CC;
 }
-button.minimal:active, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:active,
-.archive .pique-panel-content .entry-content .read-more a.minimal:active,
-.blog .pique-panel-content .entry-content .read-more a.minimal:active,
-.search-results .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:focus,
-.archive .pique-panel-content .entry-content .read-more a.minimal:focus,
-.blog .pique-panel-content .entry-content .read-more a.minimal:focus,
-.search-results .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .pique-frontpage .pique-panel-content .entry-content .read-more a.minimal:hover,
-.archive .pique-panel-content .entry-content .read-more a.minimal:hover,
-.blog .pique-panel-content .entry-content .read-more a.minimal:hover,
-.search-results .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
+button.minimal:active, .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
 .button.minimal:active,
 .button.minimal:focus,
 .button.minimal:hover,
@@ -3461,45 +3335,15 @@ input[type="submit"].minimal:hover {
 }
 
 @media (max-width: 767px) {
-  button + button, .pique-frontpage .pique-panel-content .entry-content .read-more a + button,
-  .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button,
-  .search-results .pique-panel-content .entry-content .read-more a + button, .more-link + button,
-  .more-link:visited + button, .pique-frontpage .pique-panel-content .entry-content .read-more button + a, .pique-frontpage .pique-panel-content .entry-content .read-more a + a, .pique-frontpage .pique-panel-content .entry-content .read-more .more-link + a,
-  .archive .pique-panel-content .entry-content .read-more button + a,
-  .archive .pique-panel-content .entry-content .read-more a + a,
-  .archive .pique-panel-content .entry-content .read-more .more-link + a,
-  .blog .pique-panel-content .entry-content .read-more button + a,
-  .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a,
-  .search-results .pique-panel-content .entry-content .read-more button + a,
-  .search-results .pique-panel-content .entry-content .read-more a + a,
-  .search-results .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
-  .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link,
-  .search-results .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  button + button, .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .more-link:visited + button, .pique-panel-content .entry-content .read-more button + a, .pique-panel-content .entry-content .read-more a + a, .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-top: 1em;
   }
 }
 @media (min-width: 768px) {
-  button + button, .pique-frontpage .pique-panel-content .entry-content .read-more a + button,
-  .archive .pique-panel-content .entry-content .read-more a + button,
-  .blog .pique-panel-content .entry-content .read-more a + button,
-  .search-results .pique-panel-content .entry-content .read-more a + button, .more-link + button,
-  .more-link:visited + button, .pique-frontpage .pique-panel-content .entry-content .read-more button + a, .pique-frontpage .pique-panel-content .entry-content .read-more a + a, .pique-frontpage .pique-panel-content .entry-content .read-more .more-link + a,
-  .archive .pique-panel-content .entry-content .read-more button + a,
-  .archive .pique-panel-content .entry-content .read-more a + a,
-  .archive .pique-panel-content .entry-content .read-more .more-link + a,
-  .blog .pique-panel-content .entry-content .read-more button + a,
-  .blog .pique-panel-content .entry-content .read-more a + a,
-  .blog .pique-panel-content .entry-content .read-more .more-link + a,
-  .search-results .pique-panel-content .entry-content .read-more button + a,
-  .search-results .pique-panel-content .entry-content .read-more a + a,
-  .search-results .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-frontpage .pique-panel-content .entry-content .read-more a + .more-link,
-  .archive .pique-panel-content .entry-content .read-more a + .more-link,
-  .blog .pique-panel-content .entry-content .read-more a + .more-link,
-  .search-results .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
+  button + button, .pique-panel-content .entry-content .read-more a + button, .more-link + button,
+  .more-link:visited + button, .pique-panel-content .entry-content .read-more button + a, .pique-panel-content .entry-content .read-more a + a, .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
   button + .more-link:visited {
     margin-left: 0.5em;
   }
@@ -4182,14 +4026,8 @@ a:hover, a:active {
 .widget h3:not(.widget-title),
 .widget blockquote cite:not(.widget-title),
 blockquote .widget cite:not(.widget-title),
-.widget .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
-.widget .archive .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
-.widget .blog .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
-.widget .search-results .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
+.widget .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
+.pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
 .widget #masthead .site-branding .site-title:not(.widget-title),
 #masthead .site-branding .widget .site-title:not(.widget-title),
 .widget .widget-title:not(.widget-title),
@@ -4594,6 +4432,7 @@ blockquote .widget cite:not(.widget-title),
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* Header rules specific to the front page only */
 .pique-frontpage #masthead {
   position: absolute;
   top: 0;
@@ -4615,10 +4454,6 @@ blockquote .widget cite:not(.widget-title),
   position: relative;
 }
 @media (max-width: 767px) {
-  .pique-frontpage .sticky {
-    margin-top: 1em;
-    position: relative;
-  }
   .pique-frontpage .main-navigation {
     content: "";
     display: table;
@@ -4644,19 +4479,7 @@ blockquote .widget cite:not(.widget-title),
   }
 }
 
-.pique-frontpage,
-.archive,
-.blog,
-.search-results {
-  /* In-between panel links */
-  /* Hero area (the "home" page, as it were) */
-  /* Content-heavy pages */
-  /* Grid template panel */
-  /* Testimonial panel */
-  /* Recent blog posts panel */
-  /* Full-width panel */
-  /* Overlays */
-}
+/* Re-set some structural elements on these pages. This allows us to have 'panel' style pages. */
 .pique-frontpage .site-content,
 .pique-frontpage .content-area,
 .archive .site-content,
@@ -4676,10 +4499,9 @@ blockquote .widget cite:not(.widget-title),
 .search-results .page-header {
   text-align: center;
 }
-.pique-frontpage .pique-panel,
-.archive .pique-panel,
-.blog .pique-panel,
-.search-results .pique-panel {
+
+/* Panels */
+.pique-panel {
   background-color: #14100d;
   border-bottom: 4px solid rgba(72, 62, 52, 0.75);
   min-height: 75vh;
@@ -4687,16 +4509,22 @@ blockquote .widget cite:not(.widget-title),
   position: relative;
   width: 100%;
 }
-.pique-frontpage .pique-panel:nth-of-type(even),
-.archive .pique-panel:nth-of-type(even),
-.blog .pique-panel:nth-of-type(even),
-.search-results .pique-panel:nth-of-type(even) {
+.pique-panel:nth-of-type(even) {
   background-color: #1d1813;
 }
-.pique-frontpage .pique-panel-background,
-.archive .pique-panel-background,
-.blog .pique-panel-background,
-.search-results .pique-panel-background {
+.pique-panel .entry-meta, .pique-panel .widget_rss .rss-date, .widget_rss .pique-panel .rss-date, .pique-panel .widget_rss cite, .widget_rss .pique-panel cite, .pique-panel .comment-metadata, .pique-panel .reply {
+  display: none;
+  /* Hide for most post formats */
+}
+.pique-panel .entry-header,
+.pique-panel .entry-content {
+  position: relative;
+  z-index: 1;
+  /* Make sure these aren't covered by their backgrounds! */
+}
+
+/* Panel background (featured) image */
+.pique-panel-background {
   background-attachment: fixed;
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
@@ -4709,10 +4537,9 @@ blockquote .widget cite:not(.widget-title),
   width: 100%;
   height: 100%;
 }
-.pique-frontpage .pique-panel-link,
-.archive .pique-panel-link,
-.blog .pique-panel-link,
-.search-results .pique-panel-link {
+
+/* In-between panel links */
+.pique-panel-link {
   background-color: #483E34;
   border-radius: 50%;
   height: 60px;
@@ -4727,19 +4554,10 @@ blockquote .widget cite:not(.widget-title),
   width: 60px;
   z-index: 1000;
 }
-.pique-frontpage .pique-panel-link:hover,
-.archive .pique-panel-link:hover,
-.blog .pique-panel-link:hover,
-.search-results .pique-panel-link:hover {
+.pique-panel-link:hover {
   border: none;
 }
-.pique-frontpage .pique-panel-link::before, .pique-frontpage .pique-panel-link::after,
-.archive .pique-panel-link::before,
-.archive .pique-panel-link::after,
-.blog .pique-panel-link::before,
-.blog .pique-panel-link::after,
-.search-results .pique-panel-link::before,
-.search-results .pique-panel-link::after {
+.pique-panel-link::before, .pique-panel-link::after {
   border-style: solid;
   border-width: 16px 16px 0 16px;
   content: '';
@@ -4753,1086 +4571,25 @@ blockquote .widget cite:not(.widget-title),
           transform: translate(-50%, -50%);
   width: 0;
 }
-.pique-frontpage .pique-panel-link::before,
-.archive .pique-panel-link::before,
-.blog .pique-panel-link::before,
-.search-results .pique-panel-link::before {
+.pique-panel-link::before {
   border-color: #E9D5C0 transparent transparent transparent;
 }
-.pique-frontpage .pique-panel-link::after,
-.archive .pique-panel-link::after,
-.blog .pique-panel-link::after,
-.search-results .pique-panel-link::after {
+.pique-panel-link::after {
   border-color: #483E34 transparent transparent transparent;
   top: 48%;
 }
-.pique-frontpage .pique-panel-content,
-.archive .pique-panel-content,
-.blog .pique-panel-content,
-.search-results .pique-panel-content {
-  color: #FCFBF9;
-  margin: 0 auto;
-  max-width: 1400px;
-  padding: 20px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
-}
-@media (min-width: 768px) {
-  .pique-frontpage .pique-panel-content,
-  .archive .pique-panel-content,
-  .blog .pique-panel-content,
-  .search-results .pique-panel-content {
-    padding: 40px;
-  }
-}
-.pique-frontpage .pique-panel-content h2,
-.archive .pique-panel-content h2,
-.blog .pique-panel-content h2,
-.search-results .pique-panel-content h2 {
-  color: #FCFBF9;
-  border: 2px solid #FCFBF9;
-  display: inline-block;
-  max-width: 700px;
-  padding: 0.7rem 1.5rem;
-  text-transform: uppercase;
-}
-.pique-frontpage .pique-panel-content h2 a,
-.archive .pique-panel-content h2 a,
-.blog .pique-panel-content h2 a,
-.search-results .pique-panel-content h2 a {
-  color: #FCFBF9;
-}
-.pique-frontpage .pique-panel-content h2 a:hover,
-.archive .pique-panel-content h2 a:hover,
-.blog .pique-panel-content h2 a:hover,
-.search-results .pique-panel-content h2 a:hover {
-  border: none;
-}
-.pique-frontpage .pique-panel-content .entry-content,
-.archive .pique-panel-content .entry-content,
-.blog .pique-panel-content .entry-content,
-.search-results .pique-panel-content .entry-content {
-  margin: 1em auto;
-  max-width: 700px;
-  text-align: left;
-}
-.pique-frontpage .pique-panel-content .entry-content .read-more,
-.archive .pique-panel-content .entry-content .read-more,
-.blog .pique-panel-content .entry-content .read-more,
-.search-results .pique-panel-content .entry-content .read-more {
-  margin: 2em auto 1em;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .pique-frontpage .pique-panel-content .entry-content .read-more,
-  .archive .pique-panel-content .entry-content .read-more,
-  .blog .pique-panel-content .entry-content .read-more,
-  .search-results .pique-panel-content .entry-content .read-more {
-    margin-top: 4em;
-  }
-}
-.pique-frontpage .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more a {
-  text-shadow: none;
-}
-.pique-frontpage .pique-panel-content .entry-content .read-more a::after,
-.archive .pique-panel-content .entry-content .read-more a::after,
-.blog .pique-panel-content .entry-content .read-more a::after,
-.search-results .pique-panel-content .entry-content .read-more a::after {
-  font-size: 14px;
-  content: "";
-  display: inline-block;
-}
-.pique-frontpage .pique-panel-content .entry-content .read-more a:hover,
-.archive .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more a:hover,
-.search-results .pique-panel-content .entry-content .read-more a:hover {
-  padding-right: calc(3em - 20px);
-}
-.pique-frontpage .pique-panel-content .entry-content .read-more a:hover::after,
-.archive .pique-panel-content .entry-content .read-more a:hover::after,
-.blog .pique-panel-content .entry-content .read-more a:hover::after,
-.search-results .pique-panel-content .entry-content .read-more a:hover::after {
-  margin-left: 20px;
-}
-.pique-frontpage .pique-panel-content form,
-.archive .pique-panel-content form,
-.blog .pique-panel-content form,
-.search-results .pique-panel-content form {
-  background: #FCFBF9;
-  border-top: 4px solid #83B6CC;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
-  padding: 20px;
-  text-shadow: none;
-}
-.pique-frontpage .pique-panel-content blockquote, .pique-frontpage .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-frontpage .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-.archive .pique-panel-content blockquote,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-.archive .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-.blog .pique-panel-content blockquote,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-.blog .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-.search-results .pique-panel-content blockquote,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-.search-results .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
-  color: #FCFBF9;
-}
-@media (min-width: 768px) {
-  .pique-frontpage .pique-panel-content blockquote, .pique-frontpage .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-frontpage .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-  .archive .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-  .blog .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-  .search-results .pique-template-testimonials .pique-testimonials article .pique-frontpage .pique-panel-content .entry-content,
-  .archive .pique-panel-content blockquote,
-  .pique-frontpage .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-  .archive .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-  .archive .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-  .blog .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-  .search-results .pique-template-testimonials .pique-testimonials article .archive .pique-panel-content .entry-content,
-  .blog .pique-panel-content blockquote,
-  .pique-frontpage .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-  .archive .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-  .blog .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-  .blog .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content,
-  .search-results .pique-template-testimonials .pique-testimonials article .blog .pique-panel-content .entry-content,
-  .search-results .pique-panel-content blockquote,
-  .pique-frontpage .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-  .archive .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-  .blog .pique-template-testimonials .pique-testimonials article .search-results .pique-panel-content .entry-content,
-  .search-results .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content,
-  .search-results .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
-    font-size: 1.75em;
-  }
-}
-.pique-frontpage .entry-meta, .pique-frontpage .widget_rss .rss-date, .widget_rss .pique-frontpage .rss-date, .pique-frontpage .widget_rss cite, .widget_rss .pique-frontpage cite, .pique-frontpage .comment-metadata, .pique-frontpage .reply,
-.archive .entry-meta,
-.archive .widget_rss .rss-date,
-.widget_rss .archive .rss-date,
-.archive .widget_rss cite,
-.widget_rss .archive cite,
-.archive .comment-metadata,
-.archive .reply,
-.blog .entry-meta,
-.blog .widget_rss .rss-date,
-.widget_rss .blog .rss-date,
-.blog .widget_rss cite,
-.widget_rss .blog cite,
-.blog .comment-metadata,
-.blog .reply,
-.search-results .entry-meta,
-.search-results .widget_rss .rss-date,
-.widget_rss .search-results .rss-date,
-.search-results .widget_rss cite,
-.widget_rss .search-results cite,
-.search-results .comment-metadata,
-.search-results .reply {
-  display: none;
-  /* Hide for most post formats */
-}
-.pique-frontpage .format-aside .pique-panel-content .entry-content,
-.pique-frontpage .format-status .pique-panel-content .entry-content,
-.archive .format-aside .pique-panel-content .entry-content,
-.archive .format-status .pique-panel-content .entry-content,
-.blog .format-aside .pique-panel-content .entry-content,
-.blog .format-status .pique-panel-content .entry-content,
-.search-results .format-aside .pique-panel-content .entry-content,
-.search-results .format-status .pique-panel-content .entry-content {
-  font-size: 1.2em;
-  font-style: italic;
-}
-.pique-frontpage .format-quote .read-more,
-.pique-frontpage .format-aside .read-more,
-.pique-frontpage .format-status .read-more,
-.pique-frontpage .format-link .read-more,
-.pique-frontpage .format-audio .read-more,
-.archive .format-quote .read-more,
-.archive .format-aside .read-more,
-.archive .format-status .read-more,
-.archive .format-link .read-more,
-.archive .format-audio .read-more,
-.blog .format-quote .read-more,
-.blog .format-aside .read-more,
-.blog .format-status .read-more,
-.blog .format-link .read-more,
-.blog .format-audio .read-more,
-.search-results .format-quote .read-more,
-.search-results .format-aside .read-more,
-.search-results .format-status .read-more,
-.search-results .format-link .read-more,
-.search-results .format-audio .read-more {
-  display: none;
-}
-.pique-frontpage .format-quote .entry-meta, .pique-frontpage .format-quote .widget_rss .rss-date, .widget_rss .pique-frontpage .format-quote .rss-date, .pique-frontpage .format-quote .widget_rss cite, .widget_rss .pique-frontpage .format-quote cite, .pique-frontpage .format-quote .comment-metadata, .pique-frontpage .format-quote .reply,
-.pique-frontpage .format-aside .entry-meta,
-.pique-frontpage .format-aside .widget_rss .rss-date,
-.widget_rss .pique-frontpage .format-aside .rss-date,
-.pique-frontpage .format-aside .widget_rss cite,
-.widget_rss .pique-frontpage .format-aside cite,
-.pique-frontpage .format-aside .comment-metadata,
-.pique-frontpage .format-aside .reply,
-.pique-frontpage .format-status .entry-meta,
-.pique-frontpage .format-status .widget_rss .rss-date,
-.widget_rss .pique-frontpage .format-status .rss-date,
-.pique-frontpage .format-status .widget_rss cite,
-.widget_rss .pique-frontpage .format-status cite,
-.pique-frontpage .format-status .comment-metadata,
-.pique-frontpage .format-status .reply,
-.pique-frontpage .format-link .entry-meta,
-.pique-frontpage .format-link .widget_rss .rss-date,
-.widget_rss .pique-frontpage .format-link .rss-date,
-.pique-frontpage .format-link .widget_rss cite,
-.widget_rss .pique-frontpage .format-link cite,
-.pique-frontpage .format-link .comment-metadata,
-.pique-frontpage .format-link .reply,
-.pique-frontpage .format-audio .entry-meta,
-.pique-frontpage .format-audio .widget_rss .rss-date,
-.widget_rss .pique-frontpage .format-audio .rss-date,
-.pique-frontpage .format-audio .widget_rss cite,
-.widget_rss .pique-frontpage .format-audio cite,
-.pique-frontpage .format-audio .comment-metadata,
-.pique-frontpage .format-audio .reply,
-.archive .format-quote .entry-meta,
-.archive .format-quote .widget_rss .rss-date,
-.widget_rss .archive .format-quote .rss-date,
-.archive .format-quote .widget_rss cite,
-.widget_rss .archive .format-quote cite,
-.archive .format-quote .comment-metadata,
-.archive .format-quote .reply,
-.archive .format-aside .entry-meta,
-.archive .format-aside .widget_rss .rss-date,
-.widget_rss .archive .format-aside .rss-date,
-.archive .format-aside .widget_rss cite,
-.widget_rss .archive .format-aside cite,
-.archive .format-aside .comment-metadata,
-.archive .format-aside .reply,
-.archive .format-status .entry-meta,
-.archive .format-status .widget_rss .rss-date,
-.widget_rss .archive .format-status .rss-date,
-.archive .format-status .widget_rss cite,
-.widget_rss .archive .format-status cite,
-.archive .format-status .comment-metadata,
-.archive .format-status .reply,
-.archive .format-link .entry-meta,
-.archive .format-link .widget_rss .rss-date,
-.widget_rss .archive .format-link .rss-date,
-.archive .format-link .widget_rss cite,
-.widget_rss .archive .format-link cite,
-.archive .format-link .comment-metadata,
-.archive .format-link .reply,
-.archive .format-audio .entry-meta,
-.archive .format-audio .widget_rss .rss-date,
-.widget_rss .archive .format-audio .rss-date,
-.archive .format-audio .widget_rss cite,
-.widget_rss .archive .format-audio cite,
-.archive .format-audio .comment-metadata,
-.archive .format-audio .reply,
-.blog .format-quote .entry-meta,
-.blog .format-quote .widget_rss .rss-date,
-.widget_rss .blog .format-quote .rss-date,
-.blog .format-quote .widget_rss cite,
-.widget_rss .blog .format-quote cite,
-.blog .format-quote .comment-metadata,
-.blog .format-quote .reply,
-.blog .format-aside .entry-meta,
-.blog .format-aside .widget_rss .rss-date,
-.widget_rss .blog .format-aside .rss-date,
-.blog .format-aside .widget_rss cite,
-.widget_rss .blog .format-aside cite,
-.blog .format-aside .comment-metadata,
-.blog .format-aside .reply,
-.blog .format-status .entry-meta,
-.blog .format-status .widget_rss .rss-date,
-.widget_rss .blog .format-status .rss-date,
-.blog .format-status .widget_rss cite,
-.widget_rss .blog .format-status cite,
-.blog .format-status .comment-metadata,
-.blog .format-status .reply,
-.blog .format-link .entry-meta,
-.blog .format-link .widget_rss .rss-date,
-.widget_rss .blog .format-link .rss-date,
-.blog .format-link .widget_rss cite,
-.widget_rss .blog .format-link cite,
-.blog .format-link .comment-metadata,
-.blog .format-link .reply,
-.blog .format-audio .entry-meta,
-.blog .format-audio .widget_rss .rss-date,
-.widget_rss .blog .format-audio .rss-date,
-.blog .format-audio .widget_rss cite,
-.widget_rss .blog .format-audio cite,
-.blog .format-audio .comment-metadata,
-.blog .format-audio .reply,
-.search-results .format-quote .entry-meta,
-.search-results .format-quote .widget_rss .rss-date,
-.widget_rss .search-results .format-quote .rss-date,
-.search-results .format-quote .widget_rss cite,
-.widget_rss .search-results .format-quote cite,
-.search-results .format-quote .comment-metadata,
-.search-results .format-quote .reply,
-.search-results .format-aside .entry-meta,
-.search-results .format-aside .widget_rss .rss-date,
-.widget_rss .search-results .format-aside .rss-date,
-.search-results .format-aside .widget_rss cite,
-.widget_rss .search-results .format-aside cite,
-.search-results .format-aside .comment-metadata,
-.search-results .format-aside .reply,
-.search-results .format-status .entry-meta,
-.search-results .format-status .widget_rss .rss-date,
-.widget_rss .search-results .format-status .rss-date,
-.search-results .format-status .widget_rss cite,
-.widget_rss .search-results .format-status cite,
-.search-results .format-status .comment-metadata,
-.search-results .format-status .reply,
-.search-results .format-link .entry-meta,
-.search-results .format-link .widget_rss .rss-date,
-.widget_rss .search-results .format-link .rss-date,
-.search-results .format-link .widget_rss cite,
-.widget_rss .search-results .format-link cite,
-.search-results .format-link .comment-metadata,
-.search-results .format-link .reply,
-.search-results .format-audio .entry-meta,
-.search-results .format-audio .widget_rss .rss-date,
-.widget_rss .search-results .format-audio .rss-date,
-.search-results .format-audio .widget_rss cite,
-.widget_rss .search-results .format-audio cite,
-.search-results .format-audio .comment-metadata,
-.search-results .format-audio .reply {
-  display: block;
-  font-style: normal;
-  text-align: left;
-}
-.pique-frontpage .format-quote .entry-meta .edit-link, .pique-frontpage .format-quote .widget_rss .rss-date .edit-link, .widget_rss .pique-frontpage .format-quote .rss-date .edit-link, .pique-frontpage .format-quote .widget_rss cite .edit-link, .widget_rss .pique-frontpage .format-quote cite .edit-link, .pique-frontpage .format-quote .comment-metadata .edit-link, .pique-frontpage .format-quote .reply .edit-link,
-.pique-frontpage .format-aside .entry-meta .edit-link,
-.pique-frontpage .format-aside .widget_rss .rss-date .edit-link,
-.widget_rss .pique-frontpage .format-aside .rss-date .edit-link,
-.pique-frontpage .format-aside .widget_rss cite .edit-link,
-.widget_rss .pique-frontpage .format-aside cite .edit-link,
-.pique-frontpage .format-aside .comment-metadata .edit-link,
-.pique-frontpage .format-aside .reply .edit-link,
-.pique-frontpage .format-status .entry-meta .edit-link,
-.pique-frontpage .format-status .widget_rss .rss-date .edit-link,
-.widget_rss .pique-frontpage .format-status .rss-date .edit-link,
-.pique-frontpage .format-status .widget_rss cite .edit-link,
-.widget_rss .pique-frontpage .format-status cite .edit-link,
-.pique-frontpage .format-status .comment-metadata .edit-link,
-.pique-frontpage .format-status .reply .edit-link,
-.pique-frontpage .format-link .entry-meta .edit-link,
-.pique-frontpage .format-link .widget_rss .rss-date .edit-link,
-.widget_rss .pique-frontpage .format-link .rss-date .edit-link,
-.pique-frontpage .format-link .widget_rss cite .edit-link,
-.widget_rss .pique-frontpage .format-link cite .edit-link,
-.pique-frontpage .format-link .comment-metadata .edit-link,
-.pique-frontpage .format-link .reply .edit-link,
-.pique-frontpage .format-audio .entry-meta .edit-link,
-.pique-frontpage .format-audio .widget_rss .rss-date .edit-link,
-.widget_rss .pique-frontpage .format-audio .rss-date .edit-link,
-.pique-frontpage .format-audio .widget_rss cite .edit-link,
-.widget_rss .pique-frontpage .format-audio cite .edit-link,
-.pique-frontpage .format-audio .comment-metadata .edit-link,
-.pique-frontpage .format-audio .reply .edit-link,
-.archive .format-quote .entry-meta .edit-link,
-.archive .format-quote .widget_rss .rss-date .edit-link,
-.widget_rss .archive .format-quote .rss-date .edit-link,
-.archive .format-quote .widget_rss cite .edit-link,
-.widget_rss .archive .format-quote cite .edit-link,
-.archive .format-quote .comment-metadata .edit-link,
-.archive .format-quote .reply .edit-link,
-.archive .format-aside .entry-meta .edit-link,
-.archive .format-aside .widget_rss .rss-date .edit-link,
-.widget_rss .archive .format-aside .rss-date .edit-link,
-.archive .format-aside .widget_rss cite .edit-link,
-.widget_rss .archive .format-aside cite .edit-link,
-.archive .format-aside .comment-metadata .edit-link,
-.archive .format-aside .reply .edit-link,
-.archive .format-status .entry-meta .edit-link,
-.archive .format-status .widget_rss .rss-date .edit-link,
-.widget_rss .archive .format-status .rss-date .edit-link,
-.archive .format-status .widget_rss cite .edit-link,
-.widget_rss .archive .format-status cite .edit-link,
-.archive .format-status .comment-metadata .edit-link,
-.archive .format-status .reply .edit-link,
-.archive .format-link .entry-meta .edit-link,
-.archive .format-link .widget_rss .rss-date .edit-link,
-.widget_rss .archive .format-link .rss-date .edit-link,
-.archive .format-link .widget_rss cite .edit-link,
-.widget_rss .archive .format-link cite .edit-link,
-.archive .format-link .comment-metadata .edit-link,
-.archive .format-link .reply .edit-link,
-.archive .format-audio .entry-meta .edit-link,
-.archive .format-audio .widget_rss .rss-date .edit-link,
-.widget_rss .archive .format-audio .rss-date .edit-link,
-.archive .format-audio .widget_rss cite .edit-link,
-.widget_rss .archive .format-audio cite .edit-link,
-.archive .format-audio .comment-metadata .edit-link,
-.archive .format-audio .reply .edit-link,
-.blog .format-quote .entry-meta .edit-link,
-.blog .format-quote .widget_rss .rss-date .edit-link,
-.widget_rss .blog .format-quote .rss-date .edit-link,
-.blog .format-quote .widget_rss cite .edit-link,
-.widget_rss .blog .format-quote cite .edit-link,
-.blog .format-quote .comment-metadata .edit-link,
-.blog .format-quote .reply .edit-link,
-.blog .format-aside .entry-meta .edit-link,
-.blog .format-aside .widget_rss .rss-date .edit-link,
-.widget_rss .blog .format-aside .rss-date .edit-link,
-.blog .format-aside .widget_rss cite .edit-link,
-.widget_rss .blog .format-aside cite .edit-link,
-.blog .format-aside .comment-metadata .edit-link,
-.blog .format-aside .reply .edit-link,
-.blog .format-status .entry-meta .edit-link,
-.blog .format-status .widget_rss .rss-date .edit-link,
-.widget_rss .blog .format-status .rss-date .edit-link,
-.blog .format-status .widget_rss cite .edit-link,
-.widget_rss .blog .format-status cite .edit-link,
-.blog .format-status .comment-metadata .edit-link,
-.blog .format-status .reply .edit-link,
-.blog .format-link .entry-meta .edit-link,
-.blog .format-link .widget_rss .rss-date .edit-link,
-.widget_rss .blog .format-link .rss-date .edit-link,
-.blog .format-link .widget_rss cite .edit-link,
-.widget_rss .blog .format-link cite .edit-link,
-.blog .format-link .comment-metadata .edit-link,
-.blog .format-link .reply .edit-link,
-.blog .format-audio .entry-meta .edit-link,
-.blog .format-audio .widget_rss .rss-date .edit-link,
-.widget_rss .blog .format-audio .rss-date .edit-link,
-.blog .format-audio .widget_rss cite .edit-link,
-.widget_rss .blog .format-audio cite .edit-link,
-.blog .format-audio .comment-metadata .edit-link,
-.blog .format-audio .reply .edit-link,
-.search-results .format-quote .entry-meta .edit-link,
-.search-results .format-quote .widget_rss .rss-date .edit-link,
-.widget_rss .search-results .format-quote .rss-date .edit-link,
-.search-results .format-quote .widget_rss cite .edit-link,
-.widget_rss .search-results .format-quote cite .edit-link,
-.search-results .format-quote .comment-metadata .edit-link,
-.search-results .format-quote .reply .edit-link,
-.search-results .format-aside .entry-meta .edit-link,
-.search-results .format-aside .widget_rss .rss-date .edit-link,
-.widget_rss .search-results .format-aside .rss-date .edit-link,
-.search-results .format-aside .widget_rss cite .edit-link,
-.widget_rss .search-results .format-aside cite .edit-link,
-.search-results .format-aside .comment-metadata .edit-link,
-.search-results .format-aside .reply .edit-link,
-.search-results .format-status .entry-meta .edit-link,
-.search-results .format-status .widget_rss .rss-date .edit-link,
-.widget_rss .search-results .format-status .rss-date .edit-link,
-.search-results .format-status .widget_rss cite .edit-link,
-.widget_rss .search-results .format-status cite .edit-link,
-.search-results .format-status .comment-metadata .edit-link,
-.search-results .format-status .reply .edit-link,
-.search-results .format-link .entry-meta .edit-link,
-.search-results .format-link .widget_rss .rss-date .edit-link,
-.widget_rss .search-results .format-link .rss-date .edit-link,
-.search-results .format-link .widget_rss cite .edit-link,
-.widget_rss .search-results .format-link cite .edit-link,
-.search-results .format-link .comment-metadata .edit-link,
-.search-results .format-link .reply .edit-link,
-.search-results .format-audio .entry-meta .edit-link,
-.search-results .format-audio .widget_rss .rss-date .edit-link,
-.widget_rss .search-results .format-audio .rss-date .edit-link,
-.search-results .format-audio .widget_rss cite .edit-link,
-.widget_rss .search-results .format-audio cite .edit-link,
-.search-results .format-audio .comment-metadata .edit-link,
-.search-results .format-audio .reply .edit-link {
-  display: none;
-}
-.pique-frontpage .format-quote .entry-title,
-.pique-frontpage .format-aside .entry-title,
-.pique-frontpage .format-status .entry-title,
-.pique-frontpage .format-link .entry-title,
-.archive .format-quote .entry-title,
-.archive .format-aside .entry-title,
-.archive .format-status .entry-title,
-.archive .format-link .entry-title,
-.blog .format-quote .entry-title,
-.blog .format-aside .entry-title,
-.blog .format-status .entry-title,
-.blog .format-link .entry-title,
-.search-results .format-quote .entry-title,
-.search-results .format-aside .entry-title,
-.search-results .format-status .entry-title,
-.search-results .format-link .entry-title {
-  display: none;
-}
-.pique-frontpage .format-quote .entry-content,
-.pique-frontpage .format-aside .entry-content,
-.pique-frontpage .format-status .entry-content,
-.pique-frontpage .format-link .entry-content,
-.archive .format-quote .entry-content,
-.archive .format-aside .entry-content,
-.archive .format-status .entry-content,
-.archive .format-link .entry-content,
-.blog .format-quote .entry-content,
-.blog .format-aside .entry-content,
-.blog .format-status .entry-content,
-.blog .format-link .entry-content,
-.search-results .format-quote .entry-content,
-.search-results .format-aside .entry-content,
-.search-results .format-status .entry-content,
-.search-results .format-link .entry-content {
-  margin-top: 40px;
-}
-.pique-frontpage .format-image .pique-panel-content .entry-content,
-.pique-frontpage .format-video .pique-panel-content .entry-content,
-.pique-frontpage .format-gallery .pique-panel-content .entry-content,
-.pique-frontpage .format-status .pique-panel-content .entry-content,
-.pique-frontpage .format-link .pique-panel-content .entry-content,
-.archive .format-image .pique-panel-content .entry-content,
-.archive .format-video .pique-panel-content .entry-content,
-.archive .format-gallery .pique-panel-content .entry-content,
-.archive .format-status .pique-panel-content .entry-content,
-.archive .format-link .pique-panel-content .entry-content,
-.blog .format-image .pique-panel-content .entry-content,
-.blog .format-video .pique-panel-content .entry-content,
-.blog .format-gallery .pique-panel-content .entry-content,
-.blog .format-status .pique-panel-content .entry-content,
-.blog .format-link .pique-panel-content .entry-content,
-.search-results .format-image .pique-panel-content .entry-content,
-.search-results .format-video .pique-panel-content .entry-content,
-.search-results .format-gallery .pique-panel-content .entry-content,
-.search-results .format-status .pique-panel-content .entry-content,
-.search-results .format-link .pique-panel-content .entry-content {
-  text-align: center;
-}
-.pique-frontpage #pique-hero .pique-panel-content,
-.archive #pique-hero .pique-panel-content,
-.blog #pique-hero .pique-panel-content,
-.search-results #pique-hero .pique-panel-content {
-  font-size: 1.5em;
-  max-width: 1400px;
-  padding-top: 8em;
-}
-.pique-frontpage #pique-hero .pique-panel-content .entry-content,
-.archive #pique-hero .pique-panel-content .entry-content,
-.blog #pique-hero .pique-panel-content .entry-content,
-.search-results #pique-hero .pique-panel-content .entry-content {
-  text-align: center;
-}
-.pique-frontpage .pique-template-grid .pique-panel-content .entry-content,
-.pique-frontpage .pique-template-testimonials .pique-panel-content .entry-content,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content .entry-content,
-.archive .pique-template-grid .pique-panel-content .entry-content,
-.archive .pique-template-testimonials .pique-panel-content .entry-content,
-.archive .pique-template-recent-posts .pique-panel-content .entry-content,
-.blog .pique-template-grid .pique-panel-content .entry-content,
-.blog .pique-template-testimonials .pique-panel-content .entry-content,
-.blog .pique-template-recent-posts .pique-panel-content .entry-content,
-.search-results .pique-template-grid .pique-panel-content .entry-content,
-.search-results .pique-template-testimonials .pique-panel-content .entry-content,
-.search-results .pique-template-recent-posts .pique-panel-content .entry-content {
-  max-width: none;
-}
-.pique-frontpage .pique-template-grid .pique-panel-content > .entry-content > p,
-.pique-frontpage .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content > .entry-content > p,
-.archive .pique-template-grid .pique-panel-content > .entry-content > p,
-.archive .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.archive .pique-template-recent-posts .pique-panel-content > .entry-content > p,
-.blog .pique-template-grid .pique-panel-content > .entry-content > p,
-.blog .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.blog .pique-template-recent-posts .pique-panel-content > .entry-content > p,
-.search-results .pique-template-grid .pique-panel-content > .entry-content > p,
-.search-results .pique-template-testimonials .pique-panel-content > .entry-content > p,
-.search-results .pique-template-recent-posts .pique-panel-content > .entry-content > p {
-  font-size: 1.2em;
-  font-style: italic;
-  margin: 0 auto 1em;
-  max-width: 700px;
-  text-align: center;
-}
-.pique-frontpage .pique-template-grid .pique-panel-content h3, .pique-frontpage .pique-template-grid .pique-panel-content blockquote cite, blockquote .pique-frontpage .pique-template-grid .pique-panel-content cite, .pique-frontpage .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite, .pique-frontpage .pique-template-grid .pique-panel-content #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .pique-template-grid .pique-panel-content .site-title, .pique-frontpage .pique-template-grid .pique-panel-content .widget-title,
-.pique-frontpage .pique-template-grid .pique-panel-content h3 a,
-.pique-frontpage .pique-template-grid .pique-panel-content blockquote cite a,
-blockquote .pique-frontpage .pique-template-grid .pique-panel-content cite a,
-.pique-frontpage .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-grid .pique-panel-content cite a,
-.pique-frontpage .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-frontpage .pique-template-grid .pique-panel-content .site-title a,
-.pique-frontpage .pique-template-grid .pique-panel-content .widget-title a,
-.pique-frontpage .pique-template-testimonials .pique-panel-content h3,
-.pique-frontpage .pique-template-testimonials .pique-panel-content blockquote cite,
-blockquote .pique-frontpage .pique-template-testimonials .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .pique-frontpage .pique-template-testimonials .pique-panel-content .site-title,
-.pique-frontpage .pique-template-testimonials .pique-panel-content .widget-title,
-.pique-frontpage .pique-template-testimonials .pique-panel-content h3 a,
-.pique-frontpage .pique-template-testimonials .pique-panel-content blockquote cite a,
-blockquote .pique-frontpage .pique-template-testimonials .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-frontpage .pique-template-testimonials .pique-panel-content .site-title a,
-.pique-frontpage .pique-template-testimonials .pique-panel-content .widget-title a,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content h3,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content blockquote cite,
-blockquote .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .pique-frontpage .pique-template-recent-posts .pique-panel-content .site-title,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content .widget-title,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content h3 a,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content blockquote cite a,
-blockquote .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .pique-template-recent-posts .pique-panel-content cite a,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-frontpage .pique-template-recent-posts .pique-panel-content .site-title a,
-.pique-frontpage .pique-template-recent-posts .pique-panel-content .widget-title a,
-.archive .pique-template-grid .pique-panel-content h3,
-.archive .pique-template-grid .pique-panel-content blockquote cite,
-blockquote .archive .pique-template-grid .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite,
-.archive .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite,
-.archive .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .archive .pique-template-grid .pique-panel-content .site-title,
-.archive .pique-template-grid .pique-panel-content .widget-title,
-.archive .pique-template-grid .pique-panel-content h3 a,
-.archive .pique-template-grid .pique-panel-content blockquote cite a,
-blockquote .archive .pique-template-grid .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite a,
-.archive .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-grid .pique-panel-content cite a,
-.archive .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .archive .pique-template-grid .pique-panel-content .site-title a,
-.archive .pique-template-grid .pique-panel-content .widget-title a,
-.archive .pique-template-testimonials .pique-panel-content h3,
-.archive .pique-template-testimonials .pique-panel-content blockquote cite,
-blockquote .archive .pique-template-testimonials .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .archive .pique-template-testimonials .pique-panel-content .site-title,
-.archive .pique-template-testimonials .pique-panel-content .widget-title,
-.archive .pique-template-testimonials .pique-panel-content h3 a,
-.archive .pique-template-testimonials .pique-panel-content blockquote cite a,
-blockquote .archive .pique-template-testimonials .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .archive .pique-template-testimonials .pique-panel-content .site-title a,
-.archive .pique-template-testimonials .pique-panel-content .widget-title a,
-.archive .pique-template-recent-posts .pique-panel-content h3,
-.archive .pique-template-recent-posts .pique-panel-content blockquote cite,
-blockquote .archive .pique-template-recent-posts .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite,
-.archive .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite,
-.archive .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .archive .pique-template-recent-posts .pique-panel-content .site-title,
-.archive .pique-template-recent-posts .pique-panel-content .widget-title,
-.archive .pique-template-recent-posts .pique-panel-content h3 a,
-.archive .pique-template-recent-posts .pique-panel-content blockquote cite a,
-blockquote .archive .pique-template-recent-posts .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite a,
-.archive .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .pique-template-recent-posts .pique-panel-content cite a,
-.archive .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .archive .pique-template-recent-posts .pique-panel-content .site-title a,
-.archive .pique-template-recent-posts .pique-panel-content .widget-title a,
-.blog .pique-template-grid .pique-panel-content h3,
-.blog .pique-template-grid .pique-panel-content blockquote cite,
-blockquote .blog .pique-template-grid .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .blog .pique-template-grid .pique-panel-content .site-title,
-.blog .pique-template-grid .pique-panel-content .widget-title,
-.blog .pique-template-grid .pique-panel-content h3 a,
-.blog .pique-template-grid .pique-panel-content blockquote cite a,
-blockquote .blog .pique-template-grid .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite a,
-.blog .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-grid .pique-panel-content cite a,
-.blog .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .blog .pique-template-grid .pique-panel-content .site-title a,
-.blog .pique-template-grid .pique-panel-content .widget-title a,
-.blog .pique-template-testimonials .pique-panel-content h3,
-.blog .pique-template-testimonials .pique-panel-content blockquote cite,
-blockquote .blog .pique-template-testimonials .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .blog .pique-template-testimonials .pique-panel-content .site-title,
-.blog .pique-template-testimonials .pique-panel-content .widget-title,
-.blog .pique-template-testimonials .pique-panel-content h3 a,
-.blog .pique-template-testimonials .pique-panel-content blockquote cite a,
-blockquote .blog .pique-template-testimonials .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .blog .pique-template-testimonials .pique-panel-content .site-title a,
-.blog .pique-template-testimonials .pique-panel-content .widget-title a,
-.blog .pique-template-recent-posts .pique-panel-content h3,
-.blog .pique-template-recent-posts .pique-panel-content blockquote cite,
-blockquote .blog .pique-template-recent-posts .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite,
-.blog .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite,
-.blog .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .blog .pique-template-recent-posts .pique-panel-content .site-title,
-.blog .pique-template-recent-posts .pique-panel-content .widget-title,
-.blog .pique-template-recent-posts .pique-panel-content h3 a,
-.blog .pique-template-recent-posts .pique-panel-content blockquote cite a,
-blockquote .blog .pique-template-recent-posts .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite a,
-.blog .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .pique-template-recent-posts .pique-panel-content cite a,
-.blog .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .blog .pique-template-recent-posts .pique-panel-content .site-title a,
-.blog .pique-template-recent-posts .pique-panel-content .widget-title a,
-.search-results .pique-template-grid .pique-panel-content h3,
-.search-results .pique-template-grid .pique-panel-content blockquote cite,
-blockquote .search-results .pique-template-grid .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite,
-.search-results .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite,
-.search-results .pique-template-grid .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .search-results .pique-template-grid .pique-panel-content .site-title,
-.search-results .pique-template-grid .pique-panel-content .widget-title,
-.search-results .pique-template-grid .pique-panel-content h3 a,
-.search-results .pique-template-grid .pique-panel-content blockquote cite a,
-blockquote .search-results .pique-template-grid .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-grid .pique-panel-content cite a,
-.search-results .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
-.search-results .pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .search-results .pique-template-grid .pique-panel-content .site-title a,
-.search-results .pique-template-grid .pique-panel-content .widget-title a,
-.search-results .pique-template-testimonials .pique-panel-content h3,
-.search-results .pique-template-testimonials .pique-panel-content blockquote cite,
-blockquote .search-results .pique-template-testimonials .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
-.search-results .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .search-results .pique-template-testimonials .pique-panel-content .site-title,
-.search-results .pique-template-testimonials .pique-panel-content .widget-title,
-.search-results .pique-template-testimonials .pique-panel-content h3 a,
-.search-results .pique-template-testimonials .pique-panel-content blockquote cite a,
-blockquote .search-results .pique-template-testimonials .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
-.search-results .pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .search-results .pique-template-testimonials .pique-panel-content .site-title a,
-.search-results .pique-template-testimonials .pique-panel-content .widget-title a,
-.search-results .pique-template-recent-posts .pique-panel-content h3,
-.search-results .pique-template-recent-posts .pique-panel-content blockquote cite,
-blockquote .search-results .pique-template-recent-posts .pique-panel-content cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite,
-.search-results .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
-.search-results .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .search-results .pique-template-recent-posts .pique-panel-content .site-title,
-.search-results .pique-template-recent-posts .pique-panel-content .widget-title,
-.search-results .pique-template-recent-posts .pique-panel-content h3 a,
-.search-results .pique-template-recent-posts .pique-panel-content blockquote cite a,
-blockquote .search-results .pique-template-recent-posts .pique-panel-content cite a,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .pique-template-recent-posts .pique-panel-content cite a,
-.search-results .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
-.search-results .pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .search-results .pique-template-recent-posts .pique-panel-content .site-title a,
-.search-results .pique-template-recent-posts .pique-panel-content .widget-title a {
-  color: #83B6CC;
-}
-.pique-frontpage .pique-template-grid article,
-.archive .pique-template-grid article,
-.blog .pique-template-grid article,
-.search-results .pique-template-grid article {
-  font-size: 0.9em;
-  text-align: center;
-}
-.pique-frontpage .pique-template-grid img,
-.archive .pique-template-grid img,
-.blog .pique-template-grid img,
-.search-results .pique-template-grid img {
-  border-radius: 50%;
-  margin: 0 auto;
-  max-width: 60%;
-}
-.pique-frontpage .pique-template-grid p,
-.archive .pique-template-grid p,
-.blog .pique-template-grid p,
-.search-results .pique-template-grid p {
-  text-align: left;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials article,
-.archive .pique-template-testimonials .pique-testimonials article,
-.blog .pique-template-testimonials .pique-testimonials article,
-.search-results .pique-template-testimonials .pique-testimonials article {
-  font-size: 0.85em;
-  text-align: left;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content {
-  color: #FCFBF9;
-  margin-bottom: 0;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials .entry-footer,
-.archive .pique-template-testimonials .pique-testimonials .entry-footer,
-.blog .pique-template-testimonials .pique-testimonials .entry-footer,
-.search-results .pique-template-testimonials .pique-testimonials .entry-footer {
-  margin-top: 20px;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
-.archive .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
-.blog .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar,
-.search-results .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
-  border-radius: 50%;
-  float: left;
-  margin: 0 20px 0 0;
-  max-width: 50%;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials h2,
-.archive .pique-template-testimonials .pique-testimonials h2,
-.blog .pique-template-testimonials .pique-testimonials h2,
-.search-results .pique-template-testimonials .pique-testimonials h2 {
-  border: none;
-  clear: none;
-  color: #E9D5C0;
-  float: left;
-  font-size: 16px;
-  font-size: 1rem;
-  padding: 10px 0;
-  width: calc(100% - 100px - 20px);
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials h2::before,
-.archive .pique-template-testimonials .pique-testimonials h2::before,
-.blog .pique-template-testimonials .pique-testimonials h2::before,
-.search-results .pique-template-testimonials .pique-testimonials h2::before {
-  display: none;
-}
-.pique-frontpage .pique-template-testimonials .pique-testimonials h2 span,
-.archive .pique-template-testimonials .pique-testimonials h2 span,
-.blog .pique-template-testimonials .pique-testimonials h2 span,
-.search-results .pique-template-testimonials .pique-testimonials h2 span {
-  display: block;
-  font-weight: normal;
-  letter-spacing: 0;
-  text-transform: none;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts article,
-.archive .pique-template-recent-posts .pique-recent-posts article,
-.blog .pique-template-recent-posts .pique-recent-posts article,
-.search-results .pique-template-recent-posts .pique-recent-posts article {
-  text-align: center;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
-.archive .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
-.blog .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover,
-.search-results .pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
-  border: none;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-header,
-.archive .pique-template-recent-posts .pique-recent-posts .entry-header,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-header,
-.search-results .pique-template-recent-posts .pique-recent-posts .entry-header {
-  text-align: left;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-title,
-.archive .pique-template-recent-posts .pique-recent-posts .entry-title,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-title,
-.search-results .pique-template-recent-posts .pique-recent-posts .entry-title {
-  margin-bottom: 0.5em;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts .posted-on,
-.archive .pique-template-recent-posts .pique-recent-posts .posted-on,
-.blog .pique-template-recent-posts .pique-recent-posts .posted-on,
-.search-results .pique-template-recent-posts .pique-recent-posts .posted-on {
-  font-style: italic;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts .byline,
-.archive .pique-template-recent-posts .pique-recent-posts .byline,
-.blog .pique-template-recent-posts .pique-recent-posts .byline,
-.search-results .pique-template-recent-posts .pique-recent-posts .byline {
-  display: none;
-}
-.pique-frontpage .pique-template-recent-posts .pique-recent-posts .entry-content,
-.archive .pique-template-recent-posts .pique-recent-posts .entry-content,
-.blog .pique-template-recent-posts .pique-recent-posts .entry-content,
-.search-results .pique-template-recent-posts .pique-recent-posts .entry-content {
-  text-align: left;
-}
-.pique-frontpage .pique-template-full-width .entry-content,
-.archive .pique-template-full-width .entry-content,
-.blog .pique-template-full-width .entry-content,
-.search-results .pique-template-full-width .entry-content {
-  max-width: none;
-}
-.pique-frontpage .overlay,
-.archive .overlay,
-.blog .overlay,
-.search-results .overlay {
-  background: #483E34;
-  border-top: 4px solid #83B6CC;
-  font-family: Karla, Arial, sans-serif;
-  font-size: 0.8em;
-  max-width: 700px;
-  padding: 0 20px;
-  text-align: left;
-}
-@media (max-width: 767px) {
-  .pique-frontpage .overlay,
-  .archive .overlay,
-  .blog .overlay,
-  .search-results .overlay {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .pique-frontpage .overlay,
-  .archive .overlay,
-  .blog .overlay,
-  .search-results .overlay {
-    width: 60%;
-  }
-}
-@media (min-width: 1024px) {
-  .pique-frontpage .overlay,
-  .archive .overlay,
-  .blog .overlay,
-  .search-results .overlay {
-    width: 40%;
-  }
-}
-.pique-frontpage .overlay h3, .pique-frontpage .overlay blockquote cite, blockquote .pique-frontpage .overlay cite, .pique-frontpage .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .pique-frontpage .overlay cite, .pique-frontpage .overlay #masthead .site-branding .site-title, #masthead .site-branding .pique-frontpage .overlay .site-title, .pique-frontpage .overlay .widget-title,
-.archive .overlay h3,
-.archive .overlay blockquote cite,
-blockquote .archive .overlay cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .archive .overlay cite,
-.archive .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .archive .overlay cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .archive .overlay cite,
-.archive .overlay #masthead .site-branding .site-title,
-#masthead .site-branding .archive .overlay .site-title,
-.archive .overlay .widget-title,
-.blog .overlay h3,
-.blog .overlay blockquote cite,
-blockquote .blog .overlay cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .blog .overlay cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .blog .overlay cite,
-.blog .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .blog .overlay cite,
-.blog .overlay #masthead .site-branding .site-title,
-#masthead .site-branding .blog .overlay .site-title,
-.blog .overlay .widget-title,
-.search-results .overlay h3,
-.search-results .overlay blockquote cite,
-blockquote .search-results .overlay cite,
-.pique-frontpage .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
-.archive .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
-.blog .pique-template-testimonials .pique-testimonials article .entry-content .search-results .overlay cite,
-.search-results .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.search-results .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite,
-.search-results .overlay #masthead .site-branding .site-title,
-#masthead .site-branding .search-results .overlay .site-title,
-.search-results .overlay .widget-title {
-  margin-bottom: 0;
-}
-.pique-frontpage .overlay p,
-.archive .overlay p,
-.blog .overlay p,
-.search-results .overlay p {
-  margin-top: 0;
-}
-.pique-frontpage .hide,
-.archive .hide,
-.blog .hide,
-.search-results .hide {
-  display: none;
-}
-.pique-frontpage .entry-header,
-.pique-frontpage .entry-content,
-.archive .entry-header,
-.archive .entry-content,
-.blog .entry-header,
-.blog .entry-content,
-.search-results .entry-header,
-.search-results .entry-content {
-  position: relative;
-  z-index: 1;
-}
-.pique-frontpage .edit-link,
-.archive .edit-link,
-.blog .edit-link,
-.search-results .edit-link {
+
+/* Edit panel content links */
+.pique-panel .edit-link {
   position: absolute;
   bottom: 15px;
   left: 10px;
   z-index: 100;
 }
-.pique-frontpage .edit-link::before,
-.archive .edit-link::before,
-.blog .edit-link::before,
-.search-results .edit-link::before {
+.pique-panel .edit-link::before {
   display: none;
 }
-.pique-frontpage .edit-link a,
-.archive .edit-link a,
-.blog .edit-link a,
-.search-results .edit-link a {
+.pique-panel .edit-link a {
   color: #FCFBF9;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8rem;
@@ -5842,12 +4599,363 @@ blockquote .search-results .overlay cite,
   text-transform: uppercase;
   width: auto;
 }
-.pique-frontpage .edit-link a:hover,
-.archive .edit-link a:hover,
-.blog .edit-link a:hover,
-.search-results .edit-link a:hover {
+.pique-panel .edit-link a:hover {
   border: none;
   opacity: 1;
+}
+
+/* Panel content */
+.pique-panel-content {
+  color: #FCFBF9;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 768px) {
+  .pique-panel-content {
+    padding: 40px;
+  }
+}
+.pique-panel-content h2 {
+  color: #FCFBF9;
+  border: 2px solid #FCFBF9;
+  display: inline-block;
+  max-width: 700px;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+}
+.pique-panel-content h2 a {
+  color: #FCFBF9;
+}
+.pique-panel-content h2 a:hover {
+  border: none;
+}
+.pique-panel-content .entry-content {
+  margin: 1em auto;
+  max-width: 700px;
+  text-align: left;
+}
+.pique-panel-content .entry-content .read-more {
+  margin: 2em auto 1em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .pique-panel-content .entry-content .read-more {
+    margin-top: 4em;
+  }
+}
+.pique-panel-content .entry-content .read-more a {
+  text-shadow: none;
+}
+.pique-panel-content .entry-content .read-more a::after {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
+}
+.pique-panel-content .entry-content .read-more a:hover {
+  padding-right: calc(3em - 20px);
+}
+.pique-panel-content .entry-content .read-more a:hover::after {
+  margin-left: 20px;
+}
+.pique-panel-content form {
+  background: #FCFBF9;
+  border-top: 4px solid #83B6CC;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding: 20px;
+  text-shadow: none;
+}
+.pique-panel-content blockquote, .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
+  color: #FCFBF9;
+}
+@media (min-width: 768px) {
+  .pique-panel-content blockquote, .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
+    font-size: 1.75em;
+  }
+}
+
+.format-aside .pique-panel-content .entry-content,
+.format-status .pique-panel-content .entry-content {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.format-quote .read-more,
+.format-aside .read-more,
+.format-status .read-more,
+.format-link .read-more,
+.format-audio .read-more {
+  display: none;
+}
+.format-quote .entry-meta, .format-quote .widget_rss .rss-date, .widget_rss .format-quote .rss-date, .format-quote .widget_rss cite, .widget_rss .format-quote cite, .format-quote .comment-metadata, .format-quote .reply,
+.format-aside .entry-meta,
+.format-aside .widget_rss .rss-date,
+.widget_rss .format-aside .rss-date,
+.format-aside .widget_rss cite,
+.widget_rss .format-aside cite,
+.format-aside .comment-metadata,
+.format-aside .reply,
+.format-status .entry-meta,
+.format-status .widget_rss .rss-date,
+.widget_rss .format-status .rss-date,
+.format-status .widget_rss cite,
+.widget_rss .format-status cite,
+.format-status .comment-metadata,
+.format-status .reply,
+.format-link .entry-meta,
+.format-link .widget_rss .rss-date,
+.widget_rss .format-link .rss-date,
+.format-link .widget_rss cite,
+.widget_rss .format-link cite,
+.format-link .comment-metadata,
+.format-link .reply,
+.format-audio .entry-meta,
+.format-audio .widget_rss .rss-date,
+.widget_rss .format-audio .rss-date,
+.format-audio .widget_rss cite,
+.widget_rss .format-audio cite,
+.format-audio .comment-metadata,
+.format-audio .reply {
+  display: block;
+  font-style: normal;
+  text-align: left;
+}
+.format-quote .entry-meta .edit-link, .format-quote .widget_rss .rss-date .edit-link, .widget_rss .format-quote .rss-date .edit-link, .format-quote .widget_rss cite .edit-link, .widget_rss .format-quote cite .edit-link, .format-quote .comment-metadata .edit-link, .format-quote .reply .edit-link,
+.format-aside .entry-meta .edit-link,
+.format-aside .widget_rss .rss-date .edit-link,
+.widget_rss .format-aside .rss-date .edit-link,
+.format-aside .widget_rss cite .edit-link,
+.widget_rss .format-aside cite .edit-link,
+.format-aside .comment-metadata .edit-link,
+.format-aside .reply .edit-link,
+.format-status .entry-meta .edit-link,
+.format-status .widget_rss .rss-date .edit-link,
+.widget_rss .format-status .rss-date .edit-link,
+.format-status .widget_rss cite .edit-link,
+.widget_rss .format-status cite .edit-link,
+.format-status .comment-metadata .edit-link,
+.format-status .reply .edit-link,
+.format-link .entry-meta .edit-link,
+.format-link .widget_rss .rss-date .edit-link,
+.widget_rss .format-link .rss-date .edit-link,
+.format-link .widget_rss cite .edit-link,
+.widget_rss .format-link cite .edit-link,
+.format-link .comment-metadata .edit-link,
+.format-link .reply .edit-link,
+.format-audio .entry-meta .edit-link,
+.format-audio .widget_rss .rss-date .edit-link,
+.widget_rss .format-audio .rss-date .edit-link,
+.format-audio .widget_rss cite .edit-link,
+.widget_rss .format-audio cite .edit-link,
+.format-audio .comment-metadata .edit-link,
+.format-audio .reply .edit-link {
+  display: none;
+}
+
+.format-quote .entry-title,
+.format-aside .entry-title,
+.format-status .entry-title,
+.format-link .entry-title {
+  display: none;
+}
+.format-quote .entry-content,
+.format-aside .entry-content,
+.format-status .entry-content,
+.format-link .entry-content {
+  margin-top: 40px;
+}
+
+.format-image .pique-panel-content .entry-content,
+.format-video .pique-panel-content .entry-content,
+.format-gallery .pique-panel-content .entry-content,
+.format-status .pique-panel-content .entry-content,
+.format-link .pique-panel-content .entry-content {
+  text-align: center;
+}
+
+/* Hero area (the "home" page, as it were) */
+#pique-hero .pique-panel-content {
+  font-size: 1.5em;
+  max-width: 1400px;
+  padding-top: 8em;
+}
+#pique-hero .pique-panel-content .entry-content {
+  text-align: center;
+}
+
+/* Content-heavy pages */
+.pique-template-grid .pique-panel-content .entry-content,
+.pique-template-testimonials .pique-panel-content .entry-content,
+.pique-template-recent-posts .pique-panel-content .entry-content {
+  max-width: none;
+}
+.pique-template-grid .pique-panel-content > .entry-content > p,
+.pique-template-testimonials .pique-panel-content > .entry-content > p,
+.pique-template-recent-posts .pique-panel-content > .entry-content > p {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0 auto 1em;
+  max-width: 700px;
+  text-align: center;
+}
+.pique-template-grid .pique-panel-content h3, .pique-template-grid .pique-panel-content blockquote cite, blockquote .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content #masthead .site-branding .site-title, #masthead .site-branding .pique-template-grid .pique-panel-content .site-title, .pique-template-grid .pique-panel-content .widget-title,
+.pique-template-grid .pique-panel-content h3 a,
+.pique-template-grid .pique-panel-content blockquote cite a,
+blockquote .pique-template-grid .pique-panel-content cite a,
+.pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
+.pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
+.pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .pique-template-grid .pique-panel-content .site-title a,
+.pique-template-grid .pique-panel-content .widget-title a,
+.pique-template-testimonials .pique-panel-content h3,
+.pique-template-testimonials .pique-panel-content blockquote cite,
+blockquote .pique-template-testimonials .pique-panel-content cite,
+.pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
+.pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
+.pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
+#masthead .site-branding .pique-template-testimonials .pique-panel-content .site-title,
+.pique-template-testimonials .pique-panel-content .widget-title,
+.pique-template-testimonials .pique-panel-content h3 a,
+.pique-template-testimonials .pique-panel-content blockquote cite a,
+blockquote .pique-template-testimonials .pique-panel-content cite a,
+.pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
+.pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
+.pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .pique-template-testimonials .pique-panel-content .site-title a,
+.pique-template-testimonials .pique-panel-content .widget-title a,
+.pique-template-recent-posts .pique-panel-content h3,
+.pique-template-recent-posts .pique-panel-content blockquote cite,
+blockquote .pique-template-recent-posts .pique-panel-content cite,
+.pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
+.pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
+.pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
+#masthead .site-branding .pique-template-recent-posts .pique-panel-content .site-title,
+.pique-template-recent-posts .pique-panel-content .widget-title,
+.pique-template-recent-posts .pique-panel-content h3 a,
+.pique-template-recent-posts .pique-panel-content blockquote cite a,
+blockquote .pique-template-recent-posts .pique-panel-content cite a,
+.pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
+.pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
+.pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
+#masthead .site-branding .pique-template-recent-posts .pique-panel-content .site-title a,
+.pique-template-recent-posts .pique-panel-content .widget-title a {
+  color: #83B6CC;
+}
+
+/* Grid template panel */
+.pique-template-grid article {
+  font-size: 0.9em;
+  text-align: center;
+}
+.pique-template-grid img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 60%;
+}
+.pique-template-grid p {
+  text-align: left;
+}
+
+/* Testimonial panel */
+.pique-template-testimonials .pique-testimonials article {
+  font-size: 0.85em;
+  text-align: left;
+}
+.pique-template-testimonials .pique-testimonials article .entry-content {
+  color: #FCFBF9;
+  margin-bottom: 0;
+}
+.pique-template-testimonials .pique-testimonials .entry-footer {
+  margin-top: 20px;
+}
+.pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
+  border-radius: 50%;
+  float: left;
+  margin: 0 20px 0 0;
+  max-width: 50%;
+}
+.pique-template-testimonials .pique-testimonials h2 {
+  border: none;
+  clear: none;
+  color: #E9D5C0;
+  float: left;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 10px 0;
+  width: calc(100% - 100px - 20px);
+}
+.pique-template-testimonials .pique-testimonials h2::before {
+  display: none;
+}
+.pique-template-testimonials .pique-testimonials h2 span {
+  display: block;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Recent blog posts panel */
+.pique-template-recent-posts .pique-recent-posts article {
+  text-align: center;
+}
+.pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
+  border: none;
+}
+.pique-template-recent-posts .pique-recent-posts .entry-header {
+  text-align: left;
+}
+.pique-template-recent-posts .pique-recent-posts .entry-title {
+  margin-bottom: 0.5em;
+}
+.pique-template-recent-posts .pique-recent-posts .posted-on {
+  font-style: italic;
+}
+.pique-template-recent-posts .pique-recent-posts .byline {
+  display: none;
+}
+.pique-template-recent-posts .pique-recent-posts .entry-content {
+  text-align: left;
+}
+
+/* Full-width panel */
+.pique-template-full-width .entry-content {
+  max-width: none;
+}
+
+/* Overlay elements (used to show content on top of the background image in cases where you want a fully opaque image) */
+.overlay {
+  background: #483E34;
+  border-top: 4px solid #83B6CC;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 0.8em;
+  max-width: 700px;
+  padding: 0 20px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .overlay {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .overlay {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .overlay {
+    width: 40%;
+  }
+}
+.overlay h3, .overlay blockquote cite, blockquote .overlay cite, .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite, .overlay #masthead .site-branding .site-title, #masthead .site-branding .overlay .site-title, .overlay .widget-title {
+  margin-bottom: 0;
+}
+.overlay p {
+  margin-top: 0;
 }
 
 /* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
@@ -5952,14 +5060,14 @@ blockquote .search-results .overlay cite,
   }
 }
 
-.hentry {
+.entry-content {
   margin: 0 0 1.5em;
 }
-.hentry a {
+.entry-content a {
   border-bottom: 0;
   padding-bottom: 1px;
 }
-.hentry a:hover {
+.entry-content a:hover {
   border-bottom: 2px solid;
 }
 
@@ -6443,13 +5551,7 @@ time + .updated {
 .infinite-scroll #infinite-handle span {
   background: transparent;
 }
-.infinite-scroll #infinite-handle button, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .more-link {
+.infinite-scroll #infinite-handle button, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .more-link {
   color: #83B6CC;
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -6458,26 +5560,14 @@ time + .updated {
   text-transform: none;
   padding: 1em;
 }
-.infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a::before, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a::before,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a::before,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a::before,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
   font-size: 14px;
   content: "";
   display: inline-block;
   margin-right: 10px;
   vertical-align: 2px;
 }
-.infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .pique-frontpage .pique-panel-content .entry-content .read-more a:hover, .pique-frontpage .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .archive .pique-panel-content .entry-content .read-more a:hover,
-.archive .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .blog .pique-panel-content .entry-content .read-more a:hover,
-.blog .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover,
-.infinite-scroll #infinite-handle .search-results .pique-panel-content .entry-content .read-more a:hover,
-.search-results .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
+.infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a:hover, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
   color: #3c7993;
   font-size: 19.2px;
   font-size: 1.2rem;
