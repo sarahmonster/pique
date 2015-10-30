@@ -1,6 +1,6 @@
 ( function( $ ) {
   $(document).ready(function() {
-    var s = skrollr.init();
+    /*var s = skrollr.init();
 
     //The options (second parameter) are all optional. The values shown are the default values.
     skrollr.menu.init(s, {
@@ -61,5 +61,43 @@
   */
 
   });
+
+  // Skrollr smells
+  var sections = $('.pique-panel');
+  var navLinks = $('#site-navigation li a');
+
+  sections.waypoint({
+    handler: function(direction) {
+        var activePanel = $(this);
+
+        // If we're scrolling up, set the previous panel as our current panel.
+        // This just means that, when we hit to top of a panel (bottom of a new panel)
+        // we'll highlight the correct panel. Wheee!
+        if ('up' === direction) {
+            activePanel = activePanel.prev();
+        }
+
+        // Get the ID of the panel
+        var panelID = this.options.element.id;
+
+        // Find the active panel's corresponding link by matching the panel ID in the URL
+        var activeLink = $('nav a[href="#' + panelID + '"]').parent('li');
+        // Remove any existing classes
+        navLinks.parents('li').removeClass('current_page_item');
+        // Highlight the currently active panel by adding a CSS class
+        activeLink.addClass('current_page_item');
+
+    },
+    offset: '110px'
+  });
+
+  // Use scrollTo library to smoothly scroll between panels
+  navLinks.click( function() {
+   $.scrollTo( $(this).attr('href'), {
+       duration: 400,
+       offset: { 'top': -80 }
+   } );
+
+ });
 
 } )( jQuery );
