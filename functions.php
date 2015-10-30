@@ -221,8 +221,6 @@ function pique_scripts() {
 
 	// Scroll effects (only loaded on front page)
 	if ( 'page-templates/template-front.php' === get_page_template_slug() ) :
-		wp_enqueue_script( 'pique-skrollr', get_template_directory_uri() . '/assets/js/skrollr.min.js', array(), '20150805', true );
-		wp_enqueue_script( 'pique-skrollr-menu', get_template_directory_uri() . '/assets/js/skrollr.menu.min.js', array(), '20150805', true );
 		wp_enqueue_script( 'pique-scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.min.js', array(), '20151030', true );
 		wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-skrollr', 'pique-waypoints' ), '20151030', true );
 	endif;

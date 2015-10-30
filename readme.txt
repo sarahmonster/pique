@@ -44,13 +44,13 @@ Distributed under the GNU GPL
 
 Pique WordPress theme bundles the following third-party resources:
 
-Skrollr library and plugins, Copyright 2012-2014 Alexander Prinzhorn
-Licensed under the MIT license
-Source: https://github.com/Prinzhorn/skrollr/blob/master/LICENSE.txt, https://github.com/Prinzhorn/skrollr-menu/blob/master/LICENSE.txt
-
 Waypoints library, Copyright 2011-2014 Caleb Troughton
 Licensed under the MIT license
 Source: https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+
+ScrollTo library, Copyright 2007-2015 Ariel Flesler
+Licensed under the MIT license
+Source: https://github.com/flesler/jquery.scrollTo/blob/master/LICENSE
 
 Font Awesome, Copyright Dave Gandy
 Fonts licensed under the SIL OFL 1.1 license
