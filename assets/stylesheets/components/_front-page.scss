@@ -476,6 +476,7 @@
   max-width: $size__site-width / 2;
   padding: 0 $size__site-gutter / 2;
   text-align: left;
+  text-shadow: none;
 
   @include mobile {
     width: 100%;
@@ -496,6 +497,11 @@
   p {
     margin-top: 0;
   }
+}
+
+/* Some elements shouldn't use a text-shadow, because it looks weird. */
+.wp-playlist {
+	text-shadow: none;
 }
 
 /* Simplify our styles a smidge so the Customizer doesn't have a panic attack */

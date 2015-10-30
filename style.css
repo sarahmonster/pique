@@ -4935,6 +4935,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   max-width: 700px;
   padding: 0 20px;
   text-align: left;
+  text-shadow: none;
 }
 @media (max-width: 767px) {
   .overlay {
@@ -4956,6 +4957,11 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 }
 .overlay p {
   margin-top: 0;
+}
+
+/* Some elements shouldn't use a text-shadow, because it looks weird. */
+.wp-playlist {
+  text-shadow: none;
 }
 
 /* Simplify our styles a smidge so the Customizer doesn't have a panic attack */
