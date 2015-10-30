@@ -51,14 +51,10 @@
 
   // Initial state for our header & nav
   @include tablet {
-    #masthead.pique-unstuck-header {
-
-      #site-navigation {
-        background: none;
-        border: none;
-      }
-
-    } // .pique-unstuck-header
+    #site-navigation:not(.sticky) {
+      background: none;
+      border: none;
+    }
   } // tablet
 }
 

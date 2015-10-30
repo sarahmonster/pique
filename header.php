@@ -60,6 +60,7 @@
 
 			// Output our menu only if we actually have menu items
 			if ( isset( $panel_links ) ) : ?>
+			<div id="site-navigation-wrapper">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<ul>
 						<?php
@@ -80,9 +81,11 @@
 						?>
 					</ul>
 				</nav><!-- #site-navigation -->
+			</div>
 			<?php endif; ?>
 
 		<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
+		<div id="site-navigation-wrapper">
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
 					wp_nav_menu( array(
@@ -94,6 +97,7 @@
 					) );
 				?>
 			</nav><!-- #site-navigation -->
+		</div>
 		<?php endif; ?>
 
 	</header><!-- #masthead -->

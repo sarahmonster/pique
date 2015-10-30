@@ -69,11 +69,21 @@
 
 	// Okay, now we want to stick-ify our menu when we reach it
 	function stickyNav() {
-		if (!$('body').hasClass('pique-frontpage')) {
-			$('#site-navigation').waypoint(function() {
-				$('#site-navigation').toggleClass('sticky');
-			});
-		}
+		var nav_container = $('#site-navigation-wrapper');
+		var nav = $('#site-navigation');
+
+		nav_container.waypoint( {
+			handler: function(direction) {
+				nav.toggleClass('sticky', direction=='down');
+
+				// Ensure we don't have an awkward jump when the menu sticks
+				if (direction == 'down') {
+					nav_container.css({ 'height':nav.outerHeight() });
+				} else {
+					nav_container.css({ 'height':'auto' });
+				}
+			}
+		});
 	};
 
 	// Run our functions on document load

@@ -3634,13 +3634,6 @@ a:hover, a:active {
   z-index: 10000;
   /* Priority+ menu */
 }
-@media (min-width: 768px) {
-  .main-navigation.sticky {
-    position: fixed;
-    top: 0px;
-    bottom: auto;
-  }
-}
 .main-navigation ul {
   display: block;
   list-style: none;
@@ -3791,6 +3784,14 @@ a:hover, a:active {
   }
 }
 
+/* Sticky menu */
+@media (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0px;
+    bottom: auto;
+  }
+}
 /* Account for the admin bar */
 @media screen and (min-width: 600px) and (max-width: 782px) {
   .admin-bar .main-navigation.sticky {
@@ -4637,7 +4638,7 @@ blockquote .widget cite:not(.widget-title),
   }
 }
 @media (min-width: 768px) {
-  .pique-frontpage #masthead.pique-unstuck-header #site-navigation {
+  .pique-frontpage #site-navigation:not(.sticky) {
     background: none;
     border: none;
   }
