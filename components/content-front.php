@@ -46,7 +46,7 @@
 				<?php // Show four most recent posts
 				$recent_posts = new WP_Query( array(
 					'posts_per_page' => 4,
-					'post_status'  => 'publish',
+					'post_status'    => 'publish',
 				) );
 				?>
 
@@ -55,8 +55,13 @@
 					<div class="pique-recent-posts pique-grid-two">
 
 						<?php
-						while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
+						// Since WordPress seem to be ignoring our posts_per_page above, let's just brute-force the limit
+						// Note: it's also ignoring the user settings for posts_per_page and defaulting to 7. Maybe an issue
+						// with Infinite Scroll? At any rate, I don't feel so bad about being brutish when it's also being a jerk.
+						$count = 0;
+						while ( $count < 4 AND $recent_posts->have_posts() ) : $recent_posts->the_post();
 							get_template_part( 'components/content', 'excerpt' );
+							$count++;
 						endwhile;
 						wp_reset_postdata();
 						?>

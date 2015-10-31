@@ -1,7 +1,7 @@
 .entry-content {
 	margin: 0 0 1.5em;
 
-	a {
+	a:not(.more-link) {
 		border-bottom: 0;
 		padding-bottom: 1px;
 

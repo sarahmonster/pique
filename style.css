@@ -60,7 +60,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span::before,
 .post-navigation .nav-previous span::before, .comment-navigation .nav-next span::after,
 .posts-navigation .nav-next span::after,
-.post-navigation .nav-next span::after, .pique-panel-content .entry-content .read-more a::after, .cat-links::before,
+.post-navigation .nav-next span::after, .pique-panel-content .entry-content .read-more a::after, .pique-template-recent-posts .simple-more-link::after, .cat-links::before,
 .tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -136,7 +136,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.fa-pull-left::before,
 .post-navigation .nav-previous span.fa-pull-left::before, .comment-navigation .nav-next span.fa-pull-left::after,
 .posts-navigation .nav-next span.fa-pull-left::after,
-.post-navigation .nav-next span.fa-pull-left::after, .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
+.post-navigation .nav-next span.fa-pull-left::after, .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .pique-template-recent-posts .fa-pull-left.simple-more-link::after, .fa-pull-left.cat-links::before,
 .fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
   margin-right: .3em;
 }
@@ -144,7 +144,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.fa-pull-right::before,
 .post-navigation .nav-previous span.fa-pull-right::before, .comment-navigation .nav-next span.fa-pull-right::after,
 .posts-navigation .nav-next span.fa-pull-right::after,
-.post-navigation .nav-next span.fa-pull-right::after, .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
+.post-navigation .nav-next span.fa-pull-right::after, .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .pique-template-recent-posts .fa-pull-right.simple-more-link::after, .fa-pull-right.cat-links::before,
 .fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
   margin-left: .3em;
 }
@@ -162,7 +162,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.pull-left::before,
 .post-navigation .nav-previous span.pull-left::before, .comment-navigation .nav-next span.pull-left::after,
 .posts-navigation .nav-next span.pull-left::after,
-.post-navigation .nav-next span.pull-left::after, .pique-panel-content .entry-content .read-more a.pull-left::after, .pull-left.cat-links::before,
+.post-navigation .nav-next span.pull-left::after, .pique-panel-content .entry-content .read-more a.pull-left::after, .pique-template-recent-posts .pull-left.simple-more-link::after, .pull-left.cat-links::before,
 .pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
   margin-right: .3em;
 }
@@ -170,7 +170,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.pull-right::before,
 .post-navigation .nav-previous span.pull-right::before, .comment-navigation .nav-next span.pull-right::after,
 .posts-navigation .nav-next span.pull-right::after,
-.post-navigation .nav-next span.pull-right::after, .pique-panel-content .entry-content .read-more a.pull-right::after, .pull-right.cat-links::before,
+.post-navigation .nav-next span.pull-right::after, .pique-panel-content .entry-content .read-more a.pull-right::after, .pique-template-recent-posts .pull-right.simple-more-link::after, .pull-right.cat-links::before,
 .pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
   margin-left: .3em;
 }
@@ -4899,26 +4899,25 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 }
 
 /* Recent blog posts panel */
-.pique-template-recent-posts .pique-recent-posts article {
-  text-align: center;
+.pique-template-recent-posts .entry-title {
+  margin-bottom: 0;
 }
-.pique-template-recent-posts .pique-recent-posts a[rel=bookmark]:hover {
-  border: none;
+.pique-template-recent-posts article .entry-content {
+  margin-top: 0;
 }
-.pique-template-recent-posts .pique-recent-posts .entry-header {
-  text-align: left;
+.pique-template-recent-posts .simple-more-link {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
-.pique-template-recent-posts .pique-recent-posts .entry-title {
-  margin-bottom: 0.5em;
-}
-.pique-template-recent-posts .pique-recent-posts .posted-on {
-  font-style: italic;
-}
-.pique-template-recent-posts .pique-recent-posts .byline {
-  display: none;
-}
-.pique-template-recent-posts .pique-recent-posts .entry-content {
-  text-align: left;
+.pique-template-recent-posts .simple-more-link::after {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
 }
 
 /* Full-width panel */
@@ -5069,11 +5068,11 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 .entry-content {
   margin: 0 0 1.5em;
 }
-.entry-content a {
+.entry-content a:not(.more-link) {
   border-bottom: 0;
   padding-bottom: 1px;
 }
-.entry-content a:hover {
+.entry-content a:not(.more-link):hover {
   border-bottom: 2px solid;
 }
 

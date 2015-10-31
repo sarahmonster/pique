@@ -187,12 +187,18 @@ add_filter( 'wp_nav_menu_items', 'add_more_to_nav', 10, 2 );
  * we give it a proper hellip for the more text.
  */
 function pique_custom_excerpt_length( $length ) {
-	return 42;
+	return 27;
 }
 add_filter( 'excerpt_length', 'pique_custom_excerpt_length', 999 );
 
 function pique_custom_excerpt_more($more) {
-	return '&hellip;';
+	$more_link = '<a class="simple-more-link" href="' . esc_url( get_the_permalink() ) . '" rel="bookmark">';
+	$more_link .= sprintf(
+					wp_kses( __( 'Read more %s', 'pique' ), array( 'span' => array( 'class' => array() ) ) ),
+					the_title( '<span class="screen-reader-text">"', '"</span>', false )
+				);
+	$more_link .= '</a>';
+	return '&hellip; ' . $more_link;
 }
 add_filter( 'excerpt_more', 'pique_custom_excerpt_more' );
 

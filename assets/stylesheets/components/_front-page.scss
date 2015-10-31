@@ -428,36 +428,28 @@
 
 /* Recent blog posts panel */
 .pique-template-recent-posts {
-  .pique-recent-posts {
+  .entry-title {
+    margin-bottom: 0;
+  }
 
-    article {
-      text-align: center;
-    }
+  article .entry-content {
+    margin-top: 0;
+  }
 
-    a[rel=bookmark]:hover {
-      border: none;
-    }
+  .simple-more-link {
+    @include font-size(0.8);
+    font-family: $font__sans;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
 
-    .entry-header {
-      text-align: left;
+    &::after {
+      @include fontawesome;
+      content: $fa-var-arrow-right;
+      display: inline-block;
     }
-
-    .entry-title {
-      margin-bottom: 0.5em;
-    }
-
-    .posted-on {
-      font-style: italic;
-    }
-
-    .byline {
-      display: none;
-    }
-
-    .entry-content {
-      text-align: left;
-    }
-  } // .pique-recent-posts
+  }
 } // .pique-template-recent-posts
 
 /* Full-width panel */
