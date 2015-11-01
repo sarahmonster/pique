@@ -41,7 +41,6 @@ if ( ! function_exists( 'pique_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'pique-hero', 1400, 1000, true );
 		add_image_size( 'pique-square', 280, 280, true );
-		add_image_size( 'pique-strip', 440, 160, true );
 		add_image_size( 'pique-header', 1400, 400, true );
 		add_image_size( 'pique-thumbnail-avatar', 100, 100, true );
 
