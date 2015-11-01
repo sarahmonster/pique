@@ -4453,6 +4453,9 @@ blockquote .widget cite:not(.widget-title),
       -ms-transform: none;
           transform: none;
 }
+.pique-frontpage #site-navigation-wrapper {
+  position: relative;
+}
 .pique-frontpage .main-navigation:not(.sticky) {
   margin-top: 1em;
   position: relative;

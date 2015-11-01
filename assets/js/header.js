@@ -37,7 +37,7 @@
 			var moreWidth = $( '#more-menu' ).outerWidth( true );
 
 			// Calculate the current width of our navigation
-			$( '#site-navigation .menu span > li' ).each(function() {
+			$( '#site-navigation .menu > li' ).each( function() {
 				navWidth += $( this ).outerWidth( true );
 			});
 
@@ -46,7 +46,7 @@
 
 			// If our nav is wider than our available space, we're going to move items
 			if (navWidth > availableSpace) {
-				var lastItem = $( '#site-navigation .menu span > li:not(#more-menu)' ).last();
+				var lastItem = $( '#site-navigation .menu > li:not(#more-menu)' ).last();
 				lastItem.attr( 'data-width', lastItem.outerWidth( true ) );
 				lastItem.prependTo( $( '#more-menu .sub-menu' ).eq( 0 ) );
 				priorityNav(); // Rerun this function!
@@ -54,7 +54,7 @@
 				// But if we have the extra space, we should add the items back to our menu
 			} else if (navWidth + firstMoreElement.data( 'width' ) < availableSpace) {
 				// Check to be sure there's enough space for our extra element
-				firstMoreElement.insertBefore( $( '#site-navigation .menu span > li' ).last() );
+				firstMoreElement.insertBefore( $( '#site-navigation .menu > li' ).last() );
 				priorityNav();
 			}
 

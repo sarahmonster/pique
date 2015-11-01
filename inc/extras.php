@@ -173,10 +173,11 @@ class Pique_Menu extends Walker_Nav_Menu {
 
 /*
  * Add an extra li to our nav for our priority+ navigation to use
- * @todo: Make this only apply to one menu!
  */
 function add_more_to_nav( $items, $args ) {
-	$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
+	if ( 'primary' === $args->theme_location ) :
+		$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
+	endif;
 	return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_more_to_nav', 10, 2 );
