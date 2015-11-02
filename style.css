@@ -3354,6 +3354,12 @@ input[type="submit"].minimal:hover {
   display: none;
 }
 
+/* Comment form-specific */
+.contact-form textarea {
+  width: 100% !important;
+  /* Because 80% looks silly */
+}
+
 /* Search form specific */
 @media (max-width: 767px) {
   .search-form {

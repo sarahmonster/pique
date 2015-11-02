@@ -118,6 +118,11 @@ button + button {
 	display: none; // Ah, WordPress. Always adding extra p tags.
 }
 
+/* Comment form-specific */
+.contact-form textarea {
+	width: 100% !important; /* Because 80% looks silly */
+}
+
 /* Search form specific */
 .search-form {
 
