@@ -4227,7 +4227,14 @@ blockquote .widget cite:not(.widget-title),
   content: "";
   display: table;
   table-layout: fixed;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: break-word;
+  /* Prevent stuff from getting spilly on mobile */
   width: 100%;
+  word-wrap: break-word;
 }
 
 /* On desktop devices, we'll show a sidebar next to our content */

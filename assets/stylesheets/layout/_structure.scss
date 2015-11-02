@@ -13,8 +13,10 @@
 
 .content-area {
 	@include clearfix;
+	hyphens: auto;
+	overflow-wrap: break-word; /* Prevent stuff from getting spilly on mobile */
 	width: 100%;
-	//word-break: break-all;
+	word-wrap: break-word;
 }
 
 /* On desktop devices, we'll show a sidebar next to our content */
