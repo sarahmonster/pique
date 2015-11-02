@@ -100,6 +100,20 @@ function pique_content_width() {
 add_action( 'after_setup_theme', 'pique_content_width', 0 );
 
 /**
+ * Use a larger content width for full-width pages.
+ *
+ */
+if ( ! function_exists( 'pique_content_width' ) ) :
+	function pique_content_width() {
+		if ( is_page_template( 'page-templates/template-full-width.php' ) ) :
+			global $content_width;
+			$content_width = 1400; /* pixels */
+			endif;
+	}
+endif;
+add_action( 'template_redirect', 'pique_content_width' );
+
+/**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
