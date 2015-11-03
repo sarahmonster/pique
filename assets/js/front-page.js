@@ -1,17 +1,22 @@
 ( function( $ ) {
-	$( document ).ready( function() {
 
-		/*
-		// For teensy little mobile screens, we want to position the nav before the header elements. Let's do it!
-		var piqueBrandingHeight = $('#masthead').find('.site-branding').height() + 40;
-		var piqueHeroContent = $('#pique-hero').find('.pique-panel-content');
-        		if( $('#masthead').hasClass('pique-unstuck-header') ) {
-			// something
-		} else {
-			$(piqueHeroContent).css('margin-top', piqueBrandingHeight);
-		}
-		*/
+	/*
+	* Since we've absolutely positioned the header (so it sits on top of the background
+	* set for our hero panel), we're going to need to adjust the margin of our hero's
+	* entry-content so it fits correctly in the available space.
+	*/
+	function adjustHero() {
+		var piqueHeaderHeight = $( '#masthead' ).height();
+		var piqueHeroContent = $( '#pique-hero' ).find( '.pique-panel-content' );
+		$( piqueHeroContent ).css( 'padding-top', piqueHeaderHeight );
+	}
 
+	/*
+	* We're going to use the Waypoints and ScrollTo libraries to build a dynamic menu.
+	* This will animate a scroll effect to and from panels in the page as well as
+	* highlighting the current panel in the nav menu.
+	*/
+	function dynamicNav() {
 		var sections = $( '.pique-panel' );
 		var navLinks = $( '#site-navigation li a' );
 
@@ -53,7 +58,26 @@
 				offset: { 'top': -80 }
 			} );
 		});
+	}
 
+	// Run our functions on document load
+	$( document ).on('ready', function() {
+		adjustHero();
+		dynamicNav();
+	});
+
+	// Annnnnd re-run the hero adjustment every time the window resizes
+	var isResizing = false;
+	$( window ).on('resize', function() {
+		if (isResizing) {
+			return;
+		}
+
+		isResizing = true;
+		setTimeout(function() {
+			adjustHero();
+			isResizing = false;
+		}, 150);
 	});
 
 } )( jQuery );
