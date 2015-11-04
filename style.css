@@ -4451,6 +4451,7 @@ blockquote .widget cite:not(.widget-title),
 --------------------------------------------------------------*/
 /* Header rules specific to the front page only */
 .pique-frontpage #masthead {
+  padding-top: 1em;
   position: absolute;
   top: 0;
   left: 0;
@@ -4805,6 +4806,11 @@ blockquote .widget cite:not(.widget-title),
 }
 #pique-hero .pique-panel-content .entry-content {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #pique-hero .pique-panel-content .entry-content {
+    padding-top: 2em;
+  }
 }
 
 /* Content-heavy pages */
