@@ -3501,26 +3501,6 @@ a:hover, a:active {
   left: -999em;
   text-align: left;
   z-index: 99999;
-  /* This is just here to make it easier to scroll down to the drop-down */
-}
-.main-navigation ul ul::before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 7px 7px 7px;
-  border-color: transparent transparent #483E34 transparent;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-}
-.main-navigation ul ul::after {
-  height: 20px;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
 }
 .main-navigation ul ul li {
   display: block;
@@ -3534,6 +3514,13 @@ a:hover, a:active {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: 5%;
+}
+.main-navigation ul #more-menu:hover > ul,
+.main-navigation ul #more-menu:focus > ul,
+.main-navigation ul li:nth-last-child(2):hover > ul,
+.main-navigation ul li:nth-last-child(2):focus > ul {
+  left: auto;
+  right: 5%;
 }
 .main-navigation li {
   display: inline-block;
@@ -3583,6 +3570,8 @@ a:hover, a:active {
     list-style: none;
     margin: 0;
     /* Sub-nav */
+    /* Adjust position of arrow for our last two menu items */
+    /* Adjust position of sub-nav for these final two menu items also */
   }
   .main-navigation ul ul {
     float: left;
@@ -3603,7 +3592,7 @@ a:hover, a:active {
     border-color: transparent transparent #483E34 transparent;
     position: absolute;
     top: -5px;
-    left: 10px;
+    left: 15px;
   }
   .main-navigation ul ul::after {
     height: 20px;
@@ -3635,6 +3624,22 @@ a:hover, a:active {
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     left: auto;
+  }
+  .main-navigation ul #more-menu:hover > ul::before,
+  .main-navigation ul #more-menu:focus > ul::before,
+  .main-navigation ul li:nth-last-child(2):hover > ul::before,
+  .main-navigation ul li:nth-last-child(2):focus > ul::before {
+    left: auto;
+    right: 15px;
+  }
+  .main-navigation ul #more-menu li:hover > ul,
+  .main-navigation ul li:nth-last-child(2) li:hover > ul {
+    left: -103%;
+  }
+  .main-navigation ul #more-menu li:hover > ul::before,
+  .main-navigation ul li:nth-last-child(2) li:hover > ul::before {
+    left: auto;
+    right: -8px;
   }
 }
 

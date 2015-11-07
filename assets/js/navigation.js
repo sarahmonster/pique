@@ -5,23 +5,25 @@
  * support for dropdown menus.
  */
 ( function() {
-	var container, button, menu, links, subMenus;
+	var container, moreMenu, menu, button, links, subMenus;
 
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
+	// Here, we're going to look for the priority plus menu item to determine if we're on a small screen
+	moreMenu = document.getElementById( 'more-menu' );
+	console.log( moreMenu );
+	if ( ! moreMenu ) {
+		console.log('not teeny');
 		return;
 	}
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
-	// Hide menu toggle button if menu is empty and return early.
+	// If menu is empty, return early.
 	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
 		return;
 	}
 

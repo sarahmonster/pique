@@ -101,28 +101,6 @@
 			text-align: left;
 			z-index: 99999;
 
-			&::before {
-				content: '';
-				display: block;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 0 7px 7px 7px;
-				border-color: transparent transparent $color__primary transparent;
-				position: absolute;
-					top: -5px;
-					left: 50%;
-			}
-
-			/* This is just here to make it easier to scroll down to the drop-down */
-			&::after {
-				height: 20px;
-				position: absolute;
-					top: -10px;
-					left: 0;
-				width: 100%;
-			}
-
 			li {
 				display: block;
 			}
@@ -139,6 +117,14 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: 5%;
+		}
+
+		#more-menu:hover > ul,
+		#more-menu:focus > ul,
+		li:nth-last-child(2):hover > ul,
+		li:nth-last-child(2):focus > ul {
+			left: auto;
+			right: 5%;
 		}
 	} // ul (main nav)
 
@@ -209,7 +195,7 @@
 					border-color: transparent transparent $color__primary transparent;
 					position: absolute;
 						top: -5px;
-						left: 10px;
+						left: 15px;
 				}
 
 				/* This is just here to make it easier to scroll down to the drop-down */
@@ -248,10 +234,6 @@
 						}
 					}
 				}
-
-				a {
-					//width: 200px;
-				}
 			}
 
 			li {
@@ -261,6 +243,26 @@
 			li:hover > ul,
 			li.focus > ul {
 				left: auto;
+			}
+
+			/* Adjust position of arrow for our last two menu items */
+			#more-menu:hover > ul::before,
+			#more-menu:focus > ul::before,
+			li:nth-last-child(2):hover > ul::before,
+			li:nth-last-child(2):focus > ul::before {
+				left: auto;
+				right: 15px;
+			}
+
+			/* Adjust position of sub-nav for these final two menu items also */
+			#more-menu li:hover > ul,
+			li:nth-last-child(2) li:hover > ul {
+				left: -103%;
+
+				&::before {
+					left: auto;
+					right: -8px;
+				}
 			}
 		} // sub-nav
 	} // tablet
