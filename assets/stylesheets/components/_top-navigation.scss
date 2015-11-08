@@ -96,7 +96,6 @@
 		ul {
 			background: $color__primary;
 			position: absolute;
-				top: 37px;
 				left: -999em;
 			text-align: left;
 			z-index: 99999;
@@ -111,21 +110,7 @@
 				display: block;
 				width: 100%;
 			}
-
 		} // ul (sub-menu)
-
-		li:hover > ul,
-		li.focus > ul {
-			left: 5%;
-		}
-
-		#more-menu:hover > ul,
-		#more-menu:focus > ul,
-		li:nth-last-child(2):hover > ul,
-		li:nth-last-child(2):focus > ul {
-			left: auto;
-			right: 5%;
-		}
 	} // ul (main nav)
 
 	li {
@@ -163,15 +148,28 @@
 			@include genericons;
 			content: '\f476';
 		}
-	}
+	} // #more-menu
+} // .main-navigation
 
-	@include mobile {
-		ul {
-			width: 90%;
+/* Mobile menu */
+@include mobile {
+	.main-navigation {
+		/* Sub-menus */
+		ul ul {
+			border-top: 2px solid transparentize($color__tertiary, 0.5);
+			width: 100%;
 		}
-	}
+		/* Show mobile menus when "focus" class is added via JS */
+		li.focus > ul {
+	    left: 0;
+	  }
+	} // .main-navigation
+} // mobile
 
-	@include tablet {
+/* Regular menu */
+
+@include tablet {
+	.main-navigation {
 		ul {
 			display: block;
 			list-style: none;
@@ -265,17 +263,29 @@
 				}
 			}
 		} // sub-nav
-	} // tablet
-}
 
-/* Sticky menu */
-@include tablet {
+	  /* Show sub-menus on hover */
+	  li:hover > ul,
+	  li.focus > ul {
+	    left: 5%;
+	  }
+
+	  #more-menu:hover > ul,
+	  #more-menu:focus > ul,
+	  li:nth-last-child(2):hover > ul,
+	  li:nth-last-child(2):focus > ul {
+	    left: auto;
+	    right: 5%;
+	  }
+	} // .main-navigation
+
+	/* Sticky menu */
 	.sticky {
 		position: fixed;
 			top: 0px;
 			bottom: auto;
 	}
-}
+} // tablet
 
 /* Account for the admin bar */
 .admin-bar {

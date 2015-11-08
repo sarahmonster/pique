@@ -3497,7 +3497,6 @@ a:hover, a:active {
 .main-navigation ul ul {
   background: #483E34;
   position: absolute;
-  top: 37px;
   left: -999em;
   text-align: left;
   z-index: 99999;
@@ -3510,17 +3509,6 @@ a:hover, a:active {
   border-bottom: 1px solid rgba(233, 213, 192, 0.5);
   display: block;
   width: 100%;
-}
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: 5%;
-}
-.main-navigation ul #more-menu:hover > ul,
-.main-navigation ul #more-menu:focus > ul,
-.main-navigation ul li:nth-last-child(2):hover > ul,
-.main-navigation ul li:nth-last-child(2):focus > ul {
-  left: auto;
-  right: 5%;
 }
 .main-navigation li {
   display: inline-block;
@@ -3559,12 +3547,26 @@ a:hover, a:active {
   -webkit-font-smoothing: antialiased;
   content: '\f476';
 }
+
+/* Mobile menu */
 @media (max-width: 767px) {
-  .main-navigation ul {
-    width: 90%;
+  .main-navigation {
+    /* Sub-menus */
+    /* Show mobile menus when "focus" class is added via JS */
+  }
+  .main-navigation ul ul {
+    border-top: 2px solid rgba(233, 213, 192, 0.5);
+    width: 100%;
+  }
+  .main-navigation li.focus > ul {
+    left: 0;
   }
 }
+/* Regular menu */
 @media (min-width: 768px) {
+  .main-navigation {
+    /* Show sub-menus on hover */
+  }
   .main-navigation ul {
     display: block;
     list-style: none;
@@ -3641,10 +3643,19 @@ a:hover, a:active {
     left: auto;
     right: -8px;
   }
-}
+  .main-navigation li:hover > ul,
+  .main-navigation li.focus > ul {
+    left: 5%;
+  }
+  .main-navigation #more-menu:hover > ul,
+  .main-navigation #more-menu:focus > ul,
+  .main-navigation li:nth-last-child(2):hover > ul,
+  .main-navigation li:nth-last-child(2):focus > ul {
+    left: auto;
+    right: 5%;
+  }
 
-/* Sticky menu */
-@media (min-width: 768px) {
+  /* Sticky menu */
   .sticky {
     position: fixed;
     top: 0px;
