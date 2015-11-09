@@ -16,7 +16,6 @@
 	moreMenu = document.getElementById( 'more-menu' );
 	console.log( moreMenu );
 	if ( ! moreMenu ) {
-		console.log('not teeny');
 		return;
 	}
 
@@ -64,8 +63,12 @@
 	/**
 	 * Sets or removes .focus class on an element.
 	 */
-	function toggleFocus() {
+	function toggleFocus(e) {
 		var self = this;
+
+		// Check to see if we've got sub-menus
+		console.log('clicky');
+		e.preventDefault();
 
 		// Move up through the ancestors of the current link until we hit .nav-menu.
 		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {

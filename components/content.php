@@ -41,18 +41,6 @@
 				<?php pique_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
-			<div class="read-more">
-			<?php
-				printf(
-					wp_kses( __( '<a href="%1$s">Read more %2$s</a>', 'pique' ),
-						array( 'span' => array( 'class' => array() ), 'a' => array( 'href' => array(), 'class' => array() )  )
-					),
-					esc_url( get_the_permalink() ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				);
-			?>
-			</div>
-
 			<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pique' ),

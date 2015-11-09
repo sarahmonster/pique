@@ -60,8 +60,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span::before,
 .post-navigation .nav-previous span::before, .comment-navigation .nav-next span::after,
 .posts-navigation .nav-next span::after,
-.post-navigation .nav-next span::after, .pique-panel-content .entry-content .read-more a::after, .pique-template-recent-posts .simple-more-link::after, .cat-links::before,
-.tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.post-navigation .nav-next span::after, .archive .read-more a::after,
+.blog .read-more a::after,
+.search-results .read-more a::after, .pique-template-recent-posts .read-more a::after, .cat-links::before,
+.tags-links::before, .infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .archive .read-more a::before, .archive .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .blog .read-more a::before,
+.blog .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .search-results .read-more a::before,
+.search-results .read-more .infinite-scroll #infinite-handle a::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -136,16 +142,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.fa-pull-left::before,
 .post-navigation .nav-previous span.fa-pull-left::before, .comment-navigation .nav-next span.fa-pull-left::after,
 .posts-navigation .nav-next span.fa-pull-left::after,
-.post-navigation .nav-next span.fa-pull-left::after, .pique-panel-content .entry-content .read-more a.fa-pull-left::after, .pique-template-recent-posts .fa-pull-left.simple-more-link::after, .fa-pull-left.cat-links::before,
-.fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before, .infinite-scroll #infinite-handle .fa-pull-left.more-link::before {
+.post-navigation .nav-next span.fa-pull-left::after, .archive .read-more a.fa-pull-left::after,
+.blog .read-more a.fa-pull-left::after,
+.search-results .read-more a.fa-pull-left::after, .pique-template-recent-posts .read-more a.fa-pull-left::after, .fa-pull-left.cat-links::before,
+.fa-pull-left.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-left::before, .infinite-scroll #infinite-handle .archive .read-more a.fa-pull-left::before, .archive .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
+.infinite-scroll #infinite-handle .blog .read-more a.fa-pull-left::before,
+.blog .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before,
+.infinite-scroll #infinite-handle .search-results .read-more a.fa-pull-left::before,
+.search-results .read-more .infinite-scroll #infinite-handle a.fa-pull-left::before {
   margin-right: .3em;
 }
 .fa.fa-pull-right, .comment-navigation .nav-previous span.fa-pull-right::before,
 .posts-navigation .nav-previous span.fa-pull-right::before,
 .post-navigation .nav-previous span.fa-pull-right::before, .comment-navigation .nav-next span.fa-pull-right::after,
 .posts-navigation .nav-next span.fa-pull-right::after,
-.post-navigation .nav-next span.fa-pull-right::after, .pique-panel-content .entry-content .read-more a.fa-pull-right::after, .pique-template-recent-posts .fa-pull-right.simple-more-link::after, .fa-pull-right.cat-links::before,
-.fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.fa-pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before, .infinite-scroll #infinite-handle .fa-pull-right.more-link::before {
+.post-navigation .nav-next span.fa-pull-right::after, .archive .read-more a.fa-pull-right::after,
+.blog .read-more a.fa-pull-right::after,
+.search-results .read-more a.fa-pull-right::after, .pique-template-recent-posts .read-more a.fa-pull-right::after, .fa-pull-right.cat-links::before,
+.fa-pull-right.tags-links::before, .infinite-scroll #infinite-handle button.fa-pull-right::before, .infinite-scroll #infinite-handle .archive .read-more a.fa-pull-right::before, .archive .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
+.infinite-scroll #infinite-handle .blog .read-more a.fa-pull-right::before,
+.blog .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before,
+.infinite-scroll #infinite-handle .search-results .read-more a.fa-pull-right::before,
+.search-results .read-more .infinite-scroll #infinite-handle a.fa-pull-right::before {
   margin-left: .3em;
 }
 
@@ -162,16 +180,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .posts-navigation .nav-previous span.pull-left::before,
 .post-navigation .nav-previous span.pull-left::before, .comment-navigation .nav-next span.pull-left::after,
 .posts-navigation .nav-next span.pull-left::after,
-.post-navigation .nav-next span.pull-left::after, .pique-panel-content .entry-content .read-more a.pull-left::after, .pique-template-recent-posts .pull-left.simple-more-link::after, .pull-left.cat-links::before,
-.pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-left::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-left::before, .infinite-scroll #infinite-handle .pull-left.more-link::before {
+.post-navigation .nav-next span.pull-left::after, .archive .read-more a.pull-left::after,
+.blog .read-more a.pull-left::after,
+.search-results .read-more a.pull-left::after, .pique-template-recent-posts .read-more a.pull-left::after, .pull-left.cat-links::before,
+.pull-left.tags-links::before, .infinite-scroll #infinite-handle button.pull-left::before, .infinite-scroll #infinite-handle .archive .read-more a.pull-left::before, .archive .read-more .infinite-scroll #infinite-handle a.pull-left::before,
+.infinite-scroll #infinite-handle .blog .read-more a.pull-left::before,
+.blog .read-more .infinite-scroll #infinite-handle a.pull-left::before,
+.infinite-scroll #infinite-handle .search-results .read-more a.pull-left::before,
+.search-results .read-more .infinite-scroll #infinite-handle a.pull-left::before {
   margin-right: .3em;
 }
 .fa.pull-right, .comment-navigation .nav-previous span.pull-right::before,
 .posts-navigation .nav-previous span.pull-right::before,
 .post-navigation .nav-previous span.pull-right::before, .comment-navigation .nav-next span.pull-right::after,
 .posts-navigation .nav-next span.pull-right::after,
-.post-navigation .nav-next span.pull-right::after, .pique-panel-content .entry-content .read-more a.pull-right::after, .pique-template-recent-posts .pull-right.simple-more-link::after, .pull-right.cat-links::before,
-.pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a.pull-right::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a.pull-right::before, .infinite-scroll #infinite-handle .pull-right.more-link::before {
+.post-navigation .nav-next span.pull-right::after, .archive .read-more a.pull-right::after,
+.blog .read-more a.pull-right::after,
+.search-results .read-more a.pull-right::after, .pique-template-recent-posts .read-more a.pull-right::after, .pull-right.cat-links::before,
+.pull-right.tags-links::before, .infinite-scroll #infinite-handle button.pull-right::before, .infinite-scroll #infinite-handle .archive .read-more a.pull-right::before, .archive .read-more .infinite-scroll #infinite-handle a.pull-right::before,
+.infinite-scroll #infinite-handle .blog .read-more a.pull-right::before,
+.blog .read-more .infinite-scroll #infinite-handle a.pull-right::before,
+.infinite-scroll #infinite-handle .search-results .read-more a.pull-right::before,
+.search-results .read-more .infinite-scroll #infinite-handle a.pull-right::before {
   margin-left: .3em;
 }
 
@@ -2835,8 +2865,9 @@ samp {
   font-size: 1em;
 }
 
-button, .pique-panel-content .entry-content .read-more a, .more-link,
-.more-link:visited,
+button, .archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a,
 input,
 optgroup,
 select,
@@ -2846,19 +2877,22 @@ textarea {
   margin: 0;
 }
 
-button, .pique-panel-content .entry-content .read-more a, .more-link,
-.more-link:visited {
+button, .archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a {
   overflow: visible;
 }
 
-button, .pique-panel-content .entry-content .read-more a, .more-link,
-.more-link:visited,
+button, .archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a,
 select {
   text-transform: none;
 }
 
-button, .pique-panel-content .entry-content .read-more a, .more-link,
-.more-link:visited,
+button, .archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -2866,13 +2900,16 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-button[disabled], .pique-panel-content .entry-content .read-more a[disabled], [disabled].more-link,
+button[disabled], .archive .read-more a[disabled],
+.blog .read-more a[disabled],
+.search-results .read-more a[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner, .pique-panel-content .entry-content .read-more a::-moz-focus-inner, .more-link::-moz-focus-inner,
-.more-link:visited::-moz-focus-inner,
+button::-moz-focus-inner, .archive .read-more a::-moz-focus-inner,
+.blog .read-more a::-moz-focus-inner,
+.search-results .read-more a::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -2936,9 +2973,9 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
-.pique-panel-content .entry-content .read-more a,
-.more-link,
-.more-link:visited,
+.archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a,
 input,
 select,
 textarea {
@@ -3255,8 +3292,9 @@ textarea {
 }
 
 /* Buttons */
-button, .pique-panel-content .entry-content .read-more a, .more-link,
-.more-link:visited,
+button, .archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a,
 .button,
 input[type="button"],
 input[type="reset"],
@@ -3278,8 +3316,9 @@ input[type="submit"] {
           transition: background-color 0.125s ease-in;
 }
 @media (max-width: 767px) {
-  button, .pique-panel-content .entry-content .read-more a, .more-link,
-  .more-link:visited,
+  button, .archive .read-more a,
+  .blog .read-more a,
+  .search-results .read-more a,
   .button,
   input[type="button"],
   input[type="reset"],
@@ -3287,7 +3326,9 @@ input[type="submit"] {
     width: 75%;
   }
 }
-button:hover, .pique-panel-content .entry-content .read-more a:hover, .more-link:hover,
+button:hover, .archive .read-more a:hover,
+.blog .read-more a:hover,
+.search-results .read-more a:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -3296,7 +3337,11 @@ input[type="submit"]:hover {
   border-color: #83B6CC;
   color: #83B6CC;
 }
-button:active, .pique-panel-content .entry-content .read-more a:active, .more-link:active, button:focus, .pique-panel-content .entry-content .read-more a:focus, .more-link:focus,
+button:active, .archive .read-more a:active,
+.blog .read-more a:active,
+.search-results .read-more a:active, button:focus, .archive .read-more a:focus,
+.blog .read-more a:focus,
+.search-results .read-more a:focus,
 .button:active,
 .button:focus,
 input[type="button"]:active,
@@ -3308,7 +3353,9 @@ input[type="submit"]:focus {
   background-color: #b3a495;
   border-color: #83B6CC;
 }
-button.minimal, .pique-panel-content .entry-content .read-more a.minimal, .minimal.more-link,
+button.minimal, .archive .read-more a.minimal,
+.blog .read-more a.minimal,
+.search-results .read-more a.minimal,
 .button.minimal,
 input[type="button"].minimal,
 input[type="reset"].minimal,
@@ -3316,7 +3363,13 @@ input[type="submit"].minimal {
   background-color: #eff6f9;
   color: #83B6CC;
 }
-button.minimal:active, .pique-panel-content .entry-content .read-more a.minimal:active, .minimal.more-link:active, button.minimal:focus, .pique-panel-content .entry-content .read-more a.minimal:focus, .minimal.more-link:focus, button.minimal:hover, .pique-panel-content .entry-content .read-more a.minimal:hover, .minimal.more-link:hover,
+button.minimal:active, .archive .read-more a.minimal:active,
+.blog .read-more a.minimal:active,
+.search-results .read-more a.minimal:active, button.minimal:focus, .archive .read-more a.minimal:focus,
+.blog .read-more a.minimal:focus,
+.search-results .read-more a.minimal:focus, button.minimal:hover, .archive .read-more a.minimal:hover,
+.blog .read-more a.minimal:hover,
+.search-results .read-more a.minimal:hover,
 .button.minimal:active,
 .button.minimal:focus,
 .button.minimal:hover,
@@ -3335,16 +3388,24 @@ input[type="submit"].minimal:hover {
 }
 
 @media (max-width: 767px) {
-  button + button, .pique-panel-content .entry-content .read-more a + button, .more-link + button,
-  .more-link:visited + button, .pique-panel-content .entry-content .read-more button + a, .pique-panel-content .entry-content .read-more a + a, .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
-  button + .more-link:visited {
+  button + button, .archive .read-more a + button,
+  .blog .read-more a + button,
+  .search-results .read-more a + button, .archive .read-more button + a, .archive .read-more a + a,
+  .blog .read-more button + a,
+  .blog .read-more a + a,
+  .search-results .read-more button + a,
+  .search-results .read-more a + a {
     margin-top: 1em;
   }
 }
 @media (min-width: 768px) {
-  button + button, .pique-panel-content .entry-content .read-more a + button, .more-link + button,
-  .more-link:visited + button, .pique-panel-content .entry-content .read-more button + a, .pique-panel-content .entry-content .read-more a + a, .pique-panel-content .entry-content .read-more .more-link + a, button + .more-link, .pique-panel-content .entry-content .read-more a + .more-link, .more-link + .more-link,
-  button + .more-link:visited {
+  button + button, .archive .read-more a + button,
+  .blog .read-more a + button,
+  .search-results .read-more a + button, .archive .read-more button + a, .archive .read-more a + a,
+  .blog .read-more button + a,
+  .blog .read-more a + a,
+  .search-results .read-more button + a,
+  .search-results .read-more a + a {
     margin-left: 0.5em;
   }
 }
@@ -4692,29 +4753,6 @@ blockquote .widget cite:not(.widget-title),
   max-width: 700px;
   text-align: left;
 }
-.pique-panel-content .entry-content .read-more {
-  margin: 2em auto 1em;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .pique-panel-content .entry-content .read-more {
-    margin-top: 4em;
-  }
-}
-.pique-panel-content .entry-content .read-more a {
-  text-shadow: none;
-}
-.pique-panel-content .entry-content .read-more a::after {
-  font-size: 14px;
-  content: "";
-  display: inline-block;
-}
-.pique-panel-content .entry-content .read-more a:hover {
-  padding-right: calc(3em - 20px);
-}
-.pique-panel-content .entry-content .read-more a:hover::after {
-  margin-left: 20px;
-}
 .pique-panel-content form {
   background: #FCFBF9;
   border-top: 4px solid #83B6CC;
@@ -4830,6 +4868,44 @@ blockquote .widget cite:not(.widget-title),
 .format-status .pique-panel-content .entry-content,
 .format-link .pique-panel-content .entry-content {
   text-align: center;
+}
+
+/* Read more links on archive pages */
+.archive .read-more,
+.blog .read-more,
+.search-results .read-more {
+  display: block;
+  margin: 2em auto 1em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .archive .read-more,
+  .blog .read-more,
+  .search-results .read-more {
+    margin-top: 4em;
+  }
+}
+.archive .read-more a,
+.blog .read-more a,
+.search-results .read-more a {
+  text-shadow: none;
+}
+.archive .read-more a::after,
+.blog .read-more a::after,
+.search-results .read-more a::after {
+  font-size: 14px;
+  content: "";
+  display: inline-block;
+}
+.archive .read-more a:hover,
+.blog .read-more a:hover,
+.search-results .read-more a:hover {
+  padding-right: calc(3em - 20px);
+}
+.archive .read-more a:hover::after,
+.blog .read-more a:hover::after,
+.search-results .read-more a:hover::after {
+  margin-left: 20px;
 }
 
 /* Hero area (the "home" page, as it were) */
@@ -4965,7 +5041,8 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 .pique-template-recent-posts article .entry-content {
   margin-top: 0;
 }
-.pique-template-recent-posts .simple-more-link {
+.pique-template-recent-posts .read-more a {
+  display: inline;
   font-size: 12.8px;
   font-size: 0.8rem;
   font-family: Karla, Arial, sans-serif;
@@ -4974,7 +5051,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-transform: uppercase;
   white-space: nowrap;
 }
-.pique-template-recent-posts .simple-more-link::after {
+.pique-template-recent-posts .read-more a::after {
   font-size: 14px;
   content: "";
   display: inline-block;
@@ -5433,7 +5510,6 @@ time + .updated {
   margin: 1.5em 0 0;
 }
 
-/* Read more */
 .page-links {
   clear: both;
   font-family: Karla, Arial, sans-serif;
@@ -5616,7 +5692,11 @@ time + .updated {
 .infinite-scroll #infinite-handle span {
   background: transparent;
 }
-.infinite-scroll #infinite-handle button, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a, .infinite-scroll #infinite-handle .more-link {
+.infinite-scroll #infinite-handle button, .infinite-scroll #infinite-handle .archive .read-more a, .archive .read-more .infinite-scroll #infinite-handle a,
+.infinite-scroll #infinite-handle .blog .read-more a,
+.blog .read-more .infinite-scroll #infinite-handle a,
+.infinite-scroll #infinite-handle .search-results .read-more a,
+.search-results .read-more .infinite-scroll #infinite-handle a {
   color: #83B6CC;
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -5625,14 +5705,22 @@ time + .updated {
   text-transform: none;
   padding: 1em;
 }
-.infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a::before, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a::before, .infinite-scroll #infinite-handle .more-link::before {
+.infinite-scroll #infinite-handle button::before, .infinite-scroll #infinite-handle .archive .read-more a::before, .archive .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .blog .read-more a::before,
+.blog .read-more .infinite-scroll #infinite-handle a::before,
+.infinite-scroll #infinite-handle .search-results .read-more a::before,
+.search-results .read-more .infinite-scroll #infinite-handle a::before {
   font-size: 14px;
   content: "";
   display: inline-block;
   margin-right: 10px;
   vertical-align: 2px;
 }
-.infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .pique-panel-content .entry-content .read-more a:hover, .pique-panel-content .entry-content .read-more .infinite-scroll #infinite-handle a:hover, .infinite-scroll #infinite-handle .more-link:hover {
+.infinite-scroll #infinite-handle button:hover, .infinite-scroll #infinite-handle .archive .read-more a:hover, .archive .read-more .infinite-scroll #infinite-handle a:hover,
+.infinite-scroll #infinite-handle .blog .read-more a:hover,
+.blog .read-more .infinite-scroll #infinite-handle a:hover,
+.infinite-scroll #infinite-handle .search-results .read-more a:hover,
+.search-results .read-more .infinite-scroll #infinite-handle a:hover {
   color: #3c7993;
   font-size: 19.2px;
   font-size: 1.2rem;

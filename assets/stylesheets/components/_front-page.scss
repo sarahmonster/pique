@@ -218,33 +218,6 @@
     margin: 1em auto;
     max-width: $size__site-width / 2;
     text-align: left;
-
-    .read-more {
-      margin: 2em auto 1em;
-      text-align: center;
-
-      @include tablet {
-        margin-top: 4em;
-      }
-
-      a {
-        @extend button;
-        text-shadow: none;
-
-        &::after {
-          @include fontawesome;
-    			  content: $fa-var-arrow-right;
-          display: inline-block;
-        }
-
-        &:hover {
-          padding-right: calc(3em - 20px);
-          &::after {
-            margin-left: 20px;
-          }
-        }
-      } // a
-    } // .read-more
   } // .entry-content
 
   // Forms
@@ -268,8 +241,6 @@
   } // blockquote
 
 } //.pique-panel-content
-
-
 
 // Post formats
 .format-aside,
@@ -320,6 +291,39 @@
   .pique-panel-content .entry-content {
     text-align: center;
   }
+}
+
+/* Read more links on archive pages */
+.archive,
+.blog,
+.search-results {
+  .read-more {
+    display: block;
+    margin: 2em auto 1em;
+    text-align: center;
+
+    @include tablet {
+      margin-top: 4em;
+    }
+
+    a {
+      @extend button;
+      text-shadow: none;
+
+      &::after {
+        @include fontawesome;
+          content: $fa-var-arrow-right;
+        display: inline-block;
+      }
+
+      &:hover {
+        padding-right: calc(3em - 20px);
+        &::after {
+          margin-left: 20px;
+        }
+      }
+    } // a
+  } // .read-more
 }
 
 
@@ -445,7 +449,8 @@
     margin-top: 0;
   }
 
-  .simple-more-link {
+  .read-more a {
+    display: inline;
     @include font-size(0.8);
     font-family: $font__sans;
     font-weight: bold;
