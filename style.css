@@ -4653,47 +4653,6 @@ blockquote .widget cite:not(.widget-title),
   height: 100%;
 }
 
-/* In-between panel links */
-.pique-panel-link {
-  background-color: #2D2A26;
-  border-radius: 50%;
-  height: 60px;
-  line-height: 60px;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 60px;
-  z-index: 1000;
-}
-.pique-panel-link:hover {
-  border: none;
-}
-.pique-panel-link::before, .pique-panel-link::after {
-  border-style: solid;
-  border-width: 16px 16px 0 16px;
-  content: '';
-  display: block;
-  height: 0;
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 0;
-}
-.pique-panel-link::before {
-  border-color: #E9D5C0 transparent transparent transparent;
-}
-.pique-panel-link::after {
-  border-color: #2D2A26 transparent transparent transparent;
-  top: 48%;
-}
-
 /* Edit panel content links */
 .pique-panel .edit-link {
   position: absolute;
