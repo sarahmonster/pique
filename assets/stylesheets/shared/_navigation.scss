@@ -6,10 +6,6 @@ a {
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-
 	&:hover,
 	&:focus,
 	&:active {

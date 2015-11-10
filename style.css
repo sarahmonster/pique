@@ -3451,9 +3451,6 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
-a:visited {
-  color: #83B6CC;
-}
 a:hover, a:focus, a:active {
   color: #E9D5C0;
 }
