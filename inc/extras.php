@@ -76,12 +76,24 @@ function pique_post_classes( $classes ) {
 
 	// Annnnd add a 'panel' class if we're on the front page
 	if ( is_front_page() ) :
-		global $post;
-		$parent = wp_get_post_parent_id( $post->ID );
-		// But don't do it for child pages (grid templates) or testimonials, or recent blog posts
-		if ( 'page-templates/template-grid.php' !== get_page_template_slug( $parent ) AND 'jetpack-testimonial' !== get_post_type( $post->ID ) AND 'post' !== get_post_type( $post->ID ) ) :
-			$classes[] = 'pique-panel';
+		$classes[] = 'pique-panel';
+
+		// But remove the class for child pages of our grid template
+		$parent = wp_get_post_parent_id( get_the_ID() );
+		if ( 0 !== $parent && 'page-templates/template-grid.php' === get_page_template_slug( $parent ) ) :
+			$classes = pique_remove_from_array( 'pique-panel', $classes );
 		endif;
+
+		// Remove for testimonials
+		if ( 'jetpack-testimonial' === get_post_type( get_the_ID() ) ) :
+			$classes = pique_remove_from_array( 'pique-panel', $classes );
+		endif;
+
+		// Remove for blog posts (these are all in a container panel here)
+		if ( 'post' === get_post_type( get_the_ID() ) ) :
+			$classes = pique_remove_from_array( 'pique-panel', $classes );
+		endif;
+
 	endif;
 
 	// Add the panel classes to all posts in archive views
@@ -92,6 +104,18 @@ function pique_post_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'post_class', 'pique_post_classes' );
+
+/*
+ * Remove an element from an array.
+ * Used in our post_class filtering machinations above.
+ */
+function pique_remove_from_array( $item, $array ) {
+	$index = array_search( $item, $array );
+	if ( false !== $index ) {
+		unset( $array[ $index ] );
+	}
+	return $array;
+}
 
 /**
  * We want to do some fancy-pants stuff with our navbar, so we'll need to
@@ -196,9 +220,9 @@ function pique_custom_excerpt_more($more) {
 	$more_link = '<span class="read-more">';
 	$more_link .= '<a class="more-link" href="' . esc_url( get_the_permalink() ) . '" rel="bookmark">';
 	$more_link .= sprintf(
-					wp_kses( __( 'Read more %s', 'pique' ), array( 'span' => array( 'class' => array() ) ) ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				);
+		wp_kses( __( 'Read more %s', 'pique' ), array( 'span' => array( 'class' => array() ) ) ),
+		the_title( '<span class="screen-reader-text">"', '"</span>', false )
+	);
 	$more_link .= '</a></span>';
 	return '&hellip; ' . $more_link;
 }
