@@ -4622,7 +4622,7 @@ blockquote .widget cite:not(.widget-title),
 /* Panels */
 .pique-panel {
   background-color: #293940;
-  min-height: 50vh;
+  min-height: 60vh;
   margin: 0;
   position: relative;
   width: 100%;
@@ -4825,9 +4825,7 @@ blockquote .widget cite:not(.widget-title),
 
 .format-image .pique-panel-content .entry-content,
 .format-video .pique-panel-content .entry-content,
-.format-gallery .pique-panel-content .entry-content,
-.format-status .pique-panel-content .entry-content,
-.format-link .pique-panel-content .entry-content {
+.format-gallery .pique-panel-content .entry-content {
   text-align: center;
 }
 

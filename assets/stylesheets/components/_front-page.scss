@@ -78,7 +78,7 @@
 /* Panels */
 .pique-panel {
   background-color: desaturate(darken($color__secondary, 45%), 20%);
-  min-height: 50vh;
+  min-height: 60vh;
   margin: 0;
   position: relative;
   width: 100%;
@@ -242,9 +242,7 @@
 
 .format-image,
 .format-video,
-.format-gallery,
-.format-status,
-.format-link {
+.format-gallery {
   .pique-panel-content .entry-content {
     text-align: center;
   }
