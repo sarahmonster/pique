@@ -1,5 +1,20 @@
 /* WordPress.com Widgets */
 
+/* Account for the demo bar */
+.demo-site.pique-frontpage #masthead {
+  top: 132px;
+
+  @media screen and (max-width:782px) {
+    top: 110px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .demo-site .main-navigation.sticky {
+    top: 111px;
+  }
+}
+
 /* Hide stats smiley */
 #wpstats {
   display: none;
