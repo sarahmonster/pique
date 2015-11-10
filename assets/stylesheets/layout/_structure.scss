@@ -184,7 +184,7 @@
 	position: relative;
 	table-layout: fixed; // Prevents select elements from getting all spilly
 	width: 100%;
-	z-index: 1000;
+	z-index: 10000;
 
 	.widget {
 		border-top: none;
