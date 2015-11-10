@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pique 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/pique\n"
-"POT-Creation-Date: 2015-10-29 00:24:02+00:00\n"
+"POT-Creation-Date: 2015-11-03 03:39:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,10 +54,6 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: components/content-excerpt.php:40
-msgid "Read more %s <span class=\"meta-nav\">&raquo;</span>"
-msgstr ""
-
 #: components/content-front.php:11
 msgid "Skip panel"
 msgstr ""
@@ -67,7 +63,7 @@ msgstr ""
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: components/content-front.php:99 components/content-page.php:22
+#: components/content-front.php:104 components/content-page.php:22
 #: components/content-single.php:22 components/content.php:58
 msgid "Pages:"
 msgstr ""
@@ -114,34 +110,34 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:50
+#: functions.php:49
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:51
+#: functions.php:50
 msgid "Secondary Menu"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:123
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:133
 msgid "First Footer Widget Area"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:143
 msgid "Second Footer Widget Area"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:153
 msgid "Third Footer Widget Area"
 msgstr ""
 
 #. Translators: If there are characters in your language that are not
 #. 	 * supported by Lora, translate this to 'off'. Do not translate
 #. 	 * into your own language.
-#: functions.php:161
+#: functions.php:174
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""
@@ -149,7 +145,7 @@ msgstr ""
 #. Translators: If there are characters in your language that are not
 #. 	 * supported by Karla, translate this to 'off'. Do not translate
 #. 	 * into your own language.
-#: functions.php:167
+#: functions.php:180
 msgctxt "Karla font: on or off"
 msgid "on"
 msgstr ""
@@ -162,40 +158,94 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer.php:31
+#: inc/customizer.php:23
+msgid "Configure your theme settings"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "General settings"
+msgstr ""
+
+#: inc/customizer.php:38
 msgid "Use a dynamically-generated menu on the front page."
 msgstr ""
 
-#: inc/customizer.php:42
+#: inc/customizer.php:45 inc/customizer.php:57
 msgid "Panel 1"
 msgstr ""
 
-#: inc/customizer.php:53
+#: inc/customizer.php:48 inc/customizer.php:99 inc/customizer.php:150
+#: inc/customizer.php:201 inc/customizer.php:252 inc/customizer.php:303
+#: inc/customizer.php:354 inc/customizer.php:405
+msgid "Configure this panel"
+msgstr ""
+
+#: inc/customizer.php:69 inc/customizer.php:120 inc/customizer.php:171
+#: inc/customizer.php:222 inc/customizer.php:273 inc/customizer.php:324
+#: inc/customizer.php:375 inc/customizer.php:426
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:81 inc/customizer.php:132 inc/customizer.php:183
+#: inc/customizer.php:234 inc/customizer.php:285 inc/customizer.php:336
+#: inc/customizer.php:387 inc/customizer.php:438
+msgid "Featured Image Opacity"
+msgstr ""
+
+#: inc/customizer.php:86 inc/customizer.php:137 inc/customizer.php:188
+#: inc/customizer.php:239 inc/customizer.php:290 inc/customizer.php:341
+#: inc/customizer.php:392 inc/customizer.php:443
+msgid "25%"
+msgstr ""
+
+#: inc/customizer.php:87 inc/customizer.php:138 inc/customizer.php:189
+#: inc/customizer.php:240 inc/customizer.php:291 inc/customizer.php:342
+#: inc/customizer.php:393 inc/customizer.php:444
+msgid "50%"
+msgstr ""
+
+#: inc/customizer.php:88 inc/customizer.php:139 inc/customizer.php:190
+#: inc/customizer.php:241 inc/customizer.php:292 inc/customizer.php:343
+#: inc/customizer.php:394 inc/customizer.php:445
+msgid "75%"
+msgstr ""
+
+#: inc/customizer.php:89 inc/customizer.php:140 inc/customizer.php:191
+#: inc/customizer.php:242 inc/customizer.php:293 inc/customizer.php:344
+#: inc/customizer.php:395 inc/customizer.php:446
+msgid "100%"
+msgstr ""
+
+#: inc/customizer.php:96 inc/customizer.php:108
 msgid "Panel 2"
 msgstr ""
 
-#: inc/customizer.php:64
+#: inc/customizer.php:147 inc/customizer.php:159
 msgid "Panel 3"
 msgstr ""
 
-#: inc/customizer.php:75
+#: inc/customizer.php:198 inc/customizer.php:210
 msgid "Panel 4"
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:249 inc/customizer.php:261
 msgid "Panel 5"
 msgstr ""
 
-#: inc/customizer.php:97
+#: inc/customizer.php:300 inc/customizer.php:312
 msgid "Panel 6"
 msgstr ""
 
-#: inc/customizer.php:108
+#: inc/customizer.php:351 inc/customizer.php:363
 msgid "Panel 7"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:402 inc/customizer.php:414
 msgid "Panel 8"
+msgstr ""
+
+#: inc/extras.php:198
+msgid "Read more %s"
 msgstr ""
 
 #: inc/template-tags.php:30
