@@ -78,9 +78,9 @@
 }
 
 .main-navigation {
-	background: darken(saturate($color__primary, 5%), 15%);
-	border-bottom: 1px solid $color__primary;
-	border-top: 1px solid $color__primary;
+	background: $color__primary;
+	border-bottom: 1px solid lighten($color__primary, 10%);
+	border-top: 1px solid lighten($color__primary, 10%);
 	clear: both;
 	display: block;
 	font-family: $font__sans;
@@ -129,7 +129,7 @@
 
 		/* Sub-nav */
 		ul {
-			background: $color__primary;
+			background: darken($color__primary, 10%);
 			position: absolute;
 				left: -999em;
 			text-align: left;
@@ -202,7 +202,7 @@
 					height: 0;
 					border-style: solid;
 					border-width: 0 7px 7px 7px;
-					border-color: transparent transparent $color__primary transparent;
+					border-color: transparent transparent darken($color__primary, 10%) transparent;
 					position: absolute;
 						top: -5px;
 						left: 15px;
@@ -231,7 +231,7 @@
 
 					&::before {
 						border-width: 7px 7px 7px 0;
-						border-color: transparent $color__primary transparent transparent;
+						border-color: transparent darken($color__primary, 10%) transparent transparent;
 						position: absolute;
 							top: 15px;
 							left: -5px;

@@ -77,15 +77,14 @@
 
 /* Panels */
 .pique-panel {
-  background-color: darken(saturate($color__primary, 5%), 18%);
-  border-bottom: 4px solid transparentize($color__primary, 0.25);
-  min-height: 75vh;
+  background-color: desaturate(darken($color__secondary, 45%), 20%);
+  min-height: 50vh;
   margin: 0;
   position: relative;
   width: 100%;
 
   &:nth-of-type(even) {
-    background-color: darken(saturate($color__primary, 5%), 15%);
+    background-color: $color__primary;
   }
 
   .entry-meta {
@@ -534,7 +533,7 @@
 
 .pique-customizer.pique-frontpage .pique-panel:not(#pique-hero) {
   &::after {
-    border: 2px solid;
+    border: 2px dashed;
     content: '';
     display: block;
     position: absolute;

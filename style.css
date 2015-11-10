@@ -2979,7 +2979,7 @@ button,
 input,
 select,
 textarea {
-  color: #666;
+  color: #726b60;
   font-family: Lora, Georgia, serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -3083,7 +3083,7 @@ dfn, cite, em, i {
 
 blockquote, .pique-template-testimonials .pique-testimonials article .entry-content {
   border-top: 2px solid;
-  color: #aaa49e;
+  color: #909090;
   font-size: 1.3em;
   font-style: italic;
   margin: 3em auto;
@@ -3207,7 +3207,7 @@ li > ol {
 }
 
 dt {
-  color: #aaa49e;
+  color: #909090;
   font-weight: bold;
 }
 
@@ -3232,13 +3232,13 @@ table {
 --------------------------------------------------------------*/
 /* Overall form */
 form {
-  color: #666;
+  color: #726b60;
   text-align: left;
 }
 
 /* Labels */
 label {
-  color: #78716a;
+  color: #5d5d5d;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
   font-weight: 500;
@@ -3254,9 +3254,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #928b83;
+  color: #767676;
   background: rgba(255, 255, 255, 0.75);
-  border: 2px solid #aaa49e;
+  border: 2px solid #909090;
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
   font-size: 16px;
@@ -3350,7 +3350,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: #b3a495;
+  background-color: #999186;
   border-color: #83B6CC;
 }
 button.minimal, .archive .read-more a.minimal,
@@ -3539,9 +3539,9 @@ a:hover, a:active {
 }
 
 .main-navigation {
-  background: #1d1813;
-  border-bottom: 1px solid #483E34;
-  border-top: 1px solid #483E34;
+  background: #2D2A26;
+  border-bottom: 1px solid #49443d;
+  border-top: 1px solid #49443d;
   clear: both;
   display: block;
   font-family: Karla, Arial, sans-serif;
@@ -3594,7 +3594,7 @@ a:hover, a:active {
   /* Sub-nav */
 }
 .main-navigation ul ul {
-  background: #483E34;
+  background: #11100f;
   position: absolute;
   left: -999em;
   text-align: left;
@@ -3670,7 +3670,7 @@ a:hover, a:active {
     height: 0;
     border-style: solid;
     border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #483E34 transparent;
+    border-color: transparent transparent #11100f transparent;
     position: absolute;
     top: -5px;
     left: 15px;
@@ -3691,7 +3691,7 @@ a:hover, a:active {
   }
   .main-navigation ul ul ul::before {
     border-width: 7px 7px 7px 0;
-    border-color: transparent #483E34 transparent transparent;
+    border-color: transparent #11100f transparent transparent;
     position: absolute;
     top: 15px;
     left: -5px;
@@ -3869,9 +3869,9 @@ a:hover, a:active {
 
 .posts-navigation,
 .site-main .posts-navigation {
-  background: #2a251f;
-  border-bottom: 1px solid #483E34;
-  border-top: 1px solid #483E34;
+  background: #11100f;
+  border-bottom: 1px solid #2D2A26;
+  border-top: 1px solid #2D2A26;
   margin-bottom: 0;
   padding: 0.5rem 1rem;
 }
@@ -3908,7 +3908,7 @@ a:hover, a:active {
   padding: 0;
 }
 .widget.widget_wpcom_social_media_icons_widget ul a {
-  background: #483E34;
+  background: #2D2A26;
   border: 2px solid #E9D5C0 !important;
   border-radius: 50%;
   display: inline-block;
@@ -3936,10 +3936,10 @@ a:hover, a:active {
 }
 .widget.widget_wpcom_social_media_icons_widget ul a:hover {
   background: #E9D5C0;
-  border-color: #483E34;
+  border-color: #2D2A26;
 }
 .widget.widget_wpcom_social_media_icons_widget ul a:hover::before {
-  color: #483E34;
+  color: #2D2A26;
 }
 .widget.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.org']:before,
 .widget.widget_wpcom_social_media_icons_widget ul a[href*='wordpress.com']:before {
@@ -4040,7 +4040,7 @@ a:hover, a:active {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #483E34;
+  color: #2D2A26;
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
@@ -4159,7 +4159,7 @@ blockquote .widget cite:not(.widget-title),
 }
 .widget ul a {
   border-top: 1px solid rgba(233, 213, 192, 0.5);
-  color: #483E34;
+  color: #2D2A26;
   display: block;
   padding: 7px 0;
 }
@@ -4418,7 +4418,7 @@ blockquote .widget cite:not(.widget-title),
   position: relative;
 }
 .site-footer::before {
-  background: rgba(57, 49, 41, 0.875);
+  background: rgba(31, 29, 26, 0.875);
   display: block;
   position: absolute;
   top: 0;
@@ -4502,7 +4502,7 @@ blockquote .widget cite:not(.widget-title),
   color: #FCFBF9;
 }
 #tertiary .widget ul a:hover {
-  background-color: rgba(72, 62, 52, 0.95);
+  background-color: rgba(45, 42, 38, 0.95);
 }
 #tertiary .widget_archive ul li::before,
 #tertiary .widget_categories ul li::before {
@@ -4618,15 +4618,14 @@ blockquote .widget cite:not(.widget-title),
 
 /* Panels */
 .pique-panel {
-  background-color: #14100d;
-  border-bottom: 4px solid rgba(72, 62, 52, 0.75);
-  min-height: 75vh;
+  background-color: #293940;
+  min-height: 50vh;
   margin: 0;
   position: relative;
   width: 100%;
 }
 .pique-panel:nth-of-type(even) {
-  background-color: #1d1813;
+  background-color: #2D2A26;
 }
 .pique-panel .entry-meta, .pique-panel .widget_rss .rss-date, .widget_rss .pique-panel .rss-date, .pique-panel .widget_rss cite, .widget_rss .pique-panel cite, .pique-panel .comment-metadata, .pique-panel .reply {
   display: none;
@@ -4656,7 +4655,7 @@ blockquote .widget cite:not(.widget-title),
 
 /* In-between panel links */
 .pique-panel-link {
-  background-color: #483E34;
+  background-color: #2D2A26;
   border-radius: 50%;
   height: 60px;
   line-height: 60px;
@@ -4691,7 +4690,7 @@ blockquote .widget cite:not(.widget-title),
   border-color: #E9D5C0 transparent transparent transparent;
 }
 .pique-panel-link::after {
-  border-color: #483E34 transparent transparent transparent;
+  border-color: #2D2A26 transparent transparent transparent;
   top: 48%;
 }
 
@@ -5064,7 +5063,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 
 /* Overlay elements (used to show content on top of the background image in cases where you want a fully opaque image) */
 .overlay {
-  background: #483E34;
+  background: #2D2A26;
   border-top: 4px solid #83B6CC;
   font-family: Karla, Arial, sans-serif;
   font-size: 0.8em;
@@ -5114,7 +5113,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   /* Colour-code all panels (add 1 to account for #pique-hero, so 2 is actually panel 1)*/
 }
 .pique-customizer.pique-frontpage .pique-panel:not(#pique-hero)::after {
-  border: 2px solid;
+  border: 2px dashed;
   content: '';
   display: block;
   position: absolute;
@@ -5465,7 +5464,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 
 /* Entry meta */
 .entry-meta, .widget_rss .rss-date, .widget_rss cite, .comment-metadata, .reply {
-  color: #d9d7d5;
+  color: #c3c3c3;
   font-family: Karla, Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -5474,7 +5473,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-transform: uppercase;
 }
 .entry-meta a, .widget_rss .rss-date a, .widget_rss cite a, .comment-metadata a, .reply a {
-  color: #c2beb9;
+  color: darkgray;
 }
 .entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title, .comment-metadata + .entry-title, .reply + .entry-title {
   margin-top: 0.2rem;
@@ -5523,7 +5522,7 @@ time + .updated {
 /* Categories & tags */
 .cat-links,
 .tags-links {
-  color: #c2beb9;
+  color: darkgray;
   display: block;
   font-family: Lora, Georgia, serif;
   font-size: 14.4px;
@@ -5533,7 +5532,7 @@ time + .updated {
 }
 .cat-links a,
 .tags-links a {
-  color: #aaa49e;
+  color: #909090;
 }
 .cat-links::before,
 .tags-links::before {
@@ -5630,7 +5629,7 @@ time + .updated {
 }
 
 #cancel-comment-reply-link {
-  color: #c2beb9;
+  color: darkgray;
 }
 #cancel-comment-reply-link::before {
   content: '(';

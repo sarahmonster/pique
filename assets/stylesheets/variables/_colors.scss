@@ -10,8 +10,9 @@ $color__blue: #83B6CC;
 $color__red: #8a260c;
 $color__brown: #483E34;
 $color__tan: #E9D5C0;
+$color__charcoal: #2D2A26;
 
-$color__primary: $color__brown;
+$color__primary: $color__charcoal;
 $color__secondary: $color__blue;
 $color__tertiary: $color__tan;
 
@@ -32,7 +33,7 @@ $color__background-button-focus: lighten($color__primary, 40%);
 $color__link: $color__secondary;
 $color__link-visited: $color__secondary;
 $color__link-hover: $color__tertiary;
-$color__text-main: $color__dark-grey;
+$color__text-main: lighten($color__charcoal, 25%);
 $color__text-headings: $color__secondary;
 $color__text-button: $color__secondary;
 
