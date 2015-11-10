@@ -53,7 +53,13 @@
 				if ( get_theme_mod( 'pique_panel' . $panel ) ) :
 					$post = get_post( get_theme_mod( 'pique_panel' . $panel ) );
 					setup_postdata( $post );
-					$panel_links[] = '<li><a href="#post-' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+					// Just in case the user didn't set a title for the page, we're going to generate one from the slug
+					if ( '' === get_the_title() ) :
+						$title = str_replace( '-', ' ', $post->post_name );
+					else :
+						$title = get_the_title();
+					endif;
+					$panel_links[] = '<li><a href="#post-' . get_the_ID() . '">' . $title . '</a></li>';
 					wp_reset_postdata();
 				endif;
 			endforeach;
@@ -64,8 +70,6 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<ul>
 						<?php
-						// Split the menu in half at the half-way mark
-						$halfies = intval( ceil( count( $panel_links ) / 2 ) );
 						foreach ( $panel_links as $key => $link ) :
 							// Output menu link
 							echo wp_kses( $link, array(
@@ -76,7 +80,6 @@
 												'li' => array(),
 												)
 							);
-
 						endforeach;
 						?>
 					</ul>
