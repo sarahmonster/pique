@@ -3311,6 +3311,7 @@ input[type="submit"] {
   letter-spacing: 1px;
   line-height: 1;
   padding: 1em 3em;
+  text-shadow: none;
   text-transform: uppercase;
   -webkit-transition: background-color 0.125s ease-in;
           transition: background-color 0.125s ease-in;
@@ -3394,7 +3395,8 @@ input[type="submit"].minimal:hover {
   .blog .read-more button + a,
   .blog .read-more a + a,
   .search-results .read-more button + a,
-  .search-results .read-more a + a {
+  .search-results .read-more a + a,
+  .button + .button {
     margin-top: 1em;
   }
 }
@@ -3405,7 +3407,8 @@ input[type="submit"].minimal:hover {
   .blog .read-more button + a,
   .blog .read-more a + a,
   .search-results .read-more button + a,
-  .search-results .read-more a + a {
+  .search-results .read-more a + a,
+  .button + .button {
     margin-left: 0.5em;
   }
 }
@@ -4868,9 +4871,14 @@ blockquote .widget cite:not(.widget-title),
 
 /* Hero area (the "home" page, as it were) */
 #pique-hero .pique-panel-content {
-  font-size: 1.5em;
-  max-width: 1400px;
   padding-top: 8em;
+}
+#pique-hero .pique-panel-content p:first-of-type {
+  font-size: 2em;
+  font-style: italic;
+}
+#pique-hero .pique-panel-content p:first-of-type em {
+  color: #83B6CC;
 }
 #pique-hero .pique-panel-content .entry-content {
   text-align: center;
@@ -5163,11 +5171,10 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 .entry-content {
   margin: 0 0 1.5em;
 }
-.entry-content a:not(.more-link) {
+.entry-content a:not(.button) {
   border-bottom: 0;
-  padding-bottom: 1px;
 }
-.entry-content a:not(.more-link):hover {
+.entry-content a:not(.button):hover {
   border-bottom: 2px solid;
 }
 

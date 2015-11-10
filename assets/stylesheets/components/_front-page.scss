@@ -269,7 +269,7 @@
 
       &::after {
         @include fontawesome;
-          content: $fa-var-arrow-right;
+        content: $fa-var-arrow-right;
         display: inline-block;
       }
 
@@ -288,9 +288,16 @@
 #pique-hero {
 
   .pique-panel-content {
-    font-size: 1.5em;
-    max-width: $size__site-width;
     padding-top: 8em;
+
+    p:first-of-type {
+      font-size: 2em;
+      font-style: italic;
+
+      em {
+        color: $color__secondary;
+      }
+    }
 
     .entry-content {
       text-align: center;

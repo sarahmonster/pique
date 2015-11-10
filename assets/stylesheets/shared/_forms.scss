@@ -70,6 +70,7 @@ input[type="submit"] {
 	letter-spacing: 1px;
 	line-height: 1;
 	padding: 1em 3em;
+	text-shadow: none;
 	text-transform: uppercase;
 	transition: background-color 0.125s ease-in;
 
@@ -103,7 +104,8 @@ input[type="submit"] {
 	} // .minimal
 } // button
 
-button + button {
+button + button,
+.button + .button {
 	@include mobile {
 		margin-top: 1em;
 	}

@@ -1,9 +1,8 @@
 .entry-content {
 	margin: 0 0 1.5em;
 
-	a:not(.more-link) {
+	a:not(.button) {
 		border-bottom: 0;
-		padding-bottom: 1px;
 
 		&:hover {
 			border-bottom: 2px solid;
