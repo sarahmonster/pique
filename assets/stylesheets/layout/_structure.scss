@@ -190,7 +190,7 @@
 		border-top: none;
 	}
 
-	.widget ul {
+	.widget:not(.widget_wpcom_social_media_icons_widget) ul {
 		a {
 			color: $color__white;
 

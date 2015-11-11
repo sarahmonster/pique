@@ -3936,7 +3936,7 @@ a:hover, a:active {
 }
 .widget.widget_wpcom_social_media_icons_widget ul a:hover {
   background: #E9D5C0;
-  border-color: #2D2A26;
+  border-color: #2D2A26 !important;
 }
 .widget.widget_wpcom_social_media_icons_widget ul a:hover::before {
   color: #2D2A26;
@@ -4498,10 +4498,10 @@ blockquote .widget cite:not(.widget-title),
 #tertiary .widget {
   border-top: none;
 }
-#tertiary .widget ul a {
+#tertiary .widget:not(.widget_wpcom_social_media_icons_widget) ul a {
   color: #FCFBF9;
 }
-#tertiary .widget ul a:hover {
+#tertiary .widget:not(.widget_wpcom_social_media_icons_widget) ul a:hover {
   background-color: rgba(45, 42, 38, 0.95);
 }
 #tertiary .widget_archive ul li::before,
