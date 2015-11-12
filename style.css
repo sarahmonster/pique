@@ -2991,7 +2991,7 @@ h2,
 h3,
 blockquote cite,
 .pique-template-testimonials .pique-testimonials article .entry-content cite,
-#masthead .site-branding .site-title,
+.site-branding .site-title,
 .widget-title,
 h4,
 h5,
@@ -3011,17 +3011,17 @@ h2 a:active,
 h3 a:hover,
 blockquote cite a:hover,
 .pique-template-testimonials .pique-testimonials article .entry-content cite a:hover,
-#masthead .site-branding .site-title a:hover,
+.site-branding .site-title a:hover,
 .widget-title a:hover,
 h3 a:focus,
 blockquote cite a:focus,
 .pique-template-testimonials .pique-testimonials article .entry-content cite a:focus,
-#masthead .site-branding .site-title a:focus,
+.site-branding .site-title a:focus,
 .widget-title a:focus,
 h3 a:active,
 blockquote cite a:active,
 .pique-template-testimonials .pique-testimonials article .entry-content cite a:active,
-#masthead .site-branding .site-title a:active,
+.site-branding .site-title a:active,
 .widget-title a:active,
 h4 a:hover,
 h4 a:focus,
@@ -3050,7 +3050,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3, blockquote cite, .pique-template-testimonials .pique-testimonials article .entry-content cite, #masthead .site-branding .site-title, .widget-title {
+h3, blockquote cite, .pique-template-testimonials .pique-testimonials article .entry-content cite, .site-branding .site-title, .widget-title {
   font-family: Karla, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2em;
@@ -3485,45 +3485,44 @@ a:hover, a:active {
     width: auto;
   }
 }
-@media (min-width: 1024px) {
-  #masthead .site-branding {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
+
+.site-branding {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-#masthead .site-branding .site-logo-link {
+.site-branding .site-logo-link {
   display: inline-block;
   margin: 1rem auto 0;
 }
-#masthead .site-branding .site-logo-link img {
+.site-branding .site-logo-link img {
   width: auto;
   height: 75px;
 }
 @media (min-width: 768px) {
-  #masthead .site-branding .site-logo-link img {
+  .site-branding .site-logo-link img {
     height: 100px;
   }
 }
-#masthead .site-branding .site-logo-link:hover {
+.site-branding .site-logo-link:hover {
   -webkit-transform: scale(5%);
       -ms-transform: scale(5%);
           transform: scale(5%);
 }
-#masthead .site-branding .site-title {
+.site-branding .site-title {
   font-style: normal;
   margin: -5px 0 0;
   padding: 0;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
-#masthead .site-branding .site-title a {
+.site-branding .site-title a {
   color: #FCFBF9;
 }
-#masthead .site-branding .site-description {
+.site-branding .site-description {
   color: #FCFBF9;
   font-style: italic;
   margin: 0;
@@ -4129,8 +4128,8 @@ a:hover, a:active {
 blockquote .widget cite:not(.widget-title),
 .widget .pique-template-testimonials .pique-testimonials article .entry-content cite:not(.widget-title),
 .pique-template-testimonials .pique-testimonials article .entry-content .widget cite:not(.widget-title),
-.widget #masthead .site-branding .site-title:not(.widget-title),
-#masthead .site-branding .widget .site-title:not(.widget-title),
+.widget .site-branding .site-title:not(.widget-title),
+.site-branding .widget .site-title:not(.widget-title),
 .widget .widget-title:not(.widget-title),
 .widget h4:not(.widget-title) {
   font-family: Lora, Georgia, serif;
@@ -4895,46 +4894,46 @@ blockquote .widget cite:not(.widget-title),
   max-width: 700px;
   text-align: center;
 }
-.pique-template-grid .pique-panel-content h3, .pique-template-grid .pique-panel-content blockquote cite, blockquote .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content #masthead .site-branding .site-title, #masthead .site-branding .pique-template-grid .pique-panel-content .site-title, .pique-template-grid .pique-panel-content .widget-title,
+.pique-template-grid .pique-panel-content h3, .pique-template-grid .pique-panel-content blockquote cite, blockquote .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite, .pique-template-grid .pique-panel-content .site-branding .site-title, .site-branding .pique-template-grid .pique-panel-content .site-title, .pique-template-grid .pique-panel-content .widget-title,
 .pique-template-grid .pique-panel-content h3 a,
 .pique-template-grid .pique-panel-content blockquote cite a,
 blockquote .pique-template-grid .pique-panel-content cite a,
 .pique-template-grid .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-grid .pique-panel-content cite a,
-.pique-template-grid .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-template-grid .pique-panel-content .site-title a,
+.pique-template-grid .pique-panel-content .site-branding .site-title a,
+.site-branding .pique-template-grid .pique-panel-content .site-title a,
 .pique-template-grid .pique-panel-content .widget-title a,
 .pique-template-testimonials .pique-panel-content h3,
 .pique-template-testimonials .pique-panel-content blockquote cite,
 blockquote .pique-template-testimonials .pique-panel-content cite,
 .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite,
 .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite,
-.pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .pique-template-testimonials .pique-panel-content .site-title,
+.pique-template-testimonials .pique-panel-content .site-branding .site-title,
+.site-branding .pique-template-testimonials .pique-panel-content .site-title,
 .pique-template-testimonials .pique-panel-content .widget-title,
 .pique-template-testimonials .pique-panel-content h3 a,
 .pique-template-testimonials .pique-panel-content blockquote cite a,
 blockquote .pique-template-testimonials .pique-panel-content cite a,
 .pique-template-testimonials .pique-panel-content .pique-testimonials article .entry-content cite a,
 .pique-template-testimonials .pique-testimonials article .entry-content .pique-panel-content cite a,
-.pique-template-testimonials .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-template-testimonials .pique-panel-content .site-title a,
+.pique-template-testimonials .pique-panel-content .site-branding .site-title a,
+.site-branding .pique-template-testimonials .pique-panel-content .site-title a,
 .pique-template-testimonials .pique-panel-content .widget-title a,
 .pique-template-recent-posts .pique-panel-content h3,
 .pique-template-recent-posts .pique-panel-content blockquote cite,
 blockquote .pique-template-recent-posts .pique-panel-content cite,
 .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite,
 .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite,
-.pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title,
-#masthead .site-branding .pique-template-recent-posts .pique-panel-content .site-title,
+.pique-template-recent-posts .pique-panel-content .site-branding .site-title,
+.site-branding .pique-template-recent-posts .pique-panel-content .site-title,
 .pique-template-recent-posts .pique-panel-content .widget-title,
 .pique-template-recent-posts .pique-panel-content h3 a,
 .pique-template-recent-posts .pique-panel-content blockquote cite a,
 blockquote .pique-template-recent-posts .pique-panel-content cite a,
 .pique-template-recent-posts .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content cite a,
 .pique-template-testimonials .pique-testimonials article .entry-content .pique-template-recent-posts .pique-panel-content cite a,
-.pique-template-recent-posts .pique-panel-content #masthead .site-branding .site-title a,
-#masthead .site-branding .pique-template-recent-posts .pique-panel-content .site-title a,
+.pique-template-recent-posts .pique-panel-content .site-branding .site-title a,
+.site-branding .pique-template-recent-posts .pique-panel-content .site-title a,
 .pique-template-recent-posts .pique-panel-content .widget-title a {
   color: #83B6CC;
 }
@@ -5045,7 +5044,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
     width: 40%;
   }
 }
-.overlay h3, .overlay blockquote cite, blockquote .overlay cite, .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite, .overlay #masthead .site-branding .site-title, #masthead .site-branding .overlay .site-title, .overlay .widget-title {
+.overlay h3, .overlay blockquote cite, blockquote .overlay cite, .overlay .pique-template-testimonials .pique-testimonials article .entry-content cite, .pique-template-testimonials .pique-testimonials article .entry-content .overlay cite, .overlay .site-branding .site-title, .site-branding .overlay .site-title, .overlay .widget-title {
   margin-bottom: 0;
 }
 .overlay p {
