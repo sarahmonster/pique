@@ -111,17 +111,6 @@
 		color: $color__tertiary;
 	}
 
-	/* Menu items with sub-menus */
-	.menu-item-has-children a {
-		padding-right: 5px;
-		&::after {
-			@include genericons;
-			content: "\f431";
-			opacity: 0.75;
-			padding-left: 5px;
-		}
-	}
-
 	ul {
 		display: block;
 		list-style: none;
@@ -141,7 +130,7 @@
 
 			a {
 				color: $color__tertiary;
-				border-bottom: 1px solid transparentize($color__tertiary, 0.5);
+				border-top: 1px solid transparentize($color__tertiary, 0.5);
 				display: block;
 				width: 100%;
 			}
@@ -166,15 +155,30 @@
 /* Mobile menu */
 @include mobile {
 	.main-navigation {
-		/* Sub-menus */
-		ul ul {
-			border-top: 2px solid transparentize($color__tertiary, 0.5);
-			width: 100%;
+		a {
+			padding-left: 10px; // Reduce link padding
 		}
+
 		/* Show mobile menus when "focus" class is added via JS */
 		li.focus > ul {
 	    left: 0;
 	  }
+		/* Sub-menus */
+		ul ul {
+			border-bottom: 2px solid transparentize($color__tertiary, 0.5);
+			width: 100%;
+		}
+		/* Sub-sub-menus */
+		ul ul ul {
+			border-bottom: none;
+			left: 0;
+			padding-left: 25px;
+			position: relative;
+
+			a {
+				padding-left: 0; // No padding here!
+			}
+		}
 	} // .main-navigation
 } // mobile
 

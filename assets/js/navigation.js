@@ -4,7 +4,7 @@
  * Handles toggling the navigation menu for small screens and enables tab
  * support for dropdown menus.
  */
-( function() {
+( function( $ ) {
 	var container, moreMenu, menu, button, links, subMenus;
 
 	container = document.getElementById( 'site-navigation' );
@@ -14,7 +14,6 @@
 
 	// Here, we're going to look for the priority plus menu item to determine if we're on a small screen
 	moreMenu = document.getElementById( 'more-menu' );
-	console.log( moreMenu );
 	if ( ! moreMenu ) {
 		return;
 	}
@@ -54,35 +53,52 @@
 		subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
 	}
 
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'click', toggleMenu, true );
-		links[i].addEventListener( 'blur', toggleMenu, true );
-	}
+	$( document ).ready( function() {
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleMenu(e) {
-		var self = this;
+		// Open and close our sub-menus when needed
+		$( '#site-navigation .menu-item-has-children > a' ).on( 'click' , function( e ) {
 
-		// Check to see if we've got sub-menus
-		console.log('clicky');
-		e.preventDefault();
+			// If our sub-menu is already open, we need to figure out what to do if the user clicks the parent item again
+			if ( $( this ).parent( '#site-navigation .menu-item-has-children' ).hasClass( 'focus' ) &&
+				$( this ).parent().attr( 'id' ) === $( e.target ).parent().attr( 'id' ) ) {
 
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+				// If our parent item links somewhere, let's go there!
+				if ( $( this ).attr( 'href' ).length && '#' !== $( this ).attr( 'href' ) ) {
+					return true;
 
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
+				// If our link doesn't go anywhere, we're just going to remove the focus class and close the menu
+				} else if ( $( this ).attr( 'href' ).length && '#' === $( this ).attr( 'href' ) ) {
+					$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
+					e.preventDefault();
+					return false;
 				}
 			}
 
-			self = self.parentElement;
-		}
-	}
-} )();
+			// Close any other menus that might be open
+			$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
+
+			// Open/close the menu we've clicked on
+			$( this ).parent( '#site-navigation .menu-item-has-children' ).toggleClass( 'focus' );
+
+			// Open our child menus too!
+			$( this ).children( '.menu-item-has-children' ).toggleClass( 'focus' );
+
+			// Block our default link behaviour
+			e.preventDefault();
+		});
+
+		// When clicking on the document, close any open menus
+		$( document ).click(function( e ) {
+			if ( ! $( e.target ).closest( '#site-navigation .menu-item' ).length) {
+				$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
+			}
+		});
+
+		// When the window is resized, close all menus
+		$( window ).on( 'resize', function() {
+			$( '#site-navigation-wrapper .menu-item-has-children' ).removeClass( 'focus' );
+		});
+
+	});
+
+} )( jQuery );

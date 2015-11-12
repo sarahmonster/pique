@@ -200,7 +200,7 @@ class Pique_Menu extends Walker_Nav_Menu {
  */
 function add_more_to_nav( $items, $args ) {
 	if ( 'primary' === $args->theme_location ) :
-		$items .= '<li id="more-menu"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
+		$items .= '<li id="more-menu" class="menu-item menu-item-has-children"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>';
 	endif;
 	return $items;
 }
