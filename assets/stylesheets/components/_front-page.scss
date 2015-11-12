@@ -288,17 +288,22 @@
   .pique-panel-content {
     padding-top: 8em;
 
-    p:first-of-type {
-      font-size: 2em;
-      font-style: italic;
+    .entry-content {
+      text-align: center;
+
+      p {
+        text-align: left;
+
+        &:first-of-type {
+          font-size: 2em;
+          font-style: italic;
+          text-align: center;
+        }
+      }
 
       em {
         color: $color__secondary;
       }
-    }
-
-    .entry-content {
-      text-align: center;
 
       @include tablet {
         padding-top: 2em;

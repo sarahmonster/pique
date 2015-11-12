@@ -4872,15 +4872,19 @@ blockquote .widget cite:not(.widget-title),
 #pique-hero .pique-panel-content {
   padding-top: 8em;
 }
-#pique-hero .pique-panel-content p:first-of-type {
-  font-size: 2em;
-  font-style: italic;
-}
-#pique-hero .pique-panel-content p:first-of-type em {
-  color: #83B6CC;
-}
 #pique-hero .pique-panel-content .entry-content {
   text-align: center;
+}
+#pique-hero .pique-panel-content .entry-content p {
+  text-align: left;
+}
+#pique-hero .pique-panel-content .entry-content p:first-of-type {
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+#pique-hero .pique-panel-content .entry-content em {
+  color: #83B6CC;
 }
 @media (min-width: 768px) {
   #pique-hero .pique-panel-content .entry-content {
