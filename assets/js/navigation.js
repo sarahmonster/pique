@@ -56,14 +56,14 @@
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
+		links[i].addEventListener( 'click', toggleMenu, true );
+		links[i].addEventListener( 'blur', toggleMenu, true );
 	}
 
 	/**
 	 * Sets or removes .focus class on an element.
 	 */
-	function toggleFocus(e) {
+	function toggleMenu(e) {
 		var self = this;
 
 		// Check to see if we've got sub-menus
