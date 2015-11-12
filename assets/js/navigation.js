@@ -74,6 +74,13 @@
 				}
 			}
 
+			// If this is a menu item with sub-menus, but it's already inside a sub-menu itself,
+			// let's go to the link (so long as there actually IS a link)
+			if ( $( this ).closest( 'ul' ).hasClass( 'sub-menu' ) &&
+				$( this ).attr( 'href' ).length && '#' !== $( this ).attr( 'href' ) ) {
+				return true;
+			}
+
 			// Close any other menus that might be open
 			$( '#site-navigation .menu-item-has-children' ).removeClass( 'focus' );
 
