@@ -28,7 +28,7 @@ $color__text-input: desaturate(lighten($color__text-screen, 30%), 10%);
 
 $color__background-button: lighten($color__secondary, 40%);
 $color__background-button-hover: lighten($color__secondary, 20%);
-$color__background-button-focus: lighten($color__primary, 40%);
+$color__background-button-focus: darken($color__secondary, 20%);
 
 $color__link: $color__secondary;
 $color__link-visited: $color__secondary;

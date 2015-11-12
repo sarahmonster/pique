@@ -3351,7 +3351,8 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: #999186;
+  color: #83B6CC;
+  background-color: #4488a5;
   border-color: #83B6CC;
 }
 button.minimal, .archive .read-more a.minimal,
