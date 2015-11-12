@@ -25,7 +25,7 @@ function pique_customize_register( $wp_customize ) {
 
 	// General settings
 	$wp_customize->add_section( 'pique_general_settings', array(
-		'title'           => esc_html__( 'General settings', 'pique' ),
+		'title'           => esc_html__( 'General Settings', 'pique' ),
 		'panel'           => 'pique_options_panel',
 	) );
 
@@ -35,7 +35,7 @@ function pique_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'pique_menu', array(
-		'label'   => esc_html__( 'Use a dynamically-generated menu on the front page.', 'pique' ),
+		'label'   => esc_html__( 'Use a dynamically generated menu on the front page.', 'pique' ),
 		'section' => 'pique_general_settings',
 		'type'    => 'checkbox',
 	) );
@@ -45,7 +45,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 1', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel1', array(
@@ -81,7 +81,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel1',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -96,7 +96,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 2', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel2', array(
@@ -132,7 +132,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel2',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -147,7 +147,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 3', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel3', array(
@@ -183,7 +183,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel3',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -198,7 +198,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 4', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel4', array(
@@ -234,7 +234,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel4',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -249,7 +249,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 5', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel5', array(
@@ -285,7 +285,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel5',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -300,7 +300,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 6', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel6', array(
@@ -336,7 +336,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel6',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -351,7 +351,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 7', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel7', array(
@@ -387,7 +387,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel7',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
@@ -402,7 +402,7 @@ function pique_customize_register( $wp_customize ) {
 		'title'           => esc_html__( 'Panel 8', 'pique' ),
 		'active_callback' => 'is_front_page',
 		'panel'           => 'pique_options_panel',
-		'description'     => __( 'Configure this panel', 'pique' ),
+		'description'     => __( 'Configure this panel. If you don’t select a page, this panel will not be displayed.', 'pique' ),
 	) );
 
 	$wp_customize->add_setting( 'pique_panel8', array(
@@ -438,7 +438,7 @@ function pique_customize_register( $wp_customize ) {
 		'label'       => esc_html__( 'Featured Image Opacity', 'pique' ),
 		'section'     => 'pique_panel8',
 		'type'        => 'select',
-		'description' => esc_html( 'Set the opacity of the featured image over the panel background.', 'pique' ),
+		'description' => esc_html( 'Set the opacity of the featured image over the panel background. You can add a featured image in the page editor.', 'pique' ),
 		'choices'     => array(
 			'0.25' => esc_html__( '25%', 'pique' ),
 			'0.5'  => esc_html__( '50%', 'pique' ),
