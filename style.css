@@ -3587,7 +3587,7 @@ a:hover, a:active {
 }
 .main-navigation ul ul a {
   color: #E9D5C0;
-  border-top: 1px solid rgba(233, 213, 192, 0.5);
+  border-top: 1px solid rgba(233, 213, 192, 0.1);
   display: block;
   width: 100%;
 }
@@ -3623,7 +3623,7 @@ a:hover, a:active {
     left: 0;
   }
   .main-navigation ul ul {
-    border-bottom: 2px solid rgba(233, 213, 192, 0.5);
+    border-bottom: 1px solid #49443d;
     width: 100%;
   }
   .main-navigation ul ul ul {
@@ -3639,24 +3639,27 @@ a:hover, a:active {
 /* Regular menu */
 @media (min-width: 768px) {
   .main-navigation {
+    /* Sub-nav */
+    /* Sub-sub-menu */
     /* Show sub-menus on hover */
+    /* Menu items on the right-hand side of the screen should display to the left, so they don't run off the screen */
+    /* Adjust position of arrow for our last two menu items */
+    /* Adjust position of sub-nav for these final two menu items also */
   }
   .main-navigation ul {
     display: block;
     list-style: none;
     margin: 0;
-    /* Sub-nav */
-    /* Adjust position of arrow for our last two menu items */
-    /* Adjust position of sub-nav for these final two menu items also */
+  }
+  .main-navigation li {
+    position: relative;
   }
   .main-navigation ul ul {
-    float: left;
     position: absolute;
     top: 37px;
     left: -999em;
     min-width: 200px;
     /* This is just here to make it easier to scroll down to the drop-down */
-    /* Sub-sub-menu */
   }
   .main-navigation ul ul::before {
     content: '';
@@ -3671,14 +3674,17 @@ a:hover, a:active {
     left: 15px;
   }
   .main-navigation ul ul::after {
+    content: '';
+    display: block;
     height: 20px;
     position: absolute;
     top: -10px;
     left: 0;
     width: 100%;
   }
-  .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-    left: 102%;
+  .main-navigation ul ul li:first-of-type a {
+    border-top: none;
+    /* Remove border for first child element */
   }
   .main-navigation ul ul ul {
     left: -999em;
@@ -3691,42 +3697,44 @@ a:hover, a:active {
     top: 15px;
     left: -5px;
   }
-  .main-navigation ul ul ul li:hover > ul, .main-navigation ul ul ul li.focus > ul {
-    left: 102%;
+  .main-navigation ul ul ul::after {
+    height: 100%;
+    left: -15px;
+    top: 0;
+    width: 20px;
   }
-  .main-navigation ul li {
-    position: relative;
-  }
-  .main-navigation ul li:hover > ul,
-  .main-navigation ul li.focus > ul {
+  .main-navigation li:hover > ul {
     left: auto;
   }
-  .main-navigation ul #more-menu:hover > ul::before,
-  .main-navigation ul #more-menu:focus > ul::before,
-  .main-navigation ul li:nth-last-child(2):hover > ul::before,
-  .main-navigation ul li:nth-last-child(2):focus > ul::before {
+  .main-navigation ul ul li:hover > ul {
+    left: 103%;
+    left: calc(100% + 5px);
+  }
+  .main-navigation #primary-menu > li:nth-last-child(1):hover > ul,
+  .main-navigation #primary-menu > li:nth-last-child(2):hover > ul {
+    left: auto;
+    right: 5%;
+  }
+  .main-navigation #primary-menu > li:nth-last-child(1):hover ul::before,
+  .main-navigation #primary-menu > li:nth-last-child(2):hover ul::before {
     left: auto;
     right: 15px;
   }
-  .main-navigation ul #more-menu li:hover > ul,
-  .main-navigation ul li:nth-last-child(2) li:hover > ul {
-    left: -103%;
+  .main-navigation #primary-menu > li:nth-last-child(1) li:hover ul,
+  .main-navigation #primary-menu > li:nth-last-child(2) li:hover ul {
+    left: auto;
+    right: 103%;
+    right: calc(100% + 5px);
   }
-  .main-navigation ul #more-menu li:hover > ul::before,
-  .main-navigation ul li:nth-last-child(2) li:hover > ul::before {
+  .main-navigation #primary-menu > li:nth-last-child(1) li:hover ul::before,
+  .main-navigation #primary-menu > li:nth-last-child(2) li:hover ul::before {
     left: auto;
     right: -8px;
   }
-  .main-navigation li:hover > ul,
-  .main-navigation li.focus > ul {
-    left: 5%;
-  }
-  .main-navigation #more-menu:hover > ul,
-  .main-navigation #more-menu:focus > ul,
-  .main-navigation li:nth-last-child(2):hover > ul,
-  .main-navigation li:nth-last-child(2):focus > ul {
+  .main-navigation #primary-menu > li:nth-last-child(1) li:hover ul::after,
+  .main-navigation #primary-menu > li:nth-last-child(2) li:hover ul::after {
     left: auto;
-    right: 5%;
+    right: -15px;
   }
 
   /* Sticky menu */

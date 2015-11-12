@@ -128,7 +128,7 @@
 
 			a {
 				color: $color__tertiary;
-				border-top: 1px solid transparentize($color__tertiary, 0.5);
+				border-top: 1px solid transparentize($color__tertiary, 0.9);
 				display: block;
 				width: 100%;
 			}
@@ -159,13 +159,15 @@
 
 		/* Show mobile menus when "focus" class is added via JS */
 		li.focus > ul {
-	    left: 0;
-	  }
+			left: 0;
+		}
+
 		/* Sub-menus */
 		ul ul {
-			border-bottom: 2px solid transparentize($color__tertiary, 0.5);
+			border-bottom: 1px solid lighten($color__primary, 10%);
 			width: 100%;
 		}
+
 		/* Sub-sub-menus */
 		ul ul ul {
 			border-bottom: none;
@@ -181,116 +183,117 @@
 } // mobile
 
 /* Regular menu */
-
 @include tablet {
 	.main-navigation {
 		ul {
 			display: block;
 			list-style: none;
 			margin: 0;
+		}
 
-			/* Sub-nav */
-			ul {
-				float: left;
+		li {
+			position: relative;
+		}
+
+		/* Sub-nav */
+		ul ul {
+			position: absolute;
+				top: 37px;
+				left: -999em;
+			min-width: 200px;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7px 7px 7px;
+				border-color: transparent transparent darken($color__primary, 10%) transparent;
 				position: absolute;
-					top: 37px;
-					left: -999em;
-				min-width: 200px;
-
-				&::before {
-					content: '';
-					display: block;
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: 0 7px 7px 7px;
-					border-color: transparent transparent darken($color__primary, 10%) transparent;
-					position: absolute;
-						top: -5px;
-						left: 15px;
-				}
-
-				/* This is just here to make it easier to scroll down to the drop-down */
-				&::after {
-					height: 20px;
-					position: absolute;
-						top: -10px;
-						left: 0;
-					width: 100%;
-				}
-
-				li {
-					&:hover > ul,
-					&.focus > ul {
-						left: 102%;
-					}
-				}
-
-				/* Sub-sub-menu */
-				ul {
-					left: -999em;
-					top: 0;
-
-					&::before {
-						border-width: 7px 7px 7px 0;
-						border-color: transparent darken($color__primary, 10%) transparent transparent;
-						position: absolute;
-							top: 15px;
-							left: -5px;
-					}
-
-					li {
-						&:hover > ul,
-						&.focus > ul {
-							left: 102%;
-						}
-					}
-				}
+					top: -5px;
+					left: 15px;
 			}
 
-			li {
-				position: relative;
+			/* This is just here to make it easier to scroll down to the drop-down */
+			&::after {
+				content: '';
+				display: block;
+				height: 20px;
+				position: absolute;
+					top: -10px;
+					left: 0;
+				width: 100%;
 			}
 
-			li:hover > ul,
-			li.focus > ul {
+			li:first-of-type a {
+				border-top: none; /* Remove border for first child element */
+			}
+		} // ul sub-menu
+
+		/* Sub-sub-menu */
+		ul ul ul {
+			left: -999em;
+			top: 0;
+
+			&::before {
+				border-width: 7px 7px 7px 0;
+				border-color: transparent darken($color__primary, 10%) transparent transparent;
+				position: absolute;
+					top: 15px;
+					left: -5px;
+			}
+
+			&::after {
+				height: 100%;
+				left: -15px;
+				top: 0;
+				width: 20px;
+			}
+		} // ul sub-sub-menu
+
+		/* Show sub-menus on hover */
+		li:hover > ul {
+			left: auto;
+		}
+
+		ul ul li:hover > ul {
+			left: 103%;
+			left: calc(100% + 5px);
+		}
+
+		/* Menu items on the right-hand side of the screen should display to the left, so they don't run off the screen */
+		#primary-menu > li:nth-last-child(1):hover > ul,
+		#primary-menu > li:nth-last-child(2):hover > ul {
+		  left: auto;
+		  right: 5%;
+		}
+
+		/* Adjust position of arrow for our last two menu items */
+		#primary-menu > li:nth-last-child(1):hover ul::before,
+		#primary-menu > li:nth-last-child(2):hover ul::before {
+		  left: auto;
+		  right: 15px;
+		}
+
+		/* Adjust position of sub-nav for these final two menu items also */
+		#primary-menu > li:nth-last-child(1) li:hover ul,
+		#primary-menu > li:nth-last-child(2) li:hover ul {
+			left: auto;
+			right: 103%;
+			right: calc(100% + 5px);
+
+		  &::before {
+		    left: auto;
+		    right: -8px;
+		  }
+
+			&::after {
 				left: auto;
+				right: -15px;
 			}
+		}
 
-			/* Adjust position of arrow for our last two menu items */
-			#more-menu:hover > ul::before,
-			#more-menu:focus > ul::before,
-			li:nth-last-child(2):hover > ul::before,
-			li:nth-last-child(2):focus > ul::before {
-				left: auto;
-				right: 15px;
-			}
-
-			/* Adjust position of sub-nav for these final two menu items also */
-			#more-menu li:hover > ul,
-			li:nth-last-child(2) li:hover > ul {
-				left: -103%;
-
-				&::before {
-					left: auto;
-					right: -8px;
-				}
-			}
-		} // sub-nav
-
-	  /* Show sub-menus on hover */
-	  li:hover > ul,
-	  li.focus > ul {
-	    left: 5%;
-	  }
-
-	  #more-menu:hover > ul,
-	  #more-menu:focus > ul,
-	  li:nth-last-child(2):hover > ul,
-	  li:nth-last-child(2):focus > ul {
-	    left: auto;
-	    right: 5%;
-	  }
 	} // .main-navigation
 
 	/* Sticky menu */
