@@ -4728,7 +4728,7 @@ blockquote .widget cite:not(.widget-title),
 }
 @media (min-width: 768px) {
   .pique-panel-content blockquote, .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 
