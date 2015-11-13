@@ -4952,16 +4952,16 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 }
 
 /* Grid template panel */
-.pique-template-grid article {
+.pique-grid-three article {
   font-size: 0.9em;
   text-align: center;
 }
-.pique-template-grid img {
+.pique-grid-three img {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 60%;
 }
-.pique-template-grid p {
+.pique-grid-three p {
   text-align: left;
 }
 
