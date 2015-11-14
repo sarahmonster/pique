@@ -69,34 +69,6 @@ if ( ! function_exists( 'pique_header_style' ) ) :
 	}
 endif; // pique_header_style
 
-if ( ! function_exists( 'pique_admin_header_style' ) ) :
-	/**
-	 * Styles the header image displayed on the Appearance > Header admin panel.
-	 *
-	 * @see pique_custom_header_setup().
-	 */
-	function pique_admin_header_style() {
-	?>
-		<style type="text/css">
-			.appearance_page_custom-header #headimg {
-				border: none;
-			}
-			#headimg h1,
-			#desc {
-			}
-			#headimg h1 {
-			}
-			#headimg h1 a {
-			}
-			#desc {
-			}
-			#headimg img {
-			}
-		</style>
-	<?php
-	}
-endif; // pique_admin_header_style
-
 if ( ! function_exists( 'pique_admin_header_image' ) ) :
 	/**
 	 * Custom header image markup displayed on the Appearance > Header admin panel.
