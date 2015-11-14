@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'components/content', 'single' ); ?>
 
-			<?php the_post_navigation( array (
+			<?php the_post_navigation( array(
 										'prev_text' => '<span>' . esc_html__( 'Previous', 'pique' ) . '</span> %title',
 										'next_text' => '<span>' . esc_html__( 'Next', 'pique' ) . '</span> %title',
 									 ) ); ?>
