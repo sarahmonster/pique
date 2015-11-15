@@ -4573,29 +4573,31 @@ blockquote .widget cite:not(.widget-title),
   margin-top: 1em;
   position: relative;
 }
-@media (max-width: 767px) {
-  .pique-frontpage .main-navigation {
-    content: "";
-    display: table;
-    table-layout: fixed;
-  }
-  .pique-frontpage .main-navigation ul {
-    width: 100%;
-  }
-  .pique-frontpage .main-navigation li {
-    display: block;
-  }
-  .pique-frontpage .main-navigation a {
-    border-bottom: 1px solid rgba(233, 213, 192, 0.1);
-    padding: 10px 10px;
-    text-align: center;
-    width: 100%;
-  }
-}
 @media (min-width: 768px) {
   .pique-frontpage #site-navigation:not(.sticky) {
     background: none;
     border: none;
+  }
+}
+
+/* If we're using the anchor menu, show expanded on mobile */
+@media (max-width: 767px) {
+  .pique-frontpage .anchor-menu {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+  .pique-frontpage .anchor-menu ul {
+    width: 100%;
+  }
+  .pique-frontpage .anchor-menu li {
+    display: block;
+  }
+  .pique-frontpage .anchor-menu a {
+    border-bottom: 1px solid rgba(233, 213, 192, 0.1);
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
   }
 }
 

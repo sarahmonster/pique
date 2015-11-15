@@ -28,8 +28,9 @@
 
 	// Priority+ navigation, whee!
 	function priorityNav() {
-		// Don't do it on the homepage, and definitely don't do it if we don't have a menu
-		if ( ! $( 'body' ).hasClass( 'pique-frontpage' ) && 0 < $( '#site-navigation' ).length) {
+		// Make sure we have a menu and that the more-more item is present
+		if ( 0 < $( '#site-navigation' ).length && 0 < $( '#more-menu' ).length ) {
+			console.log('hi');
 			var navWidth = 0;
 			var firstMoreElement = $( '#more-menu li' ).first();
 

@@ -26,28 +26,6 @@
     position: relative;
   }
 
-  @include mobile {
-
-    .main-navigation {
-      @include clearfix;
-
-      ul {
-        width: 100%;
-      }
-
-      li {
-        display: block;
-      }
-
-      a {
-        border-bottom: 1px solid transparentize($color__tertiary, 0.9);
-        padding: 10px 10px;
-        text-align: center;
-        width: 100%;
-      }
-    } // main-navigation
-  } // mobile
-
   // Initial state for our header & nav
   @include tablet {
     #site-navigation:not(.sticky) {
@@ -55,6 +33,28 @@
       border: none;
     }
   } // tablet
+}
+
+/* If we're using the anchor menu, show expanded on mobile */
+.pique-frontpage .anchor-menu {
+  @include mobile {
+    @include clearfix;
+
+    ul {
+      width: 100%;
+    }
+
+    li {
+      display: block;
+    }
+
+    a {
+      border-bottom: 1px solid transparentize($color__tertiary, 0.9);
+      padding: 10px 10px;
+      text-align: center;
+      width: 100%;
+    }
+  } // mobile
 }
 
 /* Re-set some structural elements on these pages. This allows us to have 'panel' style pages. */

@@ -67,7 +67,7 @@
 			// Output our menu only if we actually have menu items
 			if ( isset( $panel_links ) ) : ?>
 			<div id="site-navigation-wrapper">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation anchor-menu" role="navigation">
 					<ul>
 						<?php
 						foreach ( $panel_links as $key => $link ) :
