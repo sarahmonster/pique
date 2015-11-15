@@ -3534,8 +3534,6 @@ a:hover, a:active {
 #site-navigation-wrapper {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .main-navigation {
@@ -3545,6 +3543,11 @@ a:hover, a:active {
   clear: both;
   display: block;
   font-family: Karla, Arial, sans-serif;
+  left: 50%;
+  max-width: 1400px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   z-index: 10000;
   /* Current page highlight */
