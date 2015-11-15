@@ -80,9 +80,6 @@
 	clear: both;
 	display: block;
 	font-family: $font__sans;
-	left: 50%;
-	max-width: $size__site-width;
-	transform: translateX(-50%);
 	width: 100%;
 	z-index: 10000;
 
@@ -186,6 +183,10 @@
 /* Regular menu */
 @include tablet {
 	.main-navigation {
+		left: 50%;
+		max-width: $size__site-width;
+		transform: translateX(-50%);
+		
 		ul {
 			display: block;
 			list-style: none;

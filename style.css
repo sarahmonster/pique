@@ -3543,11 +3543,6 @@ a:hover, a:active {
   clear: both;
   display: block;
   font-family: Karla, Arial, sans-serif;
-  left: 50%;
-  max-width: 1400px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 100%;
   z-index: 10000;
   /* Current page highlight */
@@ -3643,6 +3638,11 @@ a:hover, a:active {
 /* Regular menu */
 @media (min-width: 768px) {
   .main-navigation {
+    left: 50%;
+    max-width: 1400px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     /* Sub-nav */
     /* Sub-sub-menu */
     /* Show sub-menus on hover */
