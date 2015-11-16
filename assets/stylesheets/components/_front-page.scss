@@ -373,6 +373,7 @@
     } // article
 
     .entry-footer {
+      @include clearfix;
       margin-top: $size__site-gutter/2;
     }
 

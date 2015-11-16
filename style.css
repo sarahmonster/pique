@@ -4980,6 +4980,9 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   margin-bottom: 0;
 }
 .pique-template-testimonials .pique-testimonials .entry-footer {
+  content: "";
+  display: table;
+  table-layout: fixed;
   margin-top: 20px;
 }
 .pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
