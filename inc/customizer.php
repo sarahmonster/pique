@@ -519,6 +519,11 @@ add_action( 'wp_head', 'pique_customizer_css' );
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function pique_customize_preview_js() {
-	wp_enqueue_script( 'pique_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+	wp_enqueue_script( 'pique_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20151116', true );
 }
 add_action( 'customize_preview_init', 'pique_customize_preview_js' );
+
+function pique_panels_js() {
+	wp_enqueue_script( 'pique_extra_js', get_template_directory_uri() . '/assets/js/panel-customizer.js', array(), '20151116', true );
+}
+add_action( 'customize_controls_enqueue_scripts', 'pique_panels_js' );

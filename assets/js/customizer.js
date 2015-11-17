@@ -6,6 +6,26 @@
 
 ( function( $ ) {
 
+	// Collect information from panel-customizer.js about which panels are opening
+	wp.customize.bind( 'preview-ready', function() {
+		wp.customize.preview.bind( 'section-highlight', function( data ) {
+			// here you'll have whatever data you sent in the last section.
+			// you should have the needed info to highlight/unhighlight things in the theme
+			console.log( data.expanded )
+			if ( true === data.expanded ) {
+				console.log( '.' + data.section );
+				console.log( data.section + ' opened' );
+				$.scrollTo( $( '.pique_panel1' ), {
+					duration: 400,
+					offset: { 'top': -40 }
+				} );
+				$( '.' + data.section ).addClass( 'highlight' );
+			} else {
+				console.log( data.section + 'closed!' );
+			}
+		} );
+	} );
+
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
