@@ -391,7 +391,6 @@
       float: left;
       @include font-size(1);
       padding: $size__site-gutter/4  0;
-      width: calc(100% - 100px - #{$size__site-gutter/2});
 
       &::before {
         display: none;

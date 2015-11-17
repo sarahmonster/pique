@@ -4999,7 +4999,6 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   font-size: 16px;
   font-size: 1rem;
   padding: 10px 0;
-  width: calc(100% - 100px - 20px);
 }
 .pique-template-testimonials .pique-testimonials h2::before {
   display: none;
