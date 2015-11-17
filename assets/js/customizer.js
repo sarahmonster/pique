@@ -9,19 +9,23 @@
 	// Collect information from panel-customizer.js about which panels are opening
 	wp.customize.bind( 'preview-ready', function() {
 		wp.customize.preview.bind( 'section-highlight', function( data ) {
-			// here you'll have whatever data you sent in the last section.
-			// you should have the needed info to highlight/unhighlight things in the theme
-			console.log( data.expanded )
+
+			// If there's an expanded panel section, scroll down to that panel & highlight in the preview
 			if ( true === data.expanded ) {
-				console.log( '.' + data.section );
-				console.log( data.section + ' opened' );
-				$.scrollTo( $( '.pique_panel1' ), {
-					duration: 400,
+				console.log('hello');
+				$.scrollTo( $( '.' + data.section ), {
+					duration: 200,
 					offset: { 'top': -40 }
 				} );
-				$( '.' + data.section ).addClass( 'highlight' );
+				$( '.' + data.section ).addClass( 'pique-highlight' );
+			// If we've left the panel, remove the highlight and scroll back to the top
 			} else {
-				console.log( data.section + 'closed!' );
+				console.log('goodbye')
+				$.scrollTo( $( '#masthead' ), {
+					duration: 100,
+					offset: { 'top': 0 }
+				} );
+				$( '.' + data.section ).removeClass( 'pique-highlight' );
 			}
 		} );
 	} );

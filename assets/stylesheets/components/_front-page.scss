@@ -558,6 +558,24 @@
   }
 }
 
+/* Add a highlight class to improve Customizer behaviour */
+@keyframes flash {
+    0%, 20%, 40%, 60%, 80%, 100% {
+      opacity: 1;
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+      opacity: 0;
+    }
+}
+
+.pique-highlight::after {
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
 /* Account for the admin bar */
 .admin-bar.pique-frontpage {
   #masthead {

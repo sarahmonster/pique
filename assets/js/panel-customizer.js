@@ -12,49 +12,49 @@
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel1' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel1', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel1', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel2' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel2', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel2', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel3' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel3', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel3', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel4' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel4', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel4', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel5' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel5', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel5', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel6' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel6', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel6', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel7' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel7', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel7', expanded: isExpanding } );
     } );
 
     // Detect when the section for each panel is expanded (or closed) so we can adjust preview accordingly
     wp.customize.section( 'pique_panel8' ).expanded.bind( function( isExpanding ) {
       // isExpanding will = true if you're entering the section, false if you're leaving it
-      wp.customize.previewer.send( 'section-highlight', { section: 'pique_panel8', expanded: isExpanding } );
+      wp.customize.previewer.send( 'section-highlight', { section: 'pique-panel8', expanded: isExpanding } );
     } );
 
     /*
