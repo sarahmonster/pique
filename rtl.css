@@ -9,9 +9,82 @@ http://codex.wordpress.org/Right_to_Left_Language_Support
 
 */
 
-/*
 body {
 	direction: rtl;
 	unicode-bidi: embed;
 }
-*/
+
+/* Swap around menu elements */
+.main-navigation ul ul {
+	text-align: right;
+}
+
+/* Adjust teeny menu */
+@media (max-width: 767px) {
+	.main-navigation a {
+		padding-right: 10px;
+		padding-left: 0;
+	}
+
+	.main-navigation ul ul ul {
+		padding-left: 0;
+		padding-right: 25px;
+	}
+}
+
+/* Swap around direction of menu fly-outs */
+@media (min-width: 768px) {
+
+	.main-navigation ul ul::before {
+		left: auto;
+		right: 15px;
+	}
+
+	.main-navigation ul ul::before {
+		left: auto;
+		right: 15px;
+	}
+
+	.main-navigation #primary-menu > li:nth-last-child(1):hover > ul,
+	.main-navigation #primary-menu > li:nth-last-child(2):hover > ul {
+		left: 0;
+		right: auto;
+	}
+
+	.main-navigation #primary-menu > li:nth-last-child(1):hover ul::before,
+	.main-navigation #primary-menu > li:nth-last-child(2):hover ul::before {
+		left: 15px;
+		right: auto;
+	}
+
+	.main-navigation #primary-menu > li:nth-last-child(1) li:hover ul, .main-navigation #primary-menu > li:nth-last-child(2) li:hover u {
+		left: 103%;
+		right: auto;
+	}
+
+}
+
+/* Right-align content within panels */
+.pique-grid-three p,
+.overlay,
+label,
+form,
+.pique-panel-content .entry-content,
+#pique-hero .pique-panel-content .entry-content p,
+blockquote p,
+.pique-template-testimonials .pique-testimonials article .entry-content p {
+	text-align: right;
+}
+
+h3,
+blockquote cite,
+.pique-template-testimonials .pique-testimonials article .entry-content cite,
+.site-branding .site-title, .widget-title {
+	text-align: right;
+}
+
+.pique-template-testimonials .pique-testimonials .attachment-pique-thumbnail-avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 20px;
+}
