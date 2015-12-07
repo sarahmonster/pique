@@ -1,5 +1,6 @@
 # Sass cache, for obvious reasons
 .sass-cache/*
+*.map
 
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
