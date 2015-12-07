@@ -25,17 +25,28 @@
 
 // Include Genericons
 @mixin genericons() {
-	font-family: "Genericons";
+	display: inline-block;
+	font-family: Genericons;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1;
 	text-decoration: none;
+	text-rendering: auto; // optimizelegibility throws things off #1094
 	vertical-align: text-bottom;
+	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 
 @mixin fontawesome() {
-  @extend .#{$fa-css-prefix};
-  font-size: 14px;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: none;
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }

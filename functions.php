@@ -238,8 +238,11 @@ function pique_scripts() {
 		wp_enqueue_script( 'pique-front-page', get_template_directory_uri() . '/assets/js/front-page.js', array( 'pique-scrollTo', 'pique-waypoints' ), '20151030', true );
 	endif;
 
+	// Font icons, because we're retro like that
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome.min.css', array(), null );
+
 	if ( wp_style_is( 'genericons', 'registered' ) ) {
-		wp_enqueue_style( 'genericons' );
+		wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
 	} else {
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
 	}
