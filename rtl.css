@@ -79,7 +79,7 @@ blockquote p,
 h3,
 blockquote cite,
 .pique-template-testimonials .pique-testimonials article .entry-content cite,
-.site-branding .site-title, .widget-title {
+.widget-title {
 	text-align: right;
 }
 
@@ -87,6 +87,12 @@ blockquote cite,
 	float: right;
 	margin-right: 0;
 	margin-left: 20px;
+}
+
+/* Adjust padding on post format icons */
+.sticky .entry-title::before {
+	margin-left: 0.5em;
+	margin-right: 0;
 }
 
 /* Swap direction of arrows in read more buttons */
@@ -101,4 +107,19 @@ blockquote cite,
 
 .archive .read-more a:hover::after, .blog .read-more a:hover::after, .search-results .read-more a:hover::after {
 	padding-right: 20px;
+}
+
+/* Adjust padding on taxonomy icons */
+.cat-links::before, .tags-links::before {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+/* Float nav arrows */
+.comment-navigation .nav-previous span::before, .posts-navigation .nav-previous span::before, .post-navigation .nav-previous span::before {
+	float: left;
+}
+
+.comment-navigation .nav-next span::after, .posts-navigation .nav-next span::after, .post-navigation .nav-next span::after {
+	float: right;
 }

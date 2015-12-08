@@ -972,6 +972,7 @@ a {
   .posts-navigation .nav-previous,
   .post-navigation .nav-previous {
     float: left;
+    text-align: left;
     width: 50%; }
     .comment-navigation .nav-previous span::before,
     .posts-navigation .nav-previous span::before,
