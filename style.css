@@ -1506,7 +1506,7 @@ a {
   position: relative;
   table-layout: fixed;
   width: 100%;
-  z-index: 10000; }
+  z-index: 1; }
   #tertiary .widget {
     border-top: none; }
   #tertiary .widget:not(.widget_wpcom_social_media_icons_widget) ul a {
