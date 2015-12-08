@@ -907,7 +907,7 @@ a {
   .secondary-links ul li {
     display: inline; }
     .secondary-links ul li::after {
-      content: ' ·';
+      content: ' · ';
       display: inline; }
     .secondary-links ul li:last-child::after {
       display: none; }
