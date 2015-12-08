@@ -714,7 +714,8 @@ a {
 /* Navigation menu */
 #site-navigation-wrapper {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%; }
 
 .main-navigation {
   background: #2D2A26;
@@ -804,6 +805,7 @@ a {
   .main-navigation {
     left: 50%;
     max-width: 1400px;
+    position: relative;
     transform: translateX(-50%);
     /* Sub-nav */
     /* Sub-sub-menu */

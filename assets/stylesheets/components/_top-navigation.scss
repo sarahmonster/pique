@@ -71,6 +71,7 @@
 #site-navigation-wrapper {
 	position: absolute;
 		bottom: 0;
+	width: 100%;
 }
 
 .main-navigation {
@@ -185,8 +186,9 @@
 	.main-navigation {
 		left: 50%;
 		max-width: $size__site-width;
+		position: relative;
 		transform: translateX(-50%);
-		
+
 		ul {
 			display: block;
 			list-style: none;
