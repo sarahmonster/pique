@@ -88,3 +88,17 @@ blockquote cite,
 	margin-right: 0;
 	margin-left: 20px;
 }
+
+/* Swap direction of arrows in read more buttons */
+.archive .read-more a::after, .blog .read-more a::after, .search-results .read-more a::after {
+	content: '\f060';
+}
+
+.archive .read-more a:hover, .blog .read-more a:hover, .search-results .read-more a:hover {
+    padding-left: calc(3em - 40px);
+		padding-right: 3em;
+}
+
+.archive .read-more a:hover::after, .blog .read-more a:hover::after, .search-results .read-more a:hover::after {
+	padding-right: 20px;
+}
