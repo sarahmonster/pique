@@ -49,7 +49,7 @@
 	.site-title {
 		@extend h3;
 		font-style: normal;
-		margin: -5px 0 0;
+		margin: $size__site-gutter 0 0;
 		padding: 0;
 		text-align: center;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -58,6 +58,10 @@
 			color: $color__white;
 		}
 	} // .site-title
+
+	.site-logo-link + .site-title {
+		margin-top: $size__site-gutter/2;
+	}
 
 	.site-description {
 		color: $color__white;
