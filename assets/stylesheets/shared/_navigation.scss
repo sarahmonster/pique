@@ -47,7 +47,7 @@ a {
 		font-style: italic;
 		display: block;
 		line-height: 1.2;
-		padding: 10px 0;
+		padding: $size__site-gutter/2 0;
 
 		span {
 			color: darken($color__secondary, 5%);
@@ -55,9 +55,9 @@ a {
 			font-family: $font__sans;
 			font-style: normal;
 			font-weight: bold;
-			@include font-size(0.9);
+			@include font-size(0.75);
 			letter-spacing: 1px;
-			padding-bottom: 2px;
+			padding-bottom: 5px;
 			text-transform: uppercase;
 		}
 
@@ -75,6 +75,7 @@ a {
 			@include fontawesome;
 			content: $fa-var-arrow-left;
 			display: inline-block;
+			font-size: 12px;
 			margin-right: 5px;
 			vertical-align: 1px;
 		}
@@ -89,6 +90,7 @@ a {
 			@include fontawesome;
 			content: $fa-var-arrow-right;
 			display: inline-block;
+			font-size: 12px;
 			margin-left: 5px;
 			vertical-align: 1px;
 		}

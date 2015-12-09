@@ -937,7 +937,7 @@ a {
     font-style: italic;
     display: block;
     line-height: 1.2;
-    padding: 10px 0; }
+    padding: 20px 0; }
     .comment-navigation .nav-previous a span,
     .comment-navigation .nav-next a span,
     .posts-navigation .nav-previous a span,
@@ -949,8 +949,8 @@ a {
       font-family: Karla, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
-      font-size: 14.4px;
-      font-size: 0.9rem;
+      font-size: 12px;
+      font-size: 0.75rem;
       letter-spacing: 1px;
       padding-bottom: 2px;
       text-transform: uppercase; }
@@ -982,6 +982,7 @@ a {
       -moz-osx-font-smoothing: grayscale;
       content: "";
       display: inline-block;
+      font-size: 12px;
       margin-right: 5px;
       vertical-align: 1px; }
   .comment-navigation .nav-next,
@@ -1005,6 +1006,7 @@ a {
       -moz-osx-font-smoothing: grayscale;
       content: "";
       display: inline-block;
+      font-size: 12px;
       margin-left: 5px;
       vertical-align: 1px; }
 
