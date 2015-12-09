@@ -2503,9 +2503,12 @@ div.sharedaddy .site-branding .sd-title.site-title,
 div.sharedaddy .sd-title.widget-title {
   font-family: Karla, Arial, sans-serif;
   font-size: 0.9rem !important;
-  margin: 40px 0 0 !important; }
+  margin: 20px 0 0 !important; }
 
 /* Comment form */
+#respond {
+  padding-top: 10px; }
+
 #commentform {
   margin-top: -10px; }
 

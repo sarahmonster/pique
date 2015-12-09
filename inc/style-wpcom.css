@@ -21,6 +21,19 @@
 }
 
 /* Remove extra styling from comment submit */
+#respond {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+#respond h3 {
+  margin-top: 20px !important;
+}
+
+#respond form {
+  margin-top: 20px !important;
+}
+
 #respond .form-submit input,
 #respond .form-submit input#comment-submit,
 #respond .comment-form-fields input[type="submit"],
