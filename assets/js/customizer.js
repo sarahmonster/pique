@@ -14,7 +14,7 @@
 			if ( true === data.expanded ) {
 				console.log('hello');
 				$.scrollTo( $( '.' + data.section ), {
-					duration: 200,
+					duration: 600,
 					offset: { 'top': -40 }
 				} );
 				$( '.' + data.section ).addClass( 'pique-highlight' );
@@ -22,7 +22,7 @@
 			} else {
 				console.log('goodbye')
 				$.scrollTo( $( '#masthead' ), {
-					duration: 100,
+					duration: 300,
 					offset: { 'top': 0 }
 				} );
 				$( '.' + data.section ).removeClass( 'pique-highlight' );
