@@ -148,3 +148,17 @@ time + .updated {
 		margin-bottom: $size__site-gutter;
 	}
 }
+
+/* Post footers */
+.entry-footer {
+	padding: $size__site-gutter/2 0;
+}
+
+/* Titles */
+#reply-title,
+div#jp-relatedposts h3.jp-relatedposts-headline,
+div.sharedaddy h3.sd-title {
+	font-family: Karla, Arial, sans-serif;
+	font-size: 0.9rem !important;
+	margin: $size__site-gutter 0 0 !important;
+}

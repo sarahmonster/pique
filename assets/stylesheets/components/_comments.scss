@@ -1,8 +1,16 @@
 /* Comment form */
+#commentform {
+	margin-top: -10px;
+}
+
 #commentform .logged-in-as,
 #commentform .comment-notes {
 	@include font-size(1);
 	font-style: italic;
+
+	a {
+		color: lighten($color__text-main, 25%);
+	}
 }
 
 #form-allowed-tags {

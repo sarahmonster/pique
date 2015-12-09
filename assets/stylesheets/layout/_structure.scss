@@ -22,6 +22,7 @@
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {
 	.site-content {
+		margin-bottom: $size__site-gutter / 2;
 		margin-top: $size__site-gutter;
 
 		.content-area {

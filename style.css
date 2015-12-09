@@ -923,7 +923,7 @@ a {
   .site-main .comment-navigation, .site-main
   .posts-navigation, .site-main
   .post-navigation {
-    margin: 20px 0 1.5em;
+    margin: 20px 0 20px;
     overflow: hidden; }
   .comment-navigation .nav-previous a,
   .comment-navigation .nav-next a,
@@ -952,7 +952,7 @@ a {
       font-size: 12px;
       font-size: 0.75rem;
       letter-spacing: 1px;
-      padding-bottom: 2px;
+      padding-bottom: 5px;
       text-transform: uppercase; }
     .comment-navigation .nav-previous a:hover,
     .comment-navigation .nav-next a:hover,
@@ -1376,6 +1376,7 @@ a {
 /* On desktop devices, we'll show a sidebar next to our content */
 @media (min-width: 1024px) {
   .site-content {
+    margin-bottom: 20px;
     margin-top: 40px; }
     .site-content .content-area {
       margin-left: auto;
@@ -2478,12 +2479,44 @@ time + .updated {
 .error-404 .search-form {
   margin-bottom: 40px; }
 
+/* Post footers */
+.entry-footer {
+  padding: 20px 0; }
+
+/* Titles */
+#reply-title,
+div#jp-relatedposts h3.jp-relatedposts-headline,
+div#jp-relatedposts blockquote cite.jp-relatedposts-headline,
+blockquote div#jp-relatedposts cite.jp-relatedposts-headline,
+div#jp-relatedposts .pique-template-testimonials .pique-testimonials article .entry-content cite.jp-relatedposts-headline,
+.pique-template-testimonials .pique-testimonials article .entry-content div#jp-relatedposts cite.jp-relatedposts-headline,
+div#jp-relatedposts .site-branding .jp-relatedposts-headline.site-title,
+.site-branding div#jp-relatedposts .jp-relatedposts-headline.site-title,
+div#jp-relatedposts .jp-relatedposts-headline.widget-title,
+div.sharedaddy h3.sd-title,
+div.sharedaddy blockquote cite.sd-title,
+blockquote div.sharedaddy cite.sd-title,
+div.sharedaddy .pique-template-testimonials .pique-testimonials article .entry-content cite.sd-title,
+.pique-template-testimonials .pique-testimonials article .entry-content div.sharedaddy cite.sd-title,
+div.sharedaddy .site-branding .sd-title.site-title,
+.site-branding div.sharedaddy .sd-title.site-title,
+div.sharedaddy .sd-title.widget-title {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 0.9rem !important;
+  margin: 40px 0 0 !important; }
+
 /* Comment form */
+#commentform {
+  margin-top: -10px; }
+
 #commentform .logged-in-as,
 #commentform .comment-notes {
   font-size: 16px;
   font-size: 1rem;
   font-style: italic; }
+  #commentform .logged-in-as a,
+  #commentform .comment-notes a {
+    color: #b0aaa2; }
 
 #form-allowed-tags {
   font-size: 14.4px;
