@@ -19,6 +19,21 @@ function pique_is_frontpage() {
 	endif;
 }
 
+/*
+ * Count our number of active panels
+ * Primarily used to see if we have any panels active, duh.
+ */
+function pique_panel_count() {
+	$panels = array( '1', '2', '3', '4', '5', '6', '7', '8' );
+	$panel_count = 0;
+	foreach ( $panels as $panel ) :
+		if ( get_theme_mod( 'pique_panel' . $panel ) ) :
+			$panel_count++;
+		endif;
+	endforeach;
+	return $panel_count;
+}
+
 /**
  * Adds custom classes to the array of body classes.
  *
@@ -34,6 +49,12 @@ function pique_body_classes( $classes ) {
 	// Adds a body class if we're on the (static) front page
 	if ( pique_is_frontpage() ) :
 		$classes[] = 'pique-frontpage';
+	endif;
+
+	// Adds a class if we're on the static front page, and there's only a single panel
+
+	if ( pique_is_frontpage() && 0 === pique_panel_count() ) :
+		$classes[] = 'pique-no-panels';
 	endif;
 
 	// Adds a class if we're in the Customizer, since it doesn't like fixed backgrounds

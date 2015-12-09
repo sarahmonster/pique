@@ -57,6 +57,14 @@
   } // mobile
 }
 
+
+/* If we don't have any panels set, set the hero panel to full-height */
+.pique-no-panels {
+  #pique-hero {
+    min-height: 95vh;
+  }
+}
+
 /* Re-set some structural elements on these pages. This allows us to have 'panel' style pages. */
 .pique-frontpage,
 .archive,
