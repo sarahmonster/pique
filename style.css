@@ -2405,8 +2405,8 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   color: #c3c3c3;
   font-family: Karla, Arial, sans-serif;
   font-weight: bold;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 13.6px;
+  font-size: 0.85rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase; }
   .entry-meta a, .widget_rss .rss-date a, .widget_rss cite a, .comment-metadata a, .reply a {

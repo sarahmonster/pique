@@ -53,7 +53,7 @@
 	color: desaturate(lighten($color__text-screen, 60%), 10%);
 	font-family: $font__sans;
 	font-weight: bold;
-	@include font-size(0.75);
+	@include font-size(0.85);
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 
