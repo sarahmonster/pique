@@ -426,8 +426,9 @@
         display: none;
       }
 
-      span {
+      span, em {
         display: block;
+				font-style: normal;
         font-weight: normal;
         letter-spacing: 0;
         text-transform: none;

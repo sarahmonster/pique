@@ -1948,8 +1948,9 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   padding: 10px 0; }
   .pique-template-testimonials .pique-testimonials h2::before, .pique-template-testimonials .pique-testimonials h2::after {
     display: none; }
-  .pique-template-testimonials .pique-testimonials h2 span {
+  .pique-template-testimonials .pique-testimonials h2 span, .pique-template-testimonials .pique-testimonials h2 em {
     display: block;
+    font-style: normal;
     font-weight: normal;
     letter-spacing: 0;
     text-transform: none; }
