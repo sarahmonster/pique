@@ -67,9 +67,7 @@ a {
 	}
 
 	& .nav-previous {
-		float: left;
 		text-align: left;
-		width: 50%;
 
 		span::before {
 			@include fontawesome;
@@ -82,9 +80,7 @@ a {
 	}
 
 	& .nav-next {
-		float: right;
 		text-align: right;
-		width: 50%;
 
 		span::after {
 			@include fontawesome;
@@ -95,6 +91,22 @@ a {
 			vertical-align: 1px;
 		}
 	}
+
+	// On tablets and larger, sit navigation side by side
+	@include tablet {
+		& .nav-previous {
+			float: left;
+			text-align: left;
+			width: 50%;
+		}
+
+		& .nav-next {
+			float: right;
+			text-align: right;
+			width: 50%;
+		}
+	} // tablet
+
 } // .comments-navigation, .posts-navigation, .post-navigation
 
 // Posts navigation
