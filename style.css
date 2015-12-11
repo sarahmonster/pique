@@ -1450,34 +1450,27 @@ a {
     z-index: 1; }
   .site-footer a {
     color: #E9D5C0; }
-  @media (max-width: 767px) {
-    .site-footer {
-      font-size: 14.4px;
-      font-size: 0.9rem;
-      text-align: center; } }
   .site-footer .secondary-links,
   .site-footer .site-info {
+    font-size: 12.8px;
+    font-size: 0.8rem;
     font-style: italic;
     margin-bottom: 10px;
     position: relative;
+    text-align: center;
     z-index: 1000; }
     .site-footer .secondary-links a,
     .site-footer .site-info a {
       color: #FCFBF9; }
-    @media (max-width: 767px) {
-      .site-footer .secondary-links,
-      .site-footer .site-info {
-        font-size: 12.8px;
-        font-size: 0.8rem; } }
-    @media (min-width: 768px) {
-      .site-footer .secondary-links,
-      .site-footer .site-info {
-        font-size: 14.4px;
-        font-size: 0.9rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .site-footer .secondary-links {
-      float: left; }
+      float: left;
+      font-size: 14.4px;
+      font-size: 0.9rem;
+      text-align: left; }
     .site-footer .site-info {
+      font-size: 14.4px;
+      font-size: 0.9rem;
       text-align: center;
       margin-bottom: 15px; }
     .site-footer .secondary-links + .site-info {

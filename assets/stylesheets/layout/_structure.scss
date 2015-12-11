@@ -128,38 +128,32 @@
 		color: $color__tertiary;
 	}
 
-	@include mobile {
-		@include font-size(0.9);
-		text-align: center;
-	}
-
 	// Site info + links footer
 	.secondary-links,
 	.site-info {
+		@include font-size(0.8);
 		font-style: italic;
 		margin-bottom: 10px;
 		position: relative;
+			text-align: center;
 		z-index: 1000;
 
 		a {
 			color: $color__white;
 		}
 
-		@include mobile {
-			@include font-size(0.8);
-		}
-
-		@include tablet {
-			@include font-size(0.9);
-		}
 	} // .secondary-links .site-footer
 
-	@include tablet {
+	@include desktop {
+
 		.secondary-links {
 			float: left;
+			@include font-size(0.9);
+			text-align: left;
 		}
 
 		.site-info {
+			@include font-size(0.9);
 			text-align: center; // Align center if we only have this menu
 			margin-bottom: 15px;
 		}
