@@ -1373,6 +1373,10 @@ a {
   width: 100%;
   word-wrap: break-word; }
 
+/* On smaller devices, give the sidebar a bit of breathing room at the top */
+@media (max-width: 1023px) {
+  #secondary {
+    margin-top: 40px; } }
 /* On desktop devices, we'll show a sidebar next to our content */
 @media (min-width: 1024px) {
   .site-content {

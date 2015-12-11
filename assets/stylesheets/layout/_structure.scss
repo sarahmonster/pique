@@ -19,6 +19,13 @@
 	word-wrap: break-word;
 }
 
+/* On smaller devices, give the sidebar a bit of breathing room at the top */
+@include desktop-max {
+	#secondary {
+		margin-top: $size__site-gutter;
+	}
+}
+
 /* On desktop devices, we'll show a sidebar next to our content */
 @include desktop {
 	.site-content {
