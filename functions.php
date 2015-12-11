@@ -242,7 +242,7 @@ function pique_scripts() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome.min.css', array(), null );
 
 	if ( wp_style_is( 'genericons', 'registered' ) ) {
-		wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
+		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
 	} else {
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
 	}

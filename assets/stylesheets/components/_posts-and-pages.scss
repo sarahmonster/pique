@@ -7,18 +7,19 @@
 }
 
 /* Sticky posts */
-.entry-title::before {
+.entry-title a::before {
 	.sticky & {
 		@include genericons;
 		content: '\f512';
 		display: inline-block;
 		margin-right: 0.5em;
+		text-shadow: none;
 		vertical-align: 0;
 	}
 }
 
 @mixin post-format($format, $icon) {
-	.entry-title::before {
+	.entry-title a::before {
 		.blog .format-#{$format} &,
 		.archive .format-#{$format} &,
 		.search-results .format-#{$format} & {
