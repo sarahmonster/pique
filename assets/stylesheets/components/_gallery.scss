@@ -3,12 +3,14 @@ figure {
 	margin-right: auto;
 }
 
-.gallery {
+.gallery,
+.tiled-gallery {
 	margin-bottom: 1.5em;
+}
 
-	a:hover {
-		border-bottom: none;
-	}
+.entry-content .gallery a:hover,
+.entry-content .tiled-gallery a:hover {
+	border-bottom: none;
 }
 
 .gallery-item {
