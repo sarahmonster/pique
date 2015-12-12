@@ -636,7 +636,9 @@ input[type="submit"] {
 /* Search form specific */
 @media (max-width: 767px) {
   .search-form {
-    text-align: center; } }
+    text-align: center; }
+    .search-form .search-submit {
+      margin-top: 10px; } }
 @media (min-width: 768px) {
   .search-form .search-field {
     width: 77%; }

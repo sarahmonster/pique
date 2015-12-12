@@ -131,6 +131,10 @@ button + button,
 
 	@include mobile {
 		text-align: center;
+
+		.search-submit {
+			margin-top: $size__site-gutter/4;
+		}
 	}
 
 	@include tablet {
