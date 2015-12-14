@@ -927,8 +927,26 @@ a {
   .site-main .comment-navigation, .site-main
   .posts-navigation, .site-main
   .post-navigation {
-    margin: 20px 0 20px;
+    border: none;
+    margin: 20px 40px;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .site-main .comment-navigation, .site-main
+      .posts-navigation, .site-main
+      .post-navigation {
+        margin: 10px 20px; }
+        .site-main .comment-navigation .nav-previous, .site-main
+        .posts-navigation .nav-previous, .site-main
+        .post-navigation .nav-previous {
+          float: left;
+          text-align: left;
+          width: 50%; }
+        .site-main .comment-navigation .nav-next, .site-main
+        .posts-navigation .nav-next, .site-main
+        .post-navigation .nav-next {
+          float: right;
+          text-align: right;
+          width: 50%; } }
   .comment-navigation .nav-previous a,
   .comment-navigation .nav-next a,
   .posts-navigation .nav-previous a,
@@ -1022,26 +1040,6 @@ a {
       float: right;
       text-align: right;
       width: 50%; } }
-
-.posts-navigation,
-.site-main .posts-navigation {
-  background: #11100f;
-  border-bottom: 1px solid #2D2A26;
-  border-top: 1px solid #2D2A26;
-  margin-bottom: 0;
-  padding: 0.5rem 1rem; }
-  @media (min-width: 768px) {
-    .posts-navigation,
-    .site-main .posts-navigation {
-      padding: 1rem 2rem; } }
-  .posts-navigation .nav-previous,
-  .posts-navigation .nav-next,
-  .site-main .posts-navigation .nav-previous,
-  .site-main .posts-navigation .nav-next {
-    border: none; }
-  .posts-navigation a,
-  .site-main .posts-navigation a {
-    color: #E9D5C0; }
 
 .widget.widget_wpcom_social_media_icons_widget {
   margin: 0 auto;

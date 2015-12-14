@@ -35,9 +35,27 @@ a {
 	border-top: 1px solid lighten($color__secondary, 10%);
 	border-bottom: 2px solid lighten($color__secondary, 10%);
 
+
+	// This is for the posts navigation
 	.site-main & {
-		margin: $size__site-gutter/2 0 $size__site-gutter/2;
+		border: none;
+		margin: $size__site-gutter/2 $size__site-gutter;
 		overflow: hidden;
+
+		@include mobile {
+			margin: $size__site-gutter/4 $size__site-gutter/2;
+			& .nav-previous {
+				float: left;
+				text-align: left;
+				width: 50%;
+			}
+
+			& .nav-next {
+				float: right;
+				text-align: right;
+				width: 50%;
+			}
+		}
 	}
 
 	.nav-previous a,
@@ -108,28 +126,5 @@ a {
 	} // tablet
 
 } // .comments-navigation, .posts-navigation, .post-navigation
-
-// Posts navigation
-.posts-navigation,
-.site-main .posts-navigation {
-	background: darken($color__primary, 10%);
-	border-bottom: 1px solid $color__primary;
-	border-top: 1px solid $color__primary;
-	margin-bottom: 0;
-	padding: 0.5rem 1rem;
-
-	@include tablet {
-		padding: 1rem 2rem;
-	}
-
-	.nav-previous,
-	.nav-next {
-		border: none;
-	}
-
-	a {
-		color: $color__tertiary;
-	}
-}
 
 @import "../components/social-menu";
