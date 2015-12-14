@@ -128,6 +128,7 @@ button + button,
 
 /* Search form specific */
 .search-form {
+	margin-top: $size__site-gutter/4;
 
 	@include mobile {
 		text-align: center;

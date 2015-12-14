@@ -634,16 +634,18 @@ input[type="submit"] {
   /* Because 80% looks silly */ }
 
 /* Search form specific */
-@media (max-width: 767px) {
-  .search-form {
-    text-align: center; }
+.search-form {
+  margin-top: 10px; }
+  @media (max-width: 767px) {
+    .search-form {
+      text-align: center; }
+      .search-form .search-submit {
+        margin-top: 10px; } }
+  @media (min-width: 768px) {
+    .search-form .search-field {
+      width: 77%; }
     .search-form .search-submit {
-      margin-top: 10px; } }
-@media (min-width: 768px) {
-  .search-form .search-field {
-    width: 77%; }
-  .search-form .search-submit {
-    display: inline-block; } }
+      display: inline-block; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1251,6 +1253,9 @@ a {
     text-transform: none; }
 
 /* Search widget */
+.widget_search .search-form .search-field {
+  width: 100%; }
+
 .widget_search .search-submit {
   display: none; }
 
