@@ -67,7 +67,12 @@
 
 /* Comment content */
 .comment-metadata {
-	@extend .entry-meta;
+	color: desaturate(lighten($color__text-screen, 60%), 10%);
+	font-family: $font__sans;
+	font-weight: bold;
+	@include font-size(0.85);
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
 }
 
 .comment-content {
@@ -81,14 +86,21 @@
 
 /* Reply to comment */
 .reply {
-	@extend .entry-meta;
-	border: 1px solid;
-	display: inline-block;
 	float: right;
-	padding: 2px 5px;
 
-	a:hover {
+	a {
 		border: 1px solid;
+		display: inline-block;
+		font-family: $font__sans;
+		font-weight: bold;
+		@include font-size(0.85);
+		letter-spacing: 0.05rem;
+		padding: 2px 5px;
+		text-transform: uppercase;
+
+		&:hover {
+			color: desaturate(lighten($color__text-screen, 60%), 10%);
+		}
 	}
 }
 

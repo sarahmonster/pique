@@ -1617,7 +1617,7 @@ a {
   width: 100%; }
   .pique-panel:nth-of-type(even) {
     background-color: #2D2A26; }
-  .pique-panel .entry-meta, .pique-panel .widget_rss .rss-date, .widget_rss .pique-panel .rss-date, .pique-panel .widget_rss cite, .widget_rss .pique-panel cite, .pique-panel .comment-metadata, .pique-panel .reply {
+  .pique-panel .entry-meta, .pique-panel .widget_rss .rss-date, .widget_rss .pique-panel .rss-date, .pique-panel .widget_rss cite, .widget_rss .pique-panel cite {
     display: none;
     /* Hide for most post formats */ }
   .pique-panel .entry-header,
@@ -1726,67 +1726,51 @@ a {
 .format-link .read-more,
 .format-audio .read-more {
   display: none; }
-.format-quote .entry-meta, .format-quote .widget_rss .rss-date, .widget_rss .format-quote .rss-date, .format-quote .widget_rss cite, .widget_rss .format-quote cite, .format-quote .comment-metadata, .format-quote .reply,
+.format-quote .entry-meta, .format-quote .widget_rss .rss-date, .widget_rss .format-quote .rss-date, .format-quote .widget_rss cite, .widget_rss .format-quote cite,
 .format-aside .entry-meta,
 .format-aside .widget_rss .rss-date,
 .widget_rss .format-aside .rss-date,
 .format-aside .widget_rss cite,
 .widget_rss .format-aside cite,
-.format-aside .comment-metadata,
-.format-aside .reply,
 .format-status .entry-meta,
 .format-status .widget_rss .rss-date,
 .widget_rss .format-status .rss-date,
 .format-status .widget_rss cite,
 .widget_rss .format-status cite,
-.format-status .comment-metadata,
-.format-status .reply,
 .format-link .entry-meta,
 .format-link .widget_rss .rss-date,
 .widget_rss .format-link .rss-date,
 .format-link .widget_rss cite,
 .widget_rss .format-link cite,
-.format-link .comment-metadata,
-.format-link .reply,
 .format-audio .entry-meta,
 .format-audio .widget_rss .rss-date,
 .widget_rss .format-audio .rss-date,
 .format-audio .widget_rss cite,
-.widget_rss .format-audio cite,
-.format-audio .comment-metadata,
-.format-audio .reply {
+.widget_rss .format-audio cite {
   display: block;
   font-style: normal;
   text-align: left; }
-  .format-quote .entry-meta .edit-link, .format-quote .widget_rss .rss-date .edit-link, .widget_rss .format-quote .rss-date .edit-link, .format-quote .widget_rss cite .edit-link, .widget_rss .format-quote cite .edit-link, .format-quote .comment-metadata .edit-link, .format-quote .reply .edit-link,
+  .format-quote .entry-meta .edit-link, .format-quote .widget_rss .rss-date .edit-link, .widget_rss .format-quote .rss-date .edit-link, .format-quote .widget_rss cite .edit-link, .widget_rss .format-quote cite .edit-link,
   .format-aside .entry-meta .edit-link,
   .format-aside .widget_rss .rss-date .edit-link,
   .widget_rss .format-aside .rss-date .edit-link,
   .format-aside .widget_rss cite .edit-link,
   .widget_rss .format-aside cite .edit-link,
-  .format-aside .comment-metadata .edit-link,
-  .format-aside .reply .edit-link,
   .format-status .entry-meta .edit-link,
   .format-status .widget_rss .rss-date .edit-link,
   .widget_rss .format-status .rss-date .edit-link,
   .format-status .widget_rss cite .edit-link,
   .widget_rss .format-status cite .edit-link,
-  .format-status .comment-metadata .edit-link,
-  .format-status .reply .edit-link,
   .format-link .entry-meta .edit-link,
   .format-link .widget_rss .rss-date .edit-link,
   .widget_rss .format-link .rss-date .edit-link,
   .format-link .widget_rss cite .edit-link,
   .widget_rss .format-link cite .edit-link,
-  .format-link .comment-metadata .edit-link,
-  .format-link .reply .edit-link,
   .format-audio .entry-meta .edit-link,
   .format-audio .widget_rss .rss-date .edit-link,
   .widget_rss .format-audio .rss-date .edit-link,
   .format-audio .widget_rss cite .edit-link,
-  .widget_rss .format-audio cite .edit-link,
-  .format-audio .comment-metadata .edit-link,
-  .format-audio .reply .edit-link {
+  .widget_rss .format-audio cite .edit-link {
     display: none; }
 
 .format-quote .entry-title,
@@ -2154,7 +2138,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-aside .entry-meta::before, .format-aside .widget_rss .rss-date::before, .widget_rss .format-aside .rss-date::before, .format-aside .widget_rss cite::before, .widget_rss .format-aside cite::before, .format-aside .comment-metadata::before, .format-aside .reply::before {
+.format-aside .entry-meta::before, .format-aside .widget_rss .rss-date::before, .widget_rss .format-aside .rss-date::before, .format-aside .widget_rss cite::before, .widget_rss .format-aside cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2185,7 +2169,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-audio .entry-meta::before, .format-audio .widget_rss .rss-date::before, .widget_rss .format-audio .rss-date::before, .format-audio .widget_rss cite::before, .widget_rss .format-audio cite::before, .format-audio .comment-metadata::before, .format-audio .reply::before {
+.format-audio .entry-meta::before, .format-audio .widget_rss .rss-date::before, .widget_rss .format-audio .rss-date::before, .format-audio .widget_rss cite::before, .widget_rss .format-audio cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2216,7 +2200,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-chat .entry-meta::before, .format-chat .widget_rss .rss-date::before, .widget_rss .format-chat .rss-date::before, .format-chat .widget_rss cite::before, .widget_rss .format-chat cite::before, .format-chat .comment-metadata::before, .format-chat .reply::before {
+.format-chat .entry-meta::before, .format-chat .widget_rss .rss-date::before, .widget_rss .format-chat .rss-date::before, .format-chat .widget_rss cite::before, .widget_rss .format-chat cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2247,7 +2231,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-gallery .entry-meta::before, .format-gallery .widget_rss .rss-date::before, .widget_rss .format-gallery .rss-date::before, .format-gallery .widget_rss cite::before, .widget_rss .format-gallery cite::before, .format-gallery .comment-metadata::before, .format-gallery .reply::before {
+.format-gallery .entry-meta::before, .format-gallery .widget_rss .rss-date::before, .widget_rss .format-gallery .rss-date::before, .format-gallery .widget_rss cite::before, .widget_rss .format-gallery cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2278,7 +2262,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-image .entry-meta::before, .format-image .widget_rss .rss-date::before, .widget_rss .format-image .rss-date::before, .format-image .widget_rss cite::before, .widget_rss .format-image cite::before, .format-image .comment-metadata::before, .format-image .reply::before {
+.format-image .entry-meta::before, .format-image .widget_rss .rss-date::before, .widget_rss .format-image .rss-date::before, .format-image .widget_rss cite::before, .widget_rss .format-image cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2309,7 +2293,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-link .entry-meta::before, .format-link .widget_rss .rss-date::before, .widget_rss .format-link .rss-date::before, .format-link .widget_rss cite::before, .widget_rss .format-link cite::before, .format-link .comment-metadata::before, .format-link .reply::before {
+.format-link .entry-meta::before, .format-link .widget_rss .rss-date::before, .widget_rss .format-link .rss-date::before, .format-link .widget_rss cite::before, .widget_rss .format-link cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2340,7 +2324,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-status .entry-meta::before, .format-status .widget_rss .rss-date::before, .widget_rss .format-status .rss-date::before, .format-status .widget_rss cite::before, .widget_rss .format-status cite::before, .format-status .comment-metadata::before, .format-status .reply::before {
+.format-status .entry-meta::before, .format-status .widget_rss .rss-date::before, .widget_rss .format-status .rss-date::before, .format-status .widget_rss cite::before, .widget_rss .format-status cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2371,7 +2355,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-quote .entry-meta::before, .format-quote .widget_rss .rss-date::before, .widget_rss .format-quote .rss-date::before, .format-quote .widget_rss cite::before, .widget_rss .format-quote cite::before, .format-quote .comment-metadata::before, .format-quote .reply::before {
+.format-quote .entry-meta::before, .format-quote .widget_rss .rss-date::before, .widget_rss .format-quote .rss-date::before, .format-quote .widget_rss cite::before, .widget_rss .format-quote cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2402,7 +2386,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   text-shadow: none;
   vertical-align: 0; }
 
-.format-video .entry-meta::before, .format-video .widget_rss .rss-date::before, .widget_rss .format-video .rss-date::before, .format-video .widget_rss cite::before, .widget_rss .format-video cite::before, .format-video .comment-metadata::before, .format-video .reply::before {
+.format-video .entry-meta::before, .format-video .widget_rss .rss-date::before, .widget_rss .format-video .rss-date::before, .format-video .widget_rss cite::before, .widget_rss .format-video cite::before {
   display: inline-block;
   font-family: Genericons;
   font-size: 16px;
@@ -2417,7 +2401,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   content: ""; }
 
 /* Entry meta */
-.entry-meta, .widget_rss .rss-date, .widget_rss cite, .comment-metadata, .reply {
+.entry-meta, .widget_rss .rss-date, .widget_rss cite {
   color: #c3c3c3;
   font-family: Karla, Arial, sans-serif;
   font-weight: bold;
@@ -2425,9 +2409,9 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   font-size: 0.85rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase; }
-  .entry-meta a, .widget_rss .rss-date a, .widget_rss cite a, .comment-metadata a, .reply a {
+  .entry-meta a, .widget_rss .rss-date a, .widget_rss cite a {
     color: darkgray; }
-  .entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title, .comment-metadata + .entry-title, .reply + .entry-title {
+  .entry-meta + .entry-title, .widget_rss .rss-date + .entry-title, .widget_rss cite + .entry-title {
     margin-top: 0.2rem; }
 
 .byline,
@@ -2582,6 +2566,15 @@ div.sharedaddy .sd-title.widget-title {
   display: none; }
 
 /* Comment content */
+.comment-metadata {
+  color: #c3c3c3;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase; }
+
 .comment-content {
   clear: left;
   font-size: 0.9em; }
@@ -2590,12 +2583,19 @@ div.sharedaddy .sd-title.widget-title {
 
 /* Reply to comment */
 .reply {
-  border: 1px solid;
-  display: inline-block;
-  float: right;
-  padding: 2px 5px; }
-  .reply a:hover {
-    border: 1px solid; }
+  float: right; }
+  .reply a {
+    border: 1px solid;
+    display: inline-block;
+    font-family: Karla, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+    padding: 2px 5px;
+    text-transform: uppercase; }
+    .reply a:hover {
+      color: #c3c3c3; }
 
 #cancel-comment-reply-link {
   color: darkgray; }

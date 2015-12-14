@@ -124,7 +124,17 @@ blockquote cite,
 	float: right;
 }
 
-/* Right-align whatever this mess of stuff is */
-.format-quote .entry-meta, .format-quote .widget_rss .rss-date, .widget_rss .format-quote .rss-date, .format-quote .widget_rss cite, .widget_rss .format-quote cite, .format-quote .comment-metadata, .format-quote .reply, .format-aside .entry-meta, .format-aside .widget_rss .rss-date, .widget_rss .format-aside .rss-date, .format-aside .widget_rss cite, .widget_rss .format-aside cite, .format-aside .comment-metadata, .format-aside .reply, .format-status .entry-meta, .format-status .widget_rss .rss-date, .widget_rss .format-status .rss-date, .format-status .widget_rss cite, .widget_rss .format-status cite, .format-status .comment-metadata, .format-status .reply, .format-link .entry-meta, .format-link .widget_rss .rss-date, .widget_rss .format-link .rss-date, .format-link .widget_rss cite, .widget_rss .format-link cite, .format-link .comment-metadata, .format-link .reply, .format-audio .entry-meta, .format-audio .widget_rss .rss-date, .widget_rss .format-audio .rss-date, .format-audio .widget_rss cite, .widget_rss .format-audio cite, .format-audio .comment-metadata, .format-audio .reply {
+/* Right-align entry meta */
+.entry-meta, .widget_rss .rss-date, .widget_rss cite {
 	text-align: right;
+}
+
+/* Rearrange comments */
+.comment-author .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 0.5em;
+}
+.reply {
+	float: left;
 }
