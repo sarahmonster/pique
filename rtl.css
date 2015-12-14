@@ -19,6 +19,17 @@ body {
 	text-align: right;
 }
 
+/* Hide stuff to the right, rather than left */
+.main-navigation ul ul{
+	left: auto;
+	right: -999em;
+}
+
+.main-navigation li.focus > ul {
+	left: auto;
+	right: 0;
+}
+
 /* Adjust teeny menu */
 @media (max-width: 767px) {
 	.main-navigation a {
@@ -79,6 +90,7 @@ blockquote p,
 h3,
 blockquote cite,
 .pique-template-testimonials .pique-testimonials article .entry-content cite,
+blockquote p, .pique-template-testimonials .pique-testimonials article .entry-content p,
 .widget-title {
 	text-align: right;
 }
@@ -87,6 +99,11 @@ blockquote cite,
 	float: right;
 	margin-right: 0;
 	margin-left: 20px;
+}
+
+.pique-template-testimonials .pique-testimonials h2 {
+	float: right;
+	text-align: right;
 }
 
 /* Adjust padding on post format icons */
