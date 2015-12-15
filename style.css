@@ -1474,7 +1474,7 @@ a {
     margin-bottom: 10px;
     position: relative;
     text-align: center;
-    z-index: 1000; }
+    z-index: 1; }
     .site-footer .secondary-links a,
     .site-footer .site-info a {
       color: #FCFBF9; }
@@ -1509,7 +1509,7 @@ a {
   position: relative;
   table-layout: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
   #tertiary .widget {
     border-top: none; }
   #tertiary .widget:not(.widget_wpcom_social_media_icons_widget) ul a {

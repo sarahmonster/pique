@@ -142,8 +142,8 @@
 		font-style: italic;
 		margin-bottom: 10px;
 		position: relative;
-			text-align: center;
-		z-index: 1000;
+		text-align: center;
+		z-index: 1;
 
 		a {
 			color: $color__white;
@@ -186,7 +186,7 @@
 	position: relative;
 	table-layout: fixed; // Prevents select elements from getting all spilly
 	width: 100%;
-	z-index: 1; // So it's on top of its background
+	z-index: 2; // So it's on top of its background
 
 	.widget {
 		border-top: none;
