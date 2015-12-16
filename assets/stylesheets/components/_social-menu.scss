@@ -43,116 +43,171 @@
         }
       } // :hover
     } // a
-
-    // This is only needed if you want to use the footer menu for social icons
-    a[href*='wordpress.org']:before,
-    a[href*='wordpress.com']:before {
-      content: '\f205';
-    }
-
-    a[href*='facebook.com']:before {
-      content: '\f204';
-    }
-
-    a[href*='twitter.com']:before {
-      content: '\f202';
-    }
-
-    a[href*='dribbble.com']:before {
-      content: '\f201';
-    }
-
-    a[href*='plus.google.com']:before {
-      content: '\f206';
-    }
-
-    a[href*='pinterest.com']:before {
-      content: '\f209';
-    }
-
-    a[href*='github.com']:before {
-      content: '\f200';
-    }
-
-    a[href*='tumblr.com']:before {
-      content: '\f214';
-    }
-
-    a[href*='youtube.com']:before {
-      content: '\f213';
-    }
-
-    a[href*='flickr.com']:before {
-      content: '\f211';
-    }
-
-    a[href*='vimeo.com']:before {
-      content: '\f212';
-    }
-
-    a[href*='instagram.com']:before {
-      content: '\f215';
-    }
-
-    a[href*='codepen.io']:before {
-      content: '\f216';
-    }
-
-    a[href*='linkedin.com']:before {
-      content: '\f207';
-    }
-
-    a[href*='foursquare.com']:before {
-      content: '\f226';
-    }
-
-    a[href*='reddit.com']:before {
-      content: '\f222';
-    }
-
-    a[href*='digg.com']:before {
-      content: '\f221';
-    }
-
-    a[href*='getpocket.com']:before {
-      content: '\f224';
-    }
-
-    a[href*='path.com']:before {
-      content: '\f219';
-    }
-
-    a[href*='stumbleupon.com']:before {
-      content: '\f223';
-    }
-
-    a[href*='spotify.com']:before {
-      content: '\f515';
-    }
-
-    a[href*='twitch.tv']:before {
-      content: '\f516';
-    }
-
-    a[href*='dropbox.com']:before {
-      content: '\f225';
-    }
-
-    a[href*='/feed']:before {
-      content: '\f413';
-    }
-
-    a[href*='skype']:before {
-      content: '\f220';
-    }
-
-    a[href*='mailto']:before {
-      content: '\f410';
-    }
-
-    a::before {
-      content: '\f415';
-    }
   } // ul
 
 } // .widget_wpcom_social_media_icons_widget
+
+// We only want to add social media icons if we're using this area for social media links
+.secondary-links li {
+	a[href*='wordpress.org'],
+	a[href*='wordpress.com'],
+	a[href*='facebook.com'],
+	a[href*='twitter.com'],
+	a[href*='dribbble.com'],
+	a[href*='plus.google.com'],
+	a[href*='pinterest.com'],
+	a[href*='github.com'],
+	a[href*='tumblr.com'],
+	a[href*='youtube.com'],
+	a[href*='flickr.com'],
+	a[href*='vimeo.com'],
+	a[href*='instagram.com'],
+	a[href*='codepen.io'],
+	a[href*='linkedin.com'],
+	a[href*='foursquare.com'],
+	a[href*='reddit.com'],
+	a[href*='digg.com'],
+	a[href*='getpocket.com'],
+	a[href*='path.com'],
+	a[href*='stumbleupon.com'],
+	a[href*='spotify.com'],
+	a[href*='twitch.tv'],
+	a[href*='dropbox.com'],
+	a[href*='/feed'],
+	a[href*='skype'],
+	a[href*='mailto'] {
+		display: inline-block;
+		height: 32px;
+		overflow: hidden;
+		width: 32px;
+		vertical-align: middle;
+
+		&::before {
+			@include genericons;
+			background: $color__primary;
+			border: 2px solid $color__tertiary;
+			border-radius: 50%;
+			display: block;
+			color: $color__tertiary;
+			height: 32px;
+			line-height: 1;
+			padding: 6px;
+			text-align: center;
+			transition: 0.2s all ease-in-out;
+			width: 32px;
+		}
+
+		&:hover {
+			&::before {
+				background: $color__tertiary;
+				border-color: $color__primary;
+				color: $color__primary;
+			}
+		} // :hover
+	} // a
+
+	a[href*='wordpress.org']:before,
+	a[href*='wordpress.com']:before {
+		content: '\f205';
+	}
+
+	a[href*='facebook.com']:before {
+		content: '\f204';
+	}
+
+	a[href*='twitter.com']:before {
+		content: '\f202';
+	}
+
+	a[href*='dribbble.com']:before {
+		content: '\f201';
+	}
+
+	a[href*='plus.google.com']:before {
+		content: '\f206';
+	}
+
+	a[href*='pinterest.com']:before {
+		content: '\f209';
+	}
+
+	a[href*='github.com']:before {
+		content: '\f200';
+	}
+
+	a[href*='tumblr.com']:before {
+		content: '\f214';
+	}
+
+	a[href*='youtube.com']:before {
+		content: '\f213';
+	}
+
+	a[href*='flickr.com']:before {
+		content: '\f211';
+	}
+
+	a[href*='vimeo.com']:before {
+		content: '\f212';
+	}
+
+	a[href*='instagram.com']:before {
+		content: '\f215';
+	}
+
+	a[href*='codepen.io']:before {
+		content: '\f216';
+	}
+
+	a[href*='linkedin.com']:before {
+		content: '\f207';
+	}
+
+	a[href*='foursquare.com']:before {
+		content: '\f226';
+	}
+
+	a[href*='reddit.com']:before {
+		content: '\f222';
+	}
+
+	a[href*='digg.com']:before {
+		content: '\f221';
+	}
+
+	a[href*='getpocket.com']:before {
+		content: '\f224';
+	}
+
+	a[href*='path.com']:before {
+		content: '\f219';
+	}
+
+	a[href*='stumbleupon.com']:before {
+		content: '\f223';
+	}
+
+	a[href*='spotify.com']:before {
+		content: '\f515';
+	}
+
+	a[href*='twitch.tv']:before {
+		content: '\f516';
+	}
+
+	a[href*='dropbox.com']:before {
+		content: '\f225';
+	}
+
+	a[href*='/feed']:before {
+		content: '\f413';
+	}
+
+	a[href*='skype']:before {
+		content: '\f220';
+	}
+
+	a[href*='mailto']:before {
+		content: '\f410';
+	}
+}
