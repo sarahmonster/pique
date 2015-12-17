@@ -919,10 +919,10 @@ a {
   padding: 0; }
   .secondary-links ul li {
     display: inline; }
-    .secondary-links ul li::after {
+    .secondary-links ul li a::after {
       content: ' · ';
       display: inline; }
-    .secondary-links ul li:last-child::after {
+    .secondary-links ul li:last-child a::after {
       display: none; }
 
 .comment-navigation,
@@ -1118,6 +1118,7 @@ a {
 .secondary-links li a[href*='mailto'] {
   display: inline-block;
   height: 32px;
+  margin-right: 5px;
   overflow: hidden;
   width: 32px;
   vertical-align: middle; }
@@ -1198,6 +1199,33 @@ a {
     background: #E9D5C0;
     border-color: #2D2A26;
     color: #2D2A26; }
+  .secondary-links li a[href*='wordpress.org']::after,
+  .secondary-links li a[href*='facebook.com']::after,
+  .secondary-links li a[href*='twitter.com']::after,
+  .secondary-links li a[href*='dribbble.com']::after,
+  .secondary-links li a[href*='plus.google.com']::after,
+  .secondary-links li a[href*='pinterest.com']::after,
+  .secondary-links li a[href*='github.com']::after,
+  .secondary-links li a[href*='tumblr.com']::after,
+  .secondary-links li a[href*='youtube.com']::after,
+  .secondary-links li a[href*='flickr.com']::after,
+  .secondary-links li a[href*='vimeo.com']::after,
+  .secondary-links li a[href*='instagram.com']::after,
+  .secondary-links li a[href*='codepen.io']::after,
+  .secondary-links li a[href*='linkedin.com']::after,
+  .secondary-links li a[href*='foursquare.com']::after,
+  .secondary-links li a[href*='reddit.com']::after,
+  .secondary-links li a[href*='digg.com']::after,
+  .secondary-links li a[href*='getpocket.com']::after,
+  .secondary-links li a[href*='path.com']::after,
+  .secondary-links li a[href*='stumbleupon.com']::after,
+  .secondary-links li a[href*='spotify.com']::after,
+  .secondary-links li a[href*='twitch.tv']::after,
+  .secondary-links li a[href*='dropbox.com']::after,
+  .secondary-links li a[href*='/feed']::after,
+  .secondary-links li a[href*='skype']::after,
+  .secondary-links li a[href*='mailto']::after {
+    display: none; }
 .secondary-links li a[href*='wordpress.org']:before {
   content: '\f205'; }
 .secondary-links li a[href*='facebook.com']:before {

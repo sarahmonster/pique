@@ -7,12 +7,12 @@
     li {
       display: inline;
 
-      &::after {
+      a::after {
         content: ' · ';
         display: inline;
       }
 
-      &:last-child::after {
+      &:last-child a::after {
         display: none;
       }
     } // li

@@ -77,6 +77,7 @@
 	a[href*='mailto'] {
 		display: inline-block;
 		height: 32px;
+		margin-right: 5px;
 		overflow: hidden;
 		width: 32px;
 		vertical-align: middle;
@@ -103,6 +104,10 @@
 				color: $color__primary;
 			}
 		} // :hover
+
+		&::after {
+			display: none;
+		}
 	} // a
 
 	a[href*='wordpress.org']:before {
