@@ -67,7 +67,6 @@
 		align-items: baseline;
 		display: flex;
 		flex-wrap: wrap;
-		line-height: 1;
 
 		a {
 			border: none;
@@ -102,7 +101,6 @@
 		border-top: 1px solid transparentize($color__tertiary, 0.5);
 		font-family: $font__serif;
 		font-style: italic;
-		line-height: 1;
 		padding: 7px 0;
 
 		a {
