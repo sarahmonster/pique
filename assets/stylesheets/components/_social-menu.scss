@@ -36,7 +36,8 @@
 
       &:hover {
         background: $color__tertiary;
-        border-color: $color__primary !important; // Bad Jetpack.
+        border-color: $color__primary;
+				border: 2px solid; // Ensure things don't get all cut off.
 
         &::before {
           color: $color__primary;

@@ -1086,7 +1086,8 @@ a {
         width: 32px; }
       .widget.widget_wpcom_social_media_icons_widget ul a:hover {
         background: #E9D5C0;
-        border-color: #2D2A26 !important; }
+        border-color: #2D2A26;
+        border: 2px solid; }
         .widget.widget_wpcom_social_media_icons_widget ul a:hover::before {
           color: #2D2A26; }
 
