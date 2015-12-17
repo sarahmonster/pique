@@ -1059,7 +1059,7 @@ a {
       padding: 0; }
     .widget.widget_wpcom_social_media_icons_widget ul a {
       background: #2D2A26;
-      border: 2px solid #E9D5C0 !important;
+      border: 2px solid #E9D5C0;
       border-radius: 50%;
       display: inline-block;
       padding: 0;
