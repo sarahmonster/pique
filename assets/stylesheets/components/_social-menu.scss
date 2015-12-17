@@ -50,7 +50,6 @@
 // We only want to add social media icons if we're using this area for social media links
 .secondary-links li {
 	a[href*='wordpress.org'],
-	a[href*='wordpress.com'],
 	a[href*='facebook.com'],
 	a[href*='twitter.com'],
 	a[href*='dribbble.com'],
@@ -106,8 +105,7 @@
 		} // :hover
 	} // a
 
-	a[href*='wordpress.org']:before,
-	a[href*='wordpress.com']:before {
+	a[href*='wordpress.org']:before {
 		content: '\f205';
 	}
 
