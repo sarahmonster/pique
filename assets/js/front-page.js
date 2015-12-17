@@ -61,7 +61,7 @@
 	}
 
 	// Run our functions on document load
-	$( document ).on('ready', function() {
+	$( window ).on( 'load', function() {
 		adjustHero();
 		dynamicNav();
 	});

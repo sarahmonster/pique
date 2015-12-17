@@ -86,8 +86,8 @@
 		});
 	};
 
-	// Run our functions on document load
-	$( document ).on('ready', function() {
+	// Run our functions once the window has loaded fully
+	$( window ).on( 'load', function() {
 		priorityNav();
 		fitHeader();
 		stickyNav();
