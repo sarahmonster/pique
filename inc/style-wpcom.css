@@ -150,9 +150,10 @@ div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedp
 }
 
 /* Facebook */
-.fb_iframe_widget {
-  margin-top: 10px;
-  text-align: center;
+.widget_facebook_likebox .fb_iframe_widget {
+	text-align: center;
+	margin: 20px auto 0;
+	width: 100%;
 }
 
 /* Goodreads */
