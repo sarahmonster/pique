@@ -48,9 +48,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-// Are we showing the 'none' template? If so, we want a sidebar.
-if ( ! have_posts() ) :
-	get_sidebar();
-endif; ?>
 <?php get_footer(); ?>

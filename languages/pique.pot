@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pique 0.1.0\n"
+"Project-Id-Version: Pique 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/pique\n"
-"POT-Creation-Date: 2015-12-09 03:47:05+00:00\n"
+"POT-Creation-Date: 2015-12-15 03:45:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -316,7 +316,7 @@ msgstr ""
 
 #. Theme URI of the plugin/theme
 #: wp-content/themes/pub/pique/style.css
-msgid "http://wordpress.com/pique"
+msgid "http://wordpress.com/themes/pique"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -331,7 +331,7 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 #: wp-content/themes/pub/pique/style.css
-msgid "http://wordpress.com/themes"
+msgid "http://wordpress.com/themes/"
 msgstr ""
 
 #. Template Name of the plugin/theme
