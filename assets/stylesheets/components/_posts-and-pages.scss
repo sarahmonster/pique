@@ -6,6 +6,12 @@
 	}
 }
 
+.format-image .entry-content a:hover,
+.format-gallery .entry-content a:hover,
+.format-video .entry-content a:hover {
+	border-bottom: none;
+}
+
 /* Sticky posts */
 .entry-title a::before {
 	.sticky & {

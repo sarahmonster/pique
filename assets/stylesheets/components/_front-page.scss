@@ -167,10 +167,12 @@
     border: 2px solid $color__white;
 		border-bottom: 0;
     display: inline-block;
-    max-width: $size__site-width / 2;
+    max-width: 100%;
     padding: 0.75rem 1.5rem 0.85rem;
 		position: relative;
     text-transform: uppercase;
+		word-wrap: break-word;
+		word-break: break-word;
 
 		&::before,
 		&::after {
@@ -227,6 +229,12 @@
   } // blockquote
 
 } //.pique-panel-content
+
+@include tablet {
+	.pique-panel-content h2 {
+		max-width: $size__site-width / 2;
+	}
+}
 
 // Post formats
 .format-aside,
@@ -375,7 +383,7 @@
     text-align: center;
   }
 
-  img {
+  img.size-pique-square {
     border-radius: 50%;
     margin: 0 auto;
     max-width: 60%;

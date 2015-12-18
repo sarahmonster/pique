@@ -684,11 +684,6 @@ a {
     right: 0;
     bottom: 0;
     z-index: -1; }
-  @media (max-width: 767px) {
-    #masthead #pique-header-image {
-      height: 200px;
-      max-width: none;
-      width: auto; } }
 
 .site-branding {
   position: absolute;
@@ -722,6 +717,13 @@ a {
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75); }
 
+@media (max-width: 767px) {
+  .site-logo-link + .site-title,
+  .site-description {
+    display: none; }
+
+  .site-branding {
+    top: 30%; } }
 /* Navigation menu */
 #site-navigation-wrapper {
   position: absolute;
@@ -1813,10 +1815,12 @@ a {
     border: 2px solid #FCFBF9;
     border-bottom: 0;
     display: inline-block;
-    max-width: 700px;
+    max-width: 100%;
     padding: 0.75rem 1.5rem 0.85rem;
     position: relative;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    word-wrap: break-word;
+    word-break: break-word; }
     .pique-panel-content h2::before, .pique-panel-content h2::after {
       border-bottom: 2px solid #FCFBF9;
       content: '';
@@ -1851,6 +1855,9 @@ a {
       .pique-panel-content blockquote, .pique-panel-content .pique-template-testimonials .pique-testimonials article .entry-content, .pique-template-testimonials .pique-testimonials article .pique-panel-content .entry-content {
         font-size: 1.5em; } }
 
+@media (min-width: 768px) {
+  .pique-panel-content h2 {
+    max-width: 700px; } }
 .format-aside .pique-panel-content .entry-content,
 .format-status .pique-panel-content .entry-content {
   font-size: 1.2em;
@@ -2042,7 +2049,7 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
 .pique-grid-three article {
   font-size: 0.9em;
   text-align: center; }
-.pique-grid-three img {
+.pique-grid-three img.size-pique-square {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 60%; }
@@ -2237,6 +2244,11 @@ blockquote .pique-template-recent-posts .pique-panel-content cite a,
   margin: 0 0 1.5em; }
   .entry-content a:not(.button):hover {
     border-bottom: 2px solid; }
+
+.format-image .entry-content a:hover,
+.format-gallery .entry-content a:hover,
+.format-video .entry-content a:hover {
+  border-bottom: none; }
 
 /* Sticky posts */
 .sticky .entry-title a::before {

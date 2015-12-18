@@ -14,15 +14,8 @@
 
 		// Make sure we're not on the homepage, since that handles stuff differently
 		if ( ! $( 'body' ).hasClass( 'pique-frontpage' )) {
-
-			// Is this a small screen? Okay, we should be making it a little smaller (no need to account for our nav height here)
-			if ( windowWidth < 640 ) {
-				$( '#masthead' ).css( 'height', headerHeight );
-
-				// Add the height of our header image and the height of our nav
-			} else {
-				$( '#masthead' ).css( 'height', headerHeight + navHeight );
-			}
+			// Add the height of our header image and the height of our nav
+			$( '#masthead' ).css( 'height', headerHeight + navHeight );
 		}
 	};
 
