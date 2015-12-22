@@ -95,6 +95,7 @@
 
 	  &:nth-of-type(1),
 	  &:nth-of-type(3n+1) {
+			clear: left;
 	    margin-right: $size__site-gutter;
 	  }
 
