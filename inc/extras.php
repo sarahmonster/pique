@@ -84,8 +84,10 @@ function pique_post_classes( $classes ) {
 		$simple_slug = get_page_template_slug();
 		// Make sure the template actually exists in this theme.
 		if ( '' !== locate_template( $simple_slug ) ) :
-			$simple_slug = explode( '.', $simple_slug )[0];
-			$simple_slug = explode( '/', $simple_slug )[1];
+			$simple_slug = explode( '.', $simple_slug );
+			$simple_slug = $simple_slug[0];
+			$simple_slug = explode( '/', $simple_slug );
+			$simple_slug = $simple_slug[1];
 			$classes[] = 'pique-' . $simple_slug;
 		endif;
 	endif;
