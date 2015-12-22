@@ -73,6 +73,7 @@ input[type="submit"] {
 	text-shadow: none;
 	text-transform: uppercase;
 	transition: background-color 0.125s ease-in;
+	-webkit-appearance: none;
 
 	@include mobile {
 		width: 75%;

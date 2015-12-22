@@ -534,7 +534,8 @@ input[type="submit"] {
   padding: 1em 3em;
   text-shadow: none;
   text-transform: uppercase;
-  transition: background-color 0.125s ease-in; }
+  transition: background-color 0.125s ease-in;
+  -webkit-appearance: none; }
   @media (max-width: 767px) {
     button, .archive .read-more a,
     .blog .read-more a,
