@@ -1423,6 +1423,7 @@ a {
   .widget_archive ul li a,
   .widget_categories ul li a {
     border: none;
+    display: inline-block;
     order: 1; }
   .widget_archive ul li::before,
   .widget_categories ul li::before {
