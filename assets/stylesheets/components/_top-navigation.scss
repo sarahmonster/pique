@@ -64,7 +64,7 @@
 } // .site-branding
 
 @include mobile {
-	.site-logo-link + .site-title, 
+	.site-logo-link + .site-title,
 	.site-description {
 		display: none;
 	}

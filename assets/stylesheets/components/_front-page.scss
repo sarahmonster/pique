@@ -35,29 +35,6 @@
   } // tablet
 }
 
-/* If we're using the anchor menu, show expanded on mobile */
-.pique-frontpage .anchor-menu {
-  @include mobile {
-    @include clearfix;
-
-    ul {
-      width: 100%;
-    }
-
-    li {
-      display: block;
-    }
-
-    a {
-      border-bottom: 1px solid transparentize($color__tertiary, 0.9);
-      padding: 10px 10px;
-      text-align: center;
-      width: 100%;
-    }
-  } // mobile
-}
-
-
 /* If we don't have any panels set, set the hero panel to full-height */
 .pique-no-panels {
   #pique-hero {

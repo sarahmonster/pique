@@ -67,8 +67,8 @@
 			// Output our menu only if we actually have menu items
 			if ( isset( $panel_links ) ) : ?>
 			<div id="site-navigation-wrapper">
-				<nav id="site-navigation" class="main-navigation anchor-menu" role="navigation">
-					<ul>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<ul id="primary-menu" class="menu nav-menu">
 						<?php
 						foreach ( $panel_links as $key => $link ) :
 							// Output menu link
@@ -82,6 +82,7 @@
 							);
 						endforeach;
 						?>
+						<li id="more-menu" class="menu-item menu-item-has-children"><a href="#"><span class="screen-reader-text">More</span></a><ul class="sub-menu"></ul></li>
 					</ul>
 				</nav><!-- #site-navigation -->
 			</div>
