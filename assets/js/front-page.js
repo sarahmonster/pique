@@ -21,7 +21,7 @@
 		var $navLinks = $( '#site-navigation li a' );
 
 		// Use the Waypoints plugin to indicate our current nav item
-		sections.waypoint( {
+		$sections.waypoint( {
 			handler: function( direction ) {
 				var activePanel = this;
 				var panelID = activePanel.element.id;
@@ -52,7 +52,7 @@
 		});
 
 		// Use scrollTo library to smoothly scroll between panels
-		navLinks.click( function() {
+		$navLinks.click( function() {
 			$.scrollTo( $( this ).attr( 'href' ), {
 				duration: 400,
 				offset: { 'top': -80 }
