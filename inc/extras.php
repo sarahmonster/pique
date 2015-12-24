@@ -97,28 +97,6 @@ function pique_post_classes( $classes ) {
 		$classes[] = 'pique-template-recent-posts';
 	endif;
 
-	// Annnnd add a 'panel' class if we're on the front page
-	if ( is_front_page() ) :
-		$classes[] = 'pique-panel';
-
-		// But remove the class for child pages of our grid template
-		$parent = wp_get_post_parent_id( get_the_ID() );
-		if ( 0 !== $parent && 'page-templates/template-grid.php' === get_page_template_slug( $parent ) ) :
-			$classes = pique_remove_from_array( 'pique-panel', $classes );
-		endif;
-
-		// Remove for testimonials
-		if ( 'jetpack-testimonial' === get_post_type( get_the_ID() ) ) :
-			$classes = pique_remove_from_array( 'pique-panel', $classes );
-		endif;
-
-		// Remove for blog posts (these are all in a container panel here)
-		if ( 'post' === get_post_type( get_the_ID() ) ) :
-			$classes = pique_remove_from_array( 'pique-panel', $classes );
-		endif;
-
-	endif;
-
 	// Add the panel classes to all posts in archive views
 	if ( is_home() || is_search() || is_archive() ) :
 		$classes[] = 'pique-panel';
