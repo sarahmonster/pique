@@ -17,33 +17,33 @@
 	* highlighting the current panel in the nav menu.
 	*/
 	function dynamicNav() {
-		var sections = $( '.pique-panel' );
-		var navLinks = $( '#site-navigation li a' );
+		var $sections = $( '.pique-panel' );
+		var $navLinks = $( '#site-navigation li a' );
 
 		// Use the Waypoints plugin to indicate our current nav item
 		sections.waypoint( {
 			handler: function( direction ) {
-				var activePanel = $( this );
+				var activePanel = this;
+				var panelID = activePanel.element.id;
 
 				// If we're scrolling up, set the previous panel as our current panel.
 				// This just means that, when we hit to top of a panel (bottom of a new panel)
 				// we'll highlight the correct panel. Wheee!
 				if ( 'up' === direction ) {
-					activePanel = activePanel.prev();
+					// Subtract twice because waypoints is one-indexed; DOM is zero-indexed.
+					var elementIndex = activePanel.key.substr( 9, 1 ) - 2;
+					panelID = $sections.eq( elementIndex ).attr('id');
 				}
-
-				// Get the ID of the panel
-				var panelID = this.options.element.id;
 
 				// Don't show any highlight for our parent nav
 				if ( 'pique-hero' === panelID ) {
-					navLinks.parents( 'li' ).removeClass( 'current_page_item' );
+					$navLinks.parents( 'li' ).removeClass( 'current_page_item' );
 				}
 
 				// Find the active panel's corresponding link by matching the panel ID in the URL
 				var activeLink = $( 'nav a[href="#' + panelID + '"]' ).parent( 'li' );
 				// Remove any existing classes
-				navLinks.parents( 'li' ).removeClass( 'current_page_item' );
+				$navLinks.parents( 'li' ).removeClass( 'current_page_item' );
 				// Highlight the currently active panel by adding a CSS class
 				activeLink.addClass( 'current_page_item' );
 
