@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pique 1.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/pique\n"
-"POT-Creation-Date: 2015-12-19 03:46:55+00:00\n"
+"POT-Creation-Date: 2015-12-24 03:50:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,11 +55,11 @@ msgid "Comments are closed."
 msgstr ""
 
 #. translators: %s: Name of current post
-#: components/content-front.php:35 components/content-hero.php:22
+#: components/content-front.php:34 components/content-hero.php:22
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: components/content-front.php:102 components/content-page.php:22
+#: components/content-front.php:101 components/content-page.php:22
 #: components/content-single.php:22 components/content.php:46
 msgid "Pages:"
 msgstr ""
@@ -250,7 +250,7 @@ msgstr ""
 msgid "Panel 8"
 msgstr ""
 
-#: inc/extras.php:246
+#: inc/extras.php:224
 msgid "Read more %s"
 msgstr ""
 
