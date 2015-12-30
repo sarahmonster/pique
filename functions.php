@@ -223,7 +223,7 @@ add_action( 'admin_print_styles-appearance_page_custom-header', 'pique_admin_scr
  * Enqueue scripts and styles.
  */
 function pique_scripts() {
-	wp_enqueue_style( 'pique-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'pique-style', get_stylesheet_uri(), array(), null, 'screen' );
 	wp_enqueue_style( 'pique-fonts', pique_fonts_url(), array(), null );
 
 	// Header and navigation
@@ -250,6 +250,9 @@ function pique_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Custom print Styles
+	wp_enqueue_style( 'pique-print', get_template_directory_uri() . '/assets/stylesheets/print.css', array(), null, 'print' );
 }
 add_action( 'wp_enqueue_scripts', 'pique_scripts' );
 
