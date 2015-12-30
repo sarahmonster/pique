@@ -1,4 +1,6 @@
 #masthead {
+	background-color: $color__primary;
+	height: 240px;
 	position: relative;
 	text-align: center;
 	z-index: 10;
@@ -64,6 +66,10 @@
 } // .site-branding
 
 @include mobile {
+	#masthead {
+		height: 160px;
+	}
+
 	.site-logo-link + .site-title,
 	.site-description {
 		display: none;

@@ -250,9 +250,6 @@ function pique_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	// Custom print Styles
-	wp_enqueue_style( 'pique-print', get_template_directory_uri() . '/assets/stylesheets/print.css', array(), null, 'print' );
 }
 add_action( 'wp_enqueue_scripts', 'pique_scripts' );
 
