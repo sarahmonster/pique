@@ -1,13 +1,14 @@
 /* Header rules specific to the front page only */
 .pique-frontpage {
   #masthead {
-    padding-top: 1em;
-    position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-    width: 100%;
-    z-index: 10000;
+          background: none;
+            padding-top: 1em;
+            position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+            width: 100%;
+            z-index: 10000;
 
     .site-branding {
       position: relative;
@@ -86,6 +87,7 @@
 /* Panel background (featured) image */
 .pique-panel-background {
   background-attachment: fixed;
+  background-position: center center;
   -webkit-filter: brightness(.5);
         filter: brightness(.5);
   opacity: 0.5;

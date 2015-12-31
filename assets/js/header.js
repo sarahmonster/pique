@@ -11,11 +11,19 @@
 		var windowWidth = $( window ).width();
 		var headerHeight = $( '#pique-header-image' ).height();
 		var navHeight = $( '#primary-menu' ).height();
+		var brandingHeight = $( '.site-branding' ).height();
 
 		// Make sure we're not on the homepage, since that handles stuff differently
 		if ( ! $( 'body' ).hasClass( 'pique-frontpage' )) {
-			// Add the height of our header image and the height of our nav
-			$( '#masthead' ).css( 'height', headerHeight + navHeight );
+			if ( 0 < $( '#pique-header-image' ).length ) {
+				// Add the height of our header image and the height of our nav
+				console.log('header');
+				$( '#masthead' ).css( 'height', headerHeight + navHeight );
+			} else {
+				// Give enough room for our branding
+				console.log('no header');
+				$( '#masthead' ).css( 'height', brandingHeight + navHeight + 40 );
+			}
 		}
 	};
 

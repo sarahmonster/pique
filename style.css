@@ -2120,6 +2120,7 @@ blockquote
 --------------------------------------------------------------*/
 /* Header rules specific to the front page only */
 .pique-frontpage #masthead {
+	background: none;
 	left: 0;
 	padding-top: 1em;
 	position: absolute;
@@ -2209,6 +2210,7 @@ blockquote
 /* Panel background (featured) image */
 .pique-panel-background {
 	background-attachment: fixed;
+	background-position: center center;
 	bottom: 0;
 	height: 100%; 
 	left: 0;

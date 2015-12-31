@@ -15,6 +15,11 @@
   }
 }
 
+/* Don't show a background for the masthead, even if colour annotations are in place */
+.pique-frontpage #masthead {
+    background: none !important;
+}
+
 /* Hide stats smiley */
 #wpstats {
   display: none;
